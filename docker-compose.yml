@@ -1,0 +1,106 @@
+version: '3.8'
+
+services:  
+  api-gateway:    
+    build: ./api-gateway
+    container_name: api_gateway
+    ports:      
+      - "${GATEWAY_PORT:-3000}:3000"
+    environment:     
+      USER_SERVICE_URL: http://user-service:${USER_SERVICE_PORT:-3001} 
+      TASKS_SERVICE_URL: http://tasks-service:${TASKS_SERVICE_PORT:-3002} 
+      JWT_SECRET: ${JWT_SECRET}     
+      REDIS_HOST: ${REDIS_HOST} 
+      REDIS_PORT: ${REDIS_PORT}
+      REDIS_PASSWORD: ${REDIS_PASSWORD} 
+    volumes:      
+      - ./api-gateway:/usr/src/app
+      - /usr/src/app/node_modules
+    depends_on:      
+      - user-service
+      - tasks-service
+    restart: unless-stopped
+    networks:
+      - app-network   
+
+
+  user-service:
+    build: ./user-service 
+    container_name: user_service           
+    environment:      
+      PORT: ${USER_SERVICE_PORT:-3001}
+      MONGO_URI: ${MONGO_USER_URI}
+      JWT_SECRET: ${JWT_SECRET}
+      REDIS_HOST: ${REDIS_HOST} 
+      REDIS_PORT: ${REDIS_PORT}
+      REDIS_PASSWORD: ${REDIS_PASSWORD}
+    volumes:     
+      - ./user-service:/usr/src/app
+      - /usr/src/app/node_modules
+    depends_on:      
+      - redis
+    restart: unless-stopped 
+    networks:
+      - app-network
+
+
+  tasks-service:
+    build: ./tasks-service 
+    container_name: tasks_service          
+    environment:      
+      PORT: ${TASKS_SERVICE_PORT:-3002}
+      MONGO_URI: ${MONGO_TASKS_URI}      
+      RABBITMQ_URI: amqp://${RABBITMQ_USER}:${RABBITMQ_PASS}@rabbitmq:5672      
+    volumes:     
+      - ./tasks-service:/usr/src/app
+      - /usr/src/app/node_modules
+    depends_on:      
+      - rabbitmq
+    restart: unless-stopped 
+    networks:
+      - app-network      
+
+
+  rabbitmq:    
+    image: rabbitmq:3.13-management
+    container_name: rabbitmq
+    ports:     
+      - "5672:5672"      
+      - "15672:15672"
+    environment:      
+      RABBITMQ_DEFAULT_USER: ${RABBITMQ_USER}
+      RABBITMQ_DEFAULT_PASS: ${RABBITMQ_PASS}
+    volumes:      
+      - rabbitmq_data:/var/lib/rabbitmq
+    networks:     
+      - app-network
+    healthcheck:
+        test: ["CMD", "rabbitmq-diagnostics", "check_running", "-q"]
+        interval: 30s
+        timeout: 30s
+        retries: 3      
+
+
+  redis:    
+    image: redis:7-alpine
+    container_name: redis    
+    command: redis-server --requirepass ${REDIS_PASSWORD}   
+    volumes:      
+      - redis_data:/data
+    networks:      
+      - app-network
+    healthcheck:
+      test: ["CMD", "redis-cli", "-a", "${REDIS_PASSWORD}", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+
+networks:
+  app-network:   
+    driver: bridge
+
+
+volumes:  
+  rabbitmq_data:  
+  redis_data:
