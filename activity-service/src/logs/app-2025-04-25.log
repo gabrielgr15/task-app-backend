@@ -1,0 +1,2192 @@
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-25 03:21:57"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-25 03:21:57"
+}
+{
+  "level": "info",
+  "message": "Initializing RabbitMQ Consumer Service...",
+  "timestamp": "2025-04-25 03:21:57"
+}
+{
+  "level": "info",
+  "message": "Attempting to get RabbitMQ channel (with retries)...",
+  "timestamp": "2025-04-25 03:21:57"
+}
+{
+  "level": "info",
+  "message": "getChannel: Initiating connection attempt via connectRabbitMQ...",
+  "timestamp": "2025-04-25 03:21:57"
+}
+{
+  "error": {
+    "address": "172.18.0.2",
+    "code": "ECONNREFUSED",
+    "errno": -111,
+    "message": "connect ECONNREFUSED 172.18.0.2:5672",
+    "name": "Error",
+    "port": 5672,
+    "stack": "Error: connect ECONNREFUSED 172.18.0.2:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)",
+    "syscall": "connect"
+  },
+  "level": "error",
+  "message": "Failed to connect/setup RabbitMQ during initial attempt:",
+  "timestamp": "2025-04-25 03:21:57"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection failed. Scheduling retry attempt 1 in 629ms...",
+  "timestamp": "2025-04-25 03:21:57"
+}
+{
+  "level": "info",
+  "message": "Executing scheduled retry attempt 1...",
+  "timestamp": "2025-04-25 03:21:58"
+}
+{
+  "error": {
+    "address": "172.18.0.2",
+    "code": "ECONNREFUSED",
+    "errno": -111,
+    "message": "connect ECONNREFUSED 172.18.0.2:5672",
+    "name": "Error",
+    "port": 5672,
+    "stack": "Error: connect ECONNREFUSED 172.18.0.2:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)",
+    "syscall": "connect"
+  },
+  "level": "error",
+  "message": "Failed to connect/setup RabbitMQ during initial attempt:",
+  "timestamp": "2025-04-25 03:21:58"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection failed. Scheduling retry attempt 2 in 1448ms...",
+  "timestamp": "2025-04-25 03:21:58"
+}
+{
+  "level": "info",
+  "message": "Executing scheduled retry attempt 2...",
+  "timestamp": "2025-04-25 03:21:59"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection successful, resetting retry state.",
+  "timestamp": "2025-04-25 03:22:00"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-25 03:22:00"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-25 03:22:00"
+}
+{
+  "level": "info",
+  "message": "Asserting queue: task_events",
+  "timestamp": "2025-04-25 03:22:00"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-25 03:22:00"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection successful, resetting retry state.",
+  "timestamp": "2025-04-25 03:22:00"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel ready, starting consumer...",
+  "timestamp": "2025-04-25 03:22:00"
+}
+{
+  "level": "info",
+  "message": "Attempting to start consumer on queue: task_events",
+  "timestamp": "2025-04-25 03:22:00"
+}
+{
+  "level": "info",
+  "message": "Consumer started successfully on queue: task_events",
+  "timestamp": "2025-04-25 03:22:00"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ Consumer Service Initialized Successfully.",
+  "timestamp": "2025-04-25 03:22:00"
+}
+{
+  "level": "info",
+  "message": "Activity Service running on port 3003",
+  "timestamp": "2025-04-25 03:22:00"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-25 03:22:48"
+}
+{
+  "level": "info",
+  "message": "Received SIGINT. Starting graceful shutdown...",
+  "timestamp": "2025-04-25 03:22:48"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-25 03:36:53"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-25 03:36:53"
+}
+{
+  "level": "info",
+  "message": "Initializing RabbitMQ Consumer Service...",
+  "timestamp": "2025-04-25 03:36:53"
+}
+{
+  "level": "info",
+  "message": "Attempting to get RabbitMQ channel (with retries)...",
+  "timestamp": "2025-04-25 03:36:53"
+}
+{
+  "level": "info",
+  "message": "getChannel: Initiating connection attempt via connectRabbitMQ...",
+  "timestamp": "2025-04-25 03:36:53"
+}
+{
+  "error": {
+    "address": "172.18.0.2",
+    "code": "ECONNREFUSED",
+    "errno": -111,
+    "message": "connect ECONNREFUSED 172.18.0.2:5672",
+    "name": "Error",
+    "port": 5672,
+    "stack": "Error: connect ECONNREFUSED 172.18.0.2:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)",
+    "syscall": "connect"
+  },
+  "level": "error",
+  "message": "Failed to connect/setup RabbitMQ during initial attempt:",
+  "timestamp": "2025-04-25 03:36:53"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection failed. Scheduling retry attempt 1 in 653ms...",
+  "timestamp": "2025-04-25 03:36:53"
+}
+{
+  "level": "info",
+  "message": "Executing scheduled retry attempt 1...",
+  "timestamp": "2025-04-25 03:36:54"
+}
+{
+  "error": {
+    "address": "172.18.0.2",
+    "code": "ECONNREFUSED",
+    "errno": -111,
+    "message": "connect ECONNREFUSED 172.18.0.2:5672",
+    "name": "Error",
+    "port": 5672,
+    "stack": "Error: connect ECONNREFUSED 172.18.0.2:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)",
+    "syscall": "connect"
+  },
+  "level": "error",
+  "message": "Failed to connect/setup RabbitMQ during initial attempt:",
+  "timestamp": "2025-04-25 03:36:54"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection failed. Scheduling retry attempt 2 in 748ms...",
+  "timestamp": "2025-04-25 03:36:54"
+}
+{
+  "level": "info",
+  "message": "Executing scheduled retry attempt 2...",
+  "timestamp": "2025-04-25 03:36:55"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection successful, resetting retry state.",
+  "timestamp": "2025-04-25 03:36:55"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-25 03:36:55"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-25 03:36:55"
+}
+{
+  "level": "info",
+  "message": "Asserting queue: task_events",
+  "timestamp": "2025-04-25 03:36:55"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-25 03:36:55"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection successful, resetting retry state.",
+  "timestamp": "2025-04-25 03:36:55"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel ready, starting consumer...",
+  "timestamp": "2025-04-25 03:36:55"
+}
+{
+  "level": "info",
+  "message": "Attempting to start consumer on queue: task_events",
+  "timestamp": "2025-04-25 03:36:55"
+}
+{
+  "level": "info",
+  "message": "Consumer started successfully on queue: task_events",
+  "timestamp": "2025-04-25 03:36:55"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ Consumer Service Initialized Successfully.",
+  "timestamp": "2025-04-25 03:36:55"
+}
+{
+  "level": "info",
+  "message": "Activity Service running on port 3003",
+  "timestamp": "2025-04-25 03:36:55"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-25 03:37:40"
+}
+{
+  "level": "info",
+  "message": "Received SIGINT. Starting graceful shutdown...",
+  "timestamp": "2025-04-25 03:37:40"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-25 03:39:12"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-25 03:39:12"
+}
+{
+  "level": "info",
+  "message": "Initializing RabbitMQ Consumer Service...",
+  "timestamp": "2025-04-25 03:39:12"
+}
+{
+  "level": "info",
+  "message": "Attempting to get RabbitMQ channel (with retries)...",
+  "timestamp": "2025-04-25 03:39:12"
+}
+{
+  "level": "info",
+  "message": "getChannel: Initiating connection attempt via connectRabbitMQ...",
+  "timestamp": "2025-04-25 03:39:12"
+}
+{
+  "error": {
+    "address": "172.18.0.2",
+    "code": "ECONNREFUSED",
+    "errno": -111,
+    "message": "connect ECONNREFUSED 172.18.0.2:5672",
+    "name": "Error",
+    "port": 5672,
+    "stack": "Error: connect ECONNREFUSED 172.18.0.2:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)",
+    "syscall": "connect"
+  },
+  "level": "error",
+  "message": "Failed to connect/setup RabbitMQ during initial attempt:",
+  "timestamp": "2025-04-25 03:39:12"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection failed. Scheduling retry attempt 1 in 224ms...",
+  "timestamp": "2025-04-25 03:39:12"
+}
+{
+  "level": "info",
+  "message": "Executing scheduled retry attempt 1...",
+  "timestamp": "2025-04-25 03:39:12"
+}
+{
+  "error": {
+    "address": "172.18.0.2",
+    "code": "ECONNREFUSED",
+    "errno": -111,
+    "message": "connect ECONNREFUSED 172.18.0.2:5672",
+    "name": "Error",
+    "port": 5672,
+    "stack": "Error: connect ECONNREFUSED 172.18.0.2:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)",
+    "syscall": "connect"
+  },
+  "level": "error",
+  "message": "Failed to connect/setup RabbitMQ during initial attempt:",
+  "timestamp": "2025-04-25 03:39:12"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection failed. Scheduling retry attempt 2 in 739ms...",
+  "timestamp": "2025-04-25 03:39:12"
+}
+{
+  "level": "info",
+  "message": "Executing scheduled retry attempt 2...",
+  "timestamp": "2025-04-25 03:39:13"
+}
+{
+  "error": {
+    "address": "172.18.0.2",
+    "code": "ECONNREFUSED",
+    "errno": -111,
+    "message": "connect ECONNREFUSED 172.18.0.2:5672",
+    "name": "Error",
+    "port": 5672,
+    "stack": "Error: connect ECONNREFUSED 172.18.0.2:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)",
+    "syscall": "connect"
+  },
+  "level": "error",
+  "message": "Failed to connect/setup RabbitMQ during initial attempt:",
+  "timestamp": "2025-04-25 03:39:13"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection failed. Scheduling retry attempt 3 in 1865ms...",
+  "timestamp": "2025-04-25 03:39:13"
+}
+{
+  "level": "info",
+  "message": "Executing scheduled retry attempt 3...",
+  "timestamp": "2025-04-25 03:39:15"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection successful, resetting retry state.",
+  "timestamp": "2025-04-25 03:39:15"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-25 03:39:15"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-25 03:39:15"
+}
+{
+  "level": "info",
+  "message": "Asserting queue: task_events",
+  "timestamp": "2025-04-25 03:39:15"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-25 03:39:15"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection successful, resetting retry state.",
+  "timestamp": "2025-04-25 03:39:15"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel ready, starting consumer...",
+  "timestamp": "2025-04-25 03:39:15"
+}
+{
+  "level": "info",
+  "message": "Attempting to start consumer on queue: task_events",
+  "timestamp": "2025-04-25 03:39:15"
+}
+{
+  "level": "info",
+  "message": "Consumer started successfully on queue: task_events",
+  "timestamp": "2025-04-25 03:39:15"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ Consumer Service Initialized Successfully.",
+  "timestamp": "2025-04-25 03:39:15"
+}
+{
+  "level": "info",
+  "message": "Activity Service running on port 3003",
+  "timestamp": "2025-04-25 03:39:15"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-25 03:39:27"
+}
+{
+  "level": "info",
+  "message": "Received SIGTERM. Starting graceful shutdown...",
+  "timestamp": "2025-04-25 03:39:27"
+}
+{
+  "level": "info",
+  "message": "HTTP server closed.",
+  "timestamp": "2025-04-25 03:39:27"
+}
+{
+  "level": "info",
+  "message": "Attempting to cancel consumer with tag: amq.ctag-tOmNW1Y1X5A2dm6q9GxG7w",
+  "timestamp": "2025-04-25 03:39:27"
+}
+{
+  "level": "info",
+  "message": "Received SIGINT. Starting graceful shutdown...",
+  "timestamp": "2025-04-25 03:39:27"
+}
+{
+  "level": "info",
+  "message": "HTTP server closed.",
+  "timestamp": "2025-04-25 03:39:27"
+}
+{
+  "level": "warn",
+  "message": "Shutdown already in progress.",
+  "timestamp": "2025-04-25 03:39:27"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-25 19:28:13"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-25 19:28:13"
+}
+{
+  "level": "info",
+  "message": "Initializing RabbitMQ Consumer Service...",
+  "timestamp": "2025-04-25 19:28:13"
+}
+{
+  "level": "info",
+  "message": "Attempting to get RabbitMQ channel (with retries)...",
+  "timestamp": "2025-04-25 19:28:13"
+}
+{
+  "level": "info",
+  "message": "getChannel: Initiating connection attempt via connectRabbitMQ...",
+  "timestamp": "2025-04-25 19:28:13"
+}
+{
+  "error": {
+    "address": "172.18.0.4",
+    "code": "ECONNREFUSED",
+    "errno": -111,
+    "message": "connect ECONNREFUSED 172.18.0.4:5672",
+    "name": "Error",
+    "port": 5672,
+    "stack": "Error: connect ECONNREFUSED 172.18.0.4:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)",
+    "syscall": "connect"
+  },
+  "level": "error",
+  "message": "Failed to connect/setup RabbitMQ during initial attempt:",
+  "timestamp": "2025-04-25 19:28:13"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection failed. Scheduling retry attempt 1 in 284ms...",
+  "timestamp": "2025-04-25 19:28:13"
+}
+{
+  "level": "info",
+  "message": "Executing scheduled retry attempt 1...",
+  "timestamp": "2025-04-25 19:28:13"
+}
+{
+  "error": {
+    "address": "172.18.0.4",
+    "code": "ECONNREFUSED",
+    "errno": -111,
+    "message": "connect ECONNREFUSED 172.18.0.4:5672",
+    "name": "Error",
+    "port": 5672,
+    "stack": "Error: connect ECONNREFUSED 172.18.0.4:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)",
+    "syscall": "connect"
+  },
+  "level": "error",
+  "message": "Failed to connect/setup RabbitMQ during initial attempt:",
+  "timestamp": "2025-04-25 19:28:13"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection failed. Scheduling retry attempt 2 in 1192ms...",
+  "timestamp": "2025-04-25 19:28:13"
+}
+{
+  "level": "info",
+  "message": "Executing scheduled retry attempt 2...",
+  "timestamp": "2025-04-25 19:28:14"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection successful, resetting retry state.",
+  "timestamp": "2025-04-25 19:28:14"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-25 19:28:14"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-25 19:28:14"
+}
+{
+  "level": "info",
+  "message": "Asserting queue: task_events",
+  "timestamp": "2025-04-25 19:28:14"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-25 19:28:14"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection successful, resetting retry state.",
+  "timestamp": "2025-04-25 19:28:14"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel ready, starting consumer...",
+  "timestamp": "2025-04-25 19:28:14"
+}
+{
+  "level": "info",
+  "message": "Attempting to start consumer on queue: task_events",
+  "timestamp": "2025-04-25 19:28:14"
+}
+{
+  "level": "info",
+  "message": "Consumer started successfully on queue: task_events",
+  "timestamp": "2025-04-25 19:28:14"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ Consumer Service Initialized Successfully.",
+  "timestamp": "2025-04-25 19:28:14"
+}
+{
+  "level": "info",
+  "message": "Activity Service running on port 3003",
+  "timestamp": "2025-04-25 19:28:14"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-25 19:28:20"
+}
+{
+  "level": "info",
+  "message": "Received SIGTERM. Starting graceful shutdown...",
+  "timestamp": "2025-04-25 19:28:20"
+}
+{
+  "level": "info",
+  "message": "HTTP server closed.",
+  "timestamp": "2025-04-25 19:28:20"
+}
+{
+  "level": "info",
+  "message": "Attempting to cancel consumer with tag: amq.ctag-_7aKeLcIiMn4hRDSKFLOLA",
+  "timestamp": "2025-04-25 19:28:20"
+}
+{
+  "level": "info",
+  "message": "Received SIGINT. Starting graceful shutdown...",
+  "timestamp": "2025-04-25 19:28:20"
+}
+{
+  "level": "info",
+  "message": "HTTP server closed.",
+  "timestamp": "2025-04-25 19:28:20"
+}
+{
+  "level": "warn",
+  "message": "Shutdown already in progress.",
+  "timestamp": "2025-04-25 19:28:20"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-25 19:33:44"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-25 19:33:44"
+}
+{
+  "level": "info",
+  "message": "Initializing RabbitMQ Consumer Service...",
+  "timestamp": "2025-04-25 19:33:44"
+}
+{
+  "level": "info",
+  "message": "Attempting to get RabbitMQ channel (with retries)...",
+  "timestamp": "2025-04-25 19:33:44"
+}
+{
+  "level": "info",
+  "message": "getChannel: Initiating connection attempt via connectRabbitMQ...",
+  "timestamp": "2025-04-25 19:33:44"
+}
+{
+  "error": {
+    "address": "172.18.0.3",
+    "code": "ECONNREFUSED",
+    "errno": -111,
+    "message": "connect ECONNREFUSED 172.18.0.3:5672",
+    "name": "Error",
+    "port": 5672,
+    "stack": "Error: connect ECONNREFUSED 172.18.0.3:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)",
+    "syscall": "connect"
+  },
+  "level": "error",
+  "message": "Failed to connect/setup RabbitMQ during initial attempt:",
+  "timestamp": "2025-04-25 19:33:44"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection failed. Scheduling retry attempt 1 in 351ms...",
+  "timestamp": "2025-04-25 19:33:44"
+}
+{
+  "level": "info",
+  "message": "Executing scheduled retry attempt 1...",
+  "timestamp": "2025-04-25 19:33:44"
+}
+{
+  "error": {
+    "address": "172.18.0.3",
+    "code": "ECONNREFUSED",
+    "errno": -111,
+    "message": "connect ECONNREFUSED 172.18.0.3:5672",
+    "name": "Error",
+    "port": 5672,
+    "stack": "Error: connect ECONNREFUSED 172.18.0.3:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)",
+    "syscall": "connect"
+  },
+  "level": "error",
+  "message": "Failed to connect/setup RabbitMQ during initial attempt:",
+  "timestamp": "2025-04-25 19:33:44"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection failed. Scheduling retry attempt 2 in 1822ms...",
+  "timestamp": "2025-04-25 19:33:44"
+}
+{
+  "level": "info",
+  "message": "Executing scheduled retry attempt 2...",
+  "timestamp": "2025-04-25 19:33:46"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection successful, resetting retry state.",
+  "timestamp": "2025-04-25 19:33:46"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-25 19:33:46"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-25 19:33:46"
+}
+{
+  "level": "info",
+  "message": "Asserting queue: task_events",
+  "timestamp": "2025-04-25 19:33:46"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-25 19:33:46"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection successful, resetting retry state.",
+  "timestamp": "2025-04-25 19:33:46"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel ready, starting consumer...",
+  "timestamp": "2025-04-25 19:33:46"
+}
+{
+  "level": "info",
+  "message": "Attempting to start consumer on queue: task_events",
+  "timestamp": "2025-04-25 19:33:46"
+}
+{
+  "level": "info",
+  "message": "Consumer started successfully on queue: task_events",
+  "timestamp": "2025-04-25 19:33:46"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ Consumer Service Initialized Successfully.",
+  "timestamp": "2025-04-25 19:33:46"
+}
+{
+  "level": "info",
+  "message": "Activity Service running on port 3003",
+  "timestamp": "2025-04-25 19:33:46"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-25 19:33:51"
+}
+{
+  "level": "info",
+  "message": "Received SIGINT. Starting graceful shutdown...",
+  "timestamp": "2025-04-25 19:33:51"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-25 19:41:44"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-25 19:41:45"
+}
+{
+  "level": "info",
+  "message": "Initializing RabbitMQ Consumer Service...",
+  "timestamp": "2025-04-25 19:41:45"
+}
+{
+  "level": "info",
+  "message": "Attempting to get RabbitMQ channel (with retries)...",
+  "timestamp": "2025-04-25 19:41:45"
+}
+{
+  "level": "info",
+  "message": "getChannel: Initiating connection attempt via connectRabbitMQ...",
+  "timestamp": "2025-04-25 19:41:45"
+}
+{
+  "error": {
+    "address": "172.18.0.2",
+    "code": "ECONNREFUSED",
+    "errno": -111,
+    "message": "connect ECONNREFUSED 172.18.0.2:5672",
+    "name": "Error",
+    "port": 5672,
+    "stack": "Error: connect ECONNREFUSED 172.18.0.2:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)",
+    "syscall": "connect"
+  },
+  "level": "error",
+  "message": "Failed to connect/setup RabbitMQ during initial attempt:",
+  "timestamp": "2025-04-25 19:41:45"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection failed. Scheduling retry attempt 1 in 276ms...",
+  "timestamp": "2025-04-25 19:41:45"
+}
+{
+  "level": "info",
+  "message": "Executing scheduled retry attempt 1...",
+  "timestamp": "2025-04-25 19:41:45"
+}
+{
+  "error": {
+    "address": "172.18.0.2",
+    "code": "ECONNREFUSED",
+    "errno": -111,
+    "message": "connect ECONNREFUSED 172.18.0.2:5672",
+    "name": "Error",
+    "port": 5672,
+    "stack": "Error: connect ECONNREFUSED 172.18.0.2:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)",
+    "syscall": "connect"
+  },
+  "level": "error",
+  "message": "Failed to connect/setup RabbitMQ during initial attempt:",
+  "timestamp": "2025-04-25 19:41:45"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection failed. Scheduling retry attempt 2 in 508ms...",
+  "timestamp": "2025-04-25 19:41:45"
+}
+{
+  "level": "info",
+  "message": "Executing scheduled retry attempt 2...",
+  "timestamp": "2025-04-25 19:41:45"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection successful, resetting retry state.",
+  "timestamp": "2025-04-25 19:41:45"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-25 19:41:45"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-25 19:41:45"
+}
+{
+  "level": "info",
+  "message": "Asserting queue: task_events",
+  "timestamp": "2025-04-25 19:41:45"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-25 19:41:45"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection successful, resetting retry state.",
+  "timestamp": "2025-04-25 19:41:45"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel ready, starting consumer...",
+  "timestamp": "2025-04-25 19:41:45"
+}
+{
+  "level": "info",
+  "message": "Attempting to start consumer on queue: task_events",
+  "timestamp": "2025-04-25 19:41:45"
+}
+{
+  "level": "info",
+  "message": "Consumer started successfully on queue: task_events",
+  "timestamp": "2025-04-25 19:41:45"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ Consumer Service Initialized Successfully.",
+  "timestamp": "2025-04-25 19:41:45"
+}
+{
+  "level": "info",
+  "message": "Activity Service running on port 3003",
+  "timestamp": "2025-04-25 19:41:45"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-25 19:41:50"
+}
+{
+  "level": "info",
+  "message": "Received SIGTERM. Starting graceful shutdown...",
+  "timestamp": "2025-04-25 19:41:50"
+}
+{
+  "level": "info",
+  "message": "HTTP server closed.",
+  "timestamp": "2025-04-25 19:41:50"
+}
+{
+  "level": "info",
+  "message": "Attempting to cancel consumer with tag: amq.ctag-dONldzhOgHqOkTsSALAOpQ",
+  "timestamp": "2025-04-25 19:41:50"
+}
+{
+  "level": "info",
+  "message": "Received SIGINT. Starting graceful shutdown...",
+  "timestamp": "2025-04-25 19:41:50"
+}
+{
+  "level": "info",
+  "message": "HTTP server closed.",
+  "timestamp": "2025-04-25 19:41:50"
+}
+{
+  "level": "warn",
+  "message": "Shutdown already in progress.",
+  "timestamp": "2025-04-25 19:41:50"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-25 19:53:10"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-25 19:53:10"
+}
+{
+  "level": "info",
+  "message": "Initializing RabbitMQ Consumer Service...",
+  "timestamp": "2025-04-25 19:53:10"
+}
+{
+  "level": "info",
+  "message": "Attempting to get RabbitMQ channel (with retries)...",
+  "timestamp": "2025-04-25 19:53:10"
+}
+{
+  "level": "info",
+  "message": "getChannel: Initiating connection attempt via connectRabbitMQ...",
+  "timestamp": "2025-04-25 19:53:10"
+}
+{
+  "error": {
+    "address": "172.18.0.2",
+    "code": "ECONNREFUSED",
+    "errno": -111,
+    "message": "connect ECONNREFUSED 172.18.0.2:5672",
+    "name": "Error",
+    "port": 5672,
+    "stack": "Error: connect ECONNREFUSED 172.18.0.2:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)",
+    "syscall": "connect"
+  },
+  "level": "error",
+  "message": "Failed to connect/setup RabbitMQ during initial attempt:",
+  "timestamp": "2025-04-25 19:53:10"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection failed. Scheduling retry attempt 1 in 988ms...",
+  "timestamp": "2025-04-25 19:53:10"
+}
+{
+  "level": "info",
+  "message": "Executing scheduled retry attempt 1...",
+  "timestamp": "2025-04-25 19:53:11"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection successful, resetting retry state.",
+  "timestamp": "2025-04-25 19:53:11"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-25 19:53:11"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-25 19:53:11"
+}
+{
+  "level": "info",
+  "message": "Asserting queue: task_events",
+  "timestamp": "2025-04-25 19:53:11"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-25 19:53:11"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection successful, resetting retry state.",
+  "timestamp": "2025-04-25 19:53:11"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel ready, starting consumer...",
+  "timestamp": "2025-04-25 19:53:11"
+}
+{
+  "level": "info",
+  "message": "Attempting to start consumer on queue: task_events",
+  "timestamp": "2025-04-25 19:53:11"
+}
+{
+  "level": "info",
+  "message": "Consumer started successfully on queue: task_events",
+  "timestamp": "2025-04-25 19:53:11"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ Consumer Service Initialized Successfully.",
+  "timestamp": "2025-04-25 19:53:11"
+}
+{
+  "level": "info",
+  "message": "Activity Service running on port 3003",
+  "timestamp": "2025-04-25 19:53:11"
+}
+{
+  "level": "info",
+  "message": "Received message. Processing...",
+  "timestamp": "2025-04-25 19:53:31"
+}
+{
+  "level": "info",
+  "message": "Successfully parsed event data:",
+  "taskId": "680be83b50ddc9f0a78d6070",
+  "taskTitle": "Learn backend",
+  "timestamp": "2025-04-25T19:53:31.793Z",
+  "type": "TaskCreated",
+  "userId": "680be83b6e14b0194284fc96"
+}
+{
+  "description": "Task 'Learn backend' created.",
+  "details": {
+    "taskId": "680be83b50ddc9f0a78d6070",
+    "taskTitle": "Learn backend",
+    "timestamp": "2025-04-25T19:53:31.793Z",
+    "type": "TaskCreated",
+    "userId": "680be83b6e14b0194284fc96"
+  },
+  "eventType": "TaskCreated",
+  "level": "debug",
+  "message": "Attempting to save activity record:",
+  "taskId": "680be83b50ddc9f0a78d6070",
+  "taskTItle": "Learn backend",
+  "timestamp": "2025-04-25T19:53:31.793Z",
+  "userId": "680be83b6e14b0194284fc96"
+}
+{
+  "error": {
+    "_message": "Activity validation failed",
+    "errors": {
+      "taskTitle": {
+        "kind": "required",
+        "message": "Path `taskTitle` is required.",
+        "name": "ValidatorError",
+        "path": "taskTitle",
+        "properties": {
+          "message": "Path `taskTitle` is required.",
+          "path": "taskTitle",
+          "type": "required"
+        }
+      }
+    },
+    "message": "Activity validation failed: taskTitle: Path `taskTitle` is required.",
+    "name": "ValidationError"
+  },
+  "level": "error",
+  "message": "Error processing message or saving activity:",
+  "rawContent": "{\"type\":\"TaskCreated\",\"taskId\":\"680be83b50ddc9f0a78d6070\",\"userId\":\"680be83b6e14b0194284fc96\",\"taskTitle\":\"Learn backend\",\"timestamp\":\"2025-04-25T19:53:31.793Z\"}",
+  "timestamp": "2025-04-25 19:53:31"
+}
+{
+  "level": "warn",
+  "message": "Negatively acknowledged message for task ID due to error.",
+  "timestamp": "2025-04-25 19:53:31"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-25 19:53:36"
+}
+{
+  "level": "info",
+  "message": "Received SIGTERM. Starting graceful shutdown...",
+  "timestamp": "2025-04-25 19:53:36"
+}
+{
+  "level": "info",
+  "message": "HTTP server closed.",
+  "timestamp": "2025-04-25 19:53:36"
+}
+{
+  "level": "info",
+  "message": "Attempting to cancel consumer with tag: amq.ctag-Iof3i1UU-RNlKpypPsM0cw",
+  "timestamp": "2025-04-25 19:53:36"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-25 20:22:31"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-25 20:22:32"
+}
+{
+  "level": "info",
+  "message": "Initializing RabbitMQ Consumer Service...",
+  "timestamp": "2025-04-25 20:22:32"
+}
+{
+  "level": "info",
+  "message": "Attempting to get RabbitMQ channel (with retries)...",
+  "timestamp": "2025-04-25 20:22:32"
+}
+{
+  "level": "info",
+  "message": "getChannel: Initiating connection attempt via connectRabbitMQ...",
+  "timestamp": "2025-04-25 20:22:32"
+}
+{
+  "error": {
+    "address": "172.18.0.3",
+    "code": "ECONNREFUSED",
+    "errno": -111,
+    "message": "connect ECONNREFUSED 172.18.0.3:5672",
+    "name": "Error",
+    "port": 5672,
+    "stack": "Error: connect ECONNREFUSED 172.18.0.3:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)",
+    "syscall": "connect"
+  },
+  "level": "error",
+  "message": "Failed to connect/setup RabbitMQ during initial attempt:",
+  "timestamp": "2025-04-25 20:22:32"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection failed. Scheduling retry attempt 1 in 967ms...",
+  "timestamp": "2025-04-25 20:22:32"
+}
+{
+  "level": "info",
+  "message": "Executing scheduled retry attempt 1...",
+  "timestamp": "2025-04-25 20:22:33"
+}
+{
+  "error": {
+    "address": "172.18.0.3",
+    "code": "ECONNREFUSED",
+    "errno": -111,
+    "message": "connect ECONNREFUSED 172.18.0.3:5672",
+    "name": "Error",
+    "port": 5672,
+    "stack": "Error: connect ECONNREFUSED 172.18.0.3:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)",
+    "syscall": "connect"
+  },
+  "level": "error",
+  "message": "Failed to connect/setup RabbitMQ during initial attempt:",
+  "timestamp": "2025-04-25 20:22:33"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection failed. Scheduling retry attempt 2 in 709ms...",
+  "timestamp": "2025-04-25 20:22:33"
+}
+{
+  "level": "info",
+  "message": "Executing scheduled retry attempt 2...",
+  "timestamp": "2025-04-25 20:22:33"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection successful, resetting retry state.",
+  "timestamp": "2025-04-25 20:22:33"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-25 20:22:33"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-25 20:22:33"
+}
+{
+  "level": "info",
+  "message": "Asserting queue: task_events",
+  "timestamp": "2025-04-25 20:22:33"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-25 20:22:33"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection successful, resetting retry state.",
+  "timestamp": "2025-04-25 20:22:33"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel ready, starting consumer...",
+  "timestamp": "2025-04-25 20:22:33"
+}
+{
+  "level": "info",
+  "message": "Attempting to start consumer on queue: task_events",
+  "timestamp": "2025-04-25 20:22:33"
+}
+{
+  "level": "info",
+  "message": "Consumer started successfully on queue: task_events",
+  "timestamp": "2025-04-25 20:22:33"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ Consumer Service Initialized Successfully.",
+  "timestamp": "2025-04-25 20:22:33"
+}
+{
+  "level": "info",
+  "message": "Activity Service running on port 3003",
+  "timestamp": "2025-04-25 20:22:33"
+}
+{
+  "level": "info",
+  "message": "Received message. Processing...",
+  "timestamp": "2025-04-25 20:22:45"
+}
+{
+  "level": "info",
+  "message": "Successfully parsed event data:",
+  "taskId": "680bef15712f4fe5e1da3195",
+  "taskTitle": "Learn backend",
+  "timestamp": "2025-04-25T20:22:45.799Z",
+  "type": "TaskCreated",
+  "userId": "680bef1566259b3178403c87"
+}
+{
+  "description": "Task 'Learn backend' created.",
+  "details": {
+    "taskId": "680bef15712f4fe5e1da3195",
+    "taskTitle": "Learn backend",
+    "timestamp": "2025-04-25T20:22:45.799Z",
+    "type": "TaskCreated",
+    "userId": "680bef1566259b3178403c87"
+  },
+  "eventType": "TaskCreated",
+  "level": "debug",
+  "message": "Attempting to save activity record:",
+  "taskId": "680bef15712f4fe5e1da3195",
+  "taskTitle": "Learn backend",
+  "timestamp": "2025-04-25T20:22:45.799Z",
+  "userId": "680bef1566259b3178403c87"
+}
+{
+  "level": "info",
+  "message": "Successfully recorded activity for event type TaskCreated, task ID 680bef15712f4fe5e1da3195",
+  "timestamp": "2025-04-25 20:22:45"
+}
+{
+  "level": "info",
+  "message": "Acknowledged message for task ID 680bef15712f4fe5e1da3195",
+  "timestamp": "2025-04-25 20:22:45"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-25 20:22:50"
+}
+{
+  "level": "info",
+  "message": "Received SIGTERM. Starting graceful shutdown...",
+  "timestamp": "2025-04-25 20:22:50"
+}
+{
+  "level": "info",
+  "message": "HTTP server closed.",
+  "timestamp": "2025-04-25 20:22:50"
+}
+{
+  "level": "info",
+  "message": "Attempting to cancel consumer with tag: amq.ctag-xbIAZHk1MnDNtHSNG8pT8A",
+  "timestamp": "2025-04-25 20:22:50"
+}
+{
+  "level": "info",
+  "message": "Consumer amq.ctag-xbIAZHk1MnDNtHSNG8pT8A cancelled successfully.",
+  "timestamp": "2025-04-25 20:22:50"
+}
+{
+  "level": "warn",
+  "message": "RabbitMQ channel closed.",
+  "timestamp": "2025-04-25 20:22:50"
+}
+{
+  "level": "warn",
+  "message": "Handling disconnection event from: channel",
+  "timestamp": "2025-04-25 20:22:50"
+}
+{
+  "level": "info",
+  "message": "Marked connection/channel as null due to disconnect.",
+  "timestamp": "2025-04-25 20:22:50"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ disconnection in progress",
+  "timestamp": "2025-04-25 20:22:50"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection failed. Scheduling retry attempt 1 in 834ms...",
+  "timestamp": "2025-04-25 20:22:50"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel closed successfully.",
+  "timestamp": "2025-04-25 20:22:50"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection already closed or not established.",
+  "timestamp": "2025-04-25 20:22:50"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection successful, resetting retry state.",
+  "timestamp": "2025-04-25 20:22:50"
+}
+{
+  "level": "info",
+  "message": "Cleared pending RabbitMQ reconnect attempts.",
+  "timestamp": "2025-04-25 20:22:50"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-25 20:38:16"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-25 20:38:16"
+}
+{
+  "level": "info",
+  "message": "Initializing RabbitMQ Consumer Service...",
+  "timestamp": "2025-04-25 20:38:16"
+}
+{
+  "level": "info",
+  "message": "Attempting to get RabbitMQ channel (with retries)...",
+  "timestamp": "2025-04-25 20:38:16"
+}
+{
+  "level": "info",
+  "message": "getChannel: Initiating connection attempt via connectRabbitMQ...",
+  "timestamp": "2025-04-25 20:38:16"
+}
+{
+  "error": {
+    "address": "172.18.0.4",
+    "code": "ECONNREFUSED",
+    "errno": -111,
+    "message": "connect ECONNREFUSED 172.18.0.4:5672",
+    "name": "Error",
+    "port": 5672,
+    "stack": "Error: connect ECONNREFUSED 172.18.0.4:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)",
+    "syscall": "connect"
+  },
+  "level": "error",
+  "message": "Failed to connect/setup RabbitMQ during initial attempt:",
+  "timestamp": "2025-04-25 20:38:16"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection failed. Scheduling retry attempt 1 in 93ms...",
+  "timestamp": "2025-04-25 20:38:16"
+}
+{
+  "level": "info",
+  "message": "Executing scheduled retry attempt 1...",
+  "timestamp": "2025-04-25 20:38:16"
+}
+{
+  "error": {
+    "address": "172.18.0.4",
+    "code": "ECONNREFUSED",
+    "errno": -111,
+    "message": "connect ECONNREFUSED 172.18.0.4:5672",
+    "name": "Error",
+    "port": 5672,
+    "stack": "Error: connect ECONNREFUSED 172.18.0.4:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)",
+    "syscall": "connect"
+  },
+  "level": "error",
+  "message": "Failed to connect/setup RabbitMQ during initial attempt:",
+  "timestamp": "2025-04-25 20:38:16"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection failed. Scheduling retry attempt 2 in 1392ms...",
+  "timestamp": "2025-04-25 20:38:16"
+}
+{
+  "level": "info",
+  "message": "Executing scheduled retry attempt 2...",
+  "timestamp": "2025-04-25 20:38:18"
+}
+{
+  "error": {
+    "address": "172.18.0.4",
+    "code": "ECONNREFUSED",
+    "errno": -111,
+    "message": "connect ECONNREFUSED 172.18.0.4:5672",
+    "name": "Error",
+    "port": 5672,
+    "stack": "Error: connect ECONNREFUSED 172.18.0.4:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)",
+    "syscall": "connect"
+  },
+  "level": "error",
+  "message": "Failed to connect/setup RabbitMQ during initial attempt:",
+  "timestamp": "2025-04-25 20:38:18"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection failed. Scheduling retry attempt 3 in 2796ms...",
+  "timestamp": "2025-04-25 20:38:18"
+}
+{
+  "level": "info",
+  "message": "Executing scheduled retry attempt 3...",
+  "timestamp": "2025-04-25 20:38:20"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection successful, resetting retry state.",
+  "timestamp": "2025-04-25 20:38:21"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-25 20:38:21"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-25 20:38:21"
+}
+{
+  "level": "info",
+  "message": "Asserting queue: task_events",
+  "timestamp": "2025-04-25 20:38:21"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-25 20:38:21"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection successful, resetting retry state.",
+  "timestamp": "2025-04-25 20:38:21"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel ready, starting consumer...",
+  "timestamp": "2025-04-25 20:38:21"
+}
+{
+  "level": "info",
+  "message": "Attempting to start consumer on queue: task_events",
+  "timestamp": "2025-04-25 20:38:21"
+}
+{
+  "level": "info",
+  "message": "Consumer started successfully on queue: task_events",
+  "timestamp": "2025-04-25 20:38:21"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ Consumer Service Initialized Successfully.",
+  "timestamp": "2025-04-25 20:38:21"
+}
+{
+  "level": "info",
+  "message": "Activity Service running on port 3003",
+  "timestamp": "2025-04-25 20:38:21"
+}
+{
+  "level": "info",
+  "message": "Received message. Processing...",
+  "timestamp": "2025-04-25 20:38:38"
+}
+{
+  "level": "info",
+  "message": "Successfully parsed event data:",
+  "taskId": "680bf2ce58f53d960b18fc48",
+  "taskTitle": "Learn backend",
+  "timestamp": "2025-04-25T20:38:38.825Z",
+  "type": "TaskCreated",
+  "userId": "680bf2ce1e4ef48dab1b67d3"
+}
+{
+  "description": "Task 'Learn backend' created.",
+  "details": {
+    "taskId": "680bf2ce58f53d960b18fc48",
+    "taskTitle": "Learn backend",
+    "timestamp": "2025-04-25T20:38:38.825Z",
+    "type": "TaskCreated",
+    "userId": "680bf2ce1e4ef48dab1b67d3"
+  },
+  "eventType": "TaskCreated",
+  "level": "debug",
+  "message": "Attempting to save activity record:",
+  "taskId": "680bf2ce58f53d960b18fc48",
+  "taskTitle": "Learn backend",
+  "timestamp": "2025-04-25T20:38:38.825Z",
+  "userId": "680bf2ce1e4ef48dab1b67d3"
+}
+{
+  "level": "info",
+  "message": "Successfully recorded activity for event type TaskCreated, task ID 680bf2ce58f53d960b18fc48",
+  "timestamp": "2025-04-25 20:38:38"
+}
+{
+  "level": "info",
+  "message": "Acknowledged message for task ID 680bf2ce58f53d960b18fc48",
+  "timestamp": "2025-04-25 20:38:38"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-25 20:38:43"
+}
+{
+  "level": "info",
+  "message": "Received SIGTERM. Starting graceful shutdown...",
+  "timestamp": "2025-04-25 20:38:43"
+}
+{
+  "level": "info",
+  "message": "HTTP server closed.",
+  "timestamp": "2025-04-25 20:38:43"
+}
+{
+  "level": "info",
+  "message": "Attempting to cancel consumer with tag: amq.ctag-m1T9wh9eR65xCQt4WYPDOg",
+  "timestamp": "2025-04-25 20:38:43"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-25 20:43:31"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-25 20:43:31"
+}
+{
+  "level": "info",
+  "message": "Initializing RabbitMQ Consumer Service...",
+  "timestamp": "2025-04-25 20:43:31"
+}
+{
+  "level": "info",
+  "message": "Attempting to get RabbitMQ channel (with retries)...",
+  "timestamp": "2025-04-25 20:43:31"
+}
+{
+  "level": "info",
+  "message": "getChannel: Initiating connection attempt via connectRabbitMQ...",
+  "timestamp": "2025-04-25 20:43:31"
+}
+{
+  "error": {
+    "address": "172.18.0.3",
+    "code": "ECONNREFUSED",
+    "errno": -111,
+    "message": "connect ECONNREFUSED 172.18.0.3:5672",
+    "name": "Error",
+    "port": 5672,
+    "stack": "Error: connect ECONNREFUSED 172.18.0.3:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)",
+    "syscall": "connect"
+  },
+  "level": "error",
+  "message": "Failed to connect/setup RabbitMQ during initial attempt:",
+  "timestamp": "2025-04-25 20:43:31"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection failed. Scheduling retry attempt 1 in 790ms...",
+  "timestamp": "2025-04-25 20:43:31"
+}
+{
+  "level": "info",
+  "message": "Executing scheduled retry attempt 1...",
+  "timestamp": "2025-04-25 20:43:32"
+}
+{
+  "error": {
+    "address": "172.18.0.3",
+    "code": "ECONNREFUSED",
+    "errno": -111,
+    "message": "connect ECONNREFUSED 172.18.0.3:5672",
+    "name": "Error",
+    "port": 5672,
+    "stack": "Error: connect ECONNREFUSED 172.18.0.3:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)",
+    "syscall": "connect"
+  },
+  "level": "error",
+  "message": "Failed to connect/setup RabbitMQ during initial attempt:",
+  "timestamp": "2025-04-25 20:43:32"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection failed. Scheduling retry attempt 2 in 1447ms...",
+  "timestamp": "2025-04-25 20:43:32"
+}
+{
+  "level": "info",
+  "message": "Executing scheduled retry attempt 2...",
+  "timestamp": "2025-04-25 20:43:34"
+}
+{
+  "error": {
+    "address": "172.18.0.3",
+    "code": "ECONNREFUSED",
+    "errno": -111,
+    "message": "connect ECONNREFUSED 172.18.0.3:5672",
+    "name": "Error",
+    "port": 5672,
+    "stack": "Error: connect ECONNREFUSED 172.18.0.3:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)",
+    "syscall": "connect"
+  },
+  "level": "error",
+  "message": "Failed to connect/setup RabbitMQ during initial attempt:",
+  "timestamp": "2025-04-25 20:43:34"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection failed. Scheduling retry attempt 3 in 1748ms...",
+  "timestamp": "2025-04-25 20:43:34"
+}
+{
+  "level": "info",
+  "message": "Executing scheduled retry attempt 3...",
+  "timestamp": "2025-04-25 20:43:35"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection successful, resetting retry state.",
+  "timestamp": "2025-04-25 20:43:35"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-25 20:43:35"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-25 20:43:35"
+}
+{
+  "level": "info",
+  "message": "Asserting queue: task_events",
+  "timestamp": "2025-04-25 20:43:35"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-25 20:43:35"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection successful, resetting retry state.",
+  "timestamp": "2025-04-25 20:43:35"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel ready, starting consumer...",
+  "timestamp": "2025-04-25 20:43:35"
+}
+{
+  "level": "info",
+  "message": "Attempting to start consumer on queue: task_events",
+  "timestamp": "2025-04-25 20:43:35"
+}
+{
+  "level": "info",
+  "message": "Consumer started successfully on queue: task_events",
+  "timestamp": "2025-04-25 20:43:35"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ Consumer Service Initialized Successfully.",
+  "timestamp": "2025-04-25 20:43:35"
+}
+{
+  "level": "info",
+  "message": "Activity Service running on port 3003",
+  "timestamp": "2025-04-25 20:43:35"
+}
+{
+  "level": "info",
+  "message": "Received message. Processing...",
+  "timestamp": "2025-04-25 20:43:43"
+}
+{
+  "level": "info",
+  "message": "Successfully parsed event data:",
+  "taskId": "680bf3ffc3e1d77e0abb99d3",
+  "taskTitle": "Learn backend",
+  "timestamp": "2025-04-25T20:43:43.549Z",
+  "type": "TaskCreated",
+  "userId": "680bf3ff94f6b5040d019ab1"
+}
+{
+  "description": "Task 'Learn backend' created.",
+  "details": {
+    "taskId": "680bf3ffc3e1d77e0abb99d3",
+    "taskTitle": "Learn backend",
+    "timestamp": "2025-04-25T20:43:43.549Z",
+    "type": "TaskCreated",
+    "userId": "680bf3ff94f6b5040d019ab1"
+  },
+  "eventType": "TaskCreated",
+  "level": "debug",
+  "message": "Attempting to save activity record:",
+  "taskId": "680bf3ffc3e1d77e0abb99d3",
+  "taskTitle": "Learn backend",
+  "timestamp": "2025-04-25T20:43:43.549Z",
+  "userId": "680bf3ff94f6b5040d019ab1"
+}
+{
+  "level": "info",
+  "message": "Successfully recorded activity for event type TaskCreated, task ID 680bf3ffc3e1d77e0abb99d3",
+  "timestamp": "2025-04-25 20:43:43"
+}
+{
+  "level": "info",
+  "message": "Acknowledged message for task ID 680bf3ffc3e1d77e0abb99d3",
+  "timestamp": "2025-04-25 20:43:43"
+}
+{
+  "level": "info",
+  "message": "Received message. Processing...",
+  "timestamp": "2025-04-25 20:43:43"
+}
+{
+  "level": "info",
+  "message": "Successfully parsed event data:",
+  "taskId": "680bf3ffc3e1d77e0abb99d5",
+  "taskTitle": "Learn backend",
+  "timestamp": "2025-04-25T20:43:43.770Z",
+  "type": "TaskCreated",
+  "userId": "680bf3ff94f6b5040d019ab5"
+}
+{
+  "description": "Task 'Learn backend' created.",
+  "details": {
+    "taskId": "680bf3ffc3e1d77e0abb99d5",
+    "taskTitle": "Learn backend",
+    "timestamp": "2025-04-25T20:43:43.770Z",
+    "type": "TaskCreated",
+    "userId": "680bf3ff94f6b5040d019ab5"
+  },
+  "eventType": "TaskCreated",
+  "level": "debug",
+  "message": "Attempting to save activity record:",
+  "taskId": "680bf3ffc3e1d77e0abb99d5",
+  "taskTitle": "Learn backend",
+  "timestamp": "2025-04-25T20:43:43.770Z",
+  "userId": "680bf3ff94f6b5040d019ab5"
+}
+{
+  "level": "info",
+  "message": "Successfully recorded activity for event type TaskCreated, task ID 680bf3ffc3e1d77e0abb99d5",
+  "timestamp": "2025-04-25 20:43:43"
+}
+{
+  "level": "info",
+  "message": "Acknowledged message for task ID 680bf3ffc3e1d77e0abb99d5",
+  "timestamp": "2025-04-25 20:43:43"
+}
+{
+  "level": "info",
+  "message": "Received message. Processing...",
+  "timestamp": "2025-04-25 20:43:44"
+}
+{
+  "level": "info",
+  "message": "Successfully parsed event data:",
+  "taskId": "680bf3ffc3e1d77e0abb99d9",
+  "taskTitle": "Learn backend",
+  "timestamp": "2025-04-25T20:43:43.998Z",
+  "type": "TaskCreated",
+  "userId": "680bf3ff94f6b5040d019ab9"
+}
+{
+  "description": "Task 'Learn backend' created.",
+  "details": {
+    "taskId": "680bf3ffc3e1d77e0abb99d9",
+    "taskTitle": "Learn backend",
+    "timestamp": "2025-04-25T20:43:43.998Z",
+    "type": "TaskCreated",
+    "userId": "680bf3ff94f6b5040d019ab9"
+  },
+  "eventType": "TaskCreated",
+  "level": "debug",
+  "message": "Attempting to save activity record:",
+  "taskId": "680bf3ffc3e1d77e0abb99d9",
+  "taskTitle": "Learn backend",
+  "timestamp": "2025-04-25T20:43:43.998Z",
+  "userId": "680bf3ff94f6b5040d019ab9"
+}
+{
+  "level": "info",
+  "message": "Successfully recorded activity for event type TaskCreated, task ID 680bf3ffc3e1d77e0abb99d9",
+  "timestamp": "2025-04-25 20:43:44"
+}
+{
+  "level": "info",
+  "message": "Acknowledged message for task ID 680bf3ffc3e1d77e0abb99d9",
+  "timestamp": "2025-04-25 20:43:44"
+}
+{
+  "level": "info",
+  "message": "Received message. Processing...",
+  "timestamp": "2025-04-25 20:43:44"
+}
+{
+  "level": "info",
+  "message": "Successfully parsed event data:",
+  "taskId": "680bf400c3e1d77e0abb99dd",
+  "taskTitle": "Learn backend",
+  "timestamp": "2025-04-25T20:43:44.198Z",
+  "type": "TaskCreated",
+  "userId": "680bf40094f6b5040d019abd"
+}
+{
+  "description": "Task 'Learn backend' created.",
+  "details": {
+    "taskId": "680bf400c3e1d77e0abb99dd",
+    "taskTitle": "Learn backend",
+    "timestamp": "2025-04-25T20:43:44.198Z",
+    "type": "TaskCreated",
+    "userId": "680bf40094f6b5040d019abd"
+  },
+  "eventType": "TaskCreated",
+  "level": "debug",
+  "message": "Attempting to save activity record:",
+  "taskId": "680bf400c3e1d77e0abb99dd",
+  "taskTitle": "Learn backend",
+  "timestamp": "2025-04-25T20:43:44.198Z",
+  "userId": "680bf40094f6b5040d019abd"
+}
+{
+  "level": "info",
+  "message": "Successfully recorded activity for event type TaskCreated, task ID 680bf400c3e1d77e0abb99dd",
+  "timestamp": "2025-04-25 20:43:44"
+}
+{
+  "level": "info",
+  "message": "Acknowledged message for task ID 680bf400c3e1d77e0abb99dd",
+  "timestamp": "2025-04-25 20:43:44"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-25 20:43:44"
+}
+{
+  "level": "info",
+  "message": "Received SIGTERM. Starting graceful shutdown...",
+  "timestamp": "2025-04-25 20:43:45"
+}
+{
+  "level": "info",
+  "message": "HTTP server closed.",
+  "timestamp": "2025-04-25 20:43:45"
+}
+{
+  "level": "info",
+  "message": "Attempting to cancel consumer with tag: amq.ctag-EVm4gvb2h4l_d4g0Sx7rqQ",
+  "timestamp": "2025-04-25 20:43:45"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-25 20:44:49"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-25 20:44:50"
+}
+{
+  "level": "info",
+  "message": "Initializing RabbitMQ Consumer Service...",
+  "timestamp": "2025-04-25 20:44:50"
+}
+{
+  "level": "info",
+  "message": "Attempting to get RabbitMQ channel (with retries)...",
+  "timestamp": "2025-04-25 20:44:50"
+}
+{
+  "level": "info",
+  "message": "getChannel: Initiating connection attempt via connectRabbitMQ...",
+  "timestamp": "2025-04-25 20:44:50"
+}
+{
+  "error": {
+    "address": "172.18.0.4",
+    "code": "ECONNREFUSED",
+    "errno": -111,
+    "message": "connect ECONNREFUSED 172.18.0.4:5672",
+    "name": "Error",
+    "port": 5672,
+    "stack": "Error: connect ECONNREFUSED 172.18.0.4:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)",
+    "syscall": "connect"
+  },
+  "level": "error",
+  "message": "Failed to connect/setup RabbitMQ during initial attempt:",
+  "timestamp": "2025-04-25 20:44:50"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection failed. Scheduling retry attempt 1 in 824ms...",
+  "timestamp": "2025-04-25 20:44:50"
+}
+{
+  "level": "info",
+  "message": "Executing scheduled retry attempt 1...",
+  "timestamp": "2025-04-25 20:44:50"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection successful, resetting retry state.",
+  "timestamp": "2025-04-25 20:44:50"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-25 20:44:50"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-25 20:44:50"
+}
+{
+  "level": "info",
+  "message": "Asserting queue: task_events",
+  "timestamp": "2025-04-25 20:44:50"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-25 20:44:50"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection successful, resetting retry state.",
+  "timestamp": "2025-04-25 20:44:50"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel ready, starting consumer...",
+  "timestamp": "2025-04-25 20:44:50"
+}
+{
+  "level": "info",
+  "message": "Attempting to start consumer on queue: task_events",
+  "timestamp": "2025-04-25 20:44:50"
+}
+{
+  "level": "info",
+  "message": "Consumer started successfully on queue: task_events",
+  "timestamp": "2025-04-25 20:44:50"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ Consumer Service Initialized Successfully.",
+  "timestamp": "2025-04-25 20:44:50"
+}
+{
+  "level": "info",
+  "message": "Activity Service running on port 3003",
+  "timestamp": "2025-04-25 20:44:50"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-25 20:45:14"
+}
+{
+  "level": "info",
+  "message": "Received SIGTERM. Starting graceful shutdown...",
+  "timestamp": "2025-04-25 20:45:55"
+}
+{
+  "level": "info",
+  "message": "HTTP server closed.",
+  "timestamp": "2025-04-25 20:45:55"
+}
+{
+  "level": "info",
+  "message": "Attempting to cancel consumer with tag: amq.ctag-75a7LEbUye3tQEydULDlEg",
+  "timestamp": "2025-04-25 20:45:55"
+}
+{
+  "level": "info",
+  "message": "Consumer amq.ctag-75a7LEbUye3tQEydULDlEg cancelled successfully.",
+  "timestamp": "2025-04-25 20:45:55"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-25 20:46:11"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-25 20:46:11"
+}
+{
+  "level": "info",
+  "message": "Initializing RabbitMQ Consumer Service...",
+  "timestamp": "2025-04-25 20:46:11"
+}
+{
+  "level": "info",
+  "message": "Attempting to get RabbitMQ channel (with retries)...",
+  "timestamp": "2025-04-25 20:46:11"
+}
+{
+  "level": "info",
+  "message": "getChannel: Initiating connection attempt via connectRabbitMQ...",
+  "timestamp": "2025-04-25 20:46:11"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection successful, resetting retry state.",
+  "timestamp": "2025-04-25 20:46:11"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-25 20:46:11"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-25 20:46:11"
+}
+{
+  "level": "info",
+  "message": "Asserting queue: task_events",
+  "timestamp": "2025-04-25 20:46:11"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-25 20:46:11"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection successful, resetting retry state.",
+  "timestamp": "2025-04-25 20:46:11"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel ready, starting consumer...",
+  "timestamp": "2025-04-25 20:46:11"
+}
+{
+  "level": "info",
+  "message": "Attempting to start consumer on queue: task_events",
+  "timestamp": "2025-04-25 20:46:11"
+}
+{
+  "level": "info",
+  "message": "Consumer started successfully on queue: task_events",
+  "timestamp": "2025-04-25 20:46:11"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ Consumer Service Initialized Successfully.",
+  "timestamp": "2025-04-25 20:46:11"
+}
+{
+  "level": "info",
+  "message": "Activity Service running on port 3003",
+  "timestamp": "2025-04-25 20:46:11"
+}
+{
+  "level": "info",
+  "message": "Received message. Processing...",
+  "timestamp": "2025-04-25 20:46:16"
+}
+{
+  "level": "info",
+  "message": "Successfully parsed event data:",
+  "taskId": "680bf498938468643574821c",
+  "taskTitle": "Learn backend",
+  "timestamp": "2025-04-25T20:46:16.319Z",
+  "type": "TaskCreated",
+  "userId": "680bf498c31d852cc3836353"
+}
+{
+  "description": "Task 'Learn backend' created.",
+  "details": {
+    "taskId": "680bf498938468643574821c",
+    "taskTitle": "Learn backend",
+    "timestamp": "2025-04-25T20:46:16.319Z",
+    "type": "TaskCreated",
+    "userId": "680bf498c31d852cc3836353"
+  },
+  "eventType": "TaskCreated",
+  "level": "debug",
+  "message": "Attempting to save activity record:",
+  "taskId": "680bf498938468643574821c",
+  "taskTitle": "Learn backend",
+  "timestamp": "2025-04-25T20:46:16.319Z",
+  "userId": "680bf498c31d852cc3836353"
+}
+{
+  "level": "info",
+  "message": "Successfully recorded activity for event type TaskCreated, task ID 680bf498938468643574821c",
+  "timestamp": "2025-04-25 20:46:16"
+}
+{
+  "level": "info",
+  "message": "Acknowledged message for task ID 680bf498938468643574821c",
+  "timestamp": "2025-04-25 20:46:16"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-25 20:46:20"
+}
+{
+  "level": "info",
+  "message": "Received SIGTERM. Starting graceful shutdown...",
+  "timestamp": "2025-04-25 20:46:20"
+}
+{
+  "level": "info",
+  "message": "HTTP server closed.",
+  "timestamp": "2025-04-25 20:46:20"
+}
+{
+  "level": "info",
+  "message": "Attempting to cancel consumer with tag: amq.ctag-XLhwm1Cdv_lrtpKozyzKRA",
+  "timestamp": "2025-04-25 20:46:20"
+}
