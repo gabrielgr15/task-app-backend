@@ -1,0 +1,556 @@
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-25 03:21:50"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-25 03:21:50"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-25 03:21:50"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-25 03:21:50"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-25 03:21:50"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-25 03:21:50"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-25 03:21:50"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-25 03:21:50"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-25 03:22:48"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-25 03:36:43"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-25 03:36:43"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-25 03:36:43"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-25 03:36:43"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-25 03:36:43"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-25 03:36:43"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-25 03:36:43"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-25 03:36:43"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-25 03:37:40"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-25 03:39:03"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-25 03:39:03"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-25 03:39:03"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-25 03:39:03"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-25 03:39:03"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-25 03:39:03"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-25 03:39:03"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-25 03:39:03"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-25 03:39:27"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-25 19:28:06"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-25 19:28:06"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-25 19:28:06"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-25 19:28:06"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-25 19:28:06"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-25 19:28:06"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-25 19:28:06"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-25 19:28:06"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-25 19:28:20"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-25 19:33:36"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-25 19:33:36"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-25 19:33:36"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-25 19:33:36"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-25 19:33:36"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-25 19:33:36"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-25 19:33:36"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-25 19:33:36"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-25 19:33:51"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-25 19:41:34"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-25 19:41:34"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-25 19:41:34"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-25 19:41:34"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-25 19:41:35"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-25 19:41:35"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-25 19:41:35"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-25 19:41:35"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-25 19:41:50"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-25 19:53:02"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-25 19:53:02"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-25 19:53:02"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-25 19:53:02"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-25 19:53:02"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-25 19:53:02"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-25 19:53:02"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-25 19:53:02"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-25 19:53:36"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-25 20:22:24"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-25 20:22:24"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-25 20:22:24"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-25 20:22:24"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-25 20:22:24"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-25 20:22:24"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-25 20:22:24"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-25 20:22:24"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-25 20:22:50"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-25 20:38:08"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-25 20:38:08"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-25 20:38:08"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-25 20:38:08"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-25 20:38:08"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-25 20:38:08"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-25 20:38:08"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-25 20:38:08"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-25 20:38:43"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-25 20:43:25"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-25 20:43:25"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-25 20:43:25"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-25 20:43:25"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-25 20:43:25"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-25 20:43:25"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-25 20:43:25"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-25 20:43:25"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-25 20:43:44"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-25 20:44:43"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-25 20:44:43"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-25 20:44:43"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-25 20:44:43"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-25 20:44:43"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-25 20:44:43"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-25 20:44:43"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-25 20:44:43"
+}
+{
+  "level": "info",
+  "message": "[addToBlacklistAction] Successfully added token to Redis blacklist (NX): blacklist:e3067dc2c4c0c8ee3b9ff770c2da79ba",
+  "timestamp": "2025-04-25 20:45:14"
+}
+{
+  "actionResult": "OK",
+  "level": "debug",
+  "message": "[RedisLogoutBlacklist] Action successful.",
+  "timestamp": "2025-04-25 20:45:14"
+}
+{
+  "level": "info",
+  "message": "[RedisLogoutBlacklist] fire() completed for logout.\n\t\t\t\t \t\t\tResult: OK",
+  "timestamp": "2025-04-25 20:45:14"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-25 20:45:14"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-25 20:46:05"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-25 20:46:05"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-25 20:46:05"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-25 20:46:05"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-25 20:46:06"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-25 20:46:06"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-25 20:46:06"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-25 20:46:06"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-25 20:46:20"
+}

@@ -1,0 +1,2241 @@
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 01:45:14"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 01:45:14"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 01:45:14"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 01:45:14"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 01:45:14"
+}
+{
+  "address": "172.18.0.4",
+  "code": "ECONNREFUSED",
+  "errno": -111,
+  "level": "error",
+  "message": "Failed to connect to RabbitMQ during initial setup: connect ECONNREFUSED 172.18.0.4:5672",
+  "port": 5672,
+  "stack": "Error: connect ECONNREFUSED 172.18.0.4:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)",
+  "syscall": "connect",
+  "timestamp": "2025-04-21 01:45:14"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 01:45:14"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 01:45:33"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 01:45:33"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 01:45:33"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 01:45:33"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 01:45:33"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 01:45:33"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 01:45:33"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 01:45:33"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 01:45:33"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 01:45:54"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 01:45:54"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 01:45:54"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 01:45:54"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 01:45:54"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 01:45:54"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 01:45:54"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 01:45:54"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 01:45:54"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 01:46:16"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 01:46:16"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 01:46:16"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 01:46:16"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 01:46:16"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 01:46:16"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 01:46:16"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 01:46:16"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 01:46:16"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 01:56:37"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 01:56:37"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 01:56:37"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 01:56:37"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 01:56:37"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 01:56:37"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 01:56:37"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 01:56:37"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 01:56:58"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 01:56:58"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 01:56:58"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 01:56:58"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 01:56:58"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 01:56:58"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 01:56:58"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 01:56:58"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 01:56:58"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 01:57:28"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 01:57:28"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 01:57:28"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 01:57:28"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 01:57:28"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 01:57:28"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 01:57:28"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 01:57:28"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 01:57:28"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 01:58:59"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 01:58:59"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 01:58:59"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 01:58:59"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 01:58:59"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 01:58:59"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 01:58:59"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 01:58:59"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 01:59:30"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 01:59:30"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 01:59:30"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 01:59:30"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 01:59:30"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 01:59:30"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 01:59:30"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 01:59:30"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 02:00:01"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 02:00:02"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 02:00:02"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 02:00:02"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 02:00:02"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 02:00:02"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 02:00:02"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 02:00:02"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 02:00:28"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 02:00:28"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 02:00:28"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 02:00:28"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 02:00:28"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 02:00:28"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 02:00:28"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 02:00:28"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 02:00:28"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 02:15:06"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 02:15:06"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 02:15:06"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 02:15:06"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 02:15:06"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 02:15:06"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 02:15:06"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 02:15:06"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 02:15:06"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 02:15:22"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 02:15:23"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 02:15:23"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 02:15:23"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 02:15:23"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 02:15:23"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 02:15:23"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 02:15:23"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 02:15:23"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 02:15:58"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 02:15:58"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 02:15:58"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 02:15:58"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 02:15:58"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 02:15:58"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 02:15:58"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 02:15:58"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 02:15:58"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 02:16:17"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 02:16:17"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 02:16:17"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 02:16:17"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 02:16:17"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 02:16:17"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 02:16:17"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 02:16:17"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 02:16:17"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 02:34:53"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 02:34:53"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 02:34:53"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 02:34:53"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 02:34:53"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 02:34:53"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 02:34:53"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 02:34:53"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 02:35:12"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 02:35:12"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 02:35:12"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 02:35:12"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 02:35:12"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 02:35:12"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 02:35:12"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 02:35:12"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 02:35:12"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 02:35:35"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 02:35:35"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 02:35:35"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 02:35:35"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 02:35:35"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 02:35:35"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 02:35:35"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 02:35:35"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 02:36:05"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 02:36:05"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 02:36:05"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 02:36:05"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 02:36:05"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 02:36:05"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 02:36:05"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 02:36:05"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 02:36:05"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 02:45:07"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 02:45:07"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 02:45:07"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 02:45:07"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 02:45:08"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 02:45:08"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 02:45:08"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 02:45:08"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 02:45:08"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 02:45:43"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 02:45:43"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 02:45:43"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 02:45:43"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 02:45:43"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 02:45:43"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 02:45:43"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 02:45:43"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 02:45:43"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 02:46:17"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 02:46:17"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 02:46:17"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 02:46:17"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 02:46:17"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 02:46:17"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 02:46:17"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 02:46:17"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 02:46:17"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 02:46:48"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 02:46:48"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 02:46:48"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 02:46:48"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 02:46:48"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 02:46:48"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 02:46:48"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 02:46:48"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 02:46:48"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 05:07:33"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 05:07:33"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 05:07:33"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 05:07:33"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 05:07:33"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 05:07:34"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 05:07:34"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 05:07:34"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 05:07:34"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 05:07:53"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 05:07:53"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 05:07:53"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 05:07:53"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 05:07:53"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 05:07:53"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 05:07:53"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 05:07:53"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 05:07:53"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 05:08:14"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 05:08:14"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 05:08:14"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 05:08:14"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 05:08:14"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 05:08:14"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 05:08:14"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 05:08:14"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 05:08:14"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 05:08:35"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 05:08:35"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 05:08:35"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 05:08:35"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 05:08:35"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 05:08:35"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 05:08:35"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 05:08:35"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 05:08:35"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 05:35:42"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 05:35:42"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 05:35:42"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 05:35:42"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 05:35:42"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 05:35:42"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 05:35:42"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 05:35:42"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 05:35:42"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 05:36:00"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 05:36:00"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 05:36:00"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 05:36:00"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 05:36:00"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 05:36:01"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 05:36:01"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 05:36:01"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 05:36:01"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 06:35:27"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 06:35:27"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 06:35:27"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 06:35:27"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 06:35:27"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 06:35:27"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 06:35:27"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 06:35:27"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 06:35:27"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 06:35:55"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 06:35:56"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 06:35:56"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 06:35:56"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 06:35:56"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 06:35:56"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 06:35:56"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 06:35:56"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 06:35:56"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 06:37:00"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 06:37:00"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 06:37:00"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 06:37:00"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 06:37:00"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 06:37:00"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 06:37:00"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 06:37:00"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 06:37:00"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 16:24:09"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 16:24:09"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 16:24:09"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 16:24:09"
+}
+{
+  "code": "EAI_AGAIN",
+  "errno": -3001,
+  "hostname": "rabbitmq",
+  "level": "error",
+  "message": "Failed to connect to RabbitMQ during initial setup: getaddrinfo EAI_AGAIN rabbitmq",
+  "stack": "Error: getaddrinfo EAI_AGAIN rabbitmq\n    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)",
+  "syscall": "getaddrinfo",
+  "timestamp": "2025-04-21 16:24:14"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 16:24:14"
+}
+{
+  "errorLabelSet": {},
+  "level": "error",
+  "message": "getaddrinfo EAI_AGAIN mongo",
+  "reason": {
+    "commonWireVersion": 0,
+    "compatible": true,
+    "heartbeatFrequencyMS": 10000,
+    "localThresholdMS": 15,
+    "logicalSessionTimeoutMinutes": null,
+    "maxElectionId": null,
+    "maxSetVersion": null,
+    "servers": {
+      "mongo:27017": {
+        "$clusterTime": null,
+        "address": "mongo:27017",
+        "arbiters": [],
+        "electionId": null,
+        "error": {
+          "beforeHandshake": false,
+          "errorLabelSet": {}
+        },
+        "hosts": [],
+        "iscryptd": false,
+        "lastUpdateTime": 41978,
+        "lastWriteDate": 0,
+        "logicalSessionTimeoutMinutes": null,
+        "maxBsonObjectSize": null,
+        "maxMessageSizeBytes": null,
+        "maxWireVersion": 0,
+        "maxWriteBatchSize": null,
+        "me": null,
+        "minRoundTripTime": 0,
+        "minWireVersion": 0,
+        "passives": [],
+        "primary": null,
+        "roundTripTime": -1,
+        "setName": null,
+        "setVersion": null,
+        "tags": {},
+        "topologyVersion": null,
+        "type": "Unknown"
+      }
+    },
+    "setName": null,
+    "stale": false,
+    "type": "Unknown"
+  },
+  "stack": "MongooseServerSelectionError: getaddrinfo EAI_AGAIN mongo\n    at _handleConnectionErrors (/usr/src/app/node_modules/mongoose/lib/connection.js:1165:11)\n    at NativeConnection.openUri (/usr/src/app/node_modules/mongoose/lib/connection.js:1096:11)\n    at runNextTicks (node:internal/process/task_queues:60:5)\n    at listOnTimeout (node:internal/timers:545:9)\n    at process.processTimers (node:internal/timers:519:7)",
+  "timestamp": "2025-04-21 16:24:39"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 16:26:42"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 16:26:42"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 16:26:42"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 16:26:42"
+}
+{
+  "address": "172.18.0.4",
+  "code": "ECONNREFUSED",
+  "errno": -111,
+  "level": "error",
+  "message": "Failed to connect to RabbitMQ during initial setup: connect ECONNREFUSED 172.18.0.4:5672",
+  "port": 5672,
+  "stack": "Error: connect ECONNREFUSED 172.18.0.4:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)",
+  "syscall": "connect",
+  "timestamp": "2025-04-21 16:26:42"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 16:26:42"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 16:26:43"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 16:27:03"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 16:27:03"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 16:27:03"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 16:27:03"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 16:27:03"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 16:27:03"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 16:27:03"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 16:27:03"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 16:27:03"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 22:03:28"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 22:03:28"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 22:03:28"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 22:03:28"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 22:03:28"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 22:03:28"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 22:03:28"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 22:03:28"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 22:03:28"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 22:13:24"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 22:13:24"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 22:13:24"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 22:13:24"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 22:13:24"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 22:13:24"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 22:13:24"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 22:13:24"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 22:13:24"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 22:14:50"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 22:14:50"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 22:14:50"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 22:14:50"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 22:14:50"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 22:14:50"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 22:14:50"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 22:14:50"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 22:14:50"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 22:16:04"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 22:16:04"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 22:16:04"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 22:16:04"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 22:16:04"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 22:16:04"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 22:16:04"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 22:16:04"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 22:16:04"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 22:16:50"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 22:16:50"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 22:16:50"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 22:16:50"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 22:16:50"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 22:16:50"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 22:16:50"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 22:16:50"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 22:16:50"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 22:22:52"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 22:22:52"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 22:22:52"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 22:22:52"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 22:22:52"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 22:22:52"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 22:22:52"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 22:22:52"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 22:22:52"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 22:30:20"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 22:30:21"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 22:30:21"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 22:30:21"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 22:30:21"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 22:30:21"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 22:30:21"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 22:30:21"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 22:30:21"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 22:42:03"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 22:42:03"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 22:42:03"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 22:42:03"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 22:42:04"
+}
+{
+  "address": "172.18.0.4",
+  "code": "ECONNREFUSED",
+  "errno": -111,
+  "level": "error",
+  "message": "Failed to connect to RabbitMQ during initial setup: connect ECONNREFUSED 172.18.0.4:5672",
+  "port": 5672,
+  "stack": "Error: connect ECONNREFUSED 172.18.0.4:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)",
+  "syscall": "connect",
+  "timestamp": "2025-04-21 22:42:04"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 22:42:04"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 22:44:27"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 22:44:27"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 22:44:27"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 22:44:27"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 22:44:27"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 22:44:27"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 22:44:27"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 22:44:27"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 22:44:27"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 22:45:39"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 22:45:39"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 22:45:39"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 22:45:39"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 22:45:39"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 22:45:39"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 22:45:39"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 22:45:39"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 22:45:39"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 22:56:06"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 22:56:06"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 22:56:06"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 22:56:06"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 22:56:06"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 22:56:06"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 22:56:06"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 22:56:06"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 22:56:06"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 23:15:59"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 23:15:59"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 23:15:59"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 23:15:59"
+}
+{
+  "address": "172.18.0.4",
+  "code": "ECONNREFUSED",
+  "errno": -111,
+  "level": "error",
+  "message": "Failed to connect to RabbitMQ during initial setup: connect ECONNREFUSED 172.18.0.4:5672",
+  "port": 5672,
+  "stack": "Error: connect ECONNREFUSED 172.18.0.4:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)",
+  "syscall": "connect",
+  "timestamp": "2025-04-21 23:15:59"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 23:15:59"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 23:15:59"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 23:19:53"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 23:19:53"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 23:19:53"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 23:19:53"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 23:19:53"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 23:19:53"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 23:19:53"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 23:19:53"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 23:19:53"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 23:41:29"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 23:41:29"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 23:41:29"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 23:41:29"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 23:41:29"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection established successfully!",
+  "timestamp": "2025-04-21 23:41:29"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ channel created successfully!",
+  "timestamp": "2025-04-21 23:41:29"
+}
+{
+  "level": "info",
+  "message": "Queue \"task_events\" asserted successfully.",
+  "timestamp": "2025-04-21 23:41:29"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 23:41:29"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ URI found",
+  "timestamp": "2025-04-21 23:50:37"
+}
+{
+  "level": "info",
+  "message": "Tasks Server is running on http://localhost:3002",
+  "timestamp": "2025-04-21 23:50:37"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ connection not ready. Initializing...",
+  "timestamp": "2025-04-21 23:50:37"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to RabbitMQ...",
+  "timestamp": "2025-04-21 23:50:37"
+}
+{
+  "level": "info",
+  "message": "MongoDB connected succesfullyl",
+  "timestamp": "2025-04-21 23:50:37"
+}
+{
+  "address": "172.18.0.4",
+  "code": "ECONNREFUSED",
+  "errno": -111,
+  "level": "error",
+  "message": "Failed to connect to RabbitMQ during initial setup: connect ECONNREFUSED 172.18.0.4:5672",
+  "port": 5672,
+  "stack": "Error: connect ECONNREFUSED 172.18.0.4:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)",
+  "syscall": "connect",
+  "timestamp": "2025-04-21 23:50:37"
+}
+{
+  "level": "info",
+  "message": "RabbitMQ initialized succesfully",
+  "timestamp": "2025-04-21 23:50:37"
+}

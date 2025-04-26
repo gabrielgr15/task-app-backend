@@ -1,0 +1,25 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 7
+    },
+    "auditLog": "/home/gabriel/projects/tasks-service/logs/.1d7b8f0b7221758ec00b742377426d2613956474-audit.json",
+    "files": [
+        {
+            "date": 1743622519292,
+            "name": "/home/gabriel/projects/tasks-service/logs/app-2025-04-02.log",
+            "hash": "5fe1f9e914b4b29850c59628d7fc32309644b1fa64c9405ee9412ed53fa64a19"
+        },
+        {
+            "date": 1744088551888,
+            "name": "/home/gabriel/projects/tasks-service/logs/app-2025-04-08.log",
+            "hash": "d7877a2de0843cd3c49cced220bf703975c72f0f1709b2390044b5b28d50bbc8"
+        },
+        {
+            "date": 1744223694944,
+            "name": "/home/gabriel/projects/tasks-service/logs/app-2025-04-09.log",
+            "hash": "6578c0f2c79938c056219e10c444c51295e2bb40b2f3fdb5f68615009ec6c686"
+        }
+    ],
+    "hashType": "sha256"
+}

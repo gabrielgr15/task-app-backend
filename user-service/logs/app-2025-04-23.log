@@ -1,0 +1,2190 @@
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-23 21:05:41"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-23 21:05:41"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-23 21:05:41"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-23 21:05:41"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-23 21:05:41"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-23 21:05:43"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-23 21:05:43"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-23 21:05:43"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-23 21:05:49"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-23 21:09:09"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-23 21:09:09"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-23 21:09:09"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-23 21:09:09"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-23 21:09:09"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-23 21:09:09"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-23 21:09:09"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-23 21:09:09"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-23 21:09:16"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-23 21:09:35"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-23 21:09:35"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-23 21:09:35"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-23 21:09:35"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-23 21:09:35"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-23 21:09:35"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-23 21:09:35"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-23 21:09:35"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-23 21:09:41"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-23 22:06:07"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-23 22:06:07"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-23 22:06:07"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-23 22:06:07"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-23 22:06:07"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-23 22:06:07"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-23 22:06:07"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-23 22:06:07"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-23 22:06:13"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-23 22:06:51"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-23 22:06:51"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-23 22:06:51"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-23 22:06:51"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-23 22:06:51"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-23 22:06:51"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-23 22:06:51"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-23 22:06:51"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-23 22:06:58"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-23 22:08:15"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-23 22:08:15"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-23 22:08:15"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-23 22:08:15"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-23 22:08:15"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-23 22:08:15"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-23 22:08:15"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-23 22:08:15"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-23 22:08:22"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-23 22:21:11"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-23 22:21:11"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-23 22:21:11"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-23 22:21:11"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-23 22:21:11"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-23 22:21:11"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-23 22:21:11"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-23 22:21:11"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-23 22:21:17"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-23 22:21:36"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-23 22:21:36"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-23 22:21:36"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-23 22:21:36"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-23 22:21:36"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-23 22:21:36"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-23 22:21:36"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-23 22:21:36"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-23 22:21:42"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-23 22:22:02"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-23 22:22:02"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-23 22:22:02"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-23 22:22:02"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-23 22:22:02"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-23 22:22:02"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-23 22:22:02"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-23 22:22:02"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-23 22:22:09"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-23 22:22:29"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-23 22:22:29"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-23 22:22:29"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-23 22:22:29"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-23 22:22:29"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-23 22:22:29"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-23 22:22:29"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-23 22:22:29"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-23 22:22:36"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-23 22:30:55"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-23 22:30:55"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-23 22:30:55"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-23 22:30:55"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-23 22:30:55"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-23 22:30:55"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-23 22:30:55"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-23 22:30:55"
+}
+{
+  "level": "error",
+  "message": "[addToBlacklistAction] Redis SETEX failed for key blacklist:6128e6e219435d8546d862eba40fead8: redisClient.set is not a function",
+  "stack": "TypeError: redisClient.set is not a function\n    at AsyncFunction.addToBlacklistAction (/usr/src/app/utils/circuitBreaker.js:13:42)\n    at /usr/src/app/node_modules/opossum/lib/circuit.js:758:38\n    at new Promise (<anonymous>)\n    at CircuitBreaker.call (/usr/src/app/node_modules/opossum/lib/circuit.js:729:18)\n    at CircuitBreaker.fire (/usr/src/app/node_modules/opossum/lib/circuit.js:616:17)\n    at /usr/src/app/routes/auth.js:129:50\n    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)\n    at next (/usr/src/app/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/usr/src/app/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)",
+  "timestamp": "2025-04-23 22:31:02"
+}
+{
+  "error": "redisClient.set is not a function",
+  "level": "error",
+  "message": "[RedisLogoutBlacklist] Action failed.",
+  "timestamp": "2025-04-23 22:31:02"
+}
+{
+  "correlationId": "N/A",
+  "error": {
+    "cause": {
+      "message": "redisBlacklistOptions is not defined",
+      "name": "ReferenceError",
+      "stack": "ReferenceError: redisBlacklistOptions is not defined\n    at Function.fallbackSkipRedis (/usr/src/app/utils/circuitBreaker.js:30:21)\n    at fallback (/usr/src/app/node_modules/opossum/lib/circuit.js:966:10)\n    at handleError (/usr/src/app/node_modules/opossum/lib/circuit.js:953:16)\n    at /usr/src/app/node_modules/opossum/lib/circuit.js:790:17\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+    },
+    "message": "An internal server error occurred",
+    "name": "ServerError",
+    "stack": "ServerError: An internal server error occurred\n    at /usr/src/app/routes/auth.js:137:10\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
+    "status": 500
+  },
+  "level": "error",
+  "message": "Error caught by central handler:",
+  "request": {
+    "ip": "::ffff:172.18.0.7",
+    "method": "POST",
+    "url": "/api/users/auth/logout"
+  },
+  "timestamp": "2025-04-23 22:31:02"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-23 22:31:03"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-23 22:31:21"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-23 22:31:21"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-23 22:31:21"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-23 22:31:21"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-23 22:31:21"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-23 22:31:21"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-23 22:31:21"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-23 22:31:21"
+}
+{
+  "level": "error",
+  "message": "[addToBlacklistAction] Redis SETEX failed for key blacklist:21e0268a51d3d26be3a8bc945103f257: redisClient.set is not a function",
+  "stack": "TypeError: redisClient.set is not a function\n    at AsyncFunction.addToBlacklistAction (/usr/src/app/utils/circuitBreaker.js:13:42)\n    at /usr/src/app/node_modules/opossum/lib/circuit.js:758:38\n    at new Promise (<anonymous>)\n    at CircuitBreaker.call (/usr/src/app/node_modules/opossum/lib/circuit.js:729:18)\n    at CircuitBreaker.fire (/usr/src/app/node_modules/opossum/lib/circuit.js:616:17)\n    at /usr/src/app/routes/auth.js:129:50\n    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)\n    at next (/usr/src/app/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/usr/src/app/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)",
+  "timestamp": "2025-04-23 22:31:28"
+}
+{
+  "error": "redisClient.set is not a function",
+  "level": "error",
+  "message": "[RedisLogoutBlacklist] Action failed.",
+  "timestamp": "2025-04-23 22:31:28"
+}
+{
+  "correlationId": "N/A",
+  "error": {
+    "cause": {
+      "message": "redisBlacklistOptions is not defined",
+      "name": "ReferenceError",
+      "stack": "ReferenceError: redisBlacklistOptions is not defined\n    at Function.fallbackSkipRedis (/usr/src/app/utils/circuitBreaker.js:30:21)\n    at fallback (/usr/src/app/node_modules/opossum/lib/circuit.js:966:10)\n    at handleError (/usr/src/app/node_modules/opossum/lib/circuit.js:953:16)\n    at /usr/src/app/node_modules/opossum/lib/circuit.js:790:17\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+    },
+    "message": "An internal server error occurred",
+    "name": "ServerError",
+    "stack": "ServerError: An internal server error occurred\n    at /usr/src/app/routes/auth.js:137:10\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
+    "status": 500
+  },
+  "level": "error",
+  "message": "Error caught by central handler:",
+  "request": {
+    "ip": "::ffff:172.18.0.7",
+    "method": "POST",
+    "url": "/api/users/auth/logout"
+  },
+  "timestamp": "2025-04-23 22:31:28"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-23 22:31:28"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-23 22:31:47"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-23 22:31:48"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-23 22:31:48"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-23 22:31:48"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-23 22:31:48"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-23 22:31:48"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-23 22:31:48"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-23 22:31:48"
+}
+{
+  "level": "error",
+  "message": "[addToBlacklistAction] Redis SETEX failed for key blacklist:f3bdbcfcf2f24e89754da4d510deafb8: redisClient.set is not a function",
+  "stack": "TypeError: redisClient.set is not a function\n    at AsyncFunction.addToBlacklistAction (/usr/src/app/utils/circuitBreaker.js:13:42)\n    at /usr/src/app/node_modules/opossum/lib/circuit.js:758:38\n    at new Promise (<anonymous>)\n    at CircuitBreaker.call (/usr/src/app/node_modules/opossum/lib/circuit.js:729:18)\n    at CircuitBreaker.fire (/usr/src/app/node_modules/opossum/lib/circuit.js:616:17)\n    at /usr/src/app/routes/auth.js:129:50\n    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)\n    at next (/usr/src/app/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/usr/src/app/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)",
+  "timestamp": "2025-04-23 22:31:55"
+}
+{
+  "error": "redisClient.set is not a function",
+  "level": "error",
+  "message": "[RedisLogoutBlacklist] Action failed.",
+  "timestamp": "2025-04-23 22:31:55"
+}
+{
+  "correlationId": "N/A",
+  "error": {
+    "cause": {
+      "message": "redisBlacklistOptions is not defined",
+      "name": "ReferenceError",
+      "stack": "ReferenceError: redisBlacklistOptions is not defined\n    at Function.fallbackSkipRedis (/usr/src/app/utils/circuitBreaker.js:30:21)\n    at fallback (/usr/src/app/node_modules/opossum/lib/circuit.js:966:10)\n    at handleError (/usr/src/app/node_modules/opossum/lib/circuit.js:953:16)\n    at /usr/src/app/node_modules/opossum/lib/circuit.js:790:17\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+    },
+    "message": "An internal server error occurred",
+    "name": "ServerError",
+    "stack": "ServerError: An internal server error occurred\n    at /usr/src/app/routes/auth.js:137:10\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
+    "status": 500
+  },
+  "level": "error",
+  "message": "Error caught by central handler:",
+  "request": {
+    "ip": "::ffff:172.18.0.7",
+    "method": "POST",
+    "url": "/api/users/auth/logout"
+  },
+  "timestamp": "2025-04-23 22:31:55"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-23 22:31:55"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-23 22:32:18"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-23 22:32:18"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-23 22:32:18"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-23 22:32:18"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-23 22:32:18"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-23 22:32:18"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-23 22:32:18"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-23 22:32:18"
+}
+{
+  "level": "error",
+  "message": "[addToBlacklistAction] Redis SETEX failed for key blacklist:1e9e53d995eaeb6c612567e1065b8e91: redisClient.set is not a function",
+  "stack": "TypeError: redisClient.set is not a function\n    at AsyncFunction.addToBlacklistAction (/usr/src/app/utils/circuitBreaker.js:13:42)\n    at /usr/src/app/node_modules/opossum/lib/circuit.js:758:38\n    at new Promise (<anonymous>)\n    at CircuitBreaker.call (/usr/src/app/node_modules/opossum/lib/circuit.js:729:18)\n    at CircuitBreaker.fire (/usr/src/app/node_modules/opossum/lib/circuit.js:616:17)\n    at /usr/src/app/routes/auth.js:129:50\n    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)\n    at next (/usr/src/app/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/usr/src/app/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)",
+  "timestamp": "2025-04-23 22:32:25"
+}
+{
+  "error": "redisClient.set is not a function",
+  "level": "error",
+  "message": "[RedisLogoutBlacklist] Action failed.",
+  "timestamp": "2025-04-23 22:32:25"
+}
+{
+  "correlationId": "N/A",
+  "error": {
+    "cause": {
+      "message": "redisBlacklistOptions is not defined",
+      "name": "ReferenceError",
+      "stack": "ReferenceError: redisBlacklistOptions is not defined\n    at Function.fallbackSkipRedis (/usr/src/app/utils/circuitBreaker.js:30:21)\n    at fallback (/usr/src/app/node_modules/opossum/lib/circuit.js:966:10)\n    at handleError (/usr/src/app/node_modules/opossum/lib/circuit.js:953:16)\n    at /usr/src/app/node_modules/opossum/lib/circuit.js:790:17\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+    },
+    "message": "An internal server error occurred",
+    "name": "ServerError",
+    "stack": "ServerError: An internal server error occurred\n    at /usr/src/app/routes/auth.js:137:10\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
+    "status": 500
+  },
+  "level": "error",
+  "message": "Error caught by central handler:",
+  "request": {
+    "ip": "::ffff:172.18.0.7",
+    "method": "POST",
+    "url": "/api/users/auth/logout"
+  },
+  "timestamp": "2025-04-23 22:32:25"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-23 22:32:25"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-23 22:33:16"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-23 22:33:16"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-23 22:33:16"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-23 22:33:16"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-23 22:33:16"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-23 22:33:16"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-23 22:33:16"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-23 22:33:16"
+}
+{
+  "level": "error",
+  "message": "[addToBlacklistAction] Redis SETEX failed for key blacklist:237afcd4110b5cbfb584fcf0cebf334e: redisClient.set is not a function",
+  "stack": "TypeError: redisClient.set is not a function\n    at AsyncFunction.addToBlacklistAction (/usr/src/app/utils/circuitBreaker.js:13:42)\n    at /usr/src/app/node_modules/opossum/lib/circuit.js:758:38\n    at new Promise (<anonymous>)\n    at CircuitBreaker.call (/usr/src/app/node_modules/opossum/lib/circuit.js:729:18)\n    at CircuitBreaker.fire (/usr/src/app/node_modules/opossum/lib/circuit.js:616:17)\n    at /usr/src/app/routes/auth.js:129:50\n    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)\n    at next (/usr/src/app/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/usr/src/app/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)",
+  "timestamp": "2025-04-23 22:33:23"
+}
+{
+  "error": "redisClient.set is not a function",
+  "level": "error",
+  "message": "[RedisLogoutBlacklist] Action failed.",
+  "timestamp": "2025-04-23 22:33:23"
+}
+{
+  "correlationId": "N/A",
+  "error": {
+    "cause": {
+      "message": "redisBlacklistOptions is not defined",
+      "name": "ReferenceError",
+      "stack": "ReferenceError: redisBlacklistOptions is not defined\n    at Function.fallbackSkipRedis (/usr/src/app/utils/circuitBreaker.js:30:21)\n    at fallback (/usr/src/app/node_modules/opossum/lib/circuit.js:966:10)\n    at handleError (/usr/src/app/node_modules/opossum/lib/circuit.js:953:16)\n    at /usr/src/app/node_modules/opossum/lib/circuit.js:790:17\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+    },
+    "message": "An internal server error occurred",
+    "name": "ServerError",
+    "stack": "ServerError: An internal server error occurred\n    at /usr/src/app/routes/auth.js:137:10\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
+    "status": 500
+  },
+  "level": "error",
+  "message": "Error caught by central handler:",
+  "request": {
+    "ip": "::ffff:172.18.0.7",
+    "method": "POST",
+    "url": "/api/users/auth/logout"
+  },
+  "timestamp": "2025-04-23 22:33:23"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-23 22:33:23"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-23 22:33:52"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-23 22:33:52"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-23 22:33:52"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-23 22:33:52"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-23 22:33:52"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-23 22:33:53"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-23 22:33:53"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-23 22:33:53"
+}
+{
+  "level": "error",
+  "message": "[addToBlacklistAction] Redis SETEX failed for key blacklist:615080b9110a740e6a6b035b4b96622b: redisClient.set is not a function",
+  "stack": "TypeError: redisClient.set is not a function\n    at AsyncFunction.addToBlacklistAction (/usr/src/app/utils/circuitBreaker.js:13:42)\n    at /usr/src/app/node_modules/opossum/lib/circuit.js:758:38\n    at new Promise (<anonymous>)\n    at CircuitBreaker.call (/usr/src/app/node_modules/opossum/lib/circuit.js:729:18)\n    at CircuitBreaker.fire (/usr/src/app/node_modules/opossum/lib/circuit.js:616:17)\n    at /usr/src/app/routes/auth.js:129:50\n    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)\n    at next (/usr/src/app/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/usr/src/app/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)",
+  "timestamp": "2025-04-23 22:33:59"
+}
+{
+  "error": "redisClient.set is not a function",
+  "level": "error",
+  "message": "[RedisLogoutBlacklist] Action failed.",
+  "timestamp": "2025-04-23 22:33:59"
+}
+{
+  "correlationId": "N/A",
+  "error": {
+    "cause": {
+      "message": "redisBlacklistOptions is not defined",
+      "name": "ReferenceError",
+      "stack": "ReferenceError: redisBlacklistOptions is not defined\n    at Function.fallbackSkipRedis (/usr/src/app/utils/circuitBreaker.js:30:21)\n    at fallback (/usr/src/app/node_modules/opossum/lib/circuit.js:966:10)\n    at handleError (/usr/src/app/node_modules/opossum/lib/circuit.js:953:16)\n    at /usr/src/app/node_modules/opossum/lib/circuit.js:790:17\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+    },
+    "message": "An internal server error occurred",
+    "name": "ServerError",
+    "stack": "ServerError: An internal server error occurred\n    at /usr/src/app/routes/auth.js:137:10\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
+    "status": 500
+  },
+  "level": "error",
+  "message": "Error caught by central handler:",
+  "request": {
+    "ip": "::ffff:172.18.0.7",
+    "method": "POST",
+    "url": "/api/users/auth/logout"
+  },
+  "timestamp": "2025-04-23 22:33:59"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-23 22:34:00"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-23 22:34:29"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-23 22:34:29"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-23 22:34:29"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-23 22:34:29"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-23 22:34:30"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-23 22:34:30"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-23 22:34:30"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-23 22:34:30"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-23 22:34:36"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-23 22:37:01"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-23 22:37:01"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-23 22:37:01"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-23 22:37:01"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-23 22:37:01"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-23 22:37:01"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-23 22:37:01"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-23 22:37:01"
+}
+{
+  "level": "error",
+  "message": "[addToBlacklistAction] Redis SETEX failed for key blacklist:1f02f1722b56aac58b3dad81332bdf6b: redisClient.set is not a function",
+  "stack": "TypeError: redisClient.set is not a function\n    at AsyncFunction.addToBlacklistAction (/usr/src/app/utils/circuitBreaker.js:13:42)\n    at /usr/src/app/node_modules/opossum/lib/circuit.js:758:38\n    at new Promise (<anonymous>)\n    at CircuitBreaker.call (/usr/src/app/node_modules/opossum/lib/circuit.js:729:18)\n    at CircuitBreaker.fire (/usr/src/app/node_modules/opossum/lib/circuit.js:616:17)\n    at /usr/src/app/routes/auth.js:129:50\n    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)\n    at next (/usr/src/app/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/usr/src/app/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)",
+  "timestamp": "2025-04-23 22:37:08"
+}
+{
+  "error": "redisClient.set is not a function",
+  "level": "error",
+  "message": "[RedisLogoutBlacklist] Action failed.",
+  "timestamp": "2025-04-23 22:37:08"
+}
+{
+  "correlationId": "N/A",
+  "error": {
+    "cause": {
+      "message": "redisBlacklistOptions is not defined",
+      "name": "ReferenceError",
+      "stack": "ReferenceError: redisBlacklistOptions is not defined\n    at Function.fallbackSkipRedis (/usr/src/app/utils/circuitBreaker.js:30:21)\n    at fallback (/usr/src/app/node_modules/opossum/lib/circuit.js:966:10)\n    at handleError (/usr/src/app/node_modules/opossum/lib/circuit.js:953:16)\n    at /usr/src/app/node_modules/opossum/lib/circuit.js:790:17\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+    },
+    "message": "An internal server error occurred",
+    "name": "ServerError",
+    "stack": "ServerError: An internal server error occurred\n    at /usr/src/app/routes/auth.js:137:10\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
+    "status": 500
+  },
+  "level": "error",
+  "message": "Error caught by central handler:",
+  "request": {
+    "ip": "::ffff:172.18.0.7",
+    "method": "POST",
+    "url": "/api/users/auth/logout"
+  },
+  "timestamp": "2025-04-23 22:37:08"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-23 22:37:08"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-23 22:37:33"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-23 22:37:33"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-23 22:37:33"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-23 22:37:33"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-23 22:37:33"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-23 22:37:33"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-23 22:37:33"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-23 22:37:33"
+}
+{
+  "level": "error",
+  "message": "[addToBlacklistAction] Redis SETEX failed for key blacklist:d77be933b9b0a97e42f07e7d0d492f10: redisClient.set is not a function",
+  "stack": "TypeError: redisClient.set is not a function\n    at AsyncFunction.addToBlacklistAction (/usr/src/app/utils/circuitBreaker.js:13:42)\n    at /usr/src/app/node_modules/opossum/lib/circuit.js:758:38\n    at new Promise (<anonymous>)\n    at CircuitBreaker.call (/usr/src/app/node_modules/opossum/lib/circuit.js:729:18)\n    at CircuitBreaker.fire (/usr/src/app/node_modules/opossum/lib/circuit.js:616:17)\n    at /usr/src/app/routes/auth.js:129:50\n    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)\n    at next (/usr/src/app/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/usr/src/app/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)",
+  "timestamp": "2025-04-23 22:37:40"
+}
+{
+  "error": "redisClient.set is not a function",
+  "level": "error",
+  "message": "[RedisLogoutBlacklist] Action failed.",
+  "timestamp": "2025-04-23 22:37:40"
+}
+{
+  "correlationId": "N/A",
+  "error": {
+    "cause": {
+      "message": "redisBlacklistOptions is not defined",
+      "name": "ReferenceError",
+      "stack": "ReferenceError: redisBlacklistOptions is not defined\n    at Function.fallbackSkipRedis (/usr/src/app/utils/circuitBreaker.js:30:21)\n    at fallback (/usr/src/app/node_modules/opossum/lib/circuit.js:966:10)\n    at handleError (/usr/src/app/node_modules/opossum/lib/circuit.js:953:16)\n    at /usr/src/app/node_modules/opossum/lib/circuit.js:790:17\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+    },
+    "message": "An internal server error occurred",
+    "name": "ServerError",
+    "stack": "ServerError: An internal server error occurred\n    at /usr/src/app/routes/auth.js:137:10\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
+    "status": 500
+  },
+  "level": "error",
+  "message": "Error caught by central handler:",
+  "request": {
+    "ip": "::ffff:172.18.0.7",
+    "method": "POST",
+    "url": "/api/users/auth/logout"
+  },
+  "timestamp": "2025-04-23 22:37:40"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-23 22:37:40"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-23 22:38:06"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-23 22:38:06"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-23 22:38:07"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-23 22:38:07"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-23 22:38:07"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-23 22:38:07"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-23 22:38:07"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-23 22:38:07"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-23 22:38:13"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-23 22:46:15"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-23 22:46:15"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-23 22:46:15"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-23 22:46:15"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-23 22:46:15"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-23 22:46:15"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-23 22:46:15"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-23 22:46:15"
+}
+{
+  "level": "error",
+  "message": "[addToBlacklistAction] Redis SETEX failed for key blacklist:985274d79b84e7eb568006b22ab5f4d2: redisClient.set is not a function",
+  "stack": "TypeError: redisClient.set is not a function\n    at AsyncFunction.addToBlacklistAction (/usr/src/app/utils/circuitBreaker.js:13:42)\n    at /usr/src/app/node_modules/opossum/lib/circuit.js:758:38\n    at new Promise (<anonymous>)\n    at CircuitBreaker.call (/usr/src/app/node_modules/opossum/lib/circuit.js:729:18)\n    at CircuitBreaker.fire (/usr/src/app/node_modules/opossum/lib/circuit.js:616:17)\n    at /usr/src/app/routes/auth.js:129:50\n    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)\n    at next (/usr/src/app/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/usr/src/app/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)",
+  "timestamp": "2025-04-23 22:46:22"
+}
+{
+  "error": "redisClient.set is not a function",
+  "level": "error",
+  "message": "[RedisLogoutBlacklist] Action failed.",
+  "timestamp": "2025-04-23 22:46:22"
+}
+{
+  "correlationId": "N/A",
+  "error": {
+    "cause": {
+      "message": "redisBlacklistOptions is not defined",
+      "name": "ReferenceError",
+      "stack": "ReferenceError: redisBlacklistOptions is not defined\n    at Function.fallbackSkipRedis (/usr/src/app/utils/circuitBreaker.js:30:21)\n    at fallback (/usr/src/app/node_modules/opossum/lib/circuit.js:966:10)\n    at handleError (/usr/src/app/node_modules/opossum/lib/circuit.js:953:16)\n    at /usr/src/app/node_modules/opossum/lib/circuit.js:790:17\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+    },
+    "message": "An internal server error occurred",
+    "name": "ServerError",
+    "stack": "ServerError: An internal server error occurred\n    at /usr/src/app/routes/auth.js:137:10\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
+    "status": 500
+  },
+  "level": "error",
+  "message": "Error caught by central handler:",
+  "request": {
+    "ip": "::ffff:172.18.0.7",
+    "method": "POST",
+    "url": "/api/users/auth/logout"
+  },
+  "timestamp": "2025-04-23 22:46:22"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-23 22:46:22"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-23 22:46:56"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-23 22:46:56"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-23 22:46:56"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-23 22:46:56"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-23 22:46:56"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-23 22:46:56"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-23 22:46:56"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-23 22:46:56"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-23 22:47:02"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-23 22:50:26"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-23 22:50:26"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-23 22:50:26"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-23 22:50:26"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-23 22:50:26"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-23 22:50:26"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-23 22:50:26"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-23 22:50:26"
+}
+{
+  "level": "error",
+  "message": "[addToBlacklistAction] Redis SETEX failed for key blacklist:19e03b548480df1cd8561f4510fd1da1: redisClient.set is not a function",
+  "stack": "TypeError: redisClient.set is not a function\n    at AsyncFunction.addToBlacklistAction (/usr/src/app/utils/circuitBreaker.js:13:42)\n    at /usr/src/app/node_modules/opossum/lib/circuit.js:758:38\n    at new Promise (<anonymous>)\n    at CircuitBreaker.call (/usr/src/app/node_modules/opossum/lib/circuit.js:729:18)\n    at CircuitBreaker.fire (/usr/src/app/node_modules/opossum/lib/circuit.js:616:17)\n    at /usr/src/app/routes/auth.js:129:50\n    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)\n    at next (/usr/src/app/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/usr/src/app/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)",
+  "timestamp": "2025-04-23 22:50:33"
+}
+{
+  "error": "redisClient.set is not a function",
+  "level": "error",
+  "message": "[RedisLogoutBlacklist] Action failed.",
+  "timestamp": "2025-04-23 22:50:33"
+}
+{
+  "correlationId": "N/A",
+  "error": {
+    "cause": {
+      "message": "redisBlacklistOptions is not defined",
+      "name": "ReferenceError",
+      "stack": "ReferenceError: redisBlacklistOptions is not defined\n    at Function.fallbackSkipRedis (/usr/src/app/utils/circuitBreaker.js:30:21)\n    at fallback (/usr/src/app/node_modules/opossum/lib/circuit.js:966:10)\n    at handleError (/usr/src/app/node_modules/opossum/lib/circuit.js:953:16)\n    at /usr/src/app/node_modules/opossum/lib/circuit.js:790:17\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+    },
+    "message": "An internal server error occurred",
+    "name": "ServerError",
+    "stack": "ServerError: An internal server error occurred\n    at /usr/src/app/routes/auth.js:137:10\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
+    "status": 500
+  },
+  "level": "error",
+  "message": "Error caught by central handler:",
+  "request": {
+    "ip": "::ffff:172.18.0.7",
+    "method": "POST",
+    "url": "/api/users/auth/logout"
+  },
+  "timestamp": "2025-04-23 22:50:33"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-23 22:50:33"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-23 22:51:32"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-23 22:51:32"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-23 22:51:32"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-23 22:51:32"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-23 22:51:32"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-23 22:51:32"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-23 22:51:32"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-23 22:51:32"
+}
+{
+  "level": "error",
+  "message": "[addToBlacklistAction] Redis SETEX failed for key blacklist:fbd4df218b5f2b58627a4fd661afc955: redisClient.set is not a function",
+  "stack": "TypeError: redisClient.set is not a function\n    at AsyncFunction.addToBlacklistAction (/usr/src/app/utils/circuitBreaker.js:13:42)\n    at /usr/src/app/node_modules/opossum/lib/circuit.js:758:38\n    at new Promise (<anonymous>)\n    at CircuitBreaker.call (/usr/src/app/node_modules/opossum/lib/circuit.js:729:18)\n    at CircuitBreaker.fire (/usr/src/app/node_modules/opossum/lib/circuit.js:616:17)\n    at /usr/src/app/routes/auth.js:129:50\n    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)\n    at next (/usr/src/app/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/usr/src/app/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)",
+  "timestamp": "2025-04-23 22:51:39"
+}
+{
+  "error": "redisClient.set is not a function",
+  "level": "error",
+  "message": "[RedisLogoutBlacklist] Action failed.",
+  "timestamp": "2025-04-23 22:51:39"
+}
+{
+  "correlationId": "N/A",
+  "error": {
+    "cause": {
+      "message": "redisBlacklistOptions is not defined",
+      "name": "ReferenceError",
+      "stack": "ReferenceError: redisBlacklistOptions is not defined\n    at Function.fallbackSkipRedis (/usr/src/app/utils/circuitBreaker.js:30:21)\n    at fallback (/usr/src/app/node_modules/opossum/lib/circuit.js:966:10)\n    at handleError (/usr/src/app/node_modules/opossum/lib/circuit.js:953:16)\n    at /usr/src/app/node_modules/opossum/lib/circuit.js:790:17\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+    },
+    "message": "An internal server error occurred",
+    "name": "ServerError",
+    "stack": "ServerError: An internal server error occurred\n    at /usr/src/app/routes/auth.js:137:10\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
+    "status": 500
+  },
+  "level": "error",
+  "message": "Error caught by central handler:",
+  "request": {
+    "ip": "::ffff:172.18.0.7",
+    "method": "POST",
+    "url": "/api/users/auth/logout"
+  },
+  "timestamp": "2025-04-23 22:51:39"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-23 22:51:39"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-23 22:55:20"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-23 22:55:20"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-23 22:55:20"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-23 22:55:20"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-23 22:55:20"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-23 22:55:20"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-23 22:55:20"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-23 22:55:20"
+}
+{
+  "level": "error",
+  "message": "[addToBlacklistAction] Redis SETEX failed for key blacklist:2f7e54bedf4b57121763ff1e3ebac0b8: redisClient.set is not a function",
+  "stack": "TypeError: redisClient.set is not a function\n    at AsyncFunction.addToBlacklistAction (/usr/src/app/utils/circuitBreaker.js:13:42)\n    at /usr/src/app/node_modules/opossum/lib/circuit.js:758:38\n    at new Promise (<anonymous>)\n    at CircuitBreaker.call (/usr/src/app/node_modules/opossum/lib/circuit.js:729:18)\n    at CircuitBreaker.fire (/usr/src/app/node_modules/opossum/lib/circuit.js:616:17)\n    at /usr/src/app/routes/auth.js:129:50\n    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)\n    at next (/usr/src/app/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/usr/src/app/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)",
+  "timestamp": "2025-04-23 22:55:27"
+}
+{
+  "error": "redisClient.set is not a function",
+  "level": "error",
+  "message": "[RedisLogoutBlacklist] Action failed.",
+  "timestamp": "2025-04-23 22:55:27"
+}
+{
+  "correlationId": "N/A",
+  "error": {
+    "cause": {
+      "message": "redisBlacklistOptions is not defined",
+      "name": "ReferenceError",
+      "stack": "ReferenceError: redisBlacklistOptions is not defined\n    at Function.fallbackSkipRedis (/usr/src/app/utils/circuitBreaker.js:30:21)\n    at fallback (/usr/src/app/node_modules/opossum/lib/circuit.js:966:10)\n    at handleError (/usr/src/app/node_modules/opossum/lib/circuit.js:953:16)\n    at /usr/src/app/node_modules/opossum/lib/circuit.js:790:17\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+    },
+    "message": "An internal server error occurred",
+    "name": "ServerError",
+    "stack": "ServerError: An internal server error occurred\n    at /usr/src/app/routes/auth.js:137:10\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
+    "status": 500
+  },
+  "level": "error",
+  "message": "Error caught by central handler:",
+  "request": {
+    "ip": "::ffff:172.18.0.7",
+    "method": "POST",
+    "url": "/api/users/auth/logout"
+  },
+  "timestamp": "2025-04-23 22:55:27"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-23 22:55:27"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-23 22:57:41"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-23 22:57:41"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-23 22:57:41"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-23 22:57:41"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-23 22:57:41"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-23 22:57:41"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-23 22:57:41"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-23 22:57:41"
+}
+{
+  "level": "error",
+  "message": "[addToBlacklistAction] Redis SETEX failed for key blacklist:dc0eef3c353488af3a54fec718ae21fe: redisClient.set is not a function",
+  "stack": "TypeError: redisClient.set is not a function\n    at AsyncFunction.addToBlacklistAction (/usr/src/app/utils/circuitBreaker.js:13:42)\n    at /usr/src/app/node_modules/opossum/lib/circuit.js:758:38\n    at new Promise (<anonymous>)\n    at CircuitBreaker.call (/usr/src/app/node_modules/opossum/lib/circuit.js:729:18)\n    at CircuitBreaker.fire (/usr/src/app/node_modules/opossum/lib/circuit.js:616:17)\n    at /usr/src/app/routes/auth.js:129:50\n    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)\n    at next (/usr/src/app/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/usr/src/app/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)",
+  "timestamp": "2025-04-23 22:57:48"
+}
+{
+  "error": "redisClient.set is not a function",
+  "level": "error",
+  "message": "[RedisLogoutBlacklist] Action failed.",
+  "timestamp": "2025-04-23 22:57:48"
+}
+{
+  "correlationId": "N/A",
+  "error": {
+    "cause": {
+      "message": "redisBlacklistOptions is not defined",
+      "name": "ReferenceError",
+      "stack": "ReferenceError: redisBlacklistOptions is not defined\n    at Function.fallbackSkipRedis (/usr/src/app/utils/circuitBreaker.js:30:21)\n    at fallback (/usr/src/app/node_modules/opossum/lib/circuit.js:966:10)\n    at handleError (/usr/src/app/node_modules/opossum/lib/circuit.js:953:16)\n    at /usr/src/app/node_modules/opossum/lib/circuit.js:790:17\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+    },
+    "message": "An internal server error occurred",
+    "name": "ServerError",
+    "stack": "ServerError: An internal server error occurred\n    at /usr/src/app/routes/auth.js:137:10\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
+    "status": 500
+  },
+  "level": "error",
+  "message": "Error caught by central handler:",
+  "request": {
+    "ip": "::ffff:172.18.0.7",
+    "method": "POST",
+    "url": "/api/users/auth/logout"
+  },
+  "timestamp": "2025-04-23 22:57:48"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-23 22:57:48"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-23 22:58:14"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-23 22:58:14"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-23 22:58:14"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-23 22:58:14"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-23 22:58:14"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-23 22:58:14"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-23 22:58:14"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-23 22:58:14"
+}
+{
+  "level": "error",
+  "message": "[addToBlacklistAction] Redis SETEX failed for key blacklist:e76d879dd08eea1ef73fef7c0cce3a15: redisClient.set is not a function",
+  "stack": "TypeError: redisClient.set is not a function\n    at AsyncFunction.addToBlacklistAction (/usr/src/app/utils/circuitBreaker.js:13:42)\n    at /usr/src/app/node_modules/opossum/lib/circuit.js:758:38\n    at new Promise (<anonymous>)\n    at CircuitBreaker.call (/usr/src/app/node_modules/opossum/lib/circuit.js:729:18)\n    at CircuitBreaker.fire (/usr/src/app/node_modules/opossum/lib/circuit.js:616:17)\n    at /usr/src/app/routes/auth.js:129:50\n    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)\n    at next (/usr/src/app/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/usr/src/app/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)",
+  "timestamp": "2025-04-23 22:58:20"
+}
+{
+  "error": "redisClient.set is not a function",
+  "level": "error",
+  "message": "[RedisLogoutBlacklist] Action failed.",
+  "timestamp": "2025-04-23 22:58:20"
+}
+{
+  "correlationId": "N/A",
+  "error": {
+    "cause": {
+      "message": "redisBlacklistOptions is not defined",
+      "name": "ReferenceError",
+      "stack": "ReferenceError: redisBlacklistOptions is not defined\n    at Function.fallbackSkipRedis (/usr/src/app/utils/circuitBreaker.js:30:21)\n    at fallback (/usr/src/app/node_modules/opossum/lib/circuit.js:966:10)\n    at handleError (/usr/src/app/node_modules/opossum/lib/circuit.js:953:16)\n    at /usr/src/app/node_modules/opossum/lib/circuit.js:790:17\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+    },
+    "message": "An internal server error occurred",
+    "name": "ServerError",
+    "stack": "ServerError: An internal server error occurred\n    at /usr/src/app/routes/auth.js:137:10\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
+    "status": 500
+  },
+  "level": "error",
+  "message": "Error caught by central handler:",
+  "request": {
+    "ip": "::ffff:172.18.0.7",
+    "method": "POST",
+    "url": "/api/users/auth/logout"
+  },
+  "timestamp": "2025-04-23 22:58:20"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-23 22:58:21"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-23 22:58:51"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-23 22:58:51"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-23 22:58:51"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-23 22:58:51"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-23 22:58:51"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-23 22:58:53"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-23 22:58:53"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-23 22:58:53"
+}
+{
+  "level": "error",
+  "message": "[addToBlacklistAction] Redis SETEX failed for key blacklist:d4a82d73a7be9987e75d5b6b324a53ed: redisClient.set is not a function",
+  "stack": "TypeError: redisClient.set is not a function\n    at AsyncFunction.addToBlacklistAction (/usr/src/app/utils/circuitBreaker.js:13:42)\n    at /usr/src/app/node_modules/opossum/lib/circuit.js:758:38\n    at new Promise (<anonymous>)\n    at CircuitBreaker.call (/usr/src/app/node_modules/opossum/lib/circuit.js:729:18)\n    at CircuitBreaker.fire (/usr/src/app/node_modules/opossum/lib/circuit.js:616:17)\n    at /usr/src/app/routes/auth.js:129:50\n    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)\n    at next (/usr/src/app/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/usr/src/app/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)",
+  "timestamp": "2025-04-23 22:58:59"
+}
+{
+  "error": "redisClient.set is not a function",
+  "level": "error",
+  "message": "[RedisLogoutBlacklist] Action failed.",
+  "timestamp": "2025-04-23 22:58:59"
+}
+{
+  "correlationId": "N/A",
+  "error": {
+    "cause": {
+      "message": "redisBlacklistOptions is not defined",
+      "name": "ReferenceError",
+      "stack": "ReferenceError: redisBlacklistOptions is not defined\n    at Function.fallbackSkipRedis (/usr/src/app/utils/circuitBreaker.js:30:21)\n    at fallback (/usr/src/app/node_modules/opossum/lib/circuit.js:966:10)\n    at handleError (/usr/src/app/node_modules/opossum/lib/circuit.js:953:16)\n    at /usr/src/app/node_modules/opossum/lib/circuit.js:790:17\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+    },
+    "message": "An internal server error occurred",
+    "name": "ServerError",
+    "stack": "ServerError: An internal server error occurred\n    at /usr/src/app/routes/auth.js:137:10\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
+    "status": 500
+  },
+  "level": "error",
+  "message": "Error caught by central handler:",
+  "request": {
+    "ip": "::ffff:172.18.0.7",
+    "method": "POST",
+    "url": "/api/users/auth/logout"
+  },
+  "timestamp": "2025-04-23 22:58:59"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-23 22:58:59"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-23 22:59:25"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-23 22:59:25"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-23 22:59:25"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-23 22:59:25"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-23 22:59:25"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-23 22:59:25"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-23 22:59:25"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-23 22:59:25"
+}
+{
+  "level": "error",
+  "message": "[addToBlacklistAction] Redis SETEX failed for key blacklist:c17cab0c879841af9a16a54d9fb3f72c: redisClient.set is not a function",
+  "stack": "TypeError: redisClient.set is not a function\n    at AsyncFunction.addToBlacklistAction (/usr/src/app/utils/circuitBreaker.js:13:42)\n    at /usr/src/app/node_modules/opossum/lib/circuit.js:758:38\n    at new Promise (<anonymous>)\n    at CircuitBreaker.call (/usr/src/app/node_modules/opossum/lib/circuit.js:729:18)\n    at CircuitBreaker.fire (/usr/src/app/node_modules/opossum/lib/circuit.js:616:17)\n    at /usr/src/app/routes/auth.js:129:50\n    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)\n    at next (/usr/src/app/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/usr/src/app/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)",
+  "timestamp": "2025-04-23 22:59:32"
+}
+{
+  "error": "redisClient.set is not a function",
+  "level": "error",
+  "message": "[RedisLogoutBlacklist] Action failed.",
+  "timestamp": "2025-04-23 22:59:32"
+}
+{
+  "correlationId": "N/A",
+  "error": {
+    "cause": {
+      "message": "redisBlacklistOptions is not defined",
+      "name": "ReferenceError",
+      "stack": "ReferenceError: redisBlacklistOptions is not defined\n    at Function.fallbackSkipRedis (/usr/src/app/utils/circuitBreaker.js:30:21)\n    at fallback (/usr/src/app/node_modules/opossum/lib/circuit.js:966:10)\n    at handleError (/usr/src/app/node_modules/opossum/lib/circuit.js:953:16)\n    at /usr/src/app/node_modules/opossum/lib/circuit.js:790:17\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+    },
+    "message": "An internal server error occurred",
+    "name": "ServerError",
+    "stack": "ServerError: An internal server error occurred\n    at /usr/src/app/routes/auth.js:137:10\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
+    "status": 500
+  },
+  "level": "error",
+  "message": "Error caught by central handler:",
+  "request": {
+    "ip": "::ffff:172.18.0.7",
+    "method": "POST",
+    "url": "/api/users/auth/logout"
+  },
+  "timestamp": "2025-04-23 22:59:32"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-23 22:59:32"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-23 23:28:16"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-23 23:28:16"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-23 23:28:16"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-23 23:28:16"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-23 23:28:16"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-23 23:28:16"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-23 23:28:16"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-23 23:28:16"
+}
+{
+  "level": "error",
+  "message": "[addToBlacklistAction] Redis SETEX failed for key blacklist:c865221f3a26c174a1dcff12812b5e5f: redisClient.set is not a function",
+  "stack": "TypeError: redisClient.set is not a function\n    at AsyncFunction.addToBlacklistAction (/usr/src/app/utils/circuitBreaker.js:13:42)\n    at /usr/src/app/node_modules/opossum/lib/circuit.js:758:38\n    at new Promise (<anonymous>)\n    at CircuitBreaker.call (/usr/src/app/node_modules/opossum/lib/circuit.js:729:18)\n    at CircuitBreaker.fire (/usr/src/app/node_modules/opossum/lib/circuit.js:616:17)\n    at /usr/src/app/routes/auth.js:129:50\n    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)\n    at next (/usr/src/app/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/usr/src/app/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)",
+  "timestamp": "2025-04-23 23:28:23"
+}
+{
+  "error": "redisClient.set is not a function",
+  "level": "error",
+  "message": "[RedisLogoutBlacklist] Action failed.",
+  "timestamp": "2025-04-23 23:28:23"
+}
+{
+  "level": "warn",
+  "message": "[RedisLogoutBlacklist] Fallback triggered.\n        Skipping Redis blacklist add. Token (start): c865221f...\n        Reason: redisClient.set is not a function",
+  "timestamp": "2025-04-23 23:28:23"
+}
+{
+  "fallbackResult": "FALLBACK_SKIPPED_REDIS",
+  "level": "warn",
+  "message": "[RedisLogoutBlacklist] Fallback executed.",
+  "timestamp": "2025-04-23 23:28:23",
+  "triggeringError": "redisClient.set is not a function"
+}
+{
+  "level": "info",
+  "message": "[RedisLogoutBlacklist] fire() completed for logout.\n\t\t\t\t \t\t\tResult: FALLBACK_SKIPPED_REDIS",
+  "timestamp": "2025-04-23 23:28:23"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-23 23:28:24"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-23 23:31:41"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-23 23:31:41"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-23 23:31:41"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-23 23:31:41"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-23 23:31:41"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-23 23:31:41"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-23 23:31:41"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-23 23:31:41"
+}
+{
+  "level": "error",
+  "message": "[addToBlacklistAction] Redis SETEX failed for key blacklist:649d08d116e72a066927b0cdd0b14187: redisClient.set is not a function",
+  "stack": "TypeError: redisClient.set is not a function\n    at AsyncFunction.addToBlacklistAction (/usr/src/app/utils/circuitBreaker.js:13:42)\n    at /usr/src/app/node_modules/opossum/lib/circuit.js:758:38\n    at new Promise (<anonymous>)\n    at CircuitBreaker.call (/usr/src/app/node_modules/opossum/lib/circuit.js:729:18)\n    at CircuitBreaker.fire (/usr/src/app/node_modules/opossum/lib/circuit.js:616:17)\n    at /usr/src/app/routes/auth.js:129:50\n    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)\n    at next (/usr/src/app/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/usr/src/app/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)",
+  "timestamp": "2025-04-23 23:31:48"
+}
+{
+  "error": "redisClient.set is not a function",
+  "level": "error",
+  "message": "[RedisLogoutBlacklist] Action failed.",
+  "timestamp": "2025-04-23 23:31:48"
+}
+{
+  "level": "warn",
+  "message": "[RedisLogoutBlacklist] Fallback triggered.\n        Skipping Redis blacklist add. Token (start): 649d08d1...\n        Reason: redisClient.set is not a function",
+  "timestamp": "2025-04-23 23:31:48"
+}
+{
+  "fallbackResult": "FALLBACK_SKIPPED_REDIS",
+  "level": "warn",
+  "message": "[RedisLogoutBlacklist] Fallback executed.",
+  "timestamp": "2025-04-23 23:31:48",
+  "triggeringError": "redisClient.set is not a function"
+}
+{
+  "level": "info",
+  "message": "[RedisLogoutBlacklist] fire() completed for logout.\n\t\t\t\t \t\t\tResult: FALLBACK_SKIPPED_REDIS",
+  "timestamp": "2025-04-23 23:31:48"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-23 23:31:48"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-23 23:42:52"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-23 23:42:52"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-23 23:42:52"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-23 23:42:52"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-23 23:42:52"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-23 23:42:52"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-23 23:42:52"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-23 23:42:52"
+}
+{
+  "level": "error",
+  "message": "[addToBlacklistAction] Redis SETEX failed for key blacklist:60e8601826cc0c425bc2baf26e7b34c8: redisClient.set is not a function",
+  "stack": "TypeError: redisClient.set is not a function\n    at AsyncFunction.addToBlacklistAction (/usr/src/app/utils/circuitBreaker.js:13:42)\n    at /usr/src/app/node_modules/opossum/lib/circuit.js:758:38\n    at new Promise (<anonymous>)\n    at CircuitBreaker.call (/usr/src/app/node_modules/opossum/lib/circuit.js:729:18)\n    at CircuitBreaker.fire (/usr/src/app/node_modules/opossum/lib/circuit.js:616:17)\n    at /usr/src/app/routes/auth.js:129:50\n    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)\n    at next (/usr/src/app/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/usr/src/app/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)",
+  "timestamp": "2025-04-23 23:42:59"
+}
+{
+  "error": "redisClient.set is not a function",
+  "level": "error",
+  "message": "[RedisLogoutBlacklist] Action failed.",
+  "timestamp": "2025-04-23 23:42:59"
+}
+{
+  "level": "warn",
+  "message": "[RedisLogoutBlacklist] Fallback triggered.\n        Skipping Redis blacklist add. Token (start): 60e86018...\n        Reason: redisClient.set is not a function",
+  "timestamp": "2025-04-23 23:42:59"
+}
+{
+  "fallbackResult": "FALLBACK_SKIPPED_REDIS",
+  "level": "warn",
+  "message": "[RedisLogoutBlacklist] Fallback executed.",
+  "timestamp": "2025-04-23 23:42:59",
+  "triggeringError": "redisClient.set is not a function"
+}
+{
+  "level": "info",
+  "message": "[RedisLogoutBlacklist] fire() completed for logout.\n\t\t\t\t \t\t\tResult: FALLBACK_SKIPPED_REDIS",
+  "timestamp": "2025-04-23 23:42:59"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-23 23:42:59"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-23 23:46:38"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-23 23:46:38"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-23 23:46:38"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-23 23:46:38"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-23 23:46:38"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-23 23:46:38"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-23 23:46:38"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-23 23:46:38"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-23 23:50:51"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-23 23:59:21"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker configuration module loaded",
+  "timestamp": "2025-04-23 23:59:21"
+}
+{
+  "level": "info",
+  "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+  "timestamp": "2025-04-23 23:59:21"
+}
+{
+  "level": "info",
+  "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+  "timestamp": "2025-04-23 23:59:21"
+}
+{
+  "level": "info",
+  "message": "Attempting to connect to MongoDB at URI",
+  "timestamp": "2025-04-23 23:59:21"
+}
+{
+  "level": "info",
+  "message": "Mongoose connected to DB.",
+  "timestamp": "2025-04-23 23:59:21"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-23 23:59:21"
+}
+{
+  "level": "info",
+  "message": "Server is running on http://localhost:3001",
+  "timestamp": "2025-04-23 23:59:21"
+}
+{
+  "level": "error",
+  "message": "[addToBlacklistAction] Redis SETEX failed for key blacklist:98b2f96cae1348d47a1a5e5d7510eff9: redisClient.set is not a function",
+  "stack": "TypeError: redisClient.set is not a function\n    at AsyncFunction.addToBlacklistAction (/usr/src/app/utils/circuitBreaker.js:13:42)\n    at /usr/src/app/node_modules/opossum/lib/circuit.js:758:38\n    at new Promise (<anonymous>)\n    at CircuitBreaker.call (/usr/src/app/node_modules/opossum/lib/circuit.js:729:18)\n    at CircuitBreaker.fire (/usr/src/app/node_modules/opossum/lib/circuit.js:616:17)\n    at /usr/src/app/routes/auth.js:129:50\n    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)\n    at next (/usr/src/app/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/usr/src/app/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)",
+  "timestamp": "2025-04-23 23:59:27"
+}
+{
+  "error": "redisClient.set is not a function",
+  "level": "error",
+  "message": "[RedisLogoutBlacklist] Action failed.",
+  "timestamp": "2025-04-23 23:59:27"
+}
+{
+  "level": "warn",
+  "message": "[RedisLogoutBlacklist] Fallback triggered.\n        Skipping Redis blacklist add. Token (start): 98b2f96c...\n        Reason: redisClient.set is not a function",
+  "timestamp": "2025-04-23 23:59:27"
+}
+{
+  "fallbackResult": "FALLBACK_SKIPPED_REDIS",
+  "level": "warn",
+  "message": "[RedisLogoutBlacklist] Fallback executed.",
+  "timestamp": "2025-04-23 23:59:27",
+  "triggeringError": "redisClient.set is not a function"
+}
+{
+  "level": "info",
+  "message": "[RedisLogoutBlacklist] fire() completed for logout.\n\t\t\t\t \t\t\tResult: FALLBACK_SKIPPED_REDIS",
+  "timestamp": "2025-04-23 23:59:27"
+}
+{
+  "level": "warn",
+  "message": "Mongoose disconnected from DB.",
+  "timestamp": "2025-04-23 23:59:28"
+}

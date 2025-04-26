@@ -1,0 +1,5784 @@
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 00:03:40"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 00:03:40"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 00:03:40"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 00:03:40"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 00:03:40"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 00:03:40"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:893266000257666ddd915cc438a416f9",
+  "timestamp": "2025-04-24 00:03:43"
+}
+{
+  "level": "error",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS failed for key blacklist:893266000257666ddd915cc438a416f9: redisClient.exists is not a function",
+  "stack": "TypeError: redisClient.exists is not a function\n    at AsyncFunction.checkGatewayBlacklistAction (/usr/src/app/src/config/circuitBreaker.js:11:42)\n    at /usr/src/app/node_modules/opossum/lib/circuit.js:758:38\n    at new Promise (<anonymous>)\n    at CircuitBreaker.call (/usr/src/app/node_modules/opossum/lib/circuit.js:729:18)\n    at CircuitBreaker.fire (/usr/src/app/node_modules/opossum/lib/circuit.js:616:17)\n    at verifyTokenAndCheckBlacklist (/usr/src/app/src/utils/jwtUtils.js:19:62)\n    at module.exports (/usr/src/app/src/middleware/auth.js:13:25)\n    at Layer.handleRequest (/usr/src/app/node_modules/router/lib/layer.js:152:17)\n    at trimPrefix (/usr/src/app/node_modules/router/index.js:342:13)\n    at /usr/src/app/node_modules/router/index.js:297:9",
+  "timestamp": "2025-04-24 00:03:43"
+}
+{
+  "error": "redisClient.exists is not a function",
+  "level": "error",
+  "message": "[checkGatewayBlacklistAction] Action failed.",
+  "timestamp": "2025-04-24 00:03:43"
+}
+{
+  "level": "warn",
+  "message": "[GatewayRedisBlacklistCheck] Fallback function executing.\n         Assuming token NOT blacklisted. Reason: redisClient.exists is not a function,\n          JTI: 89326600...",
+  "timestamp": "2025-04-24 00:03:43"
+}
+{
+  "fallbackResult": 0,
+  "level": "warn",
+  "message": "[checkGatewayBlacklistAction] Fallback executed.",
+  "timestamp": "2025-04-24 00:03:43",
+  "triggeringError": "redisClient.exists is not a function"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 00:26:18"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 00:26:18"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 00:26:18"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 00:26:18"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 00:26:18"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 00:26:18"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:381ac8e836349c8b02186deca1342474",
+  "timestamp": "2025-04-24 00:26:21"
+}
+{
+  "level": "error",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS failed for key blacklist:381ac8e836349c8b02186deca1342474: redisClient.exists is not a function",
+  "stack": "TypeError: redisClient.exists is not a function\n    at AsyncFunction.checkGatewayBlacklistAction (/usr/src/app/src/config/circuitBreaker.js:11:42)\n    at /usr/src/app/node_modules/opossum/lib/circuit.js:758:38\n    at new Promise (<anonymous>)\n    at CircuitBreaker.call (/usr/src/app/node_modules/opossum/lib/circuit.js:729:18)\n    at CircuitBreaker.fire (/usr/src/app/node_modules/opossum/lib/circuit.js:616:17)\n    at verifyTokenAndCheckBlacklist (/usr/src/app/src/utils/jwtUtils.js:19:62)\n    at module.exports (/usr/src/app/src/middleware/auth.js:13:25)\n    at Layer.handleRequest (/usr/src/app/node_modules/router/lib/layer.js:152:17)\n    at trimPrefix (/usr/src/app/node_modules/router/index.js:342:13)\n    at /usr/src/app/node_modules/router/index.js:297:9",
+  "timestamp": "2025-04-24 00:26:21"
+}
+{
+  "error": "redisClient.exists is not a function",
+  "level": "error",
+  "message": "[checkGatewayBlacklistAction] Action failed.",
+  "timestamp": "2025-04-24 00:26:21"
+}
+{
+  "level": "warn",
+  "message": "[GatewayRedisBlacklistCheck] Fallback function executing.\n         Assuming token NOT blacklisted. Reason: redisClient.exists is not a function,\n          JTI: 381ac8e8...",
+  "timestamp": "2025-04-24 00:26:21"
+}
+{
+  "fallbackResult": 0,
+  "level": "warn",
+  "message": "[checkGatewayBlacklistAction] Fallback executed.",
+  "timestamp": "2025-04-24 00:26:21",
+  "triggeringError": "redisClient.exists is not a function"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 00:29:20"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 00:29:20"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 00:29:20"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 00:29:20"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 00:29:20"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 00:29:20"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:2206e13e4105eb775696df3df482275a",
+  "timestamp": "2025-04-24 00:29:23"
+}
+{
+  "level": "error",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS failed for key blacklist:2206e13e4105eb775696df3df482275a: redisClient.exists is not a function",
+  "stack": "TypeError: redisClient.exists is not a function\n    at AsyncFunction.checkGatewayBlacklistAction (/usr/src/app/src/config/circuitBreaker.js:11:42)\n    at /usr/src/app/node_modules/opossum/lib/circuit.js:758:38\n    at new Promise (<anonymous>)\n    at CircuitBreaker.call (/usr/src/app/node_modules/opossum/lib/circuit.js:729:18)\n    at CircuitBreaker.fire (/usr/src/app/node_modules/opossum/lib/circuit.js:616:17)\n    at verifyTokenAndCheckBlacklist (/usr/src/app/src/utils/jwtUtils.js:19:62)\n    at module.exports (/usr/src/app/src/middleware/auth.js:13:25)\n    at Layer.handleRequest (/usr/src/app/node_modules/router/lib/layer.js:152:17)\n    at trimPrefix (/usr/src/app/node_modules/router/index.js:342:13)\n    at /usr/src/app/node_modules/router/index.js:297:9",
+  "timestamp": "2025-04-24 00:29:23"
+}
+{
+  "error": "redisClient.exists is not a function",
+  "level": "error",
+  "message": "[checkGatewayBlacklistAction] Action failed.",
+  "timestamp": "2025-04-24 00:29:23"
+}
+{
+  "level": "warn",
+  "message": "[GatewayRedisBlacklistCheck] Fallback function executing.\n         Assuming token NOT blacklisted. Reason: redisClient.exists is not a function,\n          JTI: 2206e13e...",
+  "timestamp": "2025-04-24 00:29:23"
+}
+{
+  "fallbackResult": 0,
+  "level": "warn",
+  "message": "[checkGatewayBlacklistAction] Fallback executed.",
+  "timestamp": "2025-04-24 00:29:23",
+  "triggeringError": "redisClient.exists is not a function"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 00:32:39"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 00:32:39"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 00:32:39"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 00:32:39"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 00:32:39"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 00:32:39"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:4709dc99e58607f3be4ac7822bb00bd7",
+  "timestamp": "2025-04-24 00:32:42"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:4709dc99e58607f3be4ac7822bb00bd7: 0",
+  "timestamp": "2025-04-24 00:32:42"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 00:32:42"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 00:37:04"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 00:37:04"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 00:37:04"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 00:37:04"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 00:37:04"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 00:37:04"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:24cbdcf3d7380a75924b882795dfea03",
+  "timestamp": "2025-04-24 00:37:06"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:24cbdcf3d7380a75924b882795dfea03: 0",
+  "timestamp": "2025-04-24 00:37:06"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 00:37:06"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 00:38:50"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 00:38:50"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 00:38:50"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 00:38:50"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 00:38:50"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 00:38:50"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:686ccf9bd219e18ce2244846c2563c7c",
+  "timestamp": "2025-04-24 00:38:52"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:686ccf9bd219e18ce2244846c2563c7c: 0",
+  "timestamp": "2025-04-24 00:38:52"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 00:38:52"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 00:54:25"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 00:54:25"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 00:54:25"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 00:54:25"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 00:54:25"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 00:54:25"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:16188106c89db47ecdbd0420aa45caf1",
+  "timestamp": "2025-04-24 00:54:27"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:16188106c89db47ecdbd0420aa45caf1: 0",
+  "timestamp": "2025-04-24 00:54:27"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 00:54:27"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 00:56:01"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 00:56:01"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 00:56:01"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 00:56:01"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 00:56:01"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 00:56:01"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:d0e6339650abf1194d48eb4de588f927",
+  "timestamp": "2025-04-24 00:56:03"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:d0e6339650abf1194d48eb4de588f927: 0",
+  "timestamp": "2025-04-24 00:56:03"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 00:56:03"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 00:57:02"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 00:57:02"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 00:57:02"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 00:57:02"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 00:57:02"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 00:57:02"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:a36cdf3fe2f29e36ce550ee58bf8c12b",
+  "timestamp": "2025-04-24 00:57:05"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:a36cdf3fe2f29e36ce550ee58bf8c12b: 0",
+  "timestamp": "2025-04-24 00:57:05"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 00:57:05"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 00:58:14"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 00:58:14"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 00:58:14"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 00:58:14"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 00:58:14"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 00:58:14"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:0c56782f988a2e9a4ba8521353f1cbb8",
+  "timestamp": "2025-04-24 00:58:17"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:0c56782f988a2e9a4ba8521353f1cbb8: 0",
+  "timestamp": "2025-04-24 00:58:17"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 00:58:17"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 01:04:05"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 01:04:05"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 01:04:05"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 01:04:05"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 01:04:05"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 01:04:05"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:43ecf3d62b1f9761af52a7a4122e1abc",
+  "timestamp": "2025-04-24 01:04:07"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:43ecf3d62b1f9761af52a7a4122e1abc: 0",
+  "timestamp": "2025-04-24 01:04:07"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 01:04:07"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 01:15:58"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 01:15:58"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 01:15:58"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 01:15:58"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 01:15:58"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 01:15:58"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:ff9a48da8064b03a3ca368fff54d8646",
+  "timestamp": "2025-04-24 01:16:00"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:ff9a48da8064b03a3ca368fff54d8646: 0",
+  "timestamp": "2025-04-24 01:16:00"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 01:16:00"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 01:16:27"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 01:16:27"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 01:16:27"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 01:16:27"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 01:16:27"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 01:16:27"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:6fc7feb3da968c6807a63ea1435ad3cb",
+  "timestamp": "2025-04-24 01:16:29"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:6fc7feb3da968c6807a63ea1435ad3cb: 0",
+  "timestamp": "2025-04-24 01:16:29"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 01:16:29"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 01:20:42"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 01:20:42"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 01:20:42"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 01:20:42"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 01:20:42"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 01:20:42"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:500312fd468c5beb70b521b0c827cc2b",
+  "timestamp": "2025-04-24 01:20:44"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:500312fd468c5beb70b521b0c827cc2b: 0",
+  "timestamp": "2025-04-24 01:20:44"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 01:20:44"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 01:21:07"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 01:21:07"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 01:21:07"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 01:21:07"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 01:21:07"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 01:21:08"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 01:27:03"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 01:27:03"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 01:27:03"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 01:27:03"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 01:27:03"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 01:27:03"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:b5de29aeee284617d73f901636d24bcf",
+  "timestamp": "2025-04-24 01:27:05"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:b5de29aeee284617d73f901636d24bcf: 0",
+  "timestamp": "2025-04-24 01:27:05"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 01:27:05"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 01:27:29"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 01:27:29"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 01:27:29"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 01:27:29"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 01:27:29"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 01:27:29"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 01:28:04"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 01:28:04"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 01:28:04"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 01:28:04"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 01:28:04"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 01:28:04"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:ccf1298ae4555e20461711add11cfd8c",
+  "timestamp": "2025-04-24 01:28:06"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:ccf1298ae4555e20461711add11cfd8c: 0",
+  "timestamp": "2025-04-24 01:28:06"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 01:28:06"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 01:58:06"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 01:58:06"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 01:58:06"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 01:58:06"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 01:58:06"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 01:58:06"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:4d172726d1af3178fadd4c9e6afb2422",
+  "timestamp": "2025-04-24 01:58:08"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:4d172726d1af3178fadd4c9e6afb2422: 0",
+  "timestamp": "2025-04-24 01:58:08"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 01:58:08"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 01:58:37"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 01:58:37"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 01:58:37"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 01:58:37"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 01:58:37"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 01:58:37"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 01:59:39"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 01:59:39"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 01:59:39"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 01:59:39"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 01:59:39"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 01:59:39"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:87530a49adfffacd701babeb1cfb4ad5",
+  "timestamp": "2025-04-24 01:59:42"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:87530a49adfffacd701babeb1cfb4ad5: 0",
+  "timestamp": "2025-04-24 01:59:42"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 01:59:42"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 02:00:30"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 02:00:30"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 02:00:30"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 02:00:30"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 02:00:30"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 02:00:30"
+}
+{
+  "correlationId": "N/A",
+  "error": {
+    "message": "No authorization token, access denied",
+    "name": "AuthenticationError",
+    "status": 401
+  },
+  "level": "warn",
+  "message": "Error caught by central handler:",
+  "request": {
+    "ip": "::ffff:172.18.0.1",
+    "method": "POST",
+    "path": "/api/tasks",
+    "url": "/api/tasks"
+  },
+  "timestamp": "2025-04-24 02:00:31"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 02:08:48"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 02:08:48"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 02:08:48"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 02:08:48"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 02:08:48"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 02:08:48"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:39b7c1beb11ad7119281cc5c87ee0a8b",
+  "timestamp": "2025-04-24 02:08:50"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:39b7c1beb11ad7119281cc5c87ee0a8b: 0",
+  "timestamp": "2025-04-24 02:08:50"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 02:08:50"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 02:09:10"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 02:09:10"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 02:09:10"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 02:09:10"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 02:09:10"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 02:09:10"
+}
+{
+  "correlationId": "N/A",
+  "error": {
+    "message": "No authorization token, access denied",
+    "name": "AuthenticationError",
+    "status": 401
+  },
+  "level": "warn",
+  "message": "Error caught by central handler:",
+  "request": {
+    "ip": "::ffff:172.18.0.1",
+    "method": "POST",
+    "path": "/api/tasks",
+    "url": "/api/tasks"
+  },
+  "timestamp": "2025-04-24 02:09:12"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 02:09:46"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 02:09:46"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 02:09:46"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 02:09:46"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 02:09:46"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 02:09:46"
+}
+{
+  "correlationId": "N/A",
+  "error": {
+    "message": "No authorization token, access denied",
+    "name": "AuthenticationError",
+    "status": 401
+  },
+  "level": "warn",
+  "message": "Error caught by central handler:",
+  "request": {
+    "ip": "::ffff:172.18.0.1",
+    "method": "POST",
+    "path": "/api/tasks",
+    "url": "/api/tasks"
+  },
+  "timestamp": "2025-04-24 02:09:47"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 02:10:29"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 02:10:29"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 02:10:29"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 02:10:29"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 02:10:29"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 02:10:29"
+}
+{
+  "correlationId": "N/A",
+  "error": {
+    "message": "No authorization token, access denied",
+    "name": "AuthenticationError",
+    "status": 401
+  },
+  "level": "warn",
+  "message": "Error caught by central handler:",
+  "request": {
+    "ip": "::ffff:172.18.0.1",
+    "method": "POST",
+    "path": "/api/tasks",
+    "url": "/api/tasks"
+  },
+  "timestamp": "2025-04-24 02:10:30"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 02:11:05"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 02:11:05"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 02:11:05"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 02:11:05"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 02:11:05"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 02:11:05"
+}
+{
+  "correlationId": "N/A",
+  "error": {
+    "message": "No authorization token, access denied",
+    "name": "AuthenticationError",
+    "status": 401
+  },
+  "level": "warn",
+  "message": "Error caught by central handler:",
+  "request": {
+    "ip": "::ffff:172.18.0.1",
+    "method": "POST",
+    "path": "/api/tasks",
+    "url": "/api/tasks"
+  },
+  "timestamp": "2025-04-24 02:11:06"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 02:29:15"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 02:29:15"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 02:29:15"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 02:29:15"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 02:29:15"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 02:29:15"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:8a714533d7adf14f23ded3d348a31c15",
+  "timestamp": "2025-04-24 02:29:17"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:8a714533d7adf14f23ded3d348a31c15: 0",
+  "timestamp": "2025-04-24 02:29:17"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 02:29:17"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 02:29:43"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 02:29:43"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 02:29:43"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 02:29:43"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 02:29:43"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 02:29:43"
+}
+{
+  "correlationId": "N/A",
+  "error": {
+    "message": "No authorization token, access denied",
+    "name": "AuthenticationError",
+    "status": 401
+  },
+  "level": "warn",
+  "message": "Error caught by central handler:",
+  "request": {
+    "ip": "::ffff:172.18.0.1",
+    "method": "POST",
+    "path": "/api/tasks",
+    "url": "/api/tasks"
+  },
+  "timestamp": "2025-04-24 02:29:45"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 02:30:10"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 02:30:10"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 02:30:10"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 02:30:10"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 02:30:10"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 02:30:10"
+}
+{
+  "correlationId": "N/A",
+  "error": {
+    "message": "No authorization token, access denied",
+    "name": "AuthenticationError",
+    "status": 401
+  },
+  "level": "warn",
+  "message": "Error caught by central handler:",
+  "request": {
+    "ip": "::ffff:172.18.0.1",
+    "method": "POST",
+    "path": "/api/tasks",
+    "url": "/api/tasks"
+  },
+  "timestamp": "2025-04-24 02:30:11"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 02:30:45"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 02:30:45"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 02:30:45"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 02:30:45"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 02:30:45"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 02:30:45"
+}
+{
+  "correlationId": "N/A",
+  "error": {
+    "message": "No authorization token, access denied",
+    "name": "AuthenticationError",
+    "status": 401
+  },
+  "level": "warn",
+  "message": "Error caught by central handler:",
+  "request": {
+    "ip": "::ffff:172.18.0.1",
+    "method": "POST",
+    "path": "/api/tasks",
+    "url": "/api/tasks"
+  },
+  "timestamp": "2025-04-24 02:30:46"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 02:31:23"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 02:31:23"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 02:31:23"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 02:31:23"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 02:31:23"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 02:31:23"
+}
+{
+  "correlationId": "N/A",
+  "error": {
+    "message": "No authorization token, access denied",
+    "name": "AuthenticationError",
+    "status": 401
+  },
+  "level": "warn",
+  "message": "Error caught by central handler:",
+  "request": {
+    "ip": "::ffff:172.18.0.1",
+    "method": "POST",
+    "path": "/api/tasks",
+    "url": "/api/tasks"
+  },
+  "timestamp": "2025-04-24 02:31:24"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 02:44:52"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 02:44:52"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 02:44:52"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 02:44:52"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 02:44:52"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 02:44:52"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:a2dc8282d38e264c55dde9b50f1dd67c",
+  "timestamp": "2025-04-24 02:44:54"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:a2dc8282d38e264c55dde9b50f1dd67c: 0",
+  "timestamp": "2025-04-24 02:44:54"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 02:44:54"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 02:45:21"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 02:45:21"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 02:45:21"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 02:45:21"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 02:45:21"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 02:45:21"
+}
+{
+  "correlationId": "N/A",
+  "error": {
+    "message": "No authorization token, access denied",
+    "name": "AuthenticationError",
+    "status": 401
+  },
+  "level": "warn",
+  "message": "Error caught by central handler:",
+  "request": {
+    "ip": "::ffff:172.18.0.1",
+    "method": "POST",
+    "path": "/api/tasks",
+    "url": "/api/tasks"
+  },
+  "timestamp": "2025-04-24 02:45:23"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 02:46:01"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 02:46:01"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 02:46:01"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 02:46:01"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 02:46:01"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 02:46:01"
+}
+{
+  "correlationId": "N/A",
+  "error": {
+    "message": "No authorization token, access denied",
+    "name": "AuthenticationError",
+    "status": 401
+  },
+  "level": "warn",
+  "message": "Error caught by central handler:",
+  "request": {
+    "ip": "::ffff:172.18.0.1",
+    "method": "POST",
+    "path": "/api/tasks",
+    "url": "/api/tasks"
+  },
+  "timestamp": "2025-04-24 02:46:03"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 02:46:45"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 02:46:45"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 02:46:45"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 02:46:45"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 02:46:45"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 02:46:45"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 02:59:57"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 02:59:57"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 02:59:57"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 02:59:57"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 02:59:57"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 02:59:57"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:a62ff66bab3f41e26746226ea96ffe76",
+  "timestamp": "2025-04-24 02:59:59"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:a62ff66bab3f41e26746226ea96ffe76: 0",
+  "timestamp": "2025-04-24 02:59:59"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 02:59:59"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 03:00:35"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 03:00:35"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 03:00:35"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 03:00:35"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 03:00:35"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 03:00:35"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 03:02:33"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 03:02:33"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 03:02:33"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 03:02:33"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 03:02:33"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 03:02:33"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:96d1c38ebc78ca1447560c7633211529",
+  "timestamp": "2025-04-24 03:02:35"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:96d1c38ebc78ca1447560c7633211529: 0",
+  "timestamp": "2025-04-24 03:02:35"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 03:02:35"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 03:03:09"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 03:03:09"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 03:03:09"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 03:03:09"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 03:03:09"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 03:03:09"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:be501b77f9258bf6b706c0b35706a603",
+  "timestamp": "2025-04-24 03:03:11"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:be501b77f9258bf6b706c0b35706a603: 0",
+  "timestamp": "2025-04-24 03:03:11"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 03:03:11"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 03:06:44"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 03:06:44"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 03:06:44"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 03:06:44"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 03:06:44"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 03:06:44"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:61f57be32fa153e468f1831658b47550",
+  "timestamp": "2025-04-24 03:06:46"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:61f57be32fa153e468f1831658b47550: 0",
+  "timestamp": "2025-04-24 03:06:46"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 03:06:46"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 03:07:30"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 03:07:30"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 03:07:30"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 03:07:30"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 03:07:30"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 03:07:30"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:f38066c301fe7c5e858122aeb611612b",
+  "timestamp": "2025-04-24 03:07:32"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:f38066c301fe7c5e858122aeb611612b: 0",
+  "timestamp": "2025-04-24 03:07:32"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 03:07:32"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 03:08:46"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 03:08:46"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 03:08:46"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 03:08:46"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 03:08:46"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 03:08:46"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:8fba911824f97a4b211525bb8d2e50c0",
+  "timestamp": "2025-04-24 03:08:49"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:8fba911824f97a4b211525bb8d2e50c0: 0",
+  "timestamp": "2025-04-24 03:08:49"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 03:08:49"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 03:09:29"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 03:09:29"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 03:09:29"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 03:09:29"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 03:09:29"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 03:09:29"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:4c2cc67e18d81d0883c854e2d1ebcff4",
+  "timestamp": "2025-04-24 03:09:31"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:4c2cc67e18d81d0883c854e2d1ebcff4: 0",
+  "timestamp": "2025-04-24 03:09:31"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 03:09:31"
+}
+{
+  "correlationId": "N/A",
+  "error": {
+    "message": "No authorization token, access denied",
+    "name": "AuthenticationError",
+    "status": 401
+  },
+  "level": "warn",
+  "message": "Error caught by central handler:",
+  "request": {
+    "ip": "::ffff:172.18.0.1",
+    "method": "GET",
+    "path": "/api/tasks",
+    "url": "/api/tasks"
+  },
+  "timestamp": "2025-04-24 03:09:31"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 03:10:13"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 03:10:13"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 03:10:13"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 03:10:13"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 03:10:13"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 03:10:13"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:ffab3098cfa4d04a84e9dd9b2464ef09",
+  "timestamp": "2025-04-24 03:10:15"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:ffab3098cfa4d04a84e9dd9b2464ef09: 0",
+  "timestamp": "2025-04-24 03:10:15"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 03:10:15"
+}
+{
+  "correlationId": "N/A",
+  "error": {
+    "message": "No authorization token, access denied",
+    "name": "AuthenticationError",
+    "status": 401
+  },
+  "level": "warn",
+  "message": "Error caught by central handler:",
+  "request": {
+    "ip": "::ffff:172.18.0.1",
+    "method": "GET",
+    "path": "/api/tasks",
+    "url": "/api/tasks"
+  },
+  "timestamp": "2025-04-24 03:10:15"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 03:11:01"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 03:11:01"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 03:11:01"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 03:11:01"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 03:11:01"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 03:11:01"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 03:14:34"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 03:14:34"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 03:14:34"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 03:14:34"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 03:14:34"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 03:14:34"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:c3925ca8d3203be12b2e101e94bc7737",
+  "timestamp": "2025-04-24 03:14:37"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:c3925ca8d3203be12b2e101e94bc7737: 0",
+  "timestamp": "2025-04-24 03:14:37"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 03:14:37"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 03:15:08"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 03:15:08"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 03:15:08"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 03:15:08"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 03:15:08"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 03:15:08"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:670e535e4ccba349e2948b9485bd558b",
+  "timestamp": "2025-04-24 03:15:10"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:670e535e4ccba349e2948b9485bd558b: 0",
+  "timestamp": "2025-04-24 03:15:10"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 03:15:10"
+}
+{
+  "correlationId": "N/A",
+  "error": {
+    "message": "No authorization token, access denied",
+    "name": "AuthenticationError",
+    "status": 401
+  },
+  "level": "warn",
+  "message": "Error caught by central handler:",
+  "request": {
+    "ip": "::ffff:172.18.0.1",
+    "method": "GET",
+    "path": "/api/tasks",
+    "url": "/api/tasks"
+  },
+  "timestamp": "2025-04-24 03:15:10"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 03:15:46"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 03:15:46"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 03:15:46"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 03:15:46"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 03:15:46"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 03:15:46"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:20d8792823c24bfda78a081d9e24fd41",
+  "timestamp": "2025-04-24 03:15:48"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:20d8792823c24bfda78a081d9e24fd41: 0",
+  "timestamp": "2025-04-24 03:15:48"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 03:15:48"
+}
+{
+  "correlationId": "N/A",
+  "error": {
+    "message": "No authorization token, access denied",
+    "name": "AuthenticationError",
+    "status": 401
+  },
+  "level": "warn",
+  "message": "Error caught by central handler:",
+  "request": {
+    "ip": "::ffff:172.18.0.1",
+    "method": "GET",
+    "path": "/api/tasks",
+    "url": "/api/tasks"
+  },
+  "timestamp": "2025-04-24 03:15:48"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 03:16:26"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 03:16:26"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 03:16:26"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 03:16:26"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 03:16:26"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 03:16:26"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 03:22:46"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 03:22:46"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 03:22:46"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 03:22:46"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 03:22:46"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 03:22:46"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:741cfe1bf0e36c789a2710b0bb066237",
+  "timestamp": "2025-04-24 03:22:48"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:741cfe1bf0e36c789a2710b0bb066237: 0",
+  "timestamp": "2025-04-24 03:22:48"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 03:22:49"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 03:23:22"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 03:23:22"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 03:23:22"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 03:23:22"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 03:23:22"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 03:23:22"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:4d9af95ada4ad3d97108e8f720fb2281",
+  "timestamp": "2025-04-24 03:23:24"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:4d9af95ada4ad3d97108e8f720fb2281: 0",
+  "timestamp": "2025-04-24 03:23:24"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 03:23:24"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 03:24:44"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 03:24:44"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 03:24:44"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 03:24:44"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 03:24:44"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 03:24:44"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:2de7605abd1f17016f4b57fbf862e264",
+  "timestamp": "2025-04-24 03:24:47"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:2de7605abd1f17016f4b57fbf862e264: 0",
+  "timestamp": "2025-04-24 03:24:47"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 03:24:47"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 03:25:28"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 03:25:28"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 03:25:28"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 03:25:28"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 03:25:28"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 03:25:28"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:135fc04991324f7ff68b92f749f00078",
+  "timestamp": "2025-04-24 03:25:30"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:135fc04991324f7ff68b92f749f00078: 0",
+  "timestamp": "2025-04-24 03:25:30"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 03:25:30"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:78b1ce7db95216affd27dd60386f982b",
+  "timestamp": "2025-04-24 03:25:30"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:78b1ce7db95216affd27dd60386f982b: 0",
+  "timestamp": "2025-04-24 03:25:30"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 03:25:30"
+}
+{
+  "correlationId": "N/A",
+  "error": {
+    "message": "No authorization token, access denied",
+    "name": "AuthenticationError",
+    "status": 401
+  },
+  "level": "warn",
+  "message": "Error caught by central handler:",
+  "request": {
+    "ip": "::ffff:172.18.0.1",
+    "method": "GET",
+    "path": "/api/tasks",
+    "url": "/api/tasks"
+  },
+  "timestamp": "2025-04-24 03:25:30"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 03:26:11"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 03:26:11"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 03:26:11"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 03:26:11"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 03:26:11"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 03:26:11"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 03:57:29"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 03:57:29"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 03:57:29"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 03:57:29"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 03:57:29"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 03:57:29"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:f67fb73e86c1e4117366bac7c3c50e4f",
+  "timestamp": "2025-04-24 03:57:31"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:f67fb73e86c1e4117366bac7c3c50e4f: 0",
+  "timestamp": "2025-04-24 03:57:31"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 03:57:31"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:2bae7e864020b65d2991082d79a87907",
+  "timestamp": "2025-04-24 03:57:31"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:2bae7e864020b65d2991082d79a87907: 0",
+  "timestamp": "2025-04-24 03:57:31"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 03:57:31"
+}
+{
+  "correlationId": "N/A",
+  "error": {
+    "message": "No authorization token, access denied",
+    "name": "AuthenticationError",
+    "status": 401
+  },
+  "level": "warn",
+  "message": "Error caught by central handler:",
+  "request": {
+    "ip": "::ffff:172.18.0.1",
+    "method": "GET",
+    "path": "/api/tasks",
+    "url": "/api/tasks"
+  },
+  "timestamp": "2025-04-24 03:57:31"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 03:58:04"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 03:58:04"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 03:58:04"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 03:58:04"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 03:58:04"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 03:58:04"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:6ca279678ce8ac04e896ae1db650d476",
+  "timestamp": "2025-04-24 03:58:06"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:6ca279678ce8ac04e896ae1db650d476: 0",
+  "timestamp": "2025-04-24 03:58:06"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 03:58:06"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:1a42d5a4ee709d200cc596db73945319",
+  "timestamp": "2025-04-24 03:58:06"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:1a42d5a4ee709d200cc596db73945319: 0",
+  "timestamp": "2025-04-24 03:58:06"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 03:58:06"
+}
+{
+  "correlationId": "N/A",
+  "error": {
+    "message": "No authorization token, access denied",
+    "name": "AuthenticationError",
+    "status": 401
+  },
+  "level": "warn",
+  "message": "Error caught by central handler:",
+  "request": {
+    "ip": "::ffff:172.18.0.1",
+    "method": "GET",
+    "path": "/api/tasks",
+    "url": "/api/tasks"
+  },
+  "timestamp": "2025-04-24 03:58:06"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 03:58:45"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 03:58:46"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 03:58:46"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 03:58:46"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 03:58:46"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 03:58:46"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:0cfd423bb74867fea04e0bd2b4d663c5",
+  "timestamp": "2025-04-24 03:58:48"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:0cfd423bb74867fea04e0bd2b4d663c5: 0",
+  "timestamp": "2025-04-24 03:58:48"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 03:58:48"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:5a89629b5b97f2d9bf6635b6f8659dd4",
+  "timestamp": "2025-04-24 03:58:48"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:5a89629b5b97f2d9bf6635b6f8659dd4: 0",
+  "timestamp": "2025-04-24 03:58:48"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 03:58:48"
+}
+{
+  "correlationId": "N/A",
+  "error": {
+    "message": "No authorization token, access denied",
+    "name": "AuthenticationError",
+    "status": 401
+  },
+  "level": "warn",
+  "message": "Error caught by central handler:",
+  "request": {
+    "ip": "::ffff:172.18.0.1",
+    "method": "GET",
+    "path": "/api/tasks",
+    "url": "/api/tasks"
+  },
+  "timestamp": "2025-04-24 03:58:48"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 03:59:29"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 03:59:29"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 03:59:29"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 03:59:29"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 03:59:29"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 03:59:29"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:449fb6d22e2c4339307d20b8835b9877",
+  "timestamp": "2025-04-24 03:59:32"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:449fb6d22e2c4339307d20b8835b9877: 0",
+  "timestamp": "2025-04-24 03:59:32"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 03:59:32"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:325a9e8b02744d6e936a0f1c7b5513b0",
+  "timestamp": "2025-04-24 03:59:32"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:325a9e8b02744d6e936a0f1c7b5513b0: 0",
+  "timestamp": "2025-04-24 03:59:32"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 03:59:32"
+}
+{
+  "correlationId": "N/A",
+  "error": {
+    "message": "No authorization token, access denied",
+    "name": "AuthenticationError",
+    "status": 401
+  },
+  "level": "warn",
+  "message": "Error caught by central handler:",
+  "request": {
+    "ip": "::ffff:172.18.0.1",
+    "method": "GET",
+    "path": "/api/tasks",
+    "url": "/api/tasks"
+  },
+  "timestamp": "2025-04-24 03:59:32"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 04:00:11"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 04:00:11"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 04:00:11"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 04:00:11"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 04:00:11"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 04:00:11"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:856233a3315f18f5a9b89d6e79643de4",
+  "timestamp": "2025-04-24 04:00:15"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:856233a3315f18f5a9b89d6e79643de4: 0",
+  "timestamp": "2025-04-24 04:00:15"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 04:00:15"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 04:03:04"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 04:03:04"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 04:03:04"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 04:03:04"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 04:03:04"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 04:03:04"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 04:03:54"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 04:03:54"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 04:03:54"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 04:03:54"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 04:03:54"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 04:03:54"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:dc082efc91a38b255edb5f161d54fc3f",
+  "timestamp": "2025-04-24 04:03:56"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:dc082efc91a38b255edb5f161d54fc3f: 0",
+  "timestamp": "2025-04-24 04:03:56"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 04:03:56"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 04:10:18"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 04:10:18"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 04:10:18"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 04:10:18"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 04:10:18"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 04:10:18"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:6fa633bf9762fa647b36c18cf0125186",
+  "timestamp": "2025-04-24 04:10:20"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:6fa633bf9762fa647b36c18cf0125186: 0",
+  "timestamp": "2025-04-24 04:10:20"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 04:10:20"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:fab332461c9585c830a93c1959109ea8",
+  "timestamp": "2025-04-24 04:10:20"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:fab332461c9585c830a93c1959109ea8: 0",
+  "timestamp": "2025-04-24 04:10:20"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 04:10:20"
+}
+{
+  "correlationId": "N/A",
+  "error": {
+    "message": "No authorization token, access denied",
+    "name": "AuthenticationError",
+    "status": 401
+  },
+  "level": "warn",
+  "message": "Error caught by central handler:",
+  "request": {
+    "ip": "::ffff:172.18.0.1",
+    "method": "GET",
+    "path": "/api/tasks",
+    "url": "/api/tasks"
+  },
+  "timestamp": "2025-04-24 04:10:20"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 04:11:06"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 04:11:06"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 04:11:06"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 04:11:06"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 04:11:06"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 04:11:06"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:c4adedc1eeb357cea79400437b994adf",
+  "timestamp": "2025-04-24 04:11:09"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:c4adedc1eeb357cea79400437b994adf: 0",
+  "timestamp": "2025-04-24 04:11:09"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 04:11:09"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 04:13:54"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 04:13:54"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 04:13:54"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 04:13:54"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 04:13:54"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 04:13:54"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:d5a3a21cefdc48ae8a4788a88ee0b31f",
+  "timestamp": "2025-04-24 04:13:56"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:d5a3a21cefdc48ae8a4788a88ee0b31f: 0",
+  "timestamp": "2025-04-24 04:13:56"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 04:13:56"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:7c2f5f4f92711d2f0512d55bb6866e6a",
+  "timestamp": "2025-04-24 04:13:56"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:7c2f5f4f92711d2f0512d55bb6866e6a: 0",
+  "timestamp": "2025-04-24 04:13:56"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 04:13:56"
+}
+{
+  "correlationId": "N/A",
+  "error": {
+    "message": "No authorization token, access denied",
+    "name": "AuthenticationError",
+    "status": 401
+  },
+  "level": "warn",
+  "message": "Error caught by central handler:",
+  "request": {
+    "ip": "::ffff:172.18.0.1",
+    "method": "GET",
+    "path": "/api/tasks",
+    "url": "/api/tasks"
+  },
+  "timestamp": "2025-04-24 04:13:56"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 04:14:38"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 04:14:38"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 04:14:38"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 04:14:38"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 04:14:38"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 04:14:38"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:552725adbaa87c15700f4dbd228347ba",
+  "timestamp": "2025-04-24 04:14:40"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:552725adbaa87c15700f4dbd228347ba: 0",
+  "timestamp": "2025-04-24 04:14:40"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 04:14:40"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 04:17:41"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 04:17:41"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 04:17:41"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 04:17:41"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 04:17:41"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 04:17:41"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:316870c75295de35c0d5d424eb048d32",
+  "timestamp": "2025-04-24 04:17:42"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:316870c75295de35c0d5d424eb048d32: 0",
+  "timestamp": "2025-04-24 04:17:42"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 04:17:42"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:c7968f6d2ec0e4a79c7d58cf07b1de5e",
+  "timestamp": "2025-04-24 04:17:43"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:c7968f6d2ec0e4a79c7d58cf07b1de5e: 0",
+  "timestamp": "2025-04-24 04:17:43"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 04:17:43"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:c7968f6d2ec0e4a79c7d58cf07b1de5e",
+  "timestamp": "2025-04-24 04:17:43"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:c7968f6d2ec0e4a79c7d58cf07b1de5e: 0",
+  "timestamp": "2025-04-24 04:17:43"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 04:17:43"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 04:18:22"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 04:18:22"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 04:18:22"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 04:18:22"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 04:18:22"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 04:18:22"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:a817ef2b049f5cf4900a28bf840e3f0d",
+  "timestamp": "2025-04-24 04:18:24"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:a817ef2b049f5cf4900a28bf840e3f0d: 0",
+  "timestamp": "2025-04-24 04:18:24"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 04:18:24"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 04:32:03"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 04:32:03"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 04:32:03"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 04:32:03"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 04:32:03"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 04:32:03"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:6a13484be4387620d761034cd81815de",
+  "timestamp": "2025-04-24 04:32:04"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:6a13484be4387620d761034cd81815de: 0",
+  "timestamp": "2025-04-24 04:32:04"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 04:32:04"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:5efd396ba0535e4f29aac5c168b46a5e",
+  "timestamp": "2025-04-24 04:32:05"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:5efd396ba0535e4f29aac5c168b46a5e: 0",
+  "timestamp": "2025-04-24 04:32:05"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 04:32:05"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:5efd396ba0535e4f29aac5c168b46a5e",
+  "timestamp": "2025-04-24 04:32:05"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:5efd396ba0535e4f29aac5c168b46a5e: 0",
+  "timestamp": "2025-04-24 04:32:05"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 04:32:05"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 04:32:32"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 04:32:32"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 04:32:32"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 04:32:32"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 04:32:32"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 04:32:33"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:91554f230dcabf01609ebd62f6d3d153",
+  "timestamp": "2025-04-24 04:32:35"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:91554f230dcabf01609ebd62f6d3d153: 0",
+  "timestamp": "2025-04-24 04:32:35"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 04:32:35"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 04:33:49"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 04:33:49"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 04:33:49"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 04:33:49"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 04:33:49"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 04:33:49"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 05:06:15"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 05:06:15"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 05:06:15"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 05:06:15"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 05:06:15"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 05:06:15"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:572951c81abda39cbfd23f98f724c578",
+  "timestamp": "2025-04-24 05:06:17"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:572951c81abda39cbfd23f98f724c578: 0",
+  "timestamp": "2025-04-24 05:06:17"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:06:17"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:1ad7190660455f84cd72aeca27d210b1",
+  "timestamp": "2025-04-24 05:06:17"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:1ad7190660455f84cd72aeca27d210b1: 0",
+  "timestamp": "2025-04-24 05:06:17"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:06:17"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:1ad7190660455f84cd72aeca27d210b1",
+  "timestamp": "2025-04-24 05:06:17"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:1ad7190660455f84cd72aeca27d210b1: 0",
+  "timestamp": "2025-04-24 05:06:17"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:06:17"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:9641849747b2066da3f26f279d390214",
+  "timestamp": "2025-04-24 05:06:17"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:9641849747b2066da3f26f279d390214: 0",
+  "timestamp": "2025-04-24 05:06:17"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:06:17"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:9641849747b2066da3f26f279d390214",
+  "timestamp": "2025-04-24 05:06:17"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:9641849747b2066da3f26f279d390214: 0",
+  "timestamp": "2025-04-24 05:06:17"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:06:17"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 05:06:48"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 05:06:48"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 05:06:48"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 05:06:48"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 05:06:48"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 05:06:48"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:8db9fec93c5f0ea957638c829bdd1d08",
+  "timestamp": "2025-04-24 05:06:49"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:8db9fec93c5f0ea957638c829bdd1d08: 0",
+  "timestamp": "2025-04-24 05:06:49"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:06:49"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:a3cc44e96ee2e4597a32ec1d9a6bf371",
+  "timestamp": "2025-04-24 05:06:49"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:a3cc44e96ee2e4597a32ec1d9a6bf371: 0",
+  "timestamp": "2025-04-24 05:06:49"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:06:49"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:a3cc44e96ee2e4597a32ec1d9a6bf371",
+  "timestamp": "2025-04-24 05:06:49"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:a3cc44e96ee2e4597a32ec1d9a6bf371: 0",
+  "timestamp": "2025-04-24 05:06:49"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:06:49"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:961e50a8dc5ba15b9a8732aba48bb792",
+  "timestamp": "2025-04-24 05:06:50"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:961e50a8dc5ba15b9a8732aba48bb792: 0",
+  "timestamp": "2025-04-24 05:06:50"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:06:50"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:961e50a8dc5ba15b9a8732aba48bb792",
+  "timestamp": "2025-04-24 05:06:50"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:961e50a8dc5ba15b9a8732aba48bb792: 0",
+  "timestamp": "2025-04-24 05:06:50"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:06:50"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 05:07:13"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 05:07:13"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 05:07:13"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 05:07:13"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 05:07:13"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 05:07:13"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:307e396f07f773249d05f6a9a2777f31",
+  "timestamp": "2025-04-24 05:07:15"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:307e396f07f773249d05f6a9a2777f31: 0",
+  "timestamp": "2025-04-24 05:07:15"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:07:15"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:dcffb107c0bc7a618ca6009dd414d174",
+  "timestamp": "2025-04-24 05:07:15"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:dcffb107c0bc7a618ca6009dd414d174: 0",
+  "timestamp": "2025-04-24 05:07:15"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:07:15"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:dcffb107c0bc7a618ca6009dd414d174",
+  "timestamp": "2025-04-24 05:07:15"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:dcffb107c0bc7a618ca6009dd414d174: 0",
+  "timestamp": "2025-04-24 05:07:15"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:07:15"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:b6b61009dd6239c90082f95d7315229e",
+  "timestamp": "2025-04-24 05:07:15"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:b6b61009dd6239c90082f95d7315229e: 0",
+  "timestamp": "2025-04-24 05:07:15"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:07:15"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:b6b61009dd6239c90082f95d7315229e",
+  "timestamp": "2025-04-24 05:07:15"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:b6b61009dd6239c90082f95d7315229e: 0",
+  "timestamp": "2025-04-24 05:07:15"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:07:15"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 05:07:43"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 05:07:43"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 05:07:43"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 05:07:43"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 05:07:43"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 05:07:43"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:fbef4869819b5d209c48f687efdac7e8",
+  "timestamp": "2025-04-24 05:07:45"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:fbef4869819b5d209c48f687efdac7e8: 0",
+  "timestamp": "2025-04-24 05:07:45"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:07:45"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:fff066a342c761555a730a698d039ca7",
+  "timestamp": "2025-04-24 05:07:45"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:fff066a342c761555a730a698d039ca7: 0",
+  "timestamp": "2025-04-24 05:07:45"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:07:45"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:fff066a342c761555a730a698d039ca7",
+  "timestamp": "2025-04-24 05:07:45"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:fff066a342c761555a730a698d039ca7: 0",
+  "timestamp": "2025-04-24 05:07:45"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:07:45"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:7490903bcd899e2f2c2db229d429f0c4",
+  "timestamp": "2025-04-24 05:07:46"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:7490903bcd899e2f2c2db229d429f0c4: 0",
+  "timestamp": "2025-04-24 05:07:46"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:07:46"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:7490903bcd899e2f2c2db229d429f0c4",
+  "timestamp": "2025-04-24 05:07:46"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:7490903bcd899e2f2c2db229d429f0c4: 0",
+  "timestamp": "2025-04-24 05:07:46"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:07:46"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 05:08:13"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 05:08:13"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 05:08:13"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 05:08:13"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 05:08:13"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 05:08:13"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 05:12:49"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 05:12:49"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 05:12:49"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 05:12:49"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 05:12:49"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 05:12:49"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:3ffdbac1a031818a4217c8ced3a40a9a",
+  "timestamp": "2025-04-24 05:12:51"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:3ffdbac1a031818a4217c8ced3a40a9a: 0",
+  "timestamp": "2025-04-24 05:12:51"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:12:51"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:ccbdc8170e6499ae3938ea6ddbc21ca8",
+  "timestamp": "2025-04-24 05:12:51"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:ccbdc8170e6499ae3938ea6ddbc21ca8: 0",
+  "timestamp": "2025-04-24 05:12:51"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:12:51"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:ccbdc8170e6499ae3938ea6ddbc21ca8",
+  "timestamp": "2025-04-24 05:12:51"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:ccbdc8170e6499ae3938ea6ddbc21ca8: 0",
+  "timestamp": "2025-04-24 05:12:51"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:12:51"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:07bd9c82b2bb0dedaed0cebfb974125a",
+  "timestamp": "2025-04-24 05:12:52"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:07bd9c82b2bb0dedaed0cebfb974125a: 0",
+  "timestamp": "2025-04-24 05:12:52"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:12:52"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:07bd9c82b2bb0dedaed0cebfb974125a",
+  "timestamp": "2025-04-24 05:12:52"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:07bd9c82b2bb0dedaed0cebfb974125a: 0",
+  "timestamp": "2025-04-24 05:12:52"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:12:52"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 05:13:21"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 05:13:21"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 05:13:21"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 05:13:21"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 05:13:22"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 05:13:22"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:1064407bf7801380ea040d4ff0f7bde8",
+  "timestamp": "2025-04-24 05:13:24"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:1064407bf7801380ea040d4ff0f7bde8: 0",
+  "timestamp": "2025-04-24 05:13:24"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:13:24"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 05:15:03"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 05:15:03"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 05:15:03"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 05:15:03"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 05:15:03"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 05:15:03"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:14695aea1e0063af7ace60a619accd0b",
+  "timestamp": "2025-04-24 05:15:05"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:14695aea1e0063af7ace60a619accd0b: 0",
+  "timestamp": "2025-04-24 05:15:05"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:15:05"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:6ce14af549fa10e6576b845a96d3a425",
+  "timestamp": "2025-04-24 05:15:05"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:6ce14af549fa10e6576b845a96d3a425: 0",
+  "timestamp": "2025-04-24 05:15:05"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:15:05"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:6ce14af549fa10e6576b845a96d3a425",
+  "timestamp": "2025-04-24 05:15:05"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:6ce14af549fa10e6576b845a96d3a425: 0",
+  "timestamp": "2025-04-24 05:15:05"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:15:05"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:5be9000ca6813e989a375e20c3041835",
+  "timestamp": "2025-04-24 05:15:05"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:5be9000ca6813e989a375e20c3041835: 0",
+  "timestamp": "2025-04-24 05:15:05"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:15:05"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:5be9000ca6813e989a375e20c3041835",
+  "timestamp": "2025-04-24 05:15:05"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:5be9000ca6813e989a375e20c3041835: 0",
+  "timestamp": "2025-04-24 05:15:05"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:15:05"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 05:15:33"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 05:15:33"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 05:15:33"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 05:15:33"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 05:15:33"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 05:15:33"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:bd590e55eb4c2ce191badde1e62c425d",
+  "timestamp": "2025-04-24 05:15:35"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:bd590e55eb4c2ce191badde1e62c425d: 0",
+  "timestamp": "2025-04-24 05:15:35"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:15:35"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 05:19:17"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 05:19:17"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 05:19:17"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 05:19:17"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 05:19:17"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 05:19:17"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:6367898e1e04827dde76060117d7f38a",
+  "timestamp": "2025-04-24 05:19:19"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:6367898e1e04827dde76060117d7f38a: 0",
+  "timestamp": "2025-04-24 05:19:19"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:19:19"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:4305926b7c6970d4f695d6d9bac2c2be",
+  "timestamp": "2025-04-24 05:19:19"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:4305926b7c6970d4f695d6d9bac2c2be: 0",
+  "timestamp": "2025-04-24 05:19:19"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:19:19"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:4305926b7c6970d4f695d6d9bac2c2be",
+  "timestamp": "2025-04-24 05:19:19"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:4305926b7c6970d4f695d6d9bac2c2be: 0",
+  "timestamp": "2025-04-24 05:19:19"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:19:19"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:8b6e059701ddb4788d9d5d84405f2e44",
+  "timestamp": "2025-04-24 05:19:20"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:8b6e059701ddb4788d9d5d84405f2e44: 0",
+  "timestamp": "2025-04-24 05:19:20"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:19:20"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:8b6e059701ddb4788d9d5d84405f2e44",
+  "timestamp": "2025-04-24 05:19:20"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:8b6e059701ddb4788d9d5d84405f2e44: 0",
+  "timestamp": "2025-04-24 05:19:20"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:19:20"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 05:19:56"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 05:19:56"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 05:19:56"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 05:19:56"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 05:19:56"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 05:19:56"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:deedb6944b82404cf38dc991bd25bf08",
+  "timestamp": "2025-04-24 05:19:58"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:deedb6944b82404cf38dc991bd25bf08: 0",
+  "timestamp": "2025-04-24 05:19:58"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:19:58"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 05:48:27"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 05:48:27"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 05:48:27"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 05:48:27"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 05:48:27"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 05:48:27"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:d01329942c4222ef80994adb1faffd69",
+  "timestamp": "2025-04-24 05:48:29"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:d01329942c4222ef80994adb1faffd69: 0",
+  "timestamp": "2025-04-24 05:48:29"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:48:29"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:840bd647d5e27dd933633bbc340316e6",
+  "timestamp": "2025-04-24 05:48:29"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:840bd647d5e27dd933633bbc340316e6: 0",
+  "timestamp": "2025-04-24 05:48:29"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:48:29"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:840bd647d5e27dd933633bbc340316e6",
+  "timestamp": "2025-04-24 05:48:29"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:840bd647d5e27dd933633bbc340316e6: 0",
+  "timestamp": "2025-04-24 05:48:29"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:48:29"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:7afa04b57454d573897c62151f6d6cdb",
+  "timestamp": "2025-04-24 05:48:29"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:7afa04b57454d573897c62151f6d6cdb: 0",
+  "timestamp": "2025-04-24 05:48:29"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:48:29"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:7afa04b57454d573897c62151f6d6cdb",
+  "timestamp": "2025-04-24 05:48:29"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:7afa04b57454d573897c62151f6d6cdb: 0",
+  "timestamp": "2025-04-24 05:48:29"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:48:29"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:8d2ae7aafeeb0c9e5a11aa593c44e0a5",
+  "timestamp": "2025-04-24 05:48:30"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:8d2ae7aafeeb0c9e5a11aa593c44e0a5: 0",
+  "timestamp": "2025-04-24 05:48:30"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:48:30"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:8d2ae7aafeeb0c9e5a11aa593c44e0a5",
+  "timestamp": "2025-04-24 05:48:30"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:8d2ae7aafeeb0c9e5a11aa593c44e0a5: 0",
+  "timestamp": "2025-04-24 05:48:30"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:48:30"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 05:49:01"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 05:49:01"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 05:49:01"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 05:49:01"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 05:49:01"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 05:49:01"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:77ec1f6e1d15c36cd6613fb859a39026",
+  "timestamp": "2025-04-24 05:49:03"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:77ec1f6e1d15c36cd6613fb859a39026: 0",
+  "timestamp": "2025-04-24 05:49:03"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:49:03"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 05:50:41"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 05:50:41"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 05:50:41"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 05:50:41"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 05:50:41"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 05:50:41"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 05:51:11"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 05:51:11"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 05:51:11"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 05:51:11"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 05:51:11"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 05:51:11"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 05:52:10"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 05:52:10"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 05:52:10"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 05:52:10"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 05:52:10"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 05:52:10"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:049d872b240ce9a48ad35cb79905bf8a",
+  "timestamp": "2025-04-24 05:52:12"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:049d872b240ce9a48ad35cb79905bf8a: 0",
+  "timestamp": "2025-04-24 05:52:12"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:52:12"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:8fc0b092c26b17b624bebc1dbc592e27",
+  "timestamp": "2025-04-24 05:52:12"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:8fc0b092c26b17b624bebc1dbc592e27: 0",
+  "timestamp": "2025-04-24 05:52:12"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:52:12"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:8fc0b092c26b17b624bebc1dbc592e27",
+  "timestamp": "2025-04-24 05:52:12"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:8fc0b092c26b17b624bebc1dbc592e27: 0",
+  "timestamp": "2025-04-24 05:52:12"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:52:12"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:0dfe55a5b853502d94dd7eff239a2c50",
+  "timestamp": "2025-04-24 05:52:13"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:0dfe55a5b853502d94dd7eff239a2c50: 0",
+  "timestamp": "2025-04-24 05:52:13"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:52:13"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:0dfe55a5b853502d94dd7eff239a2c50",
+  "timestamp": "2025-04-24 05:52:13"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:0dfe55a5b853502d94dd7eff239a2c50: 0",
+  "timestamp": "2025-04-24 05:52:13"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:52:13"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:e9162480c85a48fc6a7168d3b2c87a71",
+  "timestamp": "2025-04-24 05:52:13"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:e9162480c85a48fc6a7168d3b2c87a71: 0",
+  "timestamp": "2025-04-24 05:52:13"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:52:13"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:e9162480c85a48fc6a7168d3b2c87a71",
+  "timestamp": "2025-04-24 05:52:13"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:e9162480c85a48fc6a7168d3b2c87a71: 0",
+  "timestamp": "2025-04-24 05:52:13"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:52:13"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 05:52:39"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 05:52:39"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 05:52:39"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 05:52:39"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 05:52:39"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 05:52:39"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:e33df340a175c06cd9066eb38b202258",
+  "timestamp": "2025-04-24 05:52:41"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:e33df340a175c06cd9066eb38b202258: 0",
+  "timestamp": "2025-04-24 05:52:41"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 05:52:41"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 06:04:15"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 06:04:15"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 06:04:15"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 06:04:15"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 06:04:15"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 06:04:15"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:4d747cd438cbb3a084c26464fe7466f8",
+  "timestamp": "2025-04-24 06:04:17"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:4d747cd438cbb3a084c26464fe7466f8: 0",
+  "timestamp": "2025-04-24 06:04:17"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 06:04:17"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:642820fbaf420bfb684895e35ac032c7",
+  "timestamp": "2025-04-24 06:04:17"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:642820fbaf420bfb684895e35ac032c7: 0",
+  "timestamp": "2025-04-24 06:04:17"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 06:04:17"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:642820fbaf420bfb684895e35ac032c7",
+  "timestamp": "2025-04-24 06:04:17"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:642820fbaf420bfb684895e35ac032c7: 0",
+  "timestamp": "2025-04-24 06:04:17"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 06:04:17"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:a28305dbbcf902b539f5a512e12406f5",
+  "timestamp": "2025-04-24 06:04:17"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:a28305dbbcf902b539f5a512e12406f5: 0",
+  "timestamp": "2025-04-24 06:04:17"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 06:04:17"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:a28305dbbcf902b539f5a512e12406f5",
+  "timestamp": "2025-04-24 06:04:17"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:a28305dbbcf902b539f5a512e12406f5: 0",
+  "timestamp": "2025-04-24 06:04:17"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 06:04:17"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:e68c46ea875fca83619ea31739b742e5",
+  "timestamp": "2025-04-24 06:04:17"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:e68c46ea875fca83619ea31739b742e5: 0",
+  "timestamp": "2025-04-24 06:04:17"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 06:04:17"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:e68c46ea875fca83619ea31739b742e5",
+  "timestamp": "2025-04-24 06:04:17"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:e68c46ea875fca83619ea31739b742e5: 0",
+  "timestamp": "2025-04-24 06:04:17"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 06:04:17"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 06:04:45"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 06:04:45"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 06:04:45"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 06:04:45"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 06:04:45"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 06:04:45"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:7302be6c4c425a0ce43e3f19f8b841c3",
+  "timestamp": "2025-04-24 06:04:47"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:7302be6c4c425a0ce43e3f19f8b841c3: 0",
+  "timestamp": "2025-04-24 06:04:47"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 06:04:47"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 06:05:57"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 06:05:57"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 06:05:57"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 06:05:57"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 06:05:57"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 06:05:57"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:9b55a4f0d372258cc6d006476b96e4d0",
+  "timestamp": "2025-04-24 06:05:59"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:9b55a4f0d372258cc6d006476b96e4d0: 0",
+  "timestamp": "2025-04-24 06:05:59"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 06:05:59"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 06:07:30"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 06:07:30"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 06:07:30"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 06:07:30"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 06:07:30"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 06:07:30"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 06:08:12"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 06:08:12"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 06:08:12"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 06:08:12"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 06:08:12"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 06:08:12"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:dbe3fb4cc4bff2fb00c7e1ca5254501d",
+  "timestamp": "2025-04-24 06:08:15"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:dbe3fb4cc4bff2fb00c7e1ca5254501d: 0",
+  "timestamp": "2025-04-24 06:08:15"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 06:08:15"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 06:11:52"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 06:11:52"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 06:11:52"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 06:11:52"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 06:11:52"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 06:11:52"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:1c99a401e79e73f56d8e0c650c45a574",
+  "timestamp": "2025-04-24 06:11:54"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:1c99a401e79e73f56d8e0c650c45a574: 0",
+  "timestamp": "2025-04-24 06:11:54"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 06:11:54"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:d0ea91b0c88416df9aab37dd90499b6e",
+  "timestamp": "2025-04-24 06:11:55"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:d0ea91b0c88416df9aab37dd90499b6e: 0",
+  "timestamp": "2025-04-24 06:11:55"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 06:11:55"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:d0ea91b0c88416df9aab37dd90499b6e",
+  "timestamp": "2025-04-24 06:11:55"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:d0ea91b0c88416df9aab37dd90499b6e: 0",
+  "timestamp": "2025-04-24 06:11:55"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 06:11:55"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:2b8de495f191713d2c12c1f174ac3fc2",
+  "timestamp": "2025-04-24 06:11:55"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:2b8de495f191713d2c12c1f174ac3fc2: 0",
+  "timestamp": "2025-04-24 06:11:55"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 06:11:55"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:2b8de495f191713d2c12c1f174ac3fc2",
+  "timestamp": "2025-04-24 06:11:55"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:2b8de495f191713d2c12c1f174ac3fc2: 0",
+  "timestamp": "2025-04-24 06:11:55"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 06:11:55"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:92fd78c1b98c17657be45c200d92168e",
+  "timestamp": "2025-04-24 06:11:55"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:92fd78c1b98c17657be45c200d92168e: 0",
+  "timestamp": "2025-04-24 06:11:55"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 06:11:55"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:92fd78c1b98c17657be45c200d92168e",
+  "timestamp": "2025-04-24 06:11:55"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:92fd78c1b98c17657be45c200d92168e: 0",
+  "timestamp": "2025-04-24 06:11:55"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 06:11:55"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 06:12:32"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 06:12:32"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 06:12:32"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 06:12:32"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 06:12:32"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 06:12:32"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:364cbbcea8da25410e2b1793c0b0ee92",
+  "timestamp": "2025-04-24 06:12:34"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:364cbbcea8da25410e2b1793c0b0ee92: 0",
+  "timestamp": "2025-04-24 06:12:34"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 06:12:34"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 06:13:40"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 06:13:40"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 06:13:40"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 06:13:40"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 06:13:41"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 06:13:41"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:5d497c6a26041671955af597143c25b5",
+  "timestamp": "2025-04-24 06:13:42"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:5d497c6a26041671955af597143c25b5: 0",
+  "timestamp": "2025-04-24 06:13:42"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 06:13:42"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:5d497c6a26041671955af597143c25b5",
+  "timestamp": "2025-04-24 06:13:47"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:5d497c6a26041671955af597143c25b5: 0",
+  "timestamp": "2025-04-24 06:13:47"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 06:13:47"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 06:14:44"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 06:14:44"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 06:14:44"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 06:14:44"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 06:14:44"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 06:14:44"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 06:20:23"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 06:20:23"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 06:20:23"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 06:20:23"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 06:20:24"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 06:20:24"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:8b7685cb273b910ef859107f4dfe8dd8",
+  "timestamp": "2025-04-24 06:20:26"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:8b7685cb273b910ef859107f4dfe8dd8: 0",
+  "timestamp": "2025-04-24 06:20:26"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 06:20:26"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:8b7685cb273b910ef859107f4dfe8dd8",
+  "timestamp": "2025-04-24 06:20:30"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:8b7685cb273b910ef859107f4dfe8dd8: 0",
+  "timestamp": "2025-04-24 06:20:30"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 06:20:30"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 06:33:40"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 06:33:40"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 06:33:40"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 06:33:40"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 06:33:40"
+}
+{
+  "level": "error",
+  "message": "!!! UNHANDLED REJECTION !!!",
+  "reason": {
+    "message": "argument handler must be a function",
+    "name": "TypeError",
+    "stack": "TypeError: argument handler must be a function\n    at Function.use (/usr/src/app/node_modules/router/index.js:392:13)\n    at Function.<anonymous> (/usr/src/app/node_modules/express/lib/application.js:222:21)\n    at Array.forEach (<anonymous>)\n    at Function.use (/usr/src/app/node_modules/express/lib/application.js:219:7)\n    at startServer (/usr/src/app/src/server.js:43:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  "timestamp": "2025-04-24 06:33:40"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 06:50:50"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 06:50:50"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 06:50:50"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 06:50:50"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 06:50:50"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 06:50:50"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:bbb8122f4994b54246fc7d7afb0d201a",
+  "timestamp": "2025-04-24 06:50:53"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:bbb8122f4994b54246fc7d7afb0d201a: 0",
+  "timestamp": "2025-04-24 06:50:53"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 06:50:53"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:bbb8122f4994b54246fc7d7afb0d201a",
+  "timestamp": "2025-04-24 06:50:57"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:bbb8122f4994b54246fc7d7afb0d201a: 0",
+  "timestamp": "2025-04-24 06:50:57"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 06:50:57"
+}
+{
+  "code": "ECONNREFUSED",
+  "level": "error",
+  "message": "connect ECONNREFUSED 172.18.0.7:3003",
+  "timestamp": "2025-04-24 06:50:57"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 07:07:09"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 07:07:09"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 07:07:09"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 07:07:09"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 07:07:09"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 07:07:09"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:eeaeab24bd76ea540fe2ae6b313f5ff9",
+  "timestamp": "2025-04-24 07:07:12"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:eeaeab24bd76ea540fe2ae6b313f5ff9: 0",
+  "timestamp": "2025-04-24 07:07:12"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 07:07:12"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:eeaeab24bd76ea540fe2ae6b313f5ff9",
+  "timestamp": "2025-04-24 07:07:16"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:eeaeab24bd76ea540fe2ae6b313f5ff9: 0",
+  "timestamp": "2025-04-24 07:07:16"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 07:07:16"
+}
+{
+  "code": "ECONNREFUSED",
+  "level": "error",
+  "message": "connect ECONNREFUSED 172.18.0.6:3003",
+  "timestamp": "2025-04-24 07:07:16"
+}
+{
+  "level": "info",
+  "message": "Connecting to Redis at redis:6379 WITH password authentication.",
+  "timestamp": "2025-04-24 07:12:42"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker configuration module loaded.",
+  "timestamp": "2025-04-24 07:12:42"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+  "timestamp": "2025-04-24 07:12:42"
+}
+{
+  "level": "info",
+  "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+  "timestamp": "2025-04-24 07:12:42"
+}
+{
+  "level": "info",
+  "message": "Connected to Redis successfully at redis:6379!",
+  "timestamp": "2025-04-24 07:12:42"
+}
+{
+  "level": "info",
+  "message": "API Gateway listening on port 3000",
+  "timestamp": "2025-04-24 07:12:42"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:d4b57252263fdb44874368fcb31c0a9d",
+  "timestamp": "2025-04-24 07:12:44"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:d4b57252263fdb44874368fcb31c0a9d: 0",
+  "timestamp": "2025-04-24 07:12:44"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 07:12:44"
+}
+{
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Gateway attempting Redis EXISTS: Key=blacklist:d4b57252263fdb44874368fcb31c0a9d",
+  "timestamp": "2025-04-24 07:12:48"
+}
+{
+  "level": "info",
+  "message": "[checkGatewayBlacklistAction] Gateway Redis EXISTS result for key blacklist:d4b57252263fdb44874368fcb31c0a9d: 0",
+  "timestamp": "2025-04-24 07:12:48"
+}
+{
+  "actionResult": 0,
+  "level": "debug",
+  "message": "[checkGatewayBlacklistAction] Action successful.",
+  "timestamp": "2025-04-24 07:12:48"
+}
+{
+  "code": "ECONNREFUSED",
+  "level": "error",
+  "message": "connect ECONNREFUSED 172.18.0.6:3003",
+  "timestamp": "2025-04-24 07:12:48"
+}

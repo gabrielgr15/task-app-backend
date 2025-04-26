@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 7
+    },
+    "auditLog": "/home/gabriel/projects/api-gateway/src/config/logs/.b99080ee63c1b0d49744df0b0b1bf58cf7a0ccaf-audit.json",
+    "files": [
+        {
+            "date": 1744088226506,
+            "name": "/home/gabriel/projects/api-gateway/src/config/logs/app-2025-04-07.log",
+            "hash": "c4621e4973785978a28a9b0630e8f51b6fd357ee2ebfff502f7d8e2a8c5f5389"
+        },
+        {
+            "date": 1744088463408,
+            "name": "/home/gabriel/projects/api-gateway/src/config/logs/app-2025-04-08.log",
+            "hash": "cdf75981e1c6da83666f0084e5f06ecb4a932a642cec4abafa1c61bd60440c84"
+        }
+    ],
+    "hashType": "sha256"
+}
