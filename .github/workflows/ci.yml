@@ -46,7 +46,7 @@ jobs:
         run: npm ci  
 
       - name: Build Docker images
-        run: docker compose -f build  
+        run: docker compose build  
 
       - name: Run tests for api-gateway
         working-directory: ./api-gateway
