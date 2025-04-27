@@ -44,7 +44,7 @@ describe('API Gateway Authentication Integration', () => {
     console.log(`Starting minimal services for authentication integration test: ${SERVICES_TO_START.join(', ')}`)
     try {
       const { stdout, stderr } = await execPromise(
-        `docker compose -f ${DOCKER_COMPOSE_FILE} up --build --detach ${SERVICES_TO_START.join(' ')}`
+        `docker compose -f ${DOCKER_COMPOSE_FILE} up --detach ${SERVICES_TO_START.join(' ')}`
       )
       console.log('Docker Compose Up STDOUT:', stdout);
       if (stderr) {

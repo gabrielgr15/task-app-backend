@@ -2,7 +2,7 @@ const { exec } = require('child_process')
 const util = require('util')
 const execPromise = util.promisify(exec)
 const axios = require('axios')
-const { TestTask, TestUser } = require('./helpers/testModels')
+const { TestUser } = require('./helpers/testModels')
 const { connectDB, disconnectDB } = require('./helpers/dbUtils')
 const bcrypt = require('bcryptjs')
 
@@ -45,7 +45,7 @@ describe('API Gateway Activity Integration', () => {
         console.log(`Starting minimal services for tasks integration test: ${SERVICES_TO_START.join(', ')}`)
         try {
             const { stdout, stderr } = await execPromise(
-                `docker compose -f ${DOCKER_COMPOSE_FILE} up --build --detach ${SERVICES_TO_START.join(' ')}`
+                `docker compose -f ${DOCKER_COMPOSE_FILE} up --detach ${SERVICES_TO_START.join(' ')}`
             )
             console.log('Docker Compose Up STDOUT:', stdout)
             if (stderr) {
@@ -84,7 +84,6 @@ describe('API Gateway Activity Integration', () => {
 
     beforeEach(async () => {
         try {
-            await TestTask.deleteMany({})
             await TestUser.deleteMany({})
         } catch (error) {
             console.error('!!! Failed to clear test DB in beforeEach:', error)

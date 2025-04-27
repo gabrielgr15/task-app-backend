@@ -1,0 +1,42 @@
+name: Node.js CI
+
+on:
+  push:
+    branches: [ master ]  
+  pull_request:
+    branches: [ master ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18.x'
+          cache: 'npm'
+
+      - name: Install user-service dependencies
+        working-directory: ./user-service
+        run: npm ci
+
+      - name: Install tasks-service dependencies
+        working-directory: ./tasks-service
+        run: npm ci  
+
+      - name: Install activity-service dependencies
+        working-directory: ./activity-service
+        run: npm ci  
+
+      - name: Install api-gateway dependencies
+        working-directory: ./api-gateway
+        run: npm ci  
+
+      - name: Run tests for api-gateway
+        working-directory: ./api-gateway
+        run: npm test
+        env:
+          MONGO_USER_TEST_URI: mongodb://localhost:27017/user_service_db
+          
