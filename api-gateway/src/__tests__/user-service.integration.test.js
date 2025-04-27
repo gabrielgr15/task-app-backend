@@ -60,7 +60,7 @@ describe('API Gateway Authentication Integration', () => {
       await execPromise(`docker compose -f ${DOCKER_COMPOSE_FILE} down -v ${SERVICES_TO_START.join(' ')} || true`)
       throw error
     }
-  }, 600000);
+  }, 800000);
 
 
   afterAll(async () => {
