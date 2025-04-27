@@ -38,4 +38,10 @@ jobs:
         run: npm test
         env:
           MONGO_USER_TEST_URI: mongodb://localhost:27017/user_service_db
-          
+          GATEWAY_PORT: 3000
+          USER_SERVICE_PORT: 3001
+          TASKS_SERVICE_PORT: 3002
+          ACTIVITY_SERVICE_PORT: 3003
+          REDIS_HOST: redis
+          REDIS_PORT: 6379
+          RABBITMQ_USER: user
