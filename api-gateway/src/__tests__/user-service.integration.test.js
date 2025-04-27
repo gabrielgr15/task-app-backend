@@ -32,7 +32,7 @@ async function waitForService(url, timeout = 600000) {
       return true;
     } catch (error) {
       console.log(`Service at ${url} not ready, retrying... (${error.message})`);
-      await new Promise(resolve => setTimeout(resolve, 1000))
+      await new Promise(resolve => setTimeout(resolve, 5000))
     }
   }
   throw new Error(`Service at ${url} did not become ready within ${timeout}ms`);
