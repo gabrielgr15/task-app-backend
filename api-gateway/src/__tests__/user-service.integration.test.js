@@ -22,7 +22,7 @@ const API_GATEWAY_BASE_URL = 'http://localhost:3000'
 const API_GATEWAY_HEALTH_URL = `${API_GATEWAY_BASE_URL}/health`
 
 
-async function waitForService(url, timeout = 60000) {
+async function waitForService(url, timeout = 600000) {
   const startTime = Date.now();
   console.log(`Waiting for service at ${url} to be ready...`);
   while (Date.now() - startTime < timeout) {
@@ -44,7 +44,7 @@ describe('API Gateway Authentication Integration', () => {
     console.log(`Starting minimal services for authentication integration test: ${SERVICES_TO_START.join(', ')}`)
     try {
       const { stdout, stderr } = await execPromise(
-        `docker compose -f ${DOCKER_COMPOSE_FILE} up ${SERVICES_TO_START.join(' ')}`
+        `docker compose -f ${DOCKER_COMPOSE_FILE} up -d ${SERVICES_TO_START.join(' ')}`
       )
       console.log('Docker Compose Up STDOUT:', stdout);
       if (stderr) {
@@ -60,7 +60,7 @@ describe('API Gateway Authentication Integration', () => {
       await execPromise(`docker compose -f ${DOCKER_COMPOSE_FILE} down -v ${SERVICES_TO_START.join(' ')} || true`)
       throw error
     }
-  }, 120000);
+  }, 600000);
 
 
   afterAll(async () => {
