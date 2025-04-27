@@ -45,3 +45,10 @@ jobs:
           REDIS_HOST: redis
           REDIS_PORT: 6379
           RABBITMQ_USER: user
+          MONGO_ACTIVITY_URI: ${{ secrets.MONGO_ACTIVITY_URI }}
+          MONGO_TASKS_URI: ${{ secrets.MONGO_TASKS_URI }}
+          MONGO_USER_URI: ${{ secrets.MONGO_USER_URI }}
+          JWT_SECRET: ${{ secrets.JWT_SECRET }}
+          REDIS_PASSWORD: ${{ secrets.REDIS_PASSWORD }}
+          RABBITMQ_PASS: ${{ secrets.RABBITMQ_PASS }}
+          RABBITMQ_URI: ${ secrets.RABBITMQ_URI }         
