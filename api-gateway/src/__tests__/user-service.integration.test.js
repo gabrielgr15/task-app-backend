@@ -44,7 +44,7 @@ describe('API Gateway Authentication Integration', () => {
     console.log(`Starting minimal services for authentication integration test: ${SERVICES_TO_START.join(', ')}`)
     try {
       const { stdout, stderr } = await execPromise(
-        `docker compose -f ${DOCKER_COMPOSE_FILE} up --detach ${SERVICES_TO_START.join(' ')}`
+        `docker compose -f ${DOCKER_COMPOSE_FILE} up ${SERVICES_TO_START.join(' ')}`
       )
       console.log('Docker Compose Up STDOUT:', stdout);
       if (stderr) {
@@ -57,7 +57,7 @@ describe('API Gateway Authentication Integration', () => {
       console.log('Minimal services are up and ready.')
     } catch (error) {
       console.error('Failed to start minimal services:', error)
-      await execPromise(`docker compose -f ${DOCKER_COMPOSE_FILE} down ${SERVICES_TO_START.join(' ')} || true`)
+      await execPromise(`docker compose -f ${DOCKER_COMPOSE_FILE} down -v ${SERVICES_TO_START.join(' ')} || true`)
       throw error
     }
   }, 120000);
@@ -68,7 +68,7 @@ describe('API Gateway Authentication Integration', () => {
     try {
       await disconnectDB()
       const { stdout, stderr } = await execPromise(
-        `docker compose -f ${DOCKER_COMPOSE_FILE} down ${SERVICES_TO_START.join(' ')}`
+        `docker compose -f ${DOCKER_COMPOSE_FILE} down -v ${SERVICES_TO_START.join(' ')}`
       );
       console.log('Docker Compose Down STDOUT:', stdout);
       if (stderr) {

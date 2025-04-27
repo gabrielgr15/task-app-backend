@@ -51,4 +51,8 @@ jobs:
           JWT_SECRET: ${{ secrets.JWT_SECRET }}
           REDIS_PASSWORD: ${{ secrets.REDIS_PASSWORD }}
           RABBITMQ_PASS: ${{ secrets.RABBITMQ_PASS }}
-          RABBITMQ_URI: ${ secrets.RABBITMQ_URI }         
+          RABBITMQ_URI: ${{ secrets.RABBITMQ_URI }}
+
+      - name: Dump Docker logs on failure
+        if: failure()
+        run: docker compose -f logs    
