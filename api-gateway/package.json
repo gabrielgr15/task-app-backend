@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --runInBand --detectOpenHandles --no-cache --testTimeout=300000",    
+    "test": "jest --runInBand --detectOpenHandles --no-cache",
     "start": "node src/server.js",
     "dev": "nodemon src/server.js"
-  },
+  }, 
   "keywords": [],
   "author": "",
   "license": "ISC",
