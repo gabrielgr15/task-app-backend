@@ -5,7 +5,7 @@ const timeout = 3000
 
 async function connectDB (retriesLeft = MAX_RETRIES){        
     try{
-        const MONGO_USER_URI = process.env.MONGO_USER_TEST_URI
+        const MONGO_USER_URI = "mongodb://localhost:27017/user_service_db"
         await mongoose.connect(MONGO_USER_URI, {
             serverSelectionTimeoutMS: 5000,
             connectTimeoutMS: 5000,
