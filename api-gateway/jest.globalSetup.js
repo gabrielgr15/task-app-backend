@@ -51,7 +51,7 @@ async function startServices() {
     const cmd = `docker compose -f "${DOCKER_COMPOSE_FILE}" up --force-recreate -d ${SERVICES_TO_START.join(' ')}`;
     console.log(`[GlobalSetup] Executing: ${cmd}`);
     try {
-        const { stdout, stderr } = await execPromise(cmd, { timeout: 300000 }) 
+        const { stdout, stderr } = await execPromise(cmd) 
         console.log('[GlobalSetup] Docker Compose Up STDOUT:', stdout);
         if (stderr) {
             console.error('[GlobalSetup] Docker Compose Up STDERR:', stderr)
