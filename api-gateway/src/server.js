@@ -1,4 +1,4 @@
-require('dotenv').config()
+//require('dotenv').config()
 const express = require('express')
 const logger = require('./config/logger')
 const cors = require('cors')
@@ -10,7 +10,7 @@ const {initializeRedis} = require('./services/redisClient')
 
 const app = express()
 
-const PORT = process.env.ACTIVITY_PORT
+const PORT = process.env.PORT
 const USER_SERVICE_URL = process.env.USER_SERVICE_URL
 const TASKS_SERVICE_URL = process.env.TASKS_SERVICE_URL
 const ACTIVITY_SERVICE_URL = process.env.ACTIVITY_SERVICE_URL
