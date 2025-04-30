@@ -62,29 +62,38 @@ jobs:
         run: npm ci  
 
       - name: Build Docker images
-        run: docker compose build  
+        run: docker compose build    
 
-      - name: DEBUG - Check env vars before test step
-        run: |
-          echo "GATEWAY_PORT=${GATEWAY_PORT}"
-          echo "USER_SERVICE_PORT=${USER_SERVICE_PORT}"
-          echo "TASKS_SERVICE_PORT=${TASKS_SERVICE_PORT}"
-          echo "ACTIVITY_SERVICE_PORT=${ACTIVITY_SERVICE_PORT}"
-          echo "REDIS_HOST=${REDIS_HOST}"
-          echo "REDIS_PORT=${REDIS_PORT}"
-          echo "RABBITMQ_USER=${RABBITMQ_USER}"
-          echo "MONGO_ACTIVITY_URI=${MONGO_ACTIVITY_URI}"
-          echo "MONGO_TASKS_URI=${MONGO_TASKS_URI}"
-          echo "MONGO_USER_URI=${MONGO_USER_URI}"
-          echo "JWT_SECRET=${JWT_SECRET}"
-          echo "REDIS_PASSWORD=${REDIS_PASSWORD}"
-          echo "RABBITMQ_PASS=${RABBITMQ_PASS}"
-            
-
-      - name: Run tests for api-gateway
+      - name: Run all integration tests
         working-directory: ./api-gateway
         run: npm test        
 
       - name: Dump Docker logs on failure
         if: failure()
         run: docker compose -f ./docker-compose.yml logs
+
+  push-to-registry:   
+    runs-on: ubuntu-latest
+    needs: test
+    if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+    strategy:
+      matrix:
+        service: [ user-service, tasks-service, activity-service, api-gateway ]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Log in to Github Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+        
+      - name: Build and push ${{ matrix.service }} Image
+        uses: docker/build-push-action@v5
+        with:
+          context: ./${{ matrix.service }}
+          push: true
+          tags: ghcr.io/${{ github.repository_owner }}/task-app-${{ matrix.service }}:${{ github.sha }}
+
