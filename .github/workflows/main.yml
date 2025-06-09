@@ -106,17 +106,26 @@ jobs:
     runs-on: ubuntu-latest
     needs: push-to-registry
     if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+    
     strategy:
       matrix:
-        service: [ user-service, tasks-service, activity-service, api-gateway ]
-    
+        service:
+          - name: user-service
+            secret_name: RAILWAY_USER_SERVICE_SERVICE_ID
+          - name: tasks-service
+            secret_name: RAILWAY_TASKS_SERVICE_SERVICE_ID
+          - name: activity-service
+            secret_name: RAILWAY_ACTIVITY_SERVICE_SERVICE_ID
+          - name: api-gateway
+            secret_name: RAILWAY_API_GATEWAY_SERVICE_ID
+
     env:
       RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
-      RAILWAY_SERVICE_ID: ${{ secrets[format('RAILWAY_{0}_SERVICE_ID', toUpper(replace(matrix.service, '-', '_')))] }}
+      RAILWAY_SERVICE_ID: ${{ secrets[matrix.service.secret_name] }}
 
     steps:
       - name: Install Railway CLI
         run: npm i -g @railway/cli
 
-      - name: Trigger Railway Redeployment for ${{ matrix.service }}
+      - name: Trigger Railway Redeployment for ${{ matrix.service.name }}
         run: railway redeploy --service=$RAILWAY_SERVICE_ID -y
