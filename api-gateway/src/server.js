@@ -26,7 +26,7 @@ async function startServer(){
 
     const allowedOrigins = [
       'http://localhost:3000',
-      'https://YOUR-VERCEL-APP-NAME.vercel.app',
+      'https://tasks-app-frontend-nine.vercel.app',
     ];
     app.use(cors({
       origin: function (origin, callback) {

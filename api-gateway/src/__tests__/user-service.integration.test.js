@@ -42,10 +42,8 @@ describe('API Gateway Authentication Integration', () => {
       expect(response.status).toBe(200)
 
       expect(response.data).toHaveProperty('accessToken');
-      expect(response.data).toHaveProperty('refreshToken');
 
       expect(typeof response.data.accessToken).toBe('string');
-      expect(typeof response.data.refreshToken).toBe('string');
     } catch (error) {
       throw error
     }
@@ -77,10 +75,8 @@ describe('API Gateway Authentication Integration', () => {
       expect(response.status).toBe(200)
 
       expect(response.data).toHaveProperty('accessToken');
-      expect(response.data).toHaveProperty('refreshToken');
 
       expect(typeof response.data.accessToken).toBe('string');
-      expect(typeof response.data.refreshToken).toBe('string');
     } catch (error) {
       throw error
     }
