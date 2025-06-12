@@ -5,6 +5,7 @@ const logger = require('./logger')
 const errorHandler = require('./middleware/errorHandler')
 const {connectDB} = require('./db')
 const {initializeRedis} = require('./redis/redisClient')
+const cookieParser = require('cookie-parser')
 
 const app = express();
 const PORT = process.env.PORT
@@ -13,6 +14,7 @@ const PORT = process.env.PORT
 async function startServer () {
 	await connectDB()
 	await initializeRedis()
+	app.use(cookieParser());
 	app.use(express.json());
 	app.use('/api/users/auth', authRoutes);
 	app.get('/health', (req, res ) => {

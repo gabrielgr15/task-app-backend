@@ -68,7 +68,14 @@ router.post(
 
 			const userId = user._id
 			const { accessToken, refreshToken } = await generateTokens(userId)
-			return res.status(200).json({ accessToken, refreshToken });
+
+			res.cookie('refreshToken', refreshToken, {
+				httpOnly: true,
+				secure: process.env.NODE_ENV === 'production',
+				sameSite: 'Strict', 
+				maxAge: 7 * 24 * 60 * 60 * 1000
+			})
+			return res.status(200).json({ accessToken });
 		} catch (error) {
 			if (error instanceof CustomError) {
 				next(error)
@@ -102,7 +109,14 @@ router.post(
 
 			const userId = user._id
 			const { refreshToken, accessToken } = await generateTokens(userId)
-			return res.status(200).json({ accessToken, refreshToken })
+
+			res.cookie('refreshToken', refreshToken, {
+				httpOnly: true,
+				secure: process.env.NODE_ENV === 'production',
+				sameSite: 'Strict', 
+				maxAge: 7 * 24 * 60 * 60 * 1000
+			})
+			return res.status(200).json({ accessToken })
 		} catch (error) {
 			if (error instanceof CustomError) {
 				next(error)
@@ -129,6 +143,14 @@ router.post(
 			const blacklistResult = await redisAddBreaker.fire(tokenId, ttlSeconds)
 			logger.info(`[${redisAddBreaker.name}] fire() completed for logout.
 				 			Result: ${blacklistResult}`)
+							
+			res.cookie('refreshToken', '', {
+            httpOnly: true,
+            secure: process.env.NODE_ENV === 'production',
+            sameSite: 'strict',
+            expires: new Date(0)
+        	});
+							
 			return res.status(204).send()
 		} catch (error) {			
 			if (error instanceof CustomError) {

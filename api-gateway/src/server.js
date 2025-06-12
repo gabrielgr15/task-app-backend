@@ -23,7 +23,26 @@ if (!USER_SERVICE_URL || !TASKS_SERVICE_URL) {
 
 async function startServer(){
     await initializeRedis()
-    app.use(cors())
+
+    const allowedOrigins = [
+      'http://localhost:3000',
+      'https://YOUR-VERCEL-APP-NAME.vercel.app',
+    ];
+    app.use(cors({
+      origin: function (origin, callback) {
+        if (!origin) return callback(null, true);
+
+        if (allowedOrigins.indexOf(origin) !== -1) {
+          callback(null, true);
+        }else {
+          const msg = `The CORS policy for this site does not allow access from the specified Origin: ${origin}.`;
+          logger.warn(msg)
+          callback(new Error(msg), false);
+        }
+      },
+      credentials: true,
+    }));
+
     app.use(express.json())
     app.get('/health', (req, res ) => {
         res.status(200).send('Api Gateway OK');
