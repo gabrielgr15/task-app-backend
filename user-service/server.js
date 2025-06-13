@@ -29,7 +29,6 @@ startServer()
 
 
 
-
 process.on('unhandledRejection', (reason, promise) => {
 	logger.error('!!! UNHANDLED REJECTION !!!', { reason: reason })
 });
