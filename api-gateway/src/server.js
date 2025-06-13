@@ -4,9 +4,10 @@ const logger = require('./config/logger')
 const cors = require('cors')
 const errorHandler = require('./middleware/errorHandler')
 const authenticateToken = require('./middleware/auth')
-const { handleExpressProxyError, decorateProxyReq} = require('./utils/proxyUtils')
+const { handleExpressProxyError, decorateProxyReq } = require('./utils/proxyUtils')
 const proxy = require('express-http-proxy')
-const {initializeRedis} = require('./services/redisClient')
+const { initializeRedis } = require('./services/redisClient')
+const cookieParser = require('cookie-parser')
 
 const app = express()
 
@@ -16,73 +17,73 @@ const TASKS_SERVICE_URL = process.env.TASKS_SERVICE_URL
 const ACTIVITY_SERVICE_URL = process.env.ACTIVITY_SERVICE_URL
 
 if (!USER_SERVICE_URL || !TASKS_SERVICE_URL) {
-    logger.error('FATAL ERROR: Service urls {USER_SERVICE_URL, TASK_SERVICE_URL} are not defined in .env file')
-    process.exit(1)
+  logger.error('FATAL ERROR: Service urls {USER_SERVICE_URL, TASK_SERVICE_URL} are not defined in .env file')
+  process.exit(1)
 }
 
 
-async function startServer(){
-    await initializeRedis()
+async function startServer() {
+  await initializeRedis()
 
-    const allowedOrigins = [
-      'http://localhost:3000',
-      'https://tasks-app-frontend-nine.vercel.app',
-    ];
-    app.use(cors({
-      origin: function (origin, callback) {
-        if (!origin) return callback(null, true);
+  app.use(cookieParser());
 
-        if (allowedOrigins.indexOf(origin) !== -1) {
-          callback(null, true);
-        }else {
-          const msg = `The CORS policy for this site does not allow access from the specified Origin: ${origin}.`;
-          logger.warn(msg)
-          callback(new Error(msg), false);
-        }
-      },
-      credentials: true,
-    }));
+  const allowedOrigins = [
+    'http://localhost:3000',
+    'https://tasks-app-frontend-nine.vercel.app',
+  ];
 
-    app.use(express.json())
-    app.get('/health', (req, res ) => {
-        res.status(200).send('Api Gateway OK');
-    });
-    app.use(['/api/users/auth/register', '/api/users/auth/login', '/api/users/auth/refresh'], proxy(USER_SERVICE_URL, {               
-        timeout: 30000,
-        proxyReqPathResolver: (req) => req.originalUrl,
-        proxyErrorHandler: handleExpressProxyError,                
-        })
-    )
-    app.use('/api/users/auth/logout', authenticateToken, proxy(USER_SERVICE_URL,{
-        timeout: 30000,
-        proxyReqPathResolver: (req) => req.originalUrl,
-        proxyErrorHandler: handleExpressProxyError,
-        proxyReqOptDecorator: decorateProxyReq
-    }))
-    app.use('/api/tasks/:taskId/activity', authenticateToken, proxy(ACTIVITY_SERVICE_URL,{
-        timeout: 30000,
-        proxyReqPathResolver: (req) => req.originalUrl,
-        proxyErrorHandler: handleExpressProxyError,
-        proxyReqOptDecorator: decorateProxyReq
-    }))
-    app.use('/api/tasks', authenticateToken, proxy(TASKS_SERVICE_URL,{
-        timeout: 30000,
-        proxyReqPathResolver: (req) => req.originalUrl,
-        proxyErrorHandler: handleExpressProxyError,
-        proxyReqOptDecorator: decorateProxyReq
-    }))    
-    app.use(errorHandler)
-    const server = app.listen(PORT, () => {
-        logger.info(`API Gateway listening on port ${PORT}`)
-    })    
+  const corsOptions = {
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.indexOf(origin) !== -1) {
+        callback(null, true);
+      } else {
+        callback(new Error('Not allowed by CORS'));
+      }
+    },
+    credentials: true,
+  };
+  app.use(cors(corsOptions));
+
+  app.use(express.json())
+  app.get('/health', (req, res) => {
+    res.status(200).send('Api Gateway OK');
+  });
+  app.use(['/api/users/auth/register', '/api/users/auth/login', '/api/users/auth/refresh'], proxy(USER_SERVICE_URL, {
+    timeout: 30000,
+    proxyReqPathResolver: (req) => req.originalUrl,
+    proxyErrorHandler: handleExpressProxyError,
+  })
+  )
+  app.use('/api/users/auth/logout', authenticateToken, proxy(USER_SERVICE_URL, {
+    timeout: 30000,
+    proxyReqPathResolver: (req) => req.originalUrl,
+    proxyErrorHandler: handleExpressProxyError,
+    proxyReqOptDecorator: decorateProxyReq
+  }))
+  app.use('/api/tasks/:taskId/activity', authenticateToken, proxy(ACTIVITY_SERVICE_URL, {
+    timeout: 30000,
+    proxyReqPathResolver: (req) => req.originalUrl,
+    proxyErrorHandler: handleExpressProxyError,
+    proxyReqOptDecorator: decorateProxyReq
+  }))
+  app.use('/api/tasks', authenticateToken, proxy(TASKS_SERVICE_URL, {
+    timeout: 30000,
+    proxyReqPathResolver: (req) => req.originalUrl,
+    proxyErrorHandler: handleExpressProxyError,
+    proxyReqOptDecorator: decorateProxyReq
+  }))
+  app.use(errorHandler)
+  const server = app.listen(PORT, () => {
+    logger.info(`API Gateway listening on port ${PORT}`)
+  })
 }
 startServer()
 
 
 process.on('unhandledRejection', (reason, promise) => {
-    logger.error('!!! UNHANDLED REJECTION !!!', { reason: reason })
+  logger.error('!!! UNHANDLED REJECTION !!!', { reason: reason })
 });
 process.on('uncaughtException', (error) => {
-    logger.error('!!! UNCAUGHT EXCEPTION !!!', error)
-    process.exit(1);
+  logger.error('!!! UNCAUGHT EXCEPTION !!!', error)
+  process.exit(1);
 })
