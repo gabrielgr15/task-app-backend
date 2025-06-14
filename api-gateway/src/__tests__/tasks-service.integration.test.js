@@ -3,7 +3,7 @@ const { TestUser } = require('./helpers/testModels')
 const bcrypt = require('bcryptjs')
 
 
-const API_GATEWAY_BASE_URL = 'http://localhost:3000'
+const API_GATEWAY_BASE_URL = 'http://localhost:4000'
 
 
 describe('API Gateway Tasks Integration', () => {

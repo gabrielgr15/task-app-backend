@@ -19,7 +19,7 @@ const SERVICES_TO_START = [
 ]
 
 const DOCKER_COMPOSE_FILE = path.resolve(__dirname, '../docker-compose.yml')
-const API_GATEWAY_BASE_URL = 'http://127.0.0.1:3000'
+const API_GATEWAY_BASE_URL = 'http://127.0.0.1:4000'
 const API_GATEWAY_HEALTH_URL = `${API_GATEWAY_BASE_URL}/health`
 
 async function waitForService(url, timeout = 600000) {
