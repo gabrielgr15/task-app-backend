@@ -35,7 +35,6 @@ async function startServer() {
   app.use(cookieParser());
 
   app.use(cors(corsOptions));
-
   app.use(express.json())
   app.get('/health', (req, res) => {
     res.status(200).send('Api Gateway OK');
