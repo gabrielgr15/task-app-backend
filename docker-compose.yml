@@ -4,12 +4,12 @@ services:
     build: ./api-gateway
     container_name: api_gateway
     ports:      
-      - "${GATEWAY_PORT:-3000}:3000"
+      - "${GATEWAY_PORT:-4000}:4000"
     environment:     
-      PORT: ${GATEWAY_PORT:-3000}
-      USER_SERVICE_URL: http://user-service:${USER_SERVICE_PORT:-3001} 
-      TASKS_SERVICE_URL: http://tasks-service:${TASKS_SERVICE_PORT:-3002} 
-      ACTIVITY_SERVICE_URL: http://activity-service:${ACTIVITY_SERVICE_PORT:-3003}
+      PORT: ${GATEWAY_PORT:-4000}
+      USER_SERVICE_URL: http://user-service:${USER_SERVICE_PORT:-4001} 
+      TASKS_SERVICE_URL: http://tasks-service:${TASKS_SERVICE_PORT:-4002} 
+      ACTIVITY_SERVICE_URL: http://activity-service:${ACTIVITY_SERVICE_PORT:-4003}
       JWT_SECRET: ${JWT_SECRET}     
       REDIS_HOST: ${REDIS_HOST} 
       REDIS_PORT: ${REDIS_PORT}
@@ -33,7 +33,7 @@ services:
     build: ./user-service 
     container_name: user_service           
     environment:      
-      PORT: ${USER_SERVICE_PORT:-3001}
+      PORT: ${USER_SERVICE_PORT:-4001}
       MONGO_URI: ${MONGO_USER_URI}
       JWT_SECRET: ${JWT_SECRET}
       REDIS_HOST: ${REDIS_HOST} 
@@ -48,7 +48,7 @@ services:
     networks:
       - app-network
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:3001/health"]
+      test: ["CMD", "curl", "-f", "http://localhost:4001/health"]
       interval: 10s
       timeout: 10s
       retries: 70
@@ -59,7 +59,7 @@ services:
     build: ./tasks-service 
     container_name: tasks_service          
     environment:      
-      PORT: ${TASKS_SERVICE_PORT:-3002}
+      PORT: ${TASKS_SERVICE_PORT:-4002}
       MONGO_URI: ${MONGO_TASKS_URI}      
       RABBITMQ_URI: ${RABBITMQ_URI}      
     volumes:     
@@ -71,7 +71,7 @@ services:
     networks:
       - app-network      
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:3002/health"]
+      test: ["CMD", "curl", "-f", "http://localhost:4002/health"]
       interval: 10s
       timeout: 10s
       retries: 70
@@ -82,7 +82,7 @@ services:
     build: ./activity-service
     container_name: activity_service
     environment:
-      PORT: ${ACTIVITY_SERVICE_PORT:-3003}
+      PORT: ${ACTIVITY_SERVICE_PORT:-4003}
       MONGO_URI: ${MONGO_ACTIVITY_URI}
       RABBITMQ_URI: ${RABBITMQ_URI}
     volumes:
@@ -94,7 +94,7 @@ services:
     networks:
       - app-network
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:3003/health"]
+      test: ["CMD", "curl", "-f", "http://localhost:4003/health"]
       interval: 10s
       timeout: 10s
       retries: 70

@@ -25,23 +25,15 @@ if (!USER_SERVICE_URL || !TASKS_SERVICE_URL) {
 async function startServer() {
   await initializeRedis()
 
-  app.use(cookieParser());
-
-  const allowedOrigins = [
-    'http://localhost:3000',
-    'https://tasks-app-frontend-nine.vercel.app',
-  ];
-
   const corsOptions = {
-    origin: function (origin, callback) {
-      if (!origin || allowedOrigins.indexOf(origin) !== -1) {
-        callback(null, true);
-      } else {
-        callback(new Error('Not allowed by CORS'));
-      }
-    },
+    origin: [
+      'http://localhost:3000',
+      'https://tasks-app-frontend-nine.vercel.app',
+    ],
     credentials: true,
   };
+  app.use(cookieParser());
+
   app.use(cors(corsOptions));
 
   app.use(express.json())
