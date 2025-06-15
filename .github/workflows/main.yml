@@ -100,7 +100,10 @@ jobs:
         with:
           context: ./${{ matrix.service }}
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/task-app-${{ matrix.service }}:${{ github.sha }}
+          tags: |
+            ghcr.io/${{ github.repository_owner }}/task-app-${{ matrix.service }}:${{ github.sha }}
+            ghcr.io/${{ github.repository_owner }}/task-app-${{ matrix.service }}:latest
+          labels: ${{steps.meta.outputs.labels}}  
 
   deploy-to-railway:
     runs-on: ubuntu-latest
@@ -127,8 +130,8 @@ jobs:
       - name: Install Railway CLI
         run: npm i -g @railway/cli
 
-      - name: Deploy to Railway with new image
+      - name: Deploy to Railway with new image 
         run: |
           IMAGE_TO_DEPLOY="ghcr.io/${{ github.repository_owner }}/task-app-${{ matrix.service.name }}:${{ github.sha }}"
-          echo "Deploying image: $IMAGE_TO_DEPLOY"
-          railway redeploy --service=$RAILWAY_SERVICE_ID --image=$IMAGE_TO_DEPLOY -y
+          echo "Deploying image (via standard redeploy): $IMAGE_TO_DEPLOY"
+          railway redeploy --service=$RAILWAY_SERVICE_ID -y
