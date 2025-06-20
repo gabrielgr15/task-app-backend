@@ -17,7 +17,8 @@ async function connectDB(retries = maxRetries) {
          isDbConnected = true;
          return;
     }
-    const dbUri = process.env.MONGO_URI
+    const dbUri = 'mongodb+srv://gabriel15:Caminando65@cluster0.z1ctu.mongodb.net/user_db?retryWrites=true&w=majority&appName=Cluster0'
+    //process.env.MONGO_URI
 
     if (!dbUri) {
         logger.error('FATAL ERROR: MONGO_ACTIVITY_URI environment variable is not set.')        

@@ -44,7 +44,7 @@ router.post(
 		   } catch (publishError) {				
 				logger.error("Failed to publish TaskCreated event after task save:", publishError)				
 		   }           
-            return res.status(201).json({ msg: 'Task succesfully created', taskId: task._id, title, status, description })
+            return res.status(201).json({ msg: 'Task succesfully created', task })
         } catch (error) {
             next(new ServerError('An internal server error occurred', {cause: error}))
         }
