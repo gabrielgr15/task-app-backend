@@ -33,10 +33,7 @@ describe('API Gateway Tasks Integration', () => {
             expect(response.status).toBe(201)
 
             expect(response.data).toHaveProperty('msg')
-            expect(response.data).toHaveProperty('taskId')
-            expect(response.data).toHaveProperty('title')
-            expect(response.data).toHaveProperty('status')
-            expect(response.data).toHaveProperty('description')
+            expect(response.data).toHaveProperty('task')
         } catch (error) {
             console.error('error in catch for post task test:', error)
             throw error
@@ -120,7 +117,7 @@ describe('API Gateway Tasks Integration', () => {
                     'Authorization': `Bearer ${accessToken}`
                 }
             })
-            const taskId = newTask.data.taskId 
+            const taskId = newTask.data.task._id
             const response = await axios.patch(`${API_GATEWAY_BASE_URL}/api/tasks/${taskId}`, {
                 title: "Learn more backend",
                 status: "almost there",
@@ -167,7 +164,7 @@ describe('API Gateway Tasks Integration', () => {
                     'Authorization': `Bearer ${accessToken}`
                 }
             })
-            const taskId = newTask.data.taskId 
+            const taskId = newTask.data.task._id 
             const response = await axios.delete(`${API_GATEWAY_BASE_URL}/api/tasks/${taskId}`, {
                 headers: {
                     'Authorization': `Bearer ${accessToken}`

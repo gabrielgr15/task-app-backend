@@ -31,7 +31,7 @@ describe('API Gateway Activity Integration', () => {
                         'Authorization': `Bearer ${accessToken}`
                     }
                 })
-            const taskId = newTask.data.taskId
+            const taskId = newTask.data.task._id 
             await new Promise(resolve => setTimeout(resolve,4000))
             const response = await axios.get(`${API_GATEWAY_BASE_URL}/api/tasks/${taskId}/activity`, {
                 headers: {
