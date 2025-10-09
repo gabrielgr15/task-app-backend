@@ -101,7 +101,7 @@ router.patch(
 			task.description = description
 			task.status = status
 			await task.save()
-			return res.status(200).json({msg: 'Task succesfully updated', taskId: task._id, title, description, status })
+			return res.status(200).json({msg: 'Task succesfully updated', task })
 		} catch (error) {
 			if (error instanceof CustomError){
                 next(error)

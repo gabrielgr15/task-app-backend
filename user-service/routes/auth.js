@@ -32,7 +32,13 @@ router.post(
 			await user.save();
 
 			const { accessToken, refreshToken } = await generateTokens(user._id);
-			return res.status(201).json({ accessToken, refreshToken });
+			res.cookie('refreshToken', refreshToken, {
+				httpOnly: true,
+				secure: process.env.NODE_ENV === 'production',
+				sameSite: 'Strict',
+				maxAge: 7 * 24 * 60 * 60 * 1000
+			})
+			return res.status(201).json({ accessToken });
 		} catch (error) {
 			if (error instanceof CustomError) {
 				next(error)
@@ -88,20 +94,16 @@ router.post(
 
 router.post(
 	'/refresh',
-	[
-		body('token', 'Refresh token is required').trim().notEmpty().isString(),
-	],
 	async (req, res, next) => {
-		const errors = validationResult(req)
-		if (!errors.isEmpty()) {
-			return next(new ValidationError('Invalid credentials', errors.array()))
-		}
 		try {
-			const { token } = req.body
+			const token = req.cookies.refreshToken
+			if (!token) throw new AuthError('Refresh token missing')
 			const storedToken = await RefreshToken.findOne({ token })
 			if (!storedToken) throw new AuthError('Invalid refresh token')
-			if (storedToken.expiresAt < new Date()) throw new AuthError('Refresh token expired')
-
+			if (storedToken.expiresAt < new Date()) {
+				await RefreshToken.findByIdAndDelete(storedToken._id)
+				throw new AuthError('Refresh token expired')
+			}			
 			const user = storedToken.user
 			if (!user || !user._id) throw new ServerError('Error reading user data from refresh token')
 
@@ -134,23 +136,26 @@ router.post(
 		const tokenId = headers['x-token-id']
 		const expiryHeader = headers['x-token-expiry']
 		const expirationTimestamp = parseInt(expiryHeader, 10)
-		try {			
+		const refreshToken = req.cookies.refreshToken		
+		try {		
+			if (!refreshToken) throw new AuthError('Refresh token missing')
+			const storedToken = await RefreshToken.findOne({ refreshToken })
+			if (!storedToken) throw new AuthError('Invalid refresh token')
+			await RefreshToken.findByIdAndDelete(storedToken._id)
 			const {ttlSeconds} = generateBlacklistData(expirationTimestamp)
-			if (ttlSeconds <= 0) {
-				logger.warn('Logout requested for already expired token')
-				return res.status(204).send()
-			}
-			const blacklistResult = await redisAddBreaker.fire(tokenId, ttlSeconds)
-			logger.info(`[${redisAddBreaker.name}] fire() completed for logout.
-				 			Result: ${blacklistResult}`)
-							
+			if (ttlSeconds > 0) {
+				const blacklistResult = await redisAddBreaker.fire(tokenId, ttlSeconds)
+				logger.info(`[${redisAddBreaker.name}] fire() completed for logout.
+				 			Result: ${blacklistResult}`)				
+			} else {
+				logger.warn('Logout requested for already expired token')	
+			}			
 			res.cookie('refreshToken', '', {
-            httpOnly: true,
-            secure: process.env.NODE_ENV === 'production',
-            sameSite: 'strict',
-            expires: new Date(0)
-        	});
-							
+				httpOnly: true,
+				secure: process.env.NODE_ENV === 'production',
+				sameSite: 'strict',
+				expires: new Date(0)
+			});						
 			return res.status(204).send()
 		} catch (error) {			
 			if (error instanceof CustomError) {

@@ -1,4 +1,4 @@
-//require('dotenv').config()
+require('dotenv').config()
 const express = require('express')
 const authRoutes = require('./routes/auth')
 const logger = require('./logger')
@@ -18,7 +18,7 @@ async function startServer () {
 	app.use(express.json());
 	app.use('/api/users/auth', authRoutes);
 	app.get('/health', (req, res ) => {
-        res.status(200).send('Api Gateway OK');
+        res.status(200).send('User Service OK');
     });
 	app.use(errorHandler)
 	app.listen(PORT, () =>{

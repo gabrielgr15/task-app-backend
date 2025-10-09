@@ -1,6 +1,5 @@
 //require('dotenv').config()
 const express = require('express')
-const mongoose = require('mongoose')
 const taskRoutes = require('./routes/taskRoutes')
 const logger = require('./logger')
 const errorHandler = require('./middleware/errorHandler')

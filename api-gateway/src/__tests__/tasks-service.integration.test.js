@@ -64,7 +64,7 @@ describe('API Gateway Tasks Integration', () => {
                     'Authorization': `Bearer ${accessToken}`
                 }
             })            
-            //get receives only two arguments, post recevies 3
+            //get receives only two arguments, post receives 3
             const response = await axios.get(`${API_GATEWAY_BASE_URL}/api/tasks`,{
                 headers: {
                     'Authorization': `Bearer ${accessToken}`

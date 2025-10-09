@@ -7,7 +7,7 @@ const API_GATEWAY_BASE_URL = 'http://localhost:4000'
 
 
 describe('API Gateway Authentication Integration', () => {
-  it('should return 201, access and refresh tokens for valid register credentials', async () => {
+  it('should return 201, access token for valid register credentials', async () => {
     try {
       const response = await axios.post(`${API_GATEWAY_BASE_URL}/api/users/auth/register`, {
         username: "Justatest",
@@ -17,16 +17,14 @@ describe('API Gateway Authentication Integration', () => {
       expect(response.status).toBe(201)
 
       expect(response.data).toHaveProperty('accessToken');
-      expect(response.data).toHaveProperty('refreshToken');
 
       expect(typeof response.data.accessToken).toBe('string');
-      expect(typeof response.data.refreshToken).toBe('string');
     } catch (error) {
       throw error
     }
   })
 
-  it('should return 200, access and refresh tokens for valid login credentials', async () => {
+  it('should return 200, access token for valid login credentials', async () => {
     try {
       const username = "Justatest"
       const email = "justaemailtest@gmail.com"

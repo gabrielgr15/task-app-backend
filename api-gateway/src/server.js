@@ -8,6 +8,8 @@ const { handleExpressProxyError, decorateProxyReq } = require('./utils/proxyUtil
 const proxy = require('express-http-proxy')
 const { initializeRedis } = require('./services/redisClient')
 const cookieParser = require('cookie-parser')
+const rateLimit = require('express-rate-limit')
+const helmet = require('helmet')
 
 const app = express()
 
@@ -16,11 +18,26 @@ const USER_SERVICE_URL = process.env.USER_SERVICE_URL
 const TASKS_SERVICE_URL = process.env.TASKS_SERVICE_URL
 const ACTIVITY_SERVICE_URL = process.env.ACTIVITY_SERVICE_URL
 
-if (!USER_SERVICE_URL || !TASKS_SERVICE_URL) {
-  logger.error('FATAL ERROR: Service urls {USER_SERVICE_URL, TASK_SERVICE_URL} are not defined in .env file')
+if (!USER_SERVICE_URL || !TASKS_SERVICE_URL || !ACTIVITY_SERVICE_URL) {
+  logger.error('FATAL ERROR: Service urls {USER_SERVICE_URL, TASK_SERVICE_URL, ACTIVITY_SERVICE_URL} are not defined in .env file')
   process.exit(1)
 }
 
+const globalLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 100,
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: 'Too many requests from this IP, please try again after 15 minutes'
+})
+
+const authLimiter = rateLimit({
+  windowMs: 5 * 60 * 1000,
+  max: 5,
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: 'Too many login/registration attempts. Try again later.'
+});
 
 async function startServer() {
   await initializeRedis()
@@ -32,14 +49,18 @@ async function startServer() {
     ],
     credentials: true,
   };
+  app.use(helmet())
+  app.use(globalLimiter)
   app.use(cookieParser());
-
   app.use(cors(corsOptions));
   app.use(express.json())
   app.get('/health', (req, res) => {
     res.status(200).send('Api Gateway OK');
   });
-  app.use(['/api/users/auth/register', '/api/users/auth/login', '/api/users/auth/refresh'], proxy(USER_SERVICE_URL, {
+  app.use(
+    ['/api/users/auth/register', '/api/users/auth/login', '/api/users/auth/refresh'],
+    authLimiter,
+    proxy(USER_SERVICE_URL, {
     timeout: 30000,
     proxyReqPathResolver: (req) => req.originalUrl,
     proxyErrorHandler: handleExpressProxyError,
