@@ -48,7 +48,7 @@ async function waitForService(url, timeout = 600000) {
 
 async function startServices() {
     console.log(`[GlobalSetup] Starting services: ${SERVICES_TO_START.join(', ')}`)
-    const cmd = `docker compose -f "${DOCKER_COMPOSE_FILE}" up --force-recreate -d ${SERVICES_TO_START.join(' ')}`;
+    const cmd = `NODE_ENV=test docker compose -f "${DOCKER_COMPOSE_FILE}" up --force-recreate -d ${SERVICES_TO_START.join(' ')}`;
     console.log(`[GlobalSetup] Executing: ${cmd}`);
     try {
         const { stdout, stderr } = await execPromise(cmd) 

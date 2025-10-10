@@ -12,6 +12,15 @@ module.exports = {
     '/__tests__/helpers/'
   ],
 
+  transformIgnorePatterns: [
+    '/node_modules/(?!axios-cookiejar-support|tough-cookie|http-cookie-agent).+\\.js$'
+  ],
+
+  // You might also need this if using other async/await features in non-test files
+  transform: {
+    '^.+\\.[jt]sx?$': 'babel-jest',
+  },
+
   //clearMocks: true,
 
   setupFilesAfterEnv: ['./src/test/setup.js'],

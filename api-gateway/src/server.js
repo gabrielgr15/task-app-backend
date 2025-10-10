@@ -13,6 +13,8 @@ const helmet = require('helmet')
 
 const app = express()
 
+module.exports = app
+
 const PORT = process.env.PORT
 const USER_SERVICE_URL = process.env.USER_SERVICE_URL
 const TASKS_SERVICE_URL = process.env.TASKS_SERVICE_URL
@@ -23,21 +25,32 @@ if (!USER_SERVICE_URL || !TASKS_SERVICE_URL || !ACTIVITY_SERVICE_URL) {
   process.exit(1)
 }
 
-const globalLimiter = rateLimit({
-  windowMs: 15 * 60 * 1000,
-  max: 100,
-  standardHeaders: true,
-  legacyHeaders: false,
-  message: 'Too many requests from this IP, please try again after 15 minutes'
-})
+let globalLimiter = null
+let authLimiter = null
 
-const authLimiter = rateLimit({
-  windowMs: 5 * 60 * 1000,
-  max: 5,
-  standardHeaders: true,
-  legacyHeaders: false,
-  message: 'Too many login/registration attempts. Try again later.'
-});
+if (process.env.NODE_ENV !== 'test'){
+  globalLimiter = rateLimit({
+    windowMs: 15 * 60 * 1000,
+    max: 100,
+    standardHeaders: true,
+    legacyHeaders: false,
+    message: 'Too many requests from this IP, please try again after 15 minutes'
+  })
+
+  authLimiter = rateLimit({
+    windowMs: 5 * 60 * 1000,
+    max: 5,
+    standardHeaders: true,
+    legacyHeaders: false,
+    message: 'Too many login/registration attempts. Try again later.'
+  });
+}
+
+const authMiddleware = [];
+if (authLimiter) {
+  authMiddleware.push(authLimiter);
+}
+
 
 async function startServer() {
   await initializeRedis()
@@ -50,7 +63,9 @@ async function startServer() {
     credentials: true,
   };
   app.use(helmet())
-  app.use(globalLimiter)
+  if (globalLimiter){
+    app.use(globalLimiter)
+  }
   app.use(cookieParser());
   app.use(cors(corsOptions));
   app.use(express.json())
@@ -59,7 +74,7 @@ async function startServer() {
   });
   app.use(
     ['/api/users/auth/register', '/api/users/auth/login', '/api/users/auth/refresh'],
-    authLimiter,
+    authMiddleware,
     proxy(USER_SERVICE_URL, {
     timeout: 30000,
     proxyReqPathResolver: (req) => req.originalUrl,

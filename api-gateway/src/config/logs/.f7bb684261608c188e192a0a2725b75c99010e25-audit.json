@@ -6,9 +6,9 @@
     "auditLog": "/home/gabriel/projects/api-gateway/src/config/logs/.f7bb684261608c188e192a0a2725b75c99010e25-audit.json",
     "files": [
         {
-            "date": 1745786815153,
-            "name": "/home/gabriel/projects/api-gateway/src/config/logs/app-2025-04-27.log",
-            "hash": "5de6bdf38d4e6e45df83b45ede8ca4fdc85b3e8114a3a2bc6a76c44c404107e9"
+            "date": 1760064699203,
+            "name": "/home/gabriel/projects/api-gateway/src/config/logs/app-2025-10-09.log",
+            "hash": "aa92e97daa2760447dcc9156d656b4c8c07f12a8093a25e6cecd239599f72cd2"
         }
     ],
     "hashType": "sha256"

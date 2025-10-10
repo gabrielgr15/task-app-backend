@@ -130,11 +130,13 @@ describe('API Gateway Tasks Integration', () => {
             })
             expect(response.status).toBe(200)
 
-            expect(response.data).toHaveProperty('msg')
-            expect(response.data).toHaveProperty('taskId')
-            expect(response.data).toHaveProperty('title')
-            expect(response.data).toHaveProperty('status')
-            expect(response.data).toHaveProperty('description')
+            expect(response.data).toHaveProperty('msg');
+            expect(response.data).toHaveProperty('task');
+            
+            expect(response.data.task).toHaveProperty('_id');
+            expect(response.data.task).toHaveProperty('title');
+            expect(response.data.task).toHaveProperty('status');
+            expect(response.data.task).toHaveProperty('description')
         } catch (error) {
             console.error('error in catch for post task test:', error)
             throw error

@@ -139,7 +139,7 @@ router.post(
 		const refreshToken = req.cookies.refreshToken		
 		try {		
 			if (!refreshToken) throw new AuthError('Refresh token missing')
-			const storedToken = await RefreshToken.findOne({ refreshToken })
+			const storedToken = await RefreshToken.findOne({ token: refreshToken })
 			if (!storedToken) throw new AuthError('Invalid refresh token')
 			await RefreshToken.findByIdAndDelete(storedToken._id)
 			const {ttlSeconds} = generateBlacklistData(expirationTimestamp)
