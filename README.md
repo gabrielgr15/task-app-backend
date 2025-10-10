@@ -58,8 +58,8 @@ To run this project locally, you will need [Docker](https://www.docker.com/) and
 **1. Clone the repository:**
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/gabrielgr15/task-app-backend.git
+cd task-app-backend
 ```
 
 **2. Create Environment Files:**
