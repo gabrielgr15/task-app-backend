@@ -13,7 +13,7 @@ interface FrontendActivityPayload {
 const router: Router = express.Router();
 
 router.get(
-    '/',
+    '/activity',
     async (req: Request, res: Response, next: NextFunction) => {
         const userId = req.get('x-user-id');
         const reqTaskId = req.params.taskId

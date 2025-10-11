@@ -99,10 +99,7 @@ async function startServer() {
   }))
   app.use('/api/activity', authenticateToken, proxy(ACTIVITY_SERVICE_URL, {
     timeout: 30000,
-    proxyReqPathResolver: (req) => {
-      const newPath = '/api/activity' + req.url;
-      return newPath;
-    },
+    proxyReqPathResolver: (req) => req.originalUrl,
     proxyErrorHandler: handleExpressProxyError,
     proxyReqOptDecorator: decorateProxyReq
   }))
