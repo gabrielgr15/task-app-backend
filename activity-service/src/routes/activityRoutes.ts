@@ -15,8 +15,7 @@ const router: Router = express.Router();
 router.get(
     '/',
     async (req: Request, res: Response, next: NextFunction) => {
-        const headers = req.headers
-        const userId = headers['x-user-id']
+        const userId = req.get('x-user-id');
         const reqTaskId = req.params.taskId
         const wantLatest = req.query.latest === 'true'        
         try {
