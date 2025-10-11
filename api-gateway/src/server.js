@@ -67,7 +67,7 @@ async function startServer() {
     ],
     credentials: true,
   };
-  app.set("trust proxy", true);
+  app.set("trust proxy", 1);
   app.use(helmet());
   if (globalLimiter) {
     app.use(globalLimiter);
@@ -77,18 +77,6 @@ async function startServer() {
   app.use(express.json());
   app.get("/health", (req, res) => {
     res.status(200).send("Api Gateway OK");
-  });
-  app.use('/api/activity', (req, res, next) => {
-    // Log in the background without awaiting
-    setImmediate(() => {
-      logger.info('Activity request:', {
-        timestamp: new Date().toISOString(),
-        originalUrl: req.originalUrl,
-        serviceUrl: process.env.ACTIVITY_SERVICE_URL,
-        hasAuth: !!req.headers.authorization,
-      });
-    });
-    next();
   });
   app.use(
     [
@@ -109,12 +97,29 @@ async function startServer() {
     proxyErrorHandler: handleExpressProxyError,
     proxyReqOptDecorator: decorateProxyReq
   }))
-  app.use('/api/activity', authenticateToken, proxy(ACTIVITY_SERVICE_URL, {
-    timeout: 30000,
-    proxyReqPathResolver: (req) => req.originalUrl,
-    proxyErrorHandler: handleExpressProxyError,
-    proxyReqOptDecorator: decorateProxyReq
-  }))
+  app.use('/api/activity',
+    // Middleware 1: The Logger
+    (req, res, next) => {
+      setImmediate(() => {
+        logger.info('Activity request:', {
+          timestamp: new Date().toISOString(),
+          originalUrl: req.originalUrl,
+          serviceUrl: process.env.ACTIVITY_SERVICE_URL,
+          hasAuth: !!req.headers.authorization,
+        });
+      });
+      next();
+    },
+    // Middleware 2: The Authenticator
+    authenticateToken,
+    // Middleware 3: The Proxy
+    proxy(ACTIVITY_SERVICE_URL, {
+      timeout: 30000,
+      proxyReqPathResolver: (req) => req.originalUrl,
+      proxyErrorHandler: handleExpressProxyError,
+      proxyReqOptDecorator: decorateProxyReq
+    })
+  );
   app.use('/api/tasks', authenticateToken, proxy(TASKS_SERVICE_URL, {
     timeout: 30000,
     proxyReqPathResolver: (req) => req.originalUrl,
