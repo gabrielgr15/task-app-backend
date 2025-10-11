@@ -33,7 +33,7 @@ if (!USER_SERVICE_URL || !TASKS_SERVICE_URL || !ACTIVITY_SERVICE_URL) {
 let globalLimiter = null;
 let authLimiter = null;
 
-if (process.env.NODE_ENV !== 'test' || process.env.NODE_ENV !== 'development'){
+if (process.env.NODE_ENV !== 'test' && process.env.NODE_ENV !== 'development'){
   globalLimiter = rateLimit({
     windowMs: 15 * 60 * 1000,
     max: 100,
