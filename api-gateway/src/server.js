@@ -78,6 +78,18 @@ async function startServer() {
   app.get("/health", (req, res) => {
     res.status(200).send("Api Gateway OK");
   });
+  app.use('/api/activity', (req, res, next) => {
+    // Log in the background without awaiting
+    setImmediate(() => {
+      logger.info('Activity request:', {
+        timestamp: new Date().toISOString(),
+        originalUrl: req.originalUrl,
+        serviceUrl: process.env.ACTIVITY_SERVICE_URL,
+        hasAuth: !!req.headers.authorization,
+      });
+    });
+    next();
+  });
   app.use(
     [
       "/api/users/auth/register",
