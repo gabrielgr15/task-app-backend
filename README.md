@@ -6,7 +6,7 @@
 
 TaskForge is a robust, scalable, and resilient task management application built on a microservices architecture. This project was developed as a deep-dive into modern backend engineering principles, including distributed systems, event-driven communication, and advanced security patterns. It serves as a comprehensive demonstration of building, testing, and deploying a production-ready backend system.
 
----
+----
 
 ## 🚀 Key Features
 
