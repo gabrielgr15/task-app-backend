@@ -28,7 +28,7 @@ if (!USER_SERVICE_URL || !TASKS_SERVICE_URL || !ACTIVITY_SERVICE_URL) {
 let globalLimiter = null
 let authLimiter = null
 
-if (process.env.NODE_ENV !== 'test'){
+if (process.env.NODE_ENV !== 'test' || process.env.NODE_ENV !== 'development'){
   globalLimiter = rateLimit({
     windowMs: 15 * 60 * 1000,
     max: 100,
@@ -87,7 +87,7 @@ async function startServer() {
     proxyErrorHandler: handleExpressProxyError,
     proxyReqOptDecorator: decorateProxyReq
   }))
-  app.use('/api/tasks/:taskId/activity', authenticateToken, proxy(ACTIVITY_SERVICE_URL, {
+  app.use('/api/activity', authenticateToken, proxy(ACTIVITY_SERVICE_URL, {
     timeout: 30000,
     proxyReqPathResolver: (req) => req.originalUrl,
     proxyErrorHandler: handleExpressProxyError,

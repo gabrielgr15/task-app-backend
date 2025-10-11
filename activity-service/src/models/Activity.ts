@@ -1,6 +1,7 @@
 import mongoose, { Schema, Document, Types } from "mongoose"
 
 export interface IActivity extends Document {
+    _id: Types.ObjectId,
     eventType: string;
     userId: Types.ObjectId;
     taskId: Types.ObjectId;

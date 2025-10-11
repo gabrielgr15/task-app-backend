@@ -44,7 +44,7 @@ async function startServer() {
         await connectDB()
         await initializeRabbitMQConsumer()
         app.use(express.json());
-        app.use('/api', activityRoutes)
+        app.use('/api/activity', activityRoutes)
         app.get('/health', (req: Request, res: Response) => {
             res.status(200).send('Activity Service OK');
         });

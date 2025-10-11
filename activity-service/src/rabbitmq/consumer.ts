@@ -88,7 +88,7 @@ async function handleMessage(msg: ConsumeMessage, channel: Channel) {
        
         logger.debug('Attempting to save activity record:', activityRecordForDb);
         const newActivity = new Activity(activityRecordForDb);
-        await newActivity.save();        
+        await newActivity.save()
 
         logger.info(`Successfully recorded activity for event type ${eventData.type}, task ID ${eventData.taskId}`);
 
