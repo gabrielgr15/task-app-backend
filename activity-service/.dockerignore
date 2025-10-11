@@ -1,0 +1,17 @@
+# Dependency directories
+node_modules
+
+# Build artifacts (if you build locally)
+dist
+.DS_Store
+
+# Logs
+logs
+*.log
+
+# Environment variables
+.env
+.env.*
+
+# Git directory
+.git

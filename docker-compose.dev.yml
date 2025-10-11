@@ -1,0 +1,20 @@
+services:
+  activity-service:
+    volumes:
+      - ./activity-service:/usr/src/app
+      - /usr/src/app/node_modules
+
+  tasks-service:
+    volumes:
+      - ./tasks-service:/usr/src/app
+      - /usr/src/app/node_modules
+
+  user-service:
+    volumes:
+      - ./user-service:/usr/src/app
+      - /usr/src/app/node_modules
+
+  api-gateway:
+    volumes:
+      - ./api-gateway:/usr/src/app
+      - /usr/src/app/node_modules

@@ -14,6 +14,8 @@ FROM node:20-alpine
 
 WORKDIR /usr/src/app
 
+RUN apk add --no-cache curl
+
 COPY package*.json ./
 
 RUN npm ci --omit=dev && npm cache clean --force
@@ -25,6 +27,6 @@ COPY --from=builder /usr/src/app/dist ./dist
 
 USER node
 
-EXPOSE 3003
+EXPOSE 4003
 
 CMD ["node", "dist/server.js"]

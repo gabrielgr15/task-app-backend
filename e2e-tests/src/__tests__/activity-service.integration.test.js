@@ -1,5 +1,5 @@
 const axios = require('axios')
-const { TestUser } = require('./helpers/testModels')
+const { TestUser } = require('../helpers/testModels')
 const bcrypt = require('bcryptjs')
 
 

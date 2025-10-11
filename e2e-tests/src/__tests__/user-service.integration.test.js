@@ -1,5 +1,5 @@
 const axios = require('axios')
-const { TestUser, TestRefreshToken } = require('./helpers/testModels')
+const { TestUser, TestRefreshToken } = require('../helpers/testModels')
 const bcrypt = require('bcryptjs')
 const { wrapper } = require('axios-cookiejar-support')
 const { CookieJar } = require('tough-cookie')

@@ -1,0 +1,11 @@
+{
+    "name": "monorepo-root",
+    "private": true,
+    "workspaces": [
+        "services/*",
+        "e2e-tests"
+    ],
+    "scripts": {
+        "test": "npm -w e2e-tests test"
+    }
+}

@@ -66,11 +66,14 @@ jobs:
         working-directory: ./api-gateway
         run: npm ci  
 
+      - name: Install e2e-tests dependencies
+        working-directory: ./e2e-tests
+        run: npm ci
+
       - name: Build Docker images
         run: docker compose build    
 
       - name: Run all integration tests
-        working-directory: ./api-gateway
         run: npm test        
 
       - name: Dump Docker logs on failure

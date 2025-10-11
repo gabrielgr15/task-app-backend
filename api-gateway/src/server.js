@@ -48,7 +48,7 @@ if (process.env.NODE_ENV !== 'test' && process.env.NODE_ENV !== 'development'){
     max: 5,
     standardHeaders: true,
     legacyHeaders: false,
-    message: "Too many login/registration attempts. Try again later.",
+    message: `Too many login/ registration attempts.Try again later.ENV = ${ process.env.NODE_ENV }`
   });
 }
 
