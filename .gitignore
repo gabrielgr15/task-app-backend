@@ -2,4 +2,4 @@
 node_modules
 *.log
 docker-compose.override.yml
-/e2e-tests/node_modules
+**/node_modules

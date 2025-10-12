@@ -1,0 +1,105 @@
+/* globals.css - UPDATED */
+
+@import "tailwindcss";
+
+@theme {
+  /* ... same theme variables as before ... */
+  /* UPDATED: Was #1a1a1a. Now a very dark, but not absolute, charcoal. */
+  --color-tomb-mold: #222326;
+
+  /* UPDATED: Was #35383d. Now a slightly lighter stone for better panel contrast. */
+  --color-yharnam-stone: #4a4d52;
+
+  /* UPDATED: Was #c9c4b5. Now a brighter, cleaner parchment for readability. */
+  --color-parchment: #e0dace;
+  --color-paleblood-sky: #9ab3bf;
+  --color-lantern-glow: #e89f4c;
+  --color-blood-echo: #8c1c1c;
+  --font-serif: "Cinzel", ui-serif, Georgia, Cambria, "Times New Roman", Times,
+    serif;
+  --shadow-glow-paleblood: 0 0 15px 3px rgba(154, 179, 191, 0.2);
+  --shadow-glow-lantern: 0 0 15px 3px rgba(232, 159, 76, 0.3);
+}
+
+/* --- Base and Utility Layers --- */
+@layer base {
+  body {
+    background-color: var(--color-tomb-mold);
+    /* 
+              UPDATED: Make sure this path matches your texture's filename.
+              If your texture is a JPG, the path should be '/grunge-texture.jpg'.
+            */
+    background-image: url("/grunge-texture.jpg");
+    background-blend-mode: soft-light;
+    color: var(--color-parchment);
+  }
+}
+
+@layer utilities {
+  .text-shadow-md {
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+
+  .text-shadow-lg {
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+  }
+
+  /* 
+    THE ORNATE FRAME: This is the magic.
+    It takes your border image and slices it to create a scalable frame.
+    Adjust 'border-width' and 'border-image-slice' to fit your image.
+  */
+  .yharnam-frame {
+    border-style: solid;
+    /* 
+              ACTION REQUIRED: Calibrate this value! 
+              Change '40px' to your best guess of the border's thickness in your PNG.
+            */
+    border-width: 40px;
+
+    /* This MUST match the border-width above */
+    border-image-slice: 40;
+
+    border-image-repeat: stretch;
+    /* This path MUST point to your new transparent PNG border */
+    border-image-source: url("/ornate-border.png");
+  }
+
+  /* 
+    ATMOSPHERIC FOG: Adds a moving, semi-transparent fog layer.
+  */
+  .fog-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+        circle at 50% 50%,
+        transparent,
+        var(--color-tomb-mold) 70%
+      ),
+      url("/grunge-texture.jpg");
+    /* Use the same texture for fog */
+    background-size: 200% 200%, 100% 100%;
+    opacity: 0.2;
+    pointer-events: none;
+    animation: fog-drift 60s linear infinite;
+  }
+}
+
+/* Keyframes for the fog animation */
+@keyframes fog-drift {
+  0% {
+    background-position: 0% 50%, 0% 0%;
+  }
+
+  50% {
+    background-position: 100% 50%, 0% 0%;
+  }
+
+  100% {
+    background-position: 0% 50%, 0% 0%;
+  }
+}
