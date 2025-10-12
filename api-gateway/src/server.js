@@ -1,6 +1,12 @@
 //require('dotenv').config()
 const express = require("express");
+console.log(`LOG FOR ACTIVITY SERVICE URL: ${process.env.ACTIVITY_SERVICE_URL}`)
+console.log(`LOG FOR ACTIVITY SERVICE URL: ${process.env.ACTIVITY_SERVICE_URL}`)
+console.log(`LOG FOR ACTIVITY SERVICE URL: ${process.env.ACTIVITY_SERVICE_URL}`)
 const logger = require("./config/logger");
+logger.info(`LOG FOR ACTIVITY SERVICE URL: ${process.env.ACTIVITY_SERVICE_URL}`)
+logger.info(`LOG FOR ACTIVITY SERVICE URL: ${process.env.ACTIVITY_SERVICE_URL}`)
+logger.info(`LOG FOR ACTIVITY SERVICE URL: ${process.env.ACTIVITY_SERVICE_URL}`)
 const cors = require("cors");
 const errorHandler = require("./middleware/errorHandler");
 const authenticateToken = require("./middleware/auth");
