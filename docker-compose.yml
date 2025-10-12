@@ -24,7 +24,13 @@ services:
         condition: service_healthy
     restart: unless-stopped
     networks:
-      - app-network   
+      - app-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:4000/health"]
+      interval: 10s
+      timeout: 10s
+      retries: 70
+      start_period: 10s  
 
 
   user-service:
@@ -91,7 +97,20 @@ services:
       timeout: 10s
       retries: 70
       start_period: 40s
-             
+
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://api-gateway:4000
+    depends_on:            
+      api-gateway:
+        condition: service_healthy
+    networks:
+      - app-network
+
 
   mongo:
     image: mongo:latest

@@ -11,9 +11,9 @@ const router = express.Router()
 router.post(
     '/tasks',
     [       
-        body('title', 'Title is required').trim().notEmpty().isLength({ max: 20 }),
+        body('title', 'Title is required').trim().notEmpty().isLength({ max: 35 }),
         body('status', 'A status is required').trim().notEmpty().isLength({ max: 20 }),
-        body('description', 'The description must be shorter').trim().isLength({ max: 30 }),
+        body('description', 'The description must be shorter').trim().isLength({ max: 45 }),
     ],
     async (req, res, next) => {               		
         const errors = validationResult(req)

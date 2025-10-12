@@ -1,12 +1,6 @@
 //require('dotenv').config()
 const express = require("express");
-console.log(`LOG FOR ACTIVITY SERVICE URL: ${process.env.ACTIVITY_SERVICE_URL}`)
-console.log(`LOG FOR ACTIVITY SERVICE URL: ${process.env.ACTIVITY_SERVICE_URL}`)
-console.log(`LOG FOR ACTIVITY SERVICE URL: ${process.env.ACTIVITY_SERVICE_URL}`)
 const logger = require("./config/logger");
-logger.info(`LOG FOR ACTIVITY SERVICE URL: ${process.env.ACTIVITY_SERVICE_URL}`)
-logger.info(`LOG FOR ACTIVITY SERVICE URL: ${process.env.ACTIVITY_SERVICE_URL}`)
-logger.info(`LOG FOR ACTIVITY SERVICE URL: ${process.env.ACTIVITY_SERVICE_URL}`)
 const cors = require("cors");
 const errorHandler = require("./middleware/errorHandler");
 const authenticateToken = require("./middleware/auth");
@@ -104,21 +98,7 @@ async function startServer() {
     proxyReqOptDecorator: decorateProxyReq
   }))
   app.use('/api/activity',
-    // Middleware 1: The Logger
-    (req, res, next) => {
-      setImmediate(() => {
-        logger.info('Activity request:', {
-          timestamp: new Date().toISOString(),
-          originalUrl: req.originalUrl,
-          serviceUrl: process.env.ACTIVITY_SERVICE_URL,
-          hasAuth: !!req.headers.authorization,
-        });
-      });
-      next();
-    },
-    // Middleware 2: The Authenticator
     authenticateToken,
-    // Middleware 3: The Proxy
     proxy(ACTIVITY_SERVICE_URL, {
       timeout: 30000,
       proxyReqPathResolver: (req) => req.originalUrl,
