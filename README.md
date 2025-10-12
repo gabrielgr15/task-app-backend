@@ -1,120 +1,157 @@
-# Project Title: TaskForge - A Distributed Task Management System
+<h1 align="center">Task Hunter</h1>
 
-![Project Banner/Diagram](docs/TaskForge.png)
+<p align="center">
+  <img src="URL_TO_YOUR_BEST_SCREENSHOT_OR_GIF.gif" alt="Task Hunter Application Dashboard" width="800"/>
+</p>
 
-## Overview
+<p align="center">
+  A deep dive into event-driven, production-grade backend architecture.
+</p>
 
-TaskForge is a robust, scalable, and resilient task management application built on a microservices architecture. This project was developed as a deep-dive into modern backend engineering principles, including distributed systems, event-driven communication, and advanced security patterns. It serves as a comprehensive demonstration of building, testing, and deploying a production-ready backend system.
-
-----
-
-## 🚀 Key Features
-
-- **Microservices Architecture:** Independent services for Users, Tasks, and Activities, promoting modularity and scalability.
-- **Centralized API Gateway:** A single, secure entry point for all client requests, handling authentication and routing.
-- **Event-Driven Communication:** Decoupled services using RabbitMQ for asynchronous messaging, ensuring high resilience.
-- **Robust Security:** JWT-based authentication with refresh tokens, Redis-based token blacklisting, and bcrypt password hashing.
-- **Resilience Patterns:** Implemented the Circuit Breaker pattern for external service calls (Redis) to prevent cascading failures.
-- **Automated CI/CD Pipeline:** GitHub Actions automatically run integration tests, build Docker images, and deploy services to Render on every push to `main`.
-- **Fully Containerized:** All services are containerized with Docker and orchestrated with Docker Compose for a seamless local development experience.
+<p align="center">
+  <strong><a href="https://tasks-app-frontend-nine.vercel.app" target="_blank">Live Demo</a></strong> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <strong><a href="https://github.com/gabrielgr15/task-app-backend" target="_blank">GitHub Repository</a></strong>
+</p>
 
 ---
 
-## 🛠️ Tech Stack
+## Project Goal
 
-| Category             | Technology                                       |
-| -------------------- | ------------------------------------------------ |
-| **Backend**          | Node.js, Express.js                              |
-| **Database**         | MongoDB (with Mongoose)                          |
-| **Caching**          | Redis                                            |
-| **Messaging**        | RabbitMQ                                         |
-| **Containerization** | Docker, Docker Compose                           |
-| **Testing**          | Jest, Supertest                                  |
-| **Authentication**   | JSON Web Tokens (JWT)                            |
-| **CI/CD**            | GitHub Actions, GitHub Container Registry (GHCR) |
-| **Deployment**       | Render.com                                       |
+I was motivated by the challenge of building something that reflected the complexity of modern backend systems. Simple CRUD projects weren't enough; I wanted to create a project that would force me to learn and apply key architectural patterns like event-driven design and service decoupling
+
+This project started as a mission to learn critical skills like service decoupling and distributed security, but it grew into a genuine passion for the process of planning, building, and debugging a complex system from the ground up.
 
 ---
 
-## 🏛️ System Architecture
+## Core Architectural Features
 
-This project follows a microservices pattern. The diagram below illustrates the flow of communication between the services:
+![Task Hunter Microservices Diagram](./docs/TaskForge.png)
 
-![Architecture Diagram](docs/TaskForge.png)
+-   **Event-Driven & Resilient Communication**
+    Initially, I considered direct API calls between services, but learned this creates a fragile system. Instead, key services like Tasks and Activity communicate asynchronously via a **RabbitMQ** event bus. When a task is created, the Tasks Service publishes an event and moves on. If a downstream service is offline, messages queue safely until it recovers. This taught me a powerful lesson in building resilient systems by truly decoupling services.
 
-### Service Breakdown:
+-   **Security-First Design**
+    Authentication uses JWT tokens with bcrypt hashing. A **Redis-backed token blacklist** handles logouts instantly and persists across restarts. The API Gateway acts as a secure shield, validating every request before it reaches the internal network.
 
-- **API Gateway:** The public-facing service. It authenticates requests, validates them, and proxies them to the appropriate backend service. It's the only service exposed to the internet.
-- **Users Service:** Manages user registration, login, and profile data. It is the source of truth for user information.
-- **Tasks Service:** Handles all CRUD (Create, Read, Update, Delete) operations for tasks. When a task is created or updated, it publishes an event to RabbitMQ.
-- **Activity Service:** A downstream service that consumes events from RabbitMQ (e.g., `task.created`). It builds a historical log of all activities within the system, providing an audit trail.
+-   **True Service Separation**
+    Four independent services—API Gateway, Users, Tasks, and Activity—each with its own data persistence. This isolation means a failure in one service (like the Activity logger) does not impact core functionality (like creating tasks).
+
+-   **Containerized & Reproducible Environment**
+    The entire stack is defined in `docker-compose.yml`. One command, `docker-compose up`, spins up all services, databases, and the message broker in a clean, predictable state. This is a production-oriented mindset that eliminates "it works on my machine" issues.
+
+-   **Resilience & Production Readiness**
+    The system is designed for fault tolerance. Key external calls (like to Redis) are wrapped in a **Circuit Breaker (Opossum)** to prevent cascading failures. Each service uses structured logging with **Winston** and includes a `/health` endpoint for monitoring.
 
 ---
 
-## ⚙️ Local Development Setup
+## Architecture Decisions & Trade-offs
 
-To run this project locally, you will need [Docker](https://www.docker.com/) and Docker Compose installed.
+#### Trade-off: Synchronous API Calls vs. an Event Bus
+Synchronous API calls are brittle and tightly coupled. If the Activity Service is slow, the Tasks Service blocks. RabbitMQ decouples them completely. The trade-off is moving from immediate consistency to eventual consistency, which is an acceptable and often desirable pattern for features like activity logging.
 
-**1. Clone the repository:**
+#### Trade-off: Using Redis vs. a Database for Caching
+Implementing a secure JWT logout requires blacklisting the token until it expires. Querying a primary database on every single authenticated request is too slow. Redis provides the optimal solution: a persistent, high-speed cache for this critical, high-frequency security check.
+
+#### Why Per-Service Databases?
+A shared database is an anti-pattern because it creates hidden dependencies. This means a change to the database schema by one service (like tasks-service) could unexpectedly break another service (activity-service) that relies on the old structure. By giving each service its own database, I enforce true isolation. The data for one service is a black box to all others.
+
+---
+
+## Technical Stack
+
+| Category           | Technology & Libraries                                       |
+|--------------------|--------------------------------------------------------------|
+| **Backend**        | Node.js, Express, TypeScript (in Activity Service)           |
+| **Database**       | MongoDB with Mongoose                                        |
+| **Messaging**      | RabbitMQ                                                     |
+| **Caching**        | Redis                                                        |
+| **Authentication** | JWT (Access + Refresh Tokens), bcryptjs                      |
+| **Testing**        | Jest, Supertest (for End-to-End Tests)                       |
+| **Resilience**     | Opossum (Circuit Breaker), Winston (Logging)                 |
+| **Containerization** | Docker, Docker Compose                                     |
+| **Frontend**       | Next.js, Tailwind CSS                                        |
+
+---
+
+## Getting Started Locally
+
+**Prerequisites:** Docker & Docker Compose
+
 
 ```bash
+# 1. Clone the repository
 git clone https://github.com/gabrielgr15/task-app-backend.git
 cd task-app-backend
-```
 
-**2. Create Environment Files:**
+# 2. Set up environment variables for each service using the .env.example files
 
-Each service requires its own `.env` file. Navigate into each service directory (`api-gateway`, `users-service`, etc.) and create a `.env` file. You can use the provided `.env.example` in each folder as a template.
-
-```bash
-# Example for users-service
-cp users-service/.env.example users-service/.env
-# ... now edit users-service/.env with your local settings
-```
-
-_(Repeat for all services)_
-
-**3. Run the application:**
-
-The entire stack can be brought up with a single command:
-
-```bash
+# 3. Launch the entire stack
 docker-compose up --build
 ```
 
-This command will build the Docker images for each service and start the containers. The API Gateway will be available at `http://localhost:8000`.
+The frontend is available at `http://localhost:3000` and the API gateway at `http://localhost:4000`.
 
-**4. Running Integration Tests:**
+---
 
-To run the integration tests, you can execute the test command in the `api-gateway` service container:
+## Project Structure
 
-```bash
-docker-compose exec api-gateway npm test
 ```
+task-hunter/
+├── api-gateway/         # Request routing & auth validation
+├── user-service/        # User management & authentication
+├── e2e-tests/           # End-to-end integration tests for the services
+├── tasks-service/       # Task CRUD & event publishing
+├── activity-service/    # Event consumption & activity logging
+├── frontend/            # Next.js frontend application
+├── docker-compose.yml   # Orchestration config
+└── README.md
+```
+---
+
+## API Endpoints Overview
+
+The API Gateway exposes the following key routes, validating JWTs for protected endpoints.
+
+| Method   | Endpoint                  | Service Destination | Description                             |
+|----------|---------------------------|---------------------|-----------------------------------------|
+| `POST`   | `/api/users/auth/register`| User Service        | Register a new user.                    |
+| `POST`   | `/api/users/auth/login`   | User Service        | Log in and receive tokens.              |
+| `POST`   | `/api/users/auth/refresh` | User Service        | Refresh an expired access token.        |
+| `GET`    | `/api/tasks`              | Tasks Service       | Get all tasks for the logged-in user.   |
+| `POST`   | `/api/tasks`              | Tasks Service       | Create a new task.                      |
+| `GET`    | `/api/activity`           | Activity Service    | Get the activity feed for the user.     |
 
 ---
 
-## 📖 API Endpoints
+## What I Learned
 
-A brief overview of the main API endpoints available through the API Gateway.
+**The Critical Importance of Planning:** My single biggest takeaway was the value of architecture and planning. Wrestling with challenges like RabbitMQ's reconnection logic taught me that time spent defining service boundaries, data flows, and communication patterns is paid back tenfold. Once the plan was solid, the act of coding became the straightforward part.
 
-| Method | Endpoint              | Description                           |
-| ------ | --------------------- | ------------------------------------- |
-| `POST` | `/api/users/register` | Register a new user.                  |
-| `POST` | `/api/users/login`    | Log in and receive JWT tokens.        |
-| `POST` | `/api/tasks`          | Create a new task.                    |
-| `GET`  | `/api/tasks`          | Get all tasks for the logged-in user. |
-| `GET`  | `/api/activities`     | Get the activity feed for the user.   |
+**Containerization is a Necessity:** Docker was non-negotiable for a project this complex. The ability to create a reproducible environment for all services and dependencies with a single command was essential for effective development and debugging.
 
-_(Add more key endpoints as you see fit)_
+**Consistency is a Deliberate Trade-off:** I learned that in distributed systems, you consciously trade the safety of a single, all-or-nothing database operation (common in monoliths) for the massive gains in resilience and scalability that an event-driven model provides.
 
 ---
 
-## 🌱 Personal Growth & Learning
+## Frontend Note
 
-This project was a significant learning journey. The `users-service` represents my initial approach, while the `activity-service` reflects a more mature understanding of decoupled, event-driven design. This project taught me invaluable lessons in:
+The frontend's purpose is to be a compelling, functional client for the backend. The visual design is inspired by the aesthetic of *Bloodborne*. Significant effort went into the frontend's visual design to match the Bloodborne aesthetic. This was an iterative process of directing AI tools, sourcing thematic assets, and refining the final result. While I'm proud of the outcome, the primary engineering effort and complexity lie in the backend architecture.
 
-- The challenges of inter-service communication and the importance of a message broker like RabbitMQ.
-- Implementing a secure and robust authentication system from scratch.
-- The power of containerization for creating reproducible development environments.
-- The critical role of a CI/CD pipeline in ensuring code quality and automating deployments.
+
+---
+
+## Next Steps & Future Work
+
+This project built a solid foundation. The logical next steps to bring it closer to a production-ready system would be:
+-   Implement distributed tracing with a tool like OpenTelemetry to visualize request flows.
+-   Add more sophisticated API rate limiting with per-user quotas.
+
+---
+
+*This is a non-commercial, personal portfolio project and is not affiliated with or endorsed by Sony or FromSoftware.*
+
+---
+
+**Connect & Discuss**
+
+[Email](gabrielgomezrojas0501@gmail.com) | [LinkedIn](https://linkedin.com/in/yourprofile)
