@@ -1,7 +1,7 @@
 <h1 align="center">Task Hunter</h1>
 
 <p align="center">
-  <img src="URL_TO_YOUR_BEST_SCREENSHOT_OR_GIF.gif" alt="Task Hunter Application Dashboard" width="800"/>
+  <img src="./docs/TaskHunter.gif" alt="Task Hunter Application Dashboard" width="800"/>
 </p>
 
 <p align="center">
@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <strong><a href="https://tasks-app-frontend-nine.vercel.app" target="_blank">Live Demo</a></strong> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <strong><a href="https://tasks-app-frontend-nine.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo</a></strong> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <strong><a href="https://github.com/gabrielgr15/task-app-backend" target="_blank">GitHub Repository</a></strong>
 </p>
 
@@ -25,7 +25,7 @@ This project started as a mission to learn critical skills like service decoupli
 
 ## Core Architectural Features
 
-![Task Hunter Microservices Diagram](./docs/TaskForge.png)
+![Task Hunter Microservices Diagram](./docs/TaskHunter.png)
 
 -   **Event-Driven & Resilient Communication**
     Initially, I considered direct API calls between services, but learned this creates a fragile system. Instead, key services like Tasks and Activity communicate asynchronously via a **RabbitMQ** event bus. When a task is created, the Tasks Service publishes an event and moves on. If a downstream service is offline, messages queue safely until it recovers. This taught me a powerful lesson in building resilient systems by truly decoupling services.
