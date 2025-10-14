@@ -5,6 +5,8 @@ const logger = require('./logger')
 const errorHandler = require('./middleware/errorHandler')
 const {initializeRabbitMQ} = require('./rabbitmq')
 const {connectDB} = require('./db')
+const OutboxModel = require('../models/outbox.model')
+const { publishTaskEvent } = require('../rabbitmq')
 
 
 const PORT = process.env.PORT
@@ -25,6 +27,28 @@ async function startServer(){
 	})
 }
 startServer()
+
+logger.info('Starting Outbox Processor...');
+
+const OUTBOX_POLL_INTERVAL = 5000;
+
+setInterval(async () => {
+	const event = await OutboxModel.findOneAndUpdate(
+		{ status: 'PENDING' },
+		{ $set: { status: 'PROCESSING' } }
+	)
+	if (!event) {
+		return
+	}
+	try {
+		await publishTaskEvent.publish(event.payload);
+		await OutboxModel.updateOne({ _id: event._id }, { $set: { status: 'SENT' } });
+		logger.info(`Successfully processed event ${event._id}`);
+	} catch (err) {
+		logger.error(`Failed to process event ${event._id}:`, err);
+		await OutboxModel.updateOne({ _id: event._id }, { $set: { status: 'PENDING' } });
+	}
+}, OUTBOX_POLL_INTERVAL);
 
 
 process.on('unhandledRejection', (reason, promise) => {
