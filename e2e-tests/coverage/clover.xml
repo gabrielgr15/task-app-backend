@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1760495780038" clover="3.2.0">
-  <project timestamp="1760495780039" name="All files">
+<coverage generated="1760503595258" clover="3.2.0">
+  <project timestamp="1760503595258" name="All files">
     <metrics statements="103" coveredstatements="96" conditionals="4" coveredconditionals="2" methods="2" coveredmethods="2" elements="109" coveredelements="100" complexity="0" loc="103" ncloc="103" packages="1" files="2" classes="2"/>
     <file name="dbUtils.js" path="/home/gabriel/projects/e2e-tests/src/helpers/dbUtils.js">
       <metrics statements="29" coveredstatements="22" conditionals="4" coveredconditionals="2" methods="2" coveredmethods="2"/>

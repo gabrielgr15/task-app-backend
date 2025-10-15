@@ -70,6 +70,14 @@ jobs:
         working-directory: ./e2e-tests
         run: npm ci
 
+      - name: Debug Environment Variables
+        run: |
+          echo "NODE_ENV is: $NODE_ENV"
+          echo "MONGO_TEST_URI is: $MONGO_TEST_URI"
+          echo "MONGO_URI_FOR_TESTS is: $MONGO_URI_FOR_TESTS"
+          echo "JWT_SECRET is set: ${{ secrets.JWT_SECRET != '' }}"
+          printenv | sort  
+
       - name: Run all integration tests
         run: npm test        
 
