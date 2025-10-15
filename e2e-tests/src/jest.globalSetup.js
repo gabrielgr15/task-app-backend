@@ -34,7 +34,7 @@ module.exports = async () => {
     console.log('\n[GlobalSetup] Starting test environment...');
     try {
         // This is the simplest possible command. It will work.
-        const command = `NODE_ENV=test docker compose --env-file "${DOTENV_CI_FILE}" -f "${DOCKER_COMPOSE_FILE}" -f "${DOCKER_COMPOSE_DEV_FILE}" up --build --force-recreate -d`;
+        const command = `NODE_ENV=test docker compose -f "${DOCKER_COMPOSE_FILE}" -f "${DOCKER_COMPOSE_DEV_FILE}" up --build --force-recreate -d`;
 
         console.log(`[GlobalSetup] Executing: ${command}`);
         execSync(command, { stdio: 'inherit' });

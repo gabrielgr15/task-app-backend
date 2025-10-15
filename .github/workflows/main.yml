@@ -20,10 +20,10 @@ jobs:
       ACTIVITY_SERVICE_PORT: 4003
       REDIS_HOST: redis
       REDIS_PORT: 6379
+      NODE_ENV: test
+      MONGO_TEST_URI: ${{ vars.MONGO_TEST_URI }}
+      MONGO_URI_FOR_TESTS: ${{ vars.MONGO_URI_FOR_TESTS }}
       RABBITMQ_USER: user
-      MONGO_ACTIVITY_URI: ${{ secrets.MONGO_ACTIVITY_URI }}
-      MONGO_TASKS_URI: ${{ secrets.MONGO_TASKS_URI }}
-      MONGO_USER_URI: ${{ secrets.MONGO_USER_URI }}
       JWT_SECRET: ${{ secrets.JWT_SECRET }}
       REDIS_PASSWORD: ${{ secrets.REDIS_PASSWORD }}
       RABBITMQ_PASS: ${{ secrets.RABBITMQ_PASS }}
@@ -69,7 +69,7 @@ jobs:
       - name: Install e2e-tests dependencies
         working-directory: ./e2e-tests
         run: npm ci
-        
+
       - name: Run all integration tests
         run: npm test        
 
