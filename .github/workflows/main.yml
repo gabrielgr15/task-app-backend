@@ -69,10 +69,7 @@ jobs:
       - name: Install e2e-tests dependencies
         working-directory: ./e2e-tests
         run: npm ci
-
-      - name: Build Docker images
-        run: docker compose build    
-
+        
       - name: Run all integration tests
         run: npm test        
 

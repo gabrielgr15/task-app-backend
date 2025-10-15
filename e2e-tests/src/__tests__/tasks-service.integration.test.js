@@ -6,7 +6,7 @@ const bcrypt = require('bcryptjs')
 const API_GATEWAY_BASE_URL = 'http://localhost:4000'
 
 
-describe('API Gateway Tasks Integration', () => {
+describe('Tasks service integration', () => {
     it('should return 201, msg, taskId, title, status and description', async () => {
         try {
             const uniqueId = Date.now()
