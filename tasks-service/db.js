@@ -17,10 +17,11 @@ async function connectDB(retries = maxRetries) {
          isDbConnected = true;
          return;
     }
-    const dbUri = process.env.MONGO_URI
+    const isTestEnv = process.env.NODE_ENV === 'test';
+    const dbUri = isTestEnv ? process.env.MONGO_TEST_URI : process.env.MONGO_URI;
 
     if (!dbUri) {
-        logger.error('FATAL ERROR: MONGO_ACTIVITY_URI environment variable is not set.')        
+        logger.error(`FATAL ERROR: A MongoDB URI was not provided for the current environment.`);
         process.exit(1);
     }
    

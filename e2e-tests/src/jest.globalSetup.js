@@ -1,5 +1,6 @@
 const { execSync } = require('child_process');
 const path = require('path');
+require('dotenv').config({ path: path.resolve(__dirname, '../.env.test') });
 const axios = require('axios');
 
 // --- THIS IS THE CORRECT PATH LOGIC. IT WILL NOT FAIL. ---
@@ -7,6 +8,7 @@ const axios = require('axios');
 // We go up two levels to get to the monorepo root.
 const MONOREPO_ROOT = path.resolve(__dirname, '..', '..');
 const DOCKER_COMPOSE_FILE = path.resolve(MONOREPO_ROOT, 'docker-compose.yml');
+const DOCKER_COMPOSE_DEV_FILE = path.resolve(MONOREPO_ROOT, 'docker-compose.dev.yml');
 // --- END OF PATH FIX ---
 
 const API_GATEWAY_HEALTH_URL = 'http://localhost:4000/health';
@@ -30,7 +32,7 @@ module.exports = async () => {
     console.log('\n[GlobalSetup] Starting test environment...');
     try {
         // This is the simplest possible command. It will work.
-        const command = `NODE_ENV=test docker compose -f "${DOCKER_COMPOSE_FILE}" up --build --force-recreate -d`;
+        const command = `NODE_ENV=test docker compose -f "${DOCKER_COMPOSE_FILE}" -f "${DOCKER_COMPOSE_DEV_FILE}" up --build --force-recreate -d`;
 
         console.log(`[GlobalSetup] Executing: ${command}`);
         execSync(command, { stdio: 'inherit' });

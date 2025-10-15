@@ -4,7 +4,7 @@ import express, { Request, Response } from 'express'
 import mongoose from 'mongoose'
 import http from 'http'
 import logger from './logger'
-import { connectDB } from './db'
+import { connectDB, isDatabaseConnected } from './db'
 import { initializeRabbitMQConsumer } from './rabbitmq/consumer'
 import activityRoutes from './routes/activityRoutes'
 import { closeRabbitMQ } from './rabbitmq/connection'
@@ -45,9 +45,14 @@ async function startServer() {
         await initializeRabbitMQConsumer()
         app.use(express.json());
         app.use('/api', activityRoutes)
-        app.get('/health', (req: Request, res: Response) => {
-            res.status(200).send('Activity Service OK');
-        });
+        app.get('/health', (req, res) => {
+                const isDbReady = isDatabaseConnected();
+                if (isDbReady) {
+                    res.status(200).send('OK');
+                } else {
+                    res.status(503).send('Service Unavailable: Database connection not ready');
+                }
+            });
         //Central error handler place holder, last app.use
         const server = app.listen(PORT, () => {
             logger.info(`Activity Service running on port ${PORT}`)

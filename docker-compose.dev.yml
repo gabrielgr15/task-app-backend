@@ -3,18 +3,22 @@ services:
     volumes:
       - ./activity-service:/usr/src/app
       - /usr/src/app/node_modules
+      - ./activity-service/src/logs:/usr/src/app/logs
 
   tasks-service:
     volumes:
       - ./tasks-service:/usr/src/app
       - /usr/src/app/node_modules
+      - ./tasks-service/logs:/usr/src/app/logs
 
   user-service:
     volumes:
       - ./user-service:/usr/src/app
       - /usr/src/app/node_modules
+      - ./user-service/logs:/usr/src/app/logs
 
   api-gateway:
     volumes:
       - ./api-gateway:/usr/src/app
       - /usr/src/app/node_modules
+      - ./api-gateway/src/config/logs:/usr/src/app/logs

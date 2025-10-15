@@ -9,7 +9,7 @@ const eventDataSchema = new mongoose.Schema({
 }, { _id: false });
 
 
-const outboxSchema = new mongoose.Schema({
+const OutboxSchema = new mongoose.Schema({
     payload: {
         type: eventDataSchema,
         required: true
@@ -27,5 +27,5 @@ const outboxSchema = new mongoose.Schema({
 }    
 })
 
-module.exports = mongoose.model('Outbox', outboxSchema)
+module.exports = mongoose.model('Outbox', OutboxSchema)
 

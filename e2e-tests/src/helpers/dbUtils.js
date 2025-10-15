@@ -5,8 +5,9 @@ const timeout = 3000
 
 async function connectDB (retriesLeft = MAX_RETRIES){        
     try{
-        const MONGO_USER_URI = "mongodb://localhost:27017/user_service_db"
-        await mongoose.connect(MONGO_USER_URI, {
+        const MONGO_URI_FOR_TESTS = 'mongodb://127.0.0.1:27017/e2e_test_db?replicaSet=rs0&directConnection=true'
+        console.log(`[dbUtils] Attempting to connect with URI: "${MONGO_URI_FOR_TESTS}"`);
+        await mongoose.connect(MONGO_URI_FOR_TESTS, {
             serverSelectionTimeoutMS: 5000,
             connectTimeoutMS: 5000,
             socketTimeoutMS: 30000

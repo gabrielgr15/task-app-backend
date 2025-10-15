@@ -10,19 +10,20 @@ const mongooseOptions = {
 
 let isDbConnected = false;
 
-export async function connectDB() {    
+export async function connectDB() {
     if (isDbConnected || mongoose.connection.readyState >= 1) {
-         logger.info('MongoDB connection already established.');
-         isDbConnected = true;
-         return;
+        logger.info('MongoDB connection already established.');
+        isDbConnected = true;
+        return;
     }
-    const dbUri = process.env.MONGO_URI
+    const isTestEnv = process.env.NODE_ENV === 'test';
+    const dbUri = isTestEnv ? process.env.MONGO_TEST_URI : process.env.MONGO_URI;
 
     if (!dbUri) {
-        logger.error('FATAL ERROR: MONGO_ACTIVITY_URI environment variable is not set.')        
+        logger.error(`FATAL ERROR: A MongoDB URI was not provided for the current environment.`);
         process.exit(1);
     }
-   
+
     mongoose.connection.on('connected', () => {
         logger.info('Mongoose connected to DB.');
         isDbConnected = true;
@@ -30,12 +31,12 @@ export async function connectDB() {
 
     mongoose.connection.on('error', (err) => {
         logger.error('Mongoose connection error:', err);
-        isDbConnected = false;       
+        isDbConnected = false;
     });
 
     mongoose.connection.on('disconnected', () => {
         logger.warn('Mongoose disconnected from DB.')
-        isDbConnected = false        
+        isDbConnected = false
     });
 
     mongoose.connection.on('reconnected', () => {
@@ -44,9 +45,9 @@ export async function connectDB() {
     })
     try {
         logger.info(`Attempting to connect to MongoDB at ${dbUri.split('@')[1] || 'URI'}`)
-        await mongoose.connect(dbUri, mongooseOptions);        
+        await mongoose.connect(dbUri, mongooseOptions);
     } catch (error) {
-        logger.error('Initial Mongoose connection failed:', error)        
+        logger.error('Initial Mongoose connection failed:', error)
         process.exit(1);
     }
 }

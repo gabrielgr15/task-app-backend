@@ -1,3 +1,4 @@
+require('dotenv').config({ path: require('path').resolve(__dirname, './.env.test') });
 module.exports = {
     "globalSetup": './src/jest.globalSetup.js',
     "globalTeardown": './src/jest.globalTeardown.js',
@@ -29,5 +30,11 @@ module.exports = {
     collectCoverage: true,
     coverageDirectory: "coverage",
     coverageProvider: "v8", // or 'babel'
+
+    globals: {
+        'process.env': {
+            MONGO_URI_FOR_TESTS: process.env.MONGO_URI_FOR_TESTS,
+        }
+      }
 }
 

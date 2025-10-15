@@ -4,9 +4,7 @@ const Task = require('../models/task')
 const OutboxModel = require('../models/outbox.model')
 const logger = require('../logger')
 const { ValidationError, ServerError, CustomError, NotFound, ForbiddenError } = require('../errors')
-
 const mongoose = require('mongoose')
-const outboxModel = require('../models/outbox.model')
 
 const router = express.Router()
 
@@ -29,7 +27,7 @@ router.post(
 		const { title, status, description } = req.body
 
 		try {
-			await session.withTransaction(async () => {
+			const createdTask = await session.withTransaction(async () => {
 				const taskData = {
 					title,
 					status,
@@ -37,6 +35,9 @@ router.post(
 					user: userId
 				}
 				const createdTasks = await Task.create([taskData], { session })
+				if (!createdTasks || createdTasks.length === 0) {
+					throw new Error('Task creation failed within transaction.');
+				}
 				const newTask = createdTasks[0]
 				const eventPayload = {
 					type: 'TaskCreated',
@@ -45,15 +46,11 @@ router.post(
 					taskTitle: newTask.title,
 					timestamp: new Date().toISOString()
 				}
-
-				await OutboxModel.create([
-					{
-						payload: eventPayload
-					}
-				], { session })
-				return res.status(201).json({ msg: 'Task succesfully created', task })
-
+				await OutboxModel.create([{ payload: eventPayload }], { session })
+				return newTask;
 			})
+			return res.status(201).json({ msg: 'Task succesfully created', task: createdTask })
+
 		} catch (error) {
 			logger.error('Transaction failed:', error);
 			next(new ServerError('An internal server error occurred', { cause: error }))

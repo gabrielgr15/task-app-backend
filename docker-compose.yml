@@ -37,14 +37,19 @@ services:
     build: ./user-service 
     container_name: user_service           
     environment:      
+      NODE_ENV: test
       PORT: ${USER_SERVICE_PORT:-4001}
       MONGO_URI: ${MONGO_USER_URI}
+      MONGO_TEST_URI: ${MONGO_TEST_URI} 
       JWT_SECRET: ${JWT_SECRET}
       REDIS_HOST: ${REDIS_HOST} 
       REDIS_PORT: ${REDIS_PORT}
       REDIS_PASSWORD: ${REDIS_PASSWORD}
     depends_on:      
-      - redis
+      mongo_db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy  
     restart: unless-stopped 
     networks:
       - app-network
@@ -60,11 +65,16 @@ services:
     build: ./tasks-service 
     container_name: tasks_service          
     environment:      
+      NODE_ENV: test
       PORT: ${TASKS_SERVICE_PORT:-4002}
       MONGO_URI: ${MONGO_TASKS_URI}      
+      MONGO_TEST_URI: ${MONGO_TEST_URI} 
       RABBITMQ_URI: ${RABBITMQ_URI}
-    depends_on:      
-      - rabbitmq
+    depends_on:
+      rabbitmq:
+        condition: service_healthy 
+      mongo_db:
+        condition: service_healthy
     restart: unless-stopped 
     networks:
       - app-network      
@@ -80,14 +90,16 @@ services:
     build: ./activity-service
     container_name: activity_service
     environment:
+      NODE_ENV: test
       PORT: ${ACTIVITY_SERVICE_PORT:-4003}
       MONGO_URI: ${MONGO_ACTIVITY_URI}
+      MONGO_TEST_URI: ${MONGO_TEST_URI} 
       RABBITMQ_URI: ${RABBITMQ_URI}
     depends_on:
       rabbitmq:
         condition: service_healthy 
-      mongo:
-        condition: service_started
+      mongo_db:
+        condition: service_healthy
     restart: unless-stopped
     networks:
       - app-network    
@@ -112,19 +124,23 @@ services:
       - app-network
 
 
-  mongo:
+  mongo_db:
     image: mongo:latest
     container_name: mongo_db
     ports:
-      - "27017:27017" 
+      - "27017:27017"
     volumes:
       - mongo_data:/data/db
+    command: ["--replSet", "rs0", "--bind_ip_all"]
+    healthcheck:
+      test: |
+        mongosh --eval "try { rs.status().ok } catch (e) { rs.initiate({ _id: 'rs0', members: [ { _id: 0, host: 'mongo_db:27017' } ] }).ok }"
+      interval: 5s
+      timeout: 10s
+      start_period: 10s
+      retries: 5
     networks:
-      - app-network  
-    # Optional: Set root credentials for basic security (good practice)
-    # environment:
-    #   MONGO_INITDB_ROOT_USERNAME: mongoadmin
-    #   MONGO_INITDB_ROOT_PASSWORD: changeme
+      - app-network
 
 
   rabbitmq:    
@@ -140,7 +156,7 @@ services:
       - rabbitmq_data:/var/lib/rabbitmq
     networks:     
       - app-network
-    healthcheck: # <--- ADD THIS ENTIRE BLOCK
+    healthcheck:
       test: ["CMD", "rabbitmq-diagnostics", "-q", "ping"]
       interval: 10s
       timeout: 5s

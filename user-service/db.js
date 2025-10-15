@@ -17,13 +17,11 @@ async function connectDB(retries = maxRetries) {
          isDbConnected = true;
          return;
     }
-    //For dev:
-    //const dbUri = 'mongodb+srv://gabriel15:Caminando65@cluster0.z1ctu.mongodb.net/user_db?retryWrites=true&w=majority&appName=Cluster0'
-    //For deployment:
-    const dbUri = process.env.MONGO_URI
+    const isTestEnv = process.env.NODE_ENV === 'test';
+    const dbUri = isTestEnv ? process.env.MONGO_TEST_URI : process.env.MONGO_URI;
 
     if (!dbUri) {
-        logger.error('FATAL ERROR: MONGO_ACTIVITY_URI environment variable is not set.')        
+        logger.error(`FATAL ERROR: A MongoDB URI was not provided for the current environment.`);
         process.exit(1);
     }
    
@@ -48,7 +46,7 @@ async function connectDB(retries = maxRetries) {
     })
     try {
         logger.info(`Attempting to connect to MongoDB at ${dbUri.split('@')[1] || 'URI'}`)
-        console.log(`*** USER_SERVICE DB CONNECT: Attempting connection with URI: [${dbUri}] ***`)
+        logger.info(`*** USER_SERVICE DB CONNECT: Attempting connection with URI: [${dbUri}] ***`)
         await mongoose.connect(dbUri, mongooseOptions);        
     } catch (error) {
         logger.error('Initial Mongoose connection failed:', error)     

@@ -9,8 +9,9 @@ const API_GATEWAY_BASE_URL = 'http://localhost:4000'
 describe('API Gateway Tasks Integration', () => {
     it('should return 201, msg, taskId, title, status and description', async () => {
         try {
-            const username = "Justatest"
-            const email = "justaemailtest@gmail.com"
+            const uniqueId = Date.now()
+            const username = `Justatest${uniqueId}`;
+            const email = `justaemailtest${uniqueId}@gmail.com`;
             const password = "Testpsw"
             const user = new TestUser({ username, email })
             user.password = await bcrypt.hash(password, 10)
@@ -43,8 +44,9 @@ describe('API Gateway Tasks Integration', () => {
 
     it('should return 200, totalTasks and tasks', async () => {
         try {
-            const username = "Justatest"
-            const email = "justaemailtest@gmail.com"
+            const uniqueId = Date.now()
+            const username = `Justatest${uniqueId}`;
+            const email = `justaemailtest${uniqueId}@gmail.com`;
             const password = "Testpsw"
             const user = new TestUser({ username, email })
             user.password = await bcrypt.hash(password, 10)
@@ -96,8 +98,9 @@ describe('API Gateway Tasks Integration', () => {
 
     it('should return 200, msg, taskId, title, status  and description', async () => {
         try {            
-            const username = "Justatest"
-            const email = "justaemailtest@gmail.com"
+            const uniqueId = Date.now();
+            const username = `Justatest${uniqueId}`;
+            const email = `justaemailtest${uniqueId}@gmail.com`;
             const password = "Testpsw"
             const user = new TestUser({ username, email })
             user.password = await bcrypt.hash(password, 10)
@@ -145,8 +148,9 @@ describe('API Gateway Tasks Integration', () => {
 
     it('should return 200 and msg', async () => {
         try {            
-            const username = "Justatest"
-            const email = "justaemailtest@gmail.com"
+            const uniqueId = Date.now();
+            const username = `Justatest${uniqueId}`;
+            const email = `justaemailtest${uniqueId}@gmail.com`;
             const password = "Testpsw"
             const user = new TestUser({ username, email })
             user.password = await bcrypt.hash(password, 10)

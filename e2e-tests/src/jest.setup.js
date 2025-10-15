@@ -1,6 +1,5 @@
-// This file is now located in e2e-tests/src/
 
-// The paths are now relative to this file's new location.
+//require('dotenv').config({ path: require('path').resolve(__dirname, '../.env.test') });
 const { connectDB, disconnectDB } = require('./helpers/dbUtils');
 const { TestUser, TestRefreshToken } = require('./helpers/testModels');
 
@@ -12,10 +11,10 @@ beforeAll(async () => {
     await connectDB();
     console.log('[SetupFile - beforeAll] DB Connected.');
   } catch (error) {
-    console.error('[SetupFile - beforeAll] FATAL: DB connection failed:', error);
+    console.error('[SetupFile - beforeAll] FATAL: DB connection failed:', process.env.MONGO_URI_FOR_TESTS, error);
     process.exit(1);
   }
-}, 60000); // Increased timeout for DB connection
+}, 60000);
 
 afterAll(async () => {
   console.log('[SetupFile - afterAll] Disconnecting from DB...');
@@ -29,7 +28,6 @@ afterAll(async () => {
 
 beforeEach(async () => {
   try {
-    // This ensures every single test starts with a clean slate.
     await TestUser.deleteMany({});
     await TestRefreshToken.deleteMany({});
   } catch (error) {

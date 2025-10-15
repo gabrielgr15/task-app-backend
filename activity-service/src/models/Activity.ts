@@ -3,8 +3,8 @@ import mongoose, { Schema, Document, Types } from "mongoose"
 export interface IActivity extends Document {
     _id: Types.ObjectId,
     eventType: string;
-    userId: Types.ObjectId;
-    taskId: Types.ObjectId;
+    userId: string
+    taskId: string
     taskTitle: string
     description: string
     timestamp: Date;
@@ -16,19 +16,17 @@ const ActivitySchema : Schema<IActivity> = new Schema({
         type: String,
         required: true,
         enum: ['TaskCreated', 'TaskUpdated', 'TaskDeleted'],
-        index: true
     },
     userId : {
-        type: Schema.Types.ObjectId,
+        type: String,
         ref: 'User',
         required: true,
         index: true,
     },
     taskId: {
-        type: Schema.Types.ObjectId,
+        type: String,
         ref: 'Task',
         required: true,
-        index: true,
     },
     taskTitle: {
         type: String,
@@ -51,6 +49,13 @@ const ActivitySchema : Schema<IActivity> = new Schema({
 }, {
     timestamps: true
 })
+
+ActivitySchema.index({ taskId: 1, eventType: 1 }, {
+    unique: true,
+    partialFilterExpression: { eventType: 'TaskCreated' }
+});
+
+
 
 const Activity = mongoose.model<IActivity>('Activity', ActivitySchema)
 

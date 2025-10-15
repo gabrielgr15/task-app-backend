@@ -19,6 +19,16 @@
             "date": 1760140936586,
             "name": "/usr/src/app/src/config/logs/app-2025-10-11.log",
             "hash": "da921e2c4bbdedc005ddb7b5b7c79de05be74561c8adc25a21b937265bc24eb3"
+        },
+        {
+            "date": 1760482830058,
+            "name": "/usr/src/app/src/config/logs/app-2025-10-14.log",
+            "hash": "9c137004089b64baa965fbd9b487b43422056f483d2581ee421dda5a40bc1ec6"
+        },
+        {
+            "date": 1760487012094,
+            "name": "/usr/src/app/src/config/logs/app-2025-10-15.log",
+            "hash": "7995dfbdfa43a957da1a049f7df418c00dff6bda631bd8ebbac4fe051a82ee60"
         }
     ],
     "hashType": "sha256"
