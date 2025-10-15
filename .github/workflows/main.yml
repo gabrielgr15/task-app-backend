@@ -23,6 +23,9 @@ jobs:
       NODE_ENV: test
       MONGO_TEST_URI: ${{ vars.MONGO_TEST_URI }}
       MONGO_URI_FOR_TESTS: ${{ vars.MONGO_URI_FOR_TESTS }}
+      MONGO_USER_URI: ${{ vars.MONGO_TEST_URI }}
+      MONGO_TASKS_URI: ${{ vars.MONGO_TEST_URI }}
+      MONGO_ACTIVITY_URI: ${{ vars.MONGO_TEST_URI }}
       RABBITMQ_USER: user
       JWT_SECRET: ${{ secrets.JWT_SECRET }}
       REDIS_PASSWORD: ${{ secrets.REDIS_PASSWORD }}
