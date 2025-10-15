@@ -9,6 +9,8 @@ const axios = require('axios');
 const MONOREPO_ROOT = path.resolve(__dirname, '..', '..');
 const DOCKER_COMPOSE_FILE = path.resolve(MONOREPO_ROOT, 'docker-compose.yml');
 const DOCKER_COMPOSE_DEV_FILE = path.resolve(MONOREPO_ROOT, 'docker-compose.dev.yml');
+const DOTENV_CI_FILE = path.resolve(MONOREPO_ROOT, '.env.ci');
+
 // --- END OF PATH FIX ---
 
 const API_GATEWAY_HEALTH_URL = 'http://localhost:4000/health';
@@ -32,7 +34,7 @@ module.exports = async () => {
     console.log('\n[GlobalSetup] Starting test environment...');
     try {
         // This is the simplest possible command. It will work.
-        const command = `NODE_ENV=test docker compose --env-file .env.ci -f "${DOCKER_COMPOSE_FILE}" -f "${DOCKER_COMPOSE_DEV_FILE}" up --build --force-recreate -d`;
+        const command = `NODE_ENV=test docker compose --env-file "${DOTENV_CI_FILE}" -f "${DOCKER_COMPOSE_FILE}" -f "${DOCKER_COMPOSE_DEV_FILE}" up --build --force-recreate -d`;
 
         console.log(`[GlobalSetup] Executing: ${command}`);
         execSync(command, { stdio: 'inherit' });
