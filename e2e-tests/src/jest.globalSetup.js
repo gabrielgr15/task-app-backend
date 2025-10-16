@@ -28,7 +28,7 @@ async function waitForApiGateway(timeout = 180000) {
 module.exports = async () => {
     console.log('\n[GlobalSetup] Starting Docker Compose...');
     try {
-        const command = `NODE_ENV=test docker compose -f "${DOCKER_COMPOSE_FILE}" -f "${DOCKER_COMPOSE_DEV_FILE}" up --build --force-recreate -d`;
+        const command = `NODE_ENV=test docker compose -f "${DOCKER_COMPOSE_FILE}" up --build --force-recreate -d`;
         console.log(`[GlobalSetup] Executing: ${command}`);
         execSync(command, { stdio: 'inherit' });
 
