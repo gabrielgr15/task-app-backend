@@ -9,18 +9,23 @@ RUN npm run build
 FROM node:20-alpine
 WORKDIR /usr/src/app
 RUN apk add --no-cache curl
+
+# Copy deps as root, then chown before app copy
 COPY package*.json ./
 RUN npm ci --omit=dev && npm cache clean --force
+RUN chown -R node:node /usr/src/app  # Own node_modules early
 
-# Copy compiled code first
-COPY --from=builder /usr/src/app/dist ./dist
+# Copy built app with ownership baked in (key change!)
+COPY --from=builder --chown=node:node /usr/src/app/dist ./dist
 
-# *** THE CRITICAL FIX: Create logs directory BEFORE switching to node user ***
-RUN mkdir -p /usr/src/app/dist/logs && \
-    chown -R node:node /usr/src/app
-
-# NOW switch to node user
+# Switch to node *before* creating runtime dirs
 USER node
+
+# Now as node: create logs (self-owned, writable, no chown needed)
+RUN mkdir -p dist/logs
+
+# Optional: Explicit modes for paranoia (owner rwx recursive)
+RUN chmod -R u+rwX /usr/src/app
 
 EXPOSE 4003
 CMD ["node", "dist/server.js"]
