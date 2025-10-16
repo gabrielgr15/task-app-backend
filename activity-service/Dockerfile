@@ -24,6 +24,9 @@ USER node
 # Now as node: create logs (self-owned, writable, no chown needed)
 RUN mkdir -p dist/logs
 
+# Go all in: Make logs dir world-writable for CI hammer test
+RUN chmod 777 dist/logs
+
 # Optional: Explicit modes for paranoia (owner rwx recursive)
 RUN chmod -R u+rwX /usr/src/app
 
