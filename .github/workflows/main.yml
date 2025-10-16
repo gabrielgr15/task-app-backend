@@ -20,6 +20,7 @@ jobs:
       ACTIVITY_SERVICE_PORT: 4003
       REDIS_HOST: redis
       REDIS_PORT: 6379
+      NODE_ENV: test
       REDIS_PASSWORD: ${{ secrets.REDIS_PASSWORD }}
       MONGO_USER_URI: ${{ vars.MONGO_USER_URI }}
       MONGO_TASKS_URI: ${{ vars.MONGO_TASKS_URI }}
