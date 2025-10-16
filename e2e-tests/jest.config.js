@@ -1,8 +1,7 @@
-require('dotenv').config({ path: require('path').resolve(__dirname, './.env.test') });
 module.exports = {
     "globalSetup": './src/jest.globalSetup.js',
     "globalTeardown": './src/jest.globalTeardown.js',
-    "testTimeout": 60000,
+    "testTimeout": 30000,
     //preset: 'ts-jest',  
 
     testEnvironment: 'node',
@@ -19,6 +18,8 @@ module.exports = {
     transform: {
         '^.+\\.[jt]sx?$': 'babel-jest',
     },
+
+    verbose: true,
 
     //clearMocks: true,
 

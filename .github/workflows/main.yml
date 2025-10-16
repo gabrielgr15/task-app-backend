@@ -20,17 +20,14 @@ jobs:
       ACTIVITY_SERVICE_PORT: 4003
       REDIS_HOST: redis
       REDIS_PORT: 6379
-      NODE_ENV: test
-      MONGO_TEST_URI: ${{ vars.MONGO_TEST_URI }}
-      MONGO_URI_FOR_TESTS: ${{ vars.MONGO_URI_FOR_TESTS }}
-      MONGO_USER_URI: ${{ vars.MONGO_TEST_URI }}
-      MONGO_TASKS_URI: ${{ vars.MONGO_TEST_URI }}
-      MONGO_ACTIVITY_URI: ${{ vars.MONGO_TEST_URI }}
-      RABBITMQ_USER: user
-      JWT_SECRET: ${{ secrets.JWT_SECRET }}
       REDIS_PASSWORD: ${{ secrets.REDIS_PASSWORD }}
+      MONGO_USER_URI: ${{ vars.MONGO_USER_URI }}
+      MONGO_TASKS_URI: ${{ vars.MONGO_TASKS_URI }}
+      MONGO_ACTIVITY_URI: ${{ vars.MONGO_ACTIVITY_URI }}
+      RABBITMQ_USER: user
       RABBITMQ_PASS: ${{ secrets.RABBITMQ_PASS }}
       RABBITMQ_URI: ${{ secrets.RABBITMQ_URI }}
+      JWT_SECRET: ${{ secrets.JWT_SECRET }}
 
     steps:
       - name: Checkout code
@@ -52,37 +49,13 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-buildx-${{ github.ref }}-
             ${{ runner.os }}-buildx-    
-
-      - name: Install user-service dependencies
-        working-directory: ./user-service
-        run: npm ci
-
-      - name: Install tasks-service dependencies
-        working-directory: ./tasks-service
-        run: npm ci  
-
-      - name: Install activity-service dependencies
-        working-directory: ./activity-service
-        run: npm ci  
-
-      - name: Install api-gateway dependencies
-        working-directory: ./api-gateway
-        run: npm ci  
-
+      
       - name: Install e2e-tests dependencies
         working-directory: ./e2e-tests
-        run: npm ci
-
-      - name: Debug Environment Variables
-        run: |
-          echo "NODE_ENV is: $NODE_ENV"
-          echo "MONGO_TEST_URI is: $MONGO_TEST_URI"
-          echo "MONGO_URI_FOR_TESTS is: $MONGO_URI_FOR_TESTS"
-          echo "JWT_SECRET is set: ${{ secrets.JWT_SECRET != '' }}"
-          printenv | sort  
+        run: npm ci      
 
       - name: Run all integration tests
-        run: npm test        
+        run: npm test
 
       - name: Dump Docker logs on failure
         if: failure()

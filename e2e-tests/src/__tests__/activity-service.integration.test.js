@@ -1,6 +1,6 @@
 const axios = require('axios')
-const { TestUser } = require('../helpers/testModels')
-const bcrypt = require('bcryptjs')
+const { wrapper } = require('axios-cookiejar-support')
+const { CookieJar } = require('tough-cookie')
 
 
 const API_GATEWAY_BASE_URL = 'http://localhost:4000'
@@ -10,17 +10,23 @@ const API_GATEWAY_BASE_URL = 'http://localhost:4000'
 describe('API Gateway Activity Integration', () => {
     it('should return 200 and activities', async () => {
         try {
-            const username = "Justatest"
-            const email = "justaemailtest@gmail.com"
-            const password = "Testpsw"
-            const user = new TestUser({ username, email })
-            user.password = await bcrypt.hash(password, 10)
-            await user.save()
-            const tokens = await axios.post(`${API_GATEWAY_BASE_URL}/api/users/auth/login`, {
+            const jar = new CookieJar();
+            const sessionClient = wrapper(axios.create({
+                baseURL: API_GATEWAY_BASE_URL,
+                jar
+            }));
+
+            const uniqueId = Date.now();
+            const username = `Justatest${uniqueId}`;
+            const email = `justaemailtest${uniqueId}@gmail.com`;
+            const password = "Testpsw";
+
+            const tokens = await sessionClient.post('/api/users/auth/register', {
                 email,
-                password
-            })
-            const accessToken = tokens.data.accessToken
+                password,
+                username
+            });
+            const accessToken = tokens.data.accessToken;
             const newTask = await axios.post(`${API_GATEWAY_BASE_URL}/api/tasks`, {
                 title: "Learn backend",
                 status: "In progress",
@@ -31,13 +37,13 @@ describe('API Gateway Activity Integration', () => {
                         'Authorization': `Bearer ${accessToken}`
                     }
                 })
-            const taskId = newTask.data.task._id 
-            await new Promise(resolve => setTimeout(resolve,4000))
+            const taskId = newTask.data.task._id
+            await new Promise(resolve => setTimeout(resolve, 4000))
             const response = await axios.get(`${API_GATEWAY_BASE_URL}/api/activity`, {
                 headers: {
                     'Authorization': `Bearer ${accessToken}`
                 }
-            })            
+            })
             expect(response.status).toBe(200)
             expect(response.data).toHaveProperty('activities')
         } catch (error) {

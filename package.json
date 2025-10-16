@@ -6,6 +6,7 @@
         "e2e-tests"
     ],
     "scripts": {
-        "test": "npm -w e2e-tests test"
+        "test": "npm -w e2e-tests test",
+        "citest":"act -j test --secret-file .env"
     }
 }

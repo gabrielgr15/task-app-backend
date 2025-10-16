@@ -1,0 +1,1643 @@
+[CI/CD/test] ⭐ Run Set up job
+[CI/CD/test] 🚀  Start image=catthehacker/ubuntu:act-la***
+[CI/CD/test]   🐳  docker pull image=catthehacker/ubuntu:act-la*** platform= ***name= forcePull=true
+[CI/CD/test]   🐳  docker create image=catthehacker/ubuntu:act-la*** platform= entrypoint=["tail" "-f" "/dev/null"] cmd=[] network="host"
+[CI/CD/test]   🐳  docker run image=catthehacker/ubuntu:act-la*** platform= entrypoint=["tail" "-f" "/dev/null"] cmd=[] network="host"
+[CI/CD/test]   🐳  docker exec cmd=[node --no-warnings -e console.log(process.execPath)] ***= workdir=
+[CI/CD/test]   ✅  Success - Set up job
+[CI/CD/test]   ☁  git clone 'https://github.com/actions/setup-node' # ref=v4
+[CI/CD/test] Non-terminating error while running 'git clone': some refs were not updated
+[CI/CD/test]   ☁  git clone 'https://github.com/docker/setup-buildx-action' # ref=v3
+[CI/CD/test]   ☁  git clone 'https://github.com/actions/cache' # ref=v4
+[CI/CD/test] Non-terminating error while running 'git clone': some refs were not updated
+[CI/CD/test] ⭐ Run Main Checkout code
+[CI/CD/test]   🐳  docker cp src=/home/gabriel/projects/. dst=/home/gabriel/projects
+[CI/CD/test]   ✅  Success - Main Checkout code [1.046564834s]
+[CI/CD/test] ⭐ Run Main Set up Node.js
+[CI/CD/test]   🐳  docker cp src=/home/gabriel/.cache/act/actions-setup-node@v4/ dst=/var/run/act/actions/actions-setup-node@v4/
+[CI/CD/test]   🐳  docker exec cmd=[/opt/acttoolcache/node/18.20.8/x64/bin/node /var/run/act/actions/actions-setup-node@v4/dist/setup/index.js] ***= workdir=
+[CI/CD/test]   | Found in cache @ /opt/hostedtoolcache/node/18.20.8/x64
+[CI/CD/test]   ❓  ::group::Environment details
+[CI/CD/test]   | node: v18.20.8
+[CI/CD/test]   | npm: 10.8.2
+[CI/CD/test]   | yarn: 
+[CI/CD/test]   ❓  ::endgroup::
+[CI/CD/test]   ❓ add-matcher /run/act/actions/actions-setup-node@v4/.github/tsc.json
+[CI/CD/test]   ❓ add-matcher /run/act/actions/actions-setup-node@v4/.github/eslint-stylish.json
+[CI/CD/test]   ❓ add-matcher /run/act/actions/actions-setup-node@v4/.github/eslint-compact.json
+[CI/CD/test]   ✅  Success - Main Set up Node.js [1.072845979s]
+[CI/CD/test]   ⚙  ::set-output:: node-version=v18.20.8
+[CI/CD/test]   ⚙  ::add-path:: /opt/hostedtoolcache/node/18.20.8/x64/bin
+[CI/CD/test] ⭐ Run Main Set up Docker Buildx
+[CI/CD/test]   🐳  docker cp src=/home/gabriel/.cache/act/docker-setup-buildx-action@v3/ dst=/var/run/act/actions/docker-setup-buildx-action@v3/
+[CI/CD/test]   🐳  docker exec cmd=[/opt/acttoolcache/node/18.20.8/x64/bin/node /var/run/act/actions/docker-setup-buildx-action@v3/dist/index.js] ***= workdir=
+[CI/CD/test]   ❓  ::group::Docker info
+[CI/CD/test]   | [command]/usr/bin/docker version
+[CI/CD/test]   | Client:
+[CI/CD/test]   |  Version:           28.5.1-1
+[CI/CD/test]   |  API version:       1.50 (downgraded from 1.51)
+[CI/CD/test]   |  Go version:        go1.24.7
+[CI/CD/test]   |  Git commit:        e180ab8ab82d22b7895a3e6e110cf6dd5c45f1d7
+[CI/CD/test]   |  Built:             Wed Oct  8 02:50:32 UTC 2025
+[CI/CD/test]   |  OS/Arch:           linux/amd64
+[CI/CD/test]   |  Context:           default
+[CI/CD/test]   | 
+[CI/CD/test]   | Server: Docker Engine - Community
+[CI/CD/test]   |  Engine:
+[CI/CD/test]   |   Version:          28.2.2
+[CI/CD/test]   |   API version:      1.50 (minimum version 1.24)
+[CI/CD/test]   |   Go version:       go1.24.3
+[CI/CD/test]   |   Git commit:       45873be
+[CI/CD/test]   |   Built:            Fri May 30 12:07:27 2025
+[CI/CD/test]   |   OS/Arch:          linux/amd64
+[CI/CD/test]   |   Experimental:     false
+[CI/CD/test]   |  containerd:
+[CI/CD/test]   |   Version:          1.7.27
+[CI/CD/test]   |   GitCommit:        05044ec0a9a75232cad458027ca83437aae3f4da
+[CI/CD/test]   |  runc:
+[CI/CD/test]   |   Version:          1.2.5
+[CI/CD/test]   |   GitCommit:        v1.2.5-0-g59923ef
+[CI/CD/test]   |  docker-init:
+[CI/CD/test]   |   Version:          0.19.0
+[CI/CD/test]   |   GitCommit:        de40ad0
+[CI/CD/test]   | [command]/usr/bin/docker info
+[CI/CD/test]   | Client:
+[CI/CD/test]   |  Version:    28.5.1-1
+[CI/CD/test]   |  Context:    default
+[CI/CD/test]   |  Debug Mode: false
+[CI/CD/test]   |  Plugins:
+[CI/CD/test]   |   buildx: Docker Buildx (Docker Inc.)
+[CI/CD/test]   |     Version:  0.29.1-1
+[CI/CD/test]   |     Path:     /usr/libexec/docker/cli-plugins/docker-buildx
+[CI/CD/test]   |   compose: Docker Compose (Docker Inc.)
+[CI/CD/test]   |     Version:  2.40.0-1
+[CI/CD/test]   |     Path:     /usr/libexec/docker/cli-plugins/docker-compose
+[CI/CD/test]   | 
+[CI/CD/test]   | Server:
+[CI/CD/test]   |  Containers: 11
+[CI/CD/test]   |   Running: 11
+[CI/CD/test]   |   Paused: 0
+[CI/CD/test]   |   Stopped: 0
+[CI/CD/test]   |  Images: 15
+[CI/CD/test]   |  Server Version: 28.2.2
+[CI/CD/test]   |  Storage Driver: overlay2
+[CI/CD/test]   |   Backing Filesystem: extfs
+[CI/CD/test]   |   Supports d_type: true
+[CI/CD/test]   |   Using metacopy: false
+[CI/CD/test]   |   Native Overlay Diff: true
+[CI/CD/test]   |   ***xattr: false
+[CI/CD/test]   |  Logging Driver: json-file
+[CI/CD/test]   |  Cgroup Driver: systemd
+[CI/CD/test]   |  Cgroup Version: 2
+[CI/CD/test]   |  Plugins:
+[CI/CD/test]   |   Volume: local
+[CI/CD/test]   |   Network: bridge host ipvlan macvlan null overlay
+[CI/CD/test]   |   Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog
+[CI/CD/test]   |  CDI spec directories:
+[CI/CD/test]   |   /etc/cdi
+[CI/CD/test]   |   /var/run/cdi
+[CI/CD/test]   |  Swarm: inactive
+[CI/CD/test]   |  Runtimes: io.containerd.runc.v2 runc
+[CI/CD/test]   |  Default Runtime: runc
+[CI/CD/test]   |  Init Binary: docker-init
+[CI/CD/test]   |  containerd version: 05044ec0a9a75232cad458027ca83437aae3f4da
+[CI/CD/test]   |  runc version: v1.2.5-0-g59923ef
+[CI/CD/test]   |  init version: de40ad0
+[CI/CD/test]   |  Security Options:
+[CI/CD/test]   |   apparmor
+[CI/CD/test]   |   seccomp
+[CI/CD/test]   |    Profile: builtin
+[CI/CD/test]   |   cgroupns
+[CI/CD/test]   |  Kernel Version: 6.14.0-33-generic
+[CI/CD/test]   |  Operating System: Ubuntu 24.04.2 LTS
+[CI/CD/test]   |  OSType: linux
+[CI/CD/test]   |  Architecture: x86_64
+[CI/CD/test]   |  CPUs: 4
+[CI/CD/test]   |  Total Memory: 10.67GiB
+[CI/CD/test]   |  Name: gabriel-VirtualBox
+[CI/CD/test]   |  ID: e45c58bb-c3d5-4679-8628-e8433cc670cc
+[CI/CD/test]   |  Docker Root Dir: /var/lib/docker
+[CI/CD/test]   |  Debug Mode: false
+[CI/CD/test]   |  Experimental: false
+[CI/CD/test]   |  Insecure Registries:
+[CI/CD/test]   |   ::1/128
+[CI/CD/test]   |   127.0.0.0/8
+[CI/CD/test]   |  Live Restore Enabled: false
+[CI/CD/test]   | 
+[CI/CD/test]   ❓  ::endgroup::
+[CI/CD/test]   ❓  ::group::Buildx version
+[CI/CD/test]   | [command]/usr/bin/docker buildx version
+[CI/CD/test]   | github.com/docker/buildx 0.29.1-1 a32761aeb3debd39be1eca514af3693af0db334b
+[CI/CD/test]   ❓  ::endgroup::
+[CI/CD/test]   ❓  ::group::Inspecting default docker context
+[CI/CD/test]   | [
+[CI/CD/test]   |   {
+[CI/CD/test]   |     "Name": "default",
+[CI/CD/test]   |     "Metadata": {},
+[CI/CD/test]   |     "Endpoints": {
+[CI/CD/test]   |       "docker": {
+[CI/CD/test]   |         "Host": "unix:///var/run/docker.sock",
+[CI/CD/test]   |         "SkipTLSVerify": false
+[CI/CD/test]   |       }
+[CI/CD/test]   |     },
+[CI/CD/test]   |     "TLSMaterial": {},
+[CI/CD/test]   |     "Storage": {
+[CI/CD/test]   |       "MetadataPath": "<IN MEMORY>",
+[CI/CD/test]   |       "TLSPath": "<IN MEMORY>"
+[CI/CD/test]   |     }
+[CI/CD/test]   |   }
+[CI/CD/test]   | ]
+[CI/CD/test]   ❓  ::endgroup::
+[CI/CD/test]   ❓  ::group::Creating a new builder instance
+[CI/CD/test]   | [command]/usr/bin/docker buildx create --name builder-832ac3b3-124f-47fd-aad2-2373c6844bb5 --driver docker-container --buildkitd-flags --allow-insecure-entitlement security.insecure --allow-insecure-entitlement network.host --use
+[CI/CD/test]   | builder-832ac3b3-124f-47fd-aad2-2373c6844bb5
+[CI/CD/test]   ❓  ::endgroup::
+[CI/CD/test]   ❓  ::group::Booting builder
+[CI/CD/test]   | [command]/usr/bin/docker buildx inspect --bootstrap --builder builder-832ac3b3-124f-47fd-aad2-2373c6844bb5
+[CI/CD/test]   | #1 [internal] booting buildkit
+[CI/CD/test]   | #1 pulling image moby/buildkit:buildx-stable-1
+[CI/CD/test]   | #1 pulling image moby/buildkit:buildx-stable-1 1.0s done
+[CI/CD/test]   | #1 creating container buildx_buildkit_builder-832ac3b3-124f-47fd-aad2-2373c6844bb50
+[CI/CD/test]   | #1 creating container buildx_buildkit_builder-832ac3b3-124f-47fd-aad2-2373c6844bb50 6.1s done
+[CI/CD/test]   | #1 DONE 7.1s
+[CI/CD/test]   | Name:          builder-832ac3b3-124f-47fd-aad2-2373c6844bb5
+[CI/CD/test]   | Driver:        docker-container
+[CI/CD/test]   | Last Activity: 2025-10-15 20:36:31 +0000 UTC
+[CI/CD/test]   | 
+[CI/CD/test]   | Nodes:
+[CI/CD/test]   | Name:                  builder-832ac3b3-124f-47fd-aad2-2373c6844bb50
+[CI/CD/test]   | Endpoint:              unix:///var/run/docker.sock
+[CI/CD/test]   | Status:                running
+[CI/CD/test]   | BuildKit daemon flags: --allow-insecure-entitlement security.insecure --allow-insecure-entitlement network.host
+[CI/CD/test]   | BuildKit version:      v0.25.1
+[CI/CD/test]   | Platforms:             linux/amd64, linux/amd64/v2, linux/amd64/v3, linux/386
+[CI/CD/test]   | Labels:
+[CI/CD/test]   |  org.mobyproject.buildkit.worker.executor:         oci
+[CI/CD/test]   |  org.mobyproject.buildkit.worker.hostname:         0dfa299e0e17
+[CI/CD/test]   |  org.mobyproject.buildkit.worker.network:          host
+[CI/CD/test]   |  org.mobyproject.buildkit.worker.oci.process-mode: sandbox
+[CI/CD/test]   |  org.mobyproject.buildkit.worker.selinux.enabled:  false
+[CI/CD/test]   |  org.mobyproject.buildkit.worker.snapshotter:      overlayfs
+[CI/CD/test]   | GC Policy rule#0:
+[CI/CD/test]   |  All:            false
+[CI/CD/test]   |  Filters:        type==source.local,type==exec.cachemount,type==source.git.checkout
+[CI/CD/test]   |  Keep Duration:  48h0m0s
+[CI/CD/test]   |  Max Used Space: 488.3MiB
+[CI/CD/test]   | GC Policy rule#1:
+[CI/CD/test]   |  All:            false
+[CI/CD/test]   |  Keep Duration:  1440h0m0s
+[CI/CD/test]   |  Reserved Space: 5.588GiB
+[CI/CD/test]   |  Max Used Space: 44.7GiB
+[CI/CD/test]   |  Min Free Space: 11.18GiB
+[CI/CD/test]   | GC Policy rule#2:
+[CI/CD/test]   |  All:            false
+[CI/CD/test]   |  Reserved Space: 5.588GiB
+[CI/CD/test]   |  Max Used Space: 44.7GiB
+[CI/CD/test]   |  Min Free Space: 11.18GiB
+[CI/CD/test]   | GC Policy rule#3:
+[CI/CD/test]   |  All:            true
+[CI/CD/test]   |  Reserved Space: 5.588GiB
+[CI/CD/test]   |  Max Used Space: 44.7GiB
+[CI/CD/test]   |  Min Free Space: 11.18GiB
+[CI/CD/test]   ❓  ::endgroup::
+[CI/CD/test]   ❓  ::group::Inspect builder
+[CI/CD/test]   | {
+[CI/CD/test]   |   "nodes": [
+[CI/CD/test]   |     {
+[CI/CD/test]   |       "name": "builder-832ac3b3-124f-47fd-aad2-2373c6844bb50",
+[CI/CD/test]   |       "endpoint": "unix:///var/run/docker.sock",
+[CI/CD/test]   |       "status": "running",
+[CI/CD/test]   |       "buildkitd-flags": "--allow-insecure-entitlement security.insecure --allow-insecure-entitlement network.host",
+[CI/CD/test]   |       "buildkit": "v0.25.1",
+[CI/CD/test]   |       "platforms": "linux/amd64,linux/amd64/v2,linux/amd64/v3,linux/386",
+[CI/CD/test]   |       "features": {
+[CI/CD/test]   |         "Automatically load images to the Docker Engine image store": true,
+[CI/CD/test]   |         "Cache export": true,
+[CI/CD/test]   |         "Direct push": true,
+[CI/CD/test]   |         "Docker exporter": true,
+[CI/CD/test]   |         "Multi-platform build": true,
+[CI/CD/test]   |         "OCI exporter": true
+[CI/CD/test]   |       },
+[CI/CD/test]   |       "labels": {
+[CI/CD/test]   |         "org.mobyproject.buildkit.worker.executor": "oci",
+[CI/CD/test]   |         "org.mobyproject.buildkit.worker.hostname": "0dfa299e0e17",
+[CI/CD/test]   |         "org.mobyproject.buildkit.worker.network": "host",
+[CI/CD/test]   |         "org.mobyproject.buildkit.worker.oci.process-mode": "sandbox",
+[CI/CD/test]   |         "org.mobyproject.buildkit.worker.selinux.enabled": "false",
+[CI/CD/test]   |         "org.mobyproject.buildkit.worker.snapshotter": "overlayfs"
+[CI/CD/test]   |       },
+[CI/CD/test]   |       "gcPolicy": [
+[CI/CD/test]   |         {
+[CI/CD/test]   |           "all": false,
+[CI/CD/test]   |           "filter": [
+[CI/CD/test]   |             "type==source.local",
+[CI/CD/test]   |             "type==exec.cachemount",
+[CI/CD/test]   |             "type==source.git.checkout"
+[CI/CD/test]   |           ],
+[CI/CD/test]   |           "keepDuration": "48h0m0s",
+[CI/CD/test]   |           "maxUsedSpace": "488.3MiB"
+[CI/CD/test]   |         },
+[CI/CD/test]   |         {
+[CI/CD/test]   |           "all": false,
+[CI/CD/test]   |           "keepDuration": "1440h0m0s",
+[CI/CD/test]   |           "reservedSpace": "5.588GiB",
+[CI/CD/test]   |           "maxUsedSpace": "44.7GiB",
+[CI/CD/test]   |           "minFreeSpace": "11.18GiB"
+[CI/CD/test]   |         },
+[CI/CD/test]   |         {
+[CI/CD/test]   |           "all": false,
+[CI/CD/test]   |           "reservedSpace": "5.588GiB",
+[CI/CD/test]   |           "maxUsedSpace": "44.7GiB",
+[CI/CD/test]   |           "minFreeSpace": "11.18GiB"
+[CI/CD/test]   |         },
+[CI/CD/test]   |         {
+[CI/CD/test]   |           "all": true,
+[CI/CD/test]   |           "reservedSpace": "5.588GiB",
+[CI/CD/test]   |           "maxUsedSpace": "44.7GiB",
+[CI/CD/test]   |           "minFreeSpace": "11.18GiB"
+[CI/CD/test]   |         }
+[CI/CD/test]   |       ]
+[CI/CD/test]   |     }
+[CI/CD/test]   |   ],
+[CI/CD/test]   |   "name": "builder-832ac3b3-124f-47fd-aad2-2373c6844bb5",
+[CI/CD/test]   |   "driver": "docker-container",
+[CI/CD/test]   |   "lastActivity": "2025-10-15T20:36:31.000Z"
+[CI/CD/test]   | }
+[CI/CD/test]   ❓  ::endgroup::
+[CI/CD/test]   ❓  ::group::BuildKit version
+[CI/CD/test]   | builder-832ac3b3-124f-47fd-aad2-2373c6844bb50: v0.25.1
+[CI/CD/test]   ❓  ::endgroup::
+[CI/CD/test]   ✅  Success - Main Set up Docker Buildx [9.717753246s]
+[CI/CD/test]   ⚙  ::set-output:: platforms=linux/amd64,linux/amd64/v2,linux/amd64/v3,linux/386
+[CI/CD/test]   ⚙  ::set-output:: nodes=[
+  {
+    "name": "builder-832ac3b3-124f-47fd-aad2-2373c6844bb50",
+    "endpoint": "unix:///var/run/docker.sock",
+    "status": "running",
+    "buildkitd-flags": "--allow-insecure-entitlement security.insecure --allow-insecure-entitlement network.host",
+    "buildkit": "v0.25.1",
+    "platforms": "linux/amd64,linux/amd64/v2,linux/amd64/v3,linux/386",
+    "features": {
+      "Automatically load images to the Docker Engine image store": true,
+      "Cache export": true,
+      "Direct push": true,
+      "Docker exporter": true,
+      "Multi-platform build": true,
+      "OCI exporter": true
+    },
+    "labels": {
+      "org.mobyproject.buildkit.worker.executor": "oci",
+      "org.mobyproject.buildkit.worker.hostname": "0dfa299e0e17",
+      "org.mobyproject.buildkit.worker.network": "host",
+      "org.mobyproject.buildkit.worker.oci.process-mode": "sandbox",
+      "org.mobyproject.buildkit.worker.selinux.enabled": "false",
+      "org.mobyproject.buildkit.worker.snapshotter": "overlayfs"
+    },
+    "gcPolicy": [
+      {
+        "all": false,
+        "filter": [
+          "type==source.local",
+          "type==exec.cachemount",
+          "type==source.git.checkout"
+        ],
+        "keepDuration": "48h0m0s",
+        "maxUsedSpace": "488.3MiB"
+      },
+      {
+        "all": false,
+        "keepDuration": "1440h0m0s",
+        "reservedSpace": "5.588GiB",
+        "maxUsedSpace": "44.7GiB",
+        "minFreeSpace": "11.18GiB"
+      },
+      {
+        "all": false,
+        "reservedSpace": "5.588GiB",
+        "maxUsedSpace": "44.7GiB",
+        "minFreeSpace": "11.18GiB"
+      },
+      {
+        "all": true,
+        "reservedSpace": "5.588GiB",
+        "maxUsedSpace": "44.7GiB",
+        "minFreeSpace": "11.18GiB"
+      }
+    ]
+  }
+]
+[CI/CD/test]   ⚙  ::set-output:: endpoint=unix:///var/run/docker.sock
+[CI/CD/test]   ⚙  ::set-output:: status=running
+[CI/CD/test]   ⚙  ::set-output:: flags=--allow-insecure-entitlement security.insecure --allow-insecure-entitlement network.host
+[CI/CD/test]   ⚙  ::set-output:: name=builder-832ac3b3-124f-47fd-aad2-2373c6844bb5
+[CI/CD/test]   ⚙  ::set-output:: driver=docker-container
+[CI/CD/test]   🐳  docker exec cmd=[/opt/acttoolcache/node/18.20.8/x64/bin/node /var/run/act/workflow/hashfiles/index.js] ***= workdir=
+[CI/CD/test]   🐳  docker exec cmd=[/opt/acttoolcache/node/18.20.8/x64/bin/node /var/run/act/workflow/hashfiles/index.js] ***= workdir=
+[CI/CD/test] ⭐ Run Main Cache Docker layers
+[CI/CD/test]   🐳  docker cp src=/home/gabriel/.cache/act/actions-cache@v4/ dst=/var/run/act/actions/actions-cache@v4/
+[CI/CD/test]   🐳  docker exec cmd=[/opt/acttoolcache/node/18.20.8/x64/bin/node /var/run/act/actions/actions-cache@v4/dist/restore/index.js] ***= workdir=
+[CI/CD/test]   | Cache not found for input keys: Linux-buildx-refs/heads/master-a251cecc8b6cc7321c2f8209802962dd65d27ebcebde87f203b8c06907ee45ed-7b450050cda36b6f98936eb4750e735a6c3a4de1274b66e1179f715bb77ff073, Linux-buildx-refs/heads/master-, Linux-buildx-
+[CI/CD/test]   ✅  Success - Main Cache Docker layers [868.432964ms]
+[CI/CD/test] ⭐ Run Main Install ***-service dependencies
+[CI/CD/test]   🐳  docker exec cmd=[bash -e /var/run/act/workflow/4] ***= workdir=./***-service
+[CI/CD/test]   | 
+[CI/CD/test]   | added 183 packages, and audited 184 packages in 4s
+[CI/CD/test]   | 
+[CI/CD/test]   | 21 packages are looking for funding
+[CI/CD/test]   |   run `npm fund` for details
+[CI/CD/test]   | 
+[CI/CD/test]   | 3 vulnerabilities (1 low, 2 moderate)
+[CI/CD/test]   | 
+[CI/CD/test]   | To address issues that do not require attention, run:
+[CI/CD/test]   |   npm audit fix
+[CI/CD/test]   | 
+[CI/CD/test]   | Some issues need review, and may require choosing
+[CI/CD/test]   | a different dependency.
+[CI/CD/test]   | 
+[CI/CD/test]   | Run `npm audit` for details.
+[CI/CD/test]   ✅  Success - Main Install ***-service dependencies [4.294537781s]
+[CI/CD/test] ⭐ Run Main Install tasks-service dependencies
+[CI/CD/test]   🐳  docker exec cmd=[bash -e /var/run/act/workflow/5] ***= workdir=./tasks-service
+[CI/CD/test]   | 
+[CI/CD/test]   | added 193 packages, and audited 194 packages in 2s
+[CI/CD/test]   | 
+[CI/CD/test]   | 23 packages are looking for funding
+[CI/CD/test]   |   run `npm fund` for details
+[CI/CD/test]   | 
+[CI/CD/test]   | 5 vulnerabilities (1 low, 2 moderate, 1 high, 1 critical)
+[CI/CD/test]   | 
+[CI/CD/test]   | To address issues that do not require attention, run:
+[CI/CD/test]   |   npm audit fix
+[CI/CD/test]   | 
+[CI/CD/test]   | Some issues need review, and may require choosing
+[CI/CD/test]   | a different dependency.
+[CI/CD/test]   | 
+[CI/CD/test]   | Run `npm audit` for details.
+[CI/CD/test]   ✅  Success - Main Install tasks-service dependencies [2.462307547s]
+[CI/CD/test] ⭐ Run Main Install activity-service dependencies
+[CI/CD/test]   🐳  docker exec cmd=[bash -e /var/run/act/workflow/6] ***= workdir=./activity-service
+[CI/CD/test]   | npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and ***ed way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+[CI/CD/test]   | npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+[CI/CD/test]   | npm warn deprecated @types/mongoose@5.11.97: Mongoose publishes its own types, so you do not need to install this package.
+[CI/CD/test]   | 
+[CI/CD/test]   | added 479 packages, and audited 480 packages in 17s
+[CI/CD/test]   | 
+[CI/CD/test]   | 57 packages are looking for funding
+[CI/CD/test]   |   run `npm fund` for details
+[CI/CD/test]   | 
+[CI/CD/test]   | 3 vulnerabilities (2 low, 1 critical)
+[CI/CD/test]   | 
+[CI/CD/test]   | To address all issues, run:
+[CI/CD/test]   |   npm audit fix
+[CI/CD/test]   | 
+[CI/CD/test]   | Run `npm audit` for details.
+[CI/CD/test]   ✅  Success - Main Install activity-service dependencies [17.32811468s]
+[CI/CD/test] ⭐ Run Main Install api-gateway dependencies
+[CI/CD/test]   🐳  docker exec cmd=[bash -e /var/run/act/workflow/7] ***= workdir=./api-gateway
+[CI/CD/test]   | npm warn ERESOLVE overriding peer dependency
+[CI/CD/test]   | npm warn While resolving: http-cookie-agent@7.0.2
+[CI/CD/test]   | npm warn Found: tough-cookie@6.0.0
+[CI/CD/test]   | npm warn node_modules/tough-cookie
+[CI/CD/test]   | npm warn   dev tough-cookie@"^6.0.0" from the root project
+[CI/CD/test]   | npm warn   1 more (axios-cookiejar-support)
+[CI/CD/test]   | npm warn
+[CI/CD/test]   | npm warn Could not resolve dependency:
+[CI/CD/test]   | npm warn peer tough-cookie@"^4.0.0 || ^5.0.0" from http-cookie-agent@7.0.2
+[CI/CD/test]   | npm warn node_modules/axios-cookiejar-support/node_modules/http-cookie-agent
+[CI/CD/test]   | npm warn   http-cookie-agent@"^7.0.2" from axios-cookiejar-support@6.0.4
+[CI/CD/test]   | npm warn   node_modules/axios-cookiejar-support
+[CI/CD/test]   | npm warn
+[CI/CD/test]   | npm warn Conflicting peer dependency: tough-cookie@5.1.2
+[CI/CD/test]   | npm warn node_modules/tough-cookie
+[CI/CD/test]   | npm warn   peer tough-cookie@"^4.0.0 || ^5.0.0" from http-cookie-agent@7.0.2
+[CI/CD/test]   | npm warn   node_modules/axios-cookiejar-support/node_modules/http-cookie-agent
+[CI/CD/test]   | npm warn     http-cookie-agent@"^7.0.2" from axios-cookiejar-support@6.0.4
+[CI/CD/test]   | npm warn     node_modules/axios-cookiejar-support
+[CI/CD/test]   | npm warn EBADENGINE Unsupported engine {
+[CI/CD/test]   | npm warn EBADENGINE   package: 'axios-cookiejar-support@6.0.4',
+[CI/CD/test]   | npm warn EBADENGINE   required: { node: '>=20.0.0' },
+[CI/CD/test]   | npm warn EBADENGINE   current: { node: 'v18.20.8', npm: '10.8.2' }
+[CI/CD/test]   | npm warn EBADENGINE }
+[CI/CD/test]   | npm warn EBADENGINE Unsupported engine {
+[CI/CD/test]   | npm warn EBADENGINE   package: 'http-cookie-agent@7.0.2',
+[CI/CD/test]   | npm warn EBADENGINE   required: { node: '>=20.0.0' },
+[CI/CD/test]   | npm warn EBADENGINE   current: { node: 'v18.20.8', npm: '10.8.2' }
+[CI/CD/test]   | npm warn EBADENGINE }
+[CI/CD/test]   | npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and ***ed way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+[CI/CD/test]   | npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+[CI/CD/test]   | 
+[CI/CD/test]   | added 567 packages, and audited 568 packages in 6s
+[CI/CD/test]   | 
+[CI/CD/test]   | 62 packages are looking for funding
+[CI/CD/test]   |   run `npm fund` for details
+[CI/CD/test]   | 
+[CI/CD/test]   | 2 vulnerabilities (1 low, 1 high)
+[CI/CD/test]   | 
+[CI/CD/test]   | To address all issues, run:
+[CI/CD/test]   |   npm audit fix
+[CI/CD/test]   | 
+[CI/CD/test]   | Run `npm audit` for details.
+[CI/CD/test]   ✅  Success - Main Install api-gateway dependencies [5.770911941s]
+[CI/CD/test] ⭐ Run Main Install e2e-***s dependencies
+[CI/CD/test]   🐳  docker exec cmd=[bash -e /var/run/act/workflow/8] ***= workdir=./e2e-***s
+[CI/CD/test]   | npm warn EBADENGINE Unsupported engine {
+[CI/CD/test]   | npm warn EBADENGINE   package: 'axios-cookiejar-support@6.0.4',
+[CI/CD/test]   | npm warn EBADENGINE   required: { node: '>=20.0.0' },
+[CI/CD/test]   | npm warn EBADENGINE   current: { node: 'v18.20.8', npm: '10.8.2' }
+[CI/CD/test]   | npm warn EBADENGINE }
+[CI/CD/test]   | npm warn EBADENGINE Unsupported engine {
+[CI/CD/test]   | npm warn EBADENGINE   package: 'http-cookie-agent@7.0.2',
+[CI/CD/test]   | npm warn EBADENGINE   required: { node: '>=20.0.0' },
+[CI/CD/test]   | npm warn EBADENGINE   current: { node: 'v18.20.8', npm: '10.8.2' }
+[CI/CD/test]   | npm warn EBADENGINE }
+[CI/CD/test]   | npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and ***ed way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+[CI/CD/test]   | npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+[CI/CD/test]   | 
+[CI/CD/test]   | added 402 packages, and audited 404 packages in 8s
+[CI/CD/test]   | 
+[CI/CD/test]   | 42 packages are looking for funding
+[CI/CD/test]   |   run `npm fund` for details
+[CI/CD/test]   | 
+[CI/CD/test]   | found 0 vulnerabilities
+[CI/CD/test]   ✅  Success - Main Install e2e-***s dependencies [7.822683973s]
+[CI/CD/test] ⭐ Run Main Debug Environment Variables
+[CI/CD/test]   🐳  docker exec cmd=[bash -e /var/run/act/workflow/9] ***= workdir=
+[CI/CD/test]   | NODE_ENV is: development
+[CI/CD/test]   | MONGO_URI_FOR_TESTS is: 
+[CI/CD/test]   | JWT_SECRET is set: true
+[CI/CD/test]   | ACT=true
+[CI/CD/test]   | ACTIONS_CACHE_URL=http://10.0.2.15:37955/
+[CI/CD/test]   | ACTIVITY_SERVICE_PORT=***
+[CI/CD/test]   | ACT_TOOLSDIRECTORY=/opt/acttoolcache
+[CI/CD/test]   | AGENT_TOOLSDIRECTORY=/opt/hostedtoolcache
+[CI/CD/test]   | CI=true
+[CI/CD/test]   | DEBIAN_FRONTEND=noninteractive
+[CI/CD/test]   | DEPLOYMENT_BASEPATH=/opt/runner
+[CI/CD/test]   | GATEWAY_PORT=***
+[CI/CD/test]   | GITHUB_ACTION=9
+[CI/CD/test]   | GITHUB_ACTIONS=true
+[CI/CD/test]   | GITHUB_ACTION_PATH=
+[CI/CD/test]   | GITHUB_ACTION_REF=
+[CI/CD/test]   | GITHUB_ACTION_REPOSITORY=
+[CI/CD/test]   | GITHUB_ACTOR=nektos/act
+[CI/CD/test]   | GITHUB_API_URL=https://api.github.com
+[CI/CD/test]   | GITHUB_BASE_REF=
+[CI/CD/test]   | GITHUB_ENV=/var/run/act/workflow/envs.txt
+[CI/CD/test]   | GITHUB_EVENT_NAME=push
+[CI/CD/test]   | GITHUB_EVENT_PATH=/var/run/act/workflow/event.json
+[CI/CD/test]   | GITHUB_GRAPHQL_URL=https://api.github.com/graphql
+[CI/CD/test]   | GITHUB_HEAD_REF=
+[CI/CD/test]   | GITHUB_JOB=***
+[CI/CD/test]   | GITHUB_OUTPUT=/var/run/act/workflow/outputcmd.txt
+[CI/CD/test]   | GITHUB_PATH=/var/run/act/workflow/pathcmd.txt
+[CI/CD/test]   | GITHUB_REF=refs/heads/master
+[CI/CD/test]   | GITHUB_REF_NAME=master
+[CI/CD/test]   | GITHUB_REF_TYPE=branch
+[CI/CD/test]   | GITHUB_REPOSITORY=gabrielgr15/task-app-backend
+[CI/CD/test]   | GITHUB_REPOSITORY_OWNER=gabrielgr15
+[CI/CD/test]   | GITHUB_RETENTION_DAYS=0
+[CI/CD/test]   | GITHUB_RUN_ATTEMPT=1
+[CI/CD/test]   | GITHUB_RUN_ID=1
+[CI/CD/test]   | GITHUB_RUN_NUMBER=1
+[CI/CD/test]   | GITHUB_SERVER_URL=https://github.com
+[CI/CD/test]   | GITHUB_SHA=d90afd6fc0e0349ec27571ccd2cc3efa583bfab5
+[CI/CD/test]   | GITHUB_STATE=/var/run/act/workflow/statecmd.txt
+[CI/CD/test]   | GITHUB_STEP_SUMMARY=/var/run/act/workflow/SUMMARY.md
+[CI/CD/test]   | GITHUB_WORKFLOW=CI/CD
+[CI/CD/test]   | GITHUB_WORKSPACE=/home/gabriel/projects
+[CI/CD/test]   | HOME=/root
+[CI/CD/test]   | HOSTNAME=gabriel-VirtualBox
+[CI/CD/test]   | IMAGE_OS=ubuntu22
+[CI/CD/test]   | ImageOS=ubuntu20
+[CI/CD/test]   | JWT_SECRET=***
+[CI/CD/test]   | LANG=C.UTF-8
+[CI/CD/test]   | LSB_OS_VERSION=2204
+[CI/CD/test]   | LSB_RELEASE=22.04
+[CI/CD/test]   | MONGO_ACTIVITY_URI=***
+[CI/CD/test]   | MONGO_TASKS_URI=***
+[CI/CD/test]   | MONGO_URI_FOR_TESTS=
+[CI/CD/test]   | NODE_ENV=development
+[CI/CD/test]   | PATH=/opt/hostedtoolcache/node/18.20.8/x64/bin:/opt/acttoolcache/node/18.20.8/x64/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+[CI/CD/test]   | PWD=/home/gabriel/projects
+[CI/CD/test]   | RABBITMQ_PASS=***
+[CI/CD/test]   | RABBITMQ_USER=***
+[CI/CD/test]   | REDIS_HOST=***
+[CI/CD/test]   | REDIS_PASSWORD=***
+[CI/CD/test]   | REDIS_PORT=***
+[CI/CD/test]   | RUNNER_ARCH=X64
+[CI/CD/test]   | RUNNER_OS=Linux
+[CI/CD/test]   | RUNNER_PERFLOG=/dev/null
+[CI/CD/test]   | RUNNER_TEMP=/tmp
+[CI/CD/test]   | RUNNER_TOOL_CACHE=/opt/hostedtoolcache
+[CI/CD/test]   | RUNNER_TRACKING_ID=
+[CI/CD/test]   | RUNNER_USER=root
+[CI/CD/test]   | RUN_TOOL_CACHE=/opt/hostedtoolcache
+[CI/CD/test]   | SHLVL=0
+[CI/CD/test]   | TASKS_SERVICE_PORT=***
+[CI/CD/test]   | USER=root
+[CI/CD/test]   | USER_SERVICE_PORT=***
+[CI/CD/test]   | _=/usr/bin/printenv
+[CI/CD/test]   ✅  Success - Main Debug Environment Variables [83.383904ms]
+[CI/CD/test] ⭐ Run Main Run all integration ***s
+[CI/CD/test]   🐳  docker exec cmd=[bash -e /var/run/act/workflow/10] ***= workdir=
+[CI/CD/test]   | 
+[CI/CD/test]   | > ***
+[CI/CD/test]   | > npm -w e2e-***s ***
+[CI/CD/test]   | 
+[CI/CD/test]   | 
+[CI/CD/test]   | > e2e-***s@1.0.0 ***
+[CI/CD/test]   | > jest --runInBand --detectOpenHandles --no-cache
+[CI/CD/test]   | 
+[CI/CD/test]   | [dotenv@17.2.3] injecting env (0) from .env.*** -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+[CI/CD/test]   | [dotenv@17.2.3] injecting env (0) from .env.*** -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+[CI/CD/test]   | 
+[CI/CD/test]   | [GlobalSetup] Starting *** environment...
+[CI/CD/test]   | [GlobalSetup] Executing: NODE_ENV=*** docker compose -f "/home/gabriel/projects/docker-compose.yml" -f "/home/gabriel/projects/docker-compose.dev.yml" up --build --force-recreate -d
+[CI/CD/test]   | #1 [internal] load local bake definitions
+[CI/CD/test]   | #1 reading from stdin 2.40kB done
+[CI/CD/test]   | #1 DONE 0.0s
+[CI/CD/test]   | 
+[CI/CD/test]   | #2 [tasks-service internal] load build definition from Dockerfile
+[CI/CD/test]   | #2 ...
+[CI/CD/test]   | 
+[CI/CD/test]   | #3 [api-gateway internal] load build definition from Dockerfile
+[CI/CD/test]   | #3 transferring dockerfile: 190B done
+[CI/CD/test]   | #3 DONE 0.5s
+[CI/CD/test]   | 
+[CI/CD/test]   | #4 [***-service internal] load build definition from Dockerfile
+[CI/CD/test]   | #4 transferring dockerfile: 195B done
+[CI/CD/test]   | #4 DONE 0.5s
+[CI/CD/test]   | 
+[CI/CD/test]   | #2 [tasks-service internal] load build definition from Dockerfile
+[CI/CD/test]   | #2 transferring dockerfile: 195B done
+[CI/CD/test]   | #2 DONE 0.6s
+[CI/CD/test]   | 
+[CI/CD/test]   | #5 [activity-service internal] load build definition from Dockerfile
+[CI/CD/test]   | #5 transferring dockerfile: 635B done
+[CI/CD/test]   | #5 DONE 0.6s
+[CI/CD/test]   | 
+[CI/CD/test]   | #6 [frontend internal] load build definition from Dockerfile
+[CI/CD/test]   | #6 transferring dockerfile: 550B done
+[CI/CD/test]   | #6 DONE 0.6s
+[CI/CD/test]   | 
+[CI/CD/test]   | #7 [frontend internal] load metadata for docker.io/library/node:20-alpine
+[CI/CD/test]   | #7 DONE 1.5s
+[CI/CD/test]   | 
+[CI/CD/test]   | #8 [***-service internal] load .dockerignore
+[CI/CD/test]   | #8 transferring context: 214B done
+[CI/CD/test]   | #8 DONE 0.1s
+[CI/CD/test]   | 
+[CI/CD/test]   | #9 [tasks-service internal] load .dockerignore
+[CI/CD/test]   | #9 transferring context: 214B done
+[CI/CD/test]   | #9 DONE 0.3s
+[CI/CD/test]   | 
+[CI/CD/test]   | #10 [activity-service internal] load .dockerignore
+[CI/CD/test]   | #10 transferring context: 214B done
+[CI/CD/test]   | #10 DONE 0.2s
+[CI/CD/test]   | 
+[CI/CD/test]   | #11 [frontend internal] load .dockerignore
+[CI/CD/test]   | #11 transferring context: 2B done
+[CI/CD/test]   | #11 DONE 0.3s
+[CI/CD/test]   | 
+[CI/CD/test]   | #12 [api-gateway internal] load .dockerignore
+[CI/CD/test]   | #12 transferring context: 214B done
+[CI/CD/test]   | #12 DONE 0.3s
+[CI/CD/test]   | 
+[CI/CD/test]   | #13 [api-gateway internal] load build context
+[CI/CD/test]   | #13 ...
+[CI/CD/test]   | 
+[CI/CD/test]   | #14 [***-service internal] load build context
+[CI/CD/test]   | #14 transferring context: 95.43kB 0.0s done
+[CI/CD/test]   | #14 DONE 0.3s
+[CI/CD/test]   | 
+[CI/CD/test]   | #15 [tasks-service 1/6] FROM docker.io/library/node:20-alpine@sha256:1ab6fc5a31d515dc7b6b25f6acfda2001821f2c2***52b6cb61044bd9f9ad48
+[CI/CD/test]   | #15 resolve docker.io/library/node:20-alpine@sha256:1ab6fc5a31d515dc7b6b25f6acfda2001821f2c2***52b6cb61044bd9f9ad48 0.1s done
+[CI/CD/test]   | #15 ...
+[CI/CD/test]   | 
+[CI/CD/test]   | #16 [activity-service internal] load build context
+[CI/CD/test]   | #16 transferring context: 266.52kB 0.0s done
+[CI/CD/test]   | #16 DONE 0.3s
+[CI/CD/test]   | 
+[CI/CD/test]   | #17 [frontend internal] load build context
+[CI/CD/test]   | #17 transferring context: 427.27kB 0.0s done
+[CI/CD/test]   | #17 DONE 0.3s
+[CI/CD/test]   | 
+[CI/CD/test]   | #18 [tasks-service internal] load build context
+[CI/CD/test]   | #18 transferring context: 99.35kB 0.0s done
+[CI/CD/test]   | #18 DONE 0.3s
+[CI/CD/test]   | 
+[CI/CD/test]   | #13 [api-gateway internal] load build context
+[CI/CD/test]   | #13 transferring context: 297.58kB 0.0s done
+[CI/CD/test]   | #13 DONE 0.4s
+[CI/CD/test]   | 
+[CI/CD/test]   | #15 [api-gateway 1/6] FROM docker.io/library/node:20-alpine@sha256:1ab6fc5a31d515dc7b6b25f6acfda2001821f2c2***52b6cb61044bd9f9ad48
+[CI/CD/test]   | #15 sha256:c74c90aa7c8726728fa9d2e330254ef29381efbd566aaee9933c3113c26f20ce 0B / 445B 0.2s
+[CI/CD/test]   | #15 sha256:c74c90aa7c8726728fa9d2e330254ef29381efbd566aaee9933c3113c26f20ce 445B / 445B 0.2s done
+[CI/CD/test]   | #15 sha256:f2fbe8556258562779088bb23277d1d0b7e43fc6ddd52623166a2ac6d92bc73a 0B / 1.26MB 0.3s
+[CI/CD/test]   | #15 sha256:c087321cece4f408fdac87711c4c5c51945101848dffd8848840912c1fceb02c 0B / 42.75MB 0.2s
+[CI/CD/test]   | #15 sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b 0B / 3.80MB 0.2s
+[CI/CD/test]   | #15 sha256:f2fbe8556258562779088bb23277d1d0b7e43fc6ddd52623166a2ac6d92bc73a 1.05MB / 1.26MB 0.6s
+[CI/CD/test]   | #15 sha256:f2fbe8556258562779088bb23277d1d0b7e43fc6ddd52623166a2ac6d92bc73a 1.26MB / 1.26MB 0.7s done
+[CI/CD/test]   | #15 sha256:f2fbe8556258562779088bb23277d1d0b7e43fc6ddd52623166a2ac6d92bc73a 1.26MB / 1.26MB 0.7s done
+[CI/CD/test]   | #15 sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b 1.05MB / 3.80MB 0.8s
+[CI/CD/test]   | #15 sha256:c087321cece4f408fdac87711c4c5c51945101848dffd8848840912c1fceb02c 3.15MB / 42.75MB 1.1s
+[CI/CD/test]   | #15 sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b 2.10MB / 3.80MB 0.9s
+[CI/CD/test]   | #15 sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b 3.80MB / 3.80MB 1.1s done
+[CI/CD/test]   | #15 extracting sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b
+[CI/CD/test]   | #15 extracting sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b 0.2s done
+[CI/CD/test]   | #15 sha256:c087321cece4f408fdac87711c4c5c51945101848dffd8848840912c1fceb02c 7.34MB / 42.75MB 1.5s
+[CI/CD/test]   | #15 extracting sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b 0.2s done
+[CI/CD/test]   | #15 sha256:c087321cece4f408fdac87711c4c5c51945101848dffd8848840912c1fceb02c 11.53MB / 42.75MB 1.8s
+[CI/CD/test]   | #15 sha256:c087321cece4f408fdac87711c4c5c51945101848dffd8848840912c1fceb02c 14.68MB / 42.75MB 2.1s
+[CI/CD/test]   | #15 sha256:c087321cece4f408fdac87711c4c5c51945101848dffd8848840912c1fceb02c 17.83MB / 42.75MB 2.4s
+[CI/CD/test]   | #15 sha256:c087321cece4f408fdac87711c4c5c51945101848dffd8848840912c1fceb02c 22.02MB / 42.75MB 2.7s
+[CI/CD/test]   | #15 sha256:c087321cece4f408fdac87711c4c5c51945101848dffd8848840912c1fceb02c 25.17MB / 42.75MB 3.0s
+[CI/CD/test]   | #15 sha256:c087321cece4f408fdac87711c4c5c51945101848dffd8848840912c1fceb02c 28.31MB / 42.75MB 3.3s
+[CI/CD/test]   | #15 sha256:c087321cece4f408fdac87711c4c5c51945101848dffd8848840912c1fceb02c 31.46MB / 42.75MB 3.6s
+[CI/CD/test]   | #15 sha256:c087321cece4f408fdac87711c4c5c51945101848dffd8848840912c1fceb02c 34.60MB / 42.75MB 3.9s
+[CI/CD/test]   | #15 sha256:c087321cece4f408fdac87711c4c5c51945101848dffd8848840912c1fceb02c 38.80MB / 42.75MB 4.2s
+[CI/CD/test]   | #15 sha256:c087321cece4f408fdac87711c4c5c51945101848dffd8848840912c1fceb02c 41.94MB / 42.75MB 4.5s
+[CI/CD/test]   | #15 sha256:c087321cece4f408fdac87711c4c5c51945101848dffd8848840912c1fceb02c 42.75MB / 42.75MB 5.1s done
+[CI/CD/test]   | #15 sha256:c087321cece4f408fdac87711c4c5c51945101848dffd8848840912c1fceb02c 42.75MB / 42.75MB 5.1s done
+[CI/CD/test]   | #15 extracting sha256:c087321cece4f408fdac87711c4c5c51945101848dffd8848840912c1fceb02c
+[CI/CD/test]   | #15 extracting sha256:c087321cece4f408fdac87711c4c5c51945101848dffd8848840912c1fceb02c 1.0s done
+[CI/CD/test]   | #15 extracting sha256:c087321cece4f408fdac87711c4c5c51945101848dffd8848840912c1fceb02c 1.0s done
+[CI/CD/test]   | #15 extracting sha256:f2fbe8556258562779088bb23277d1d0b7e43fc6ddd52623166a2ac6d92bc73a 0.0s done
+[CI/CD/test]   | #15 extracting sha256:c74c90aa7c8726728fa9d2e330254ef29381efbd566aaee9933c3113c26f20ce 0.0s done
+[CI/CD/test]   | #15 DONE 6.7s
+[CI/CD/test]   | 
+[CI/CD/test]   | #19 [api-gateway 2/6] WORKDIR /usr/src/app
+[CI/CD/test]   | #19 ...
+[CI/CD/test]   | 
+[CI/CD/test]   | #20 [frontend deps 2/4] WORKDIR /app
+[CI/CD/test]   | #20 DONE 7.9s
+[CI/CD/test]   | 
+[CI/CD/test]   | #19 [api-gateway 2/6] WORKDIR /usr/src/app
+[CI/CD/test]   | #19 DONE 7.9s
+[CI/CD/test]   | 
+[CI/CD/test]   | #21 [***-service 3/6] RUN apk add --no-cache curl
+[CI/CD/test]   | #21 ...
+[CI/CD/test]   | 
+[CI/CD/test]   | #22 [frontend deps 3/4] COPY package.json package-lock.json ./
+[CI/CD/test]   | #22 DONE 0.5s
+[CI/CD/test]   | 
+[CI/CD/test]   | #23 [activity-service builder 3/6] COPY package*.json ./
+[CI/CD/test]   | #23 DONE 0.4s
+[CI/CD/test]   | 
+[CI/CD/test]   | #21 [api-gateway 3/6] RUN apk add --no-cache curl
+[CI/CD/test]   | #21 0.493 fetch https://dl-cdn.alpinelinux.org/alpine/v3.22/main/x86_64/APKINDEX.tar.gz
+[CI/CD/test]   | #21 0.992 fetch https://dl-cdn.alpinelinux.org/alpine/v3.22/community/x86_64/APKINDEX.tar.gz
+[CI/CD/test]   | #21 1.986 (1/9) Installing brotli-libs (1.1.0-r2)
+[CI/CD/test]   | #21 2.039 (2/9) Installing c-ares (1.34.5-r0)
+[CI/CD/test]   | #21 2.056 (3/9) Installing libunistring (1.3-r0)
+[CI/CD/test]   | #21 2.122 (4/9) Installing libidn2 (2.3.7-r0)
+[CI/CD/test]   | #21 2.136 (5/9) Installing nghttp2-libs (1.65.0-r0)
+[CI/CD/test]   | #21 2.151 (6/9) Installing libpsl (0.21.5-r3)
+[CI/CD/test]   | #21 2.161 (7/9) Installing zstd-libs (1.5.7-r0)
+[CI/CD/test]   | #21 2.197 (8/9) Installing libcurl (8.14.1-r2)
+[CI/CD/test]   | #21 2.234 (9/9) Installing curl (8.14.1-r2)
+[CI/CD/test]   | #21 2.288 Executing busybox-1.37.0-r19.trigger
+[CI/CD/test]   | #21 2.335 OK: 15 MiB in 27 packages
+[CI/CD/test]   | #21 DONE 2.7s
+[CI/CD/test]   | 
+[CI/CD/test]   | #24 [activity-service stage-1 4/7] COPY package*.json ./
+[CI/CD/test]   | #24 ...
+[CI/CD/test]   | 
+[CI/CD/test]   | #25 [tasks-service 4/6] COPY package*.json ./
+[CI/CD/test]   | #25 DONE 0.3s
+[CI/CD/test]   | 
+[CI/CD/test]   | #26 [api-gateway 4/6] COPY package*.json ./
+[CI/CD/test]   | #26 DONE 0.3s
+[CI/CD/test]   | 
+[CI/CD/test]   | #24 [activity-service stage-1 4/7] COPY package*.json ./
+[CI/CD/test]   | #24 DONE 0.3s
+[CI/CD/test]   | 
+[CI/CD/test]   | #27 [***-service 4/6] COPY package*.json ./
+[CI/CD/test]   | #27 DONE 0.3s
+[CI/CD/test]   | 
+[CI/CD/test]   | #28 [activity-service stage-1 5/7] RUN npm ci --omit=dev && npm cache clean --force
+[CI/CD/test]   | #28 ...
+[CI/CD/test]   | 
+[CI/CD/test]   | #29 [api-gateway 5/6] RUN npm ci
+[CI/CD/test]   | #29 4.351 npm warn ERESOLVE overriding peer dependency
+[CI/CD/test]   | #29 4.352 npm warn While resolving: http-cookie-agent@7.0.2
+[CI/CD/test]   | #29 4.352 npm warn Found: tough-cookie@6.0.0
+[CI/CD/test]   | #29 4.352 npm warn node_modules/tough-cookie
+[CI/CD/test]   | #29 4.352 npm warn   dev tough-cookie@"^6.0.0" from the root project
+[CI/CD/test]   | #29 4.352 npm warn   1 more (axios-cookiejar-support)
+[CI/CD/test]   | #29 4.352 npm warn
+[CI/CD/test]   | #29 4.352 npm warn Could not resolve dependency:
+[CI/CD/test]   | #29 4.352 npm warn peer tough-cookie@"^4.0.0 || ^5.0.0" from http-cookie-agent@7.0.2
+[CI/CD/test]   | #29 4.352 npm warn node_modules/axios-cookiejar-support/node_modules/http-cookie-agent
+[CI/CD/test]   | #29 4.352 npm warn   http-cookie-agent@"^7.0.2" from axios-cookiejar-support@6.0.4
+[CI/CD/test]   | #29 4.352 npm warn   node_modules/axios-cookiejar-support
+[CI/CD/test]   | #29 4.352 npm warn
+[CI/CD/test]   | #29 4.352 npm warn Conflicting peer dependency: tough-cookie@5.1.2
+[CI/CD/test]   | #29 4.352 npm warn node_modules/tough-cookie
+[CI/CD/test]   | #29 4.352 npm warn   peer tough-cookie@"^4.0.0 || ^5.0.0" from http-cookie-agent@7.0.2
+[CI/CD/test]   | #29 4.352 npm warn   node_modules/axios-cookiejar-support/node_modules/http-cookie-agent
+[CI/CD/test]   | #29 4.352 npm warn     http-cookie-agent@"^7.0.2" from axios-cookiejar-support@6.0.4
+[CI/CD/test]   | #29 4.352 npm warn     node_modules/axios-cookiejar-support
+[CI/CD/test]   | #29 ...
+[CI/CD/test]   | 
+[CI/CD/test]   | #30 [frontend deps 4/4] RUN npm install
+[CI/CD/test]   | #30 ...
+[CI/CD/test]   | 
+[CI/CD/test]   | #31 [activity-service builder 4/6] RUN npm ci
+[CI/CD/test]   | #31 ...
+[CI/CD/test]   | 
+[CI/CD/test]   | #32 [***-service 5/6] RUN npm ci
+[CI/CD/test]   | #32 ...
+[CI/CD/test]   | 
+[CI/CD/test]   | #31 [activity-service builder 4/6] RUN npm ci
+[CI/CD/test]   | #31 11.50 npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and ***ed way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+[CI/CD/test]   | #31 ...
+[CI/CD/test]   | 
+[CI/CD/test]   | #33 [tasks-service 5/6] RUN npm ci
+[CI/CD/test]   | #33 ...
+[CI/CD/test]   | 
+[CI/CD/test]   | #31 [activity-service builder 4/6] RUN npm ci
+[CI/CD/test]   | #31 12.70 npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+[CI/CD/test]   | #31 14.81 npm warn deprecated @types/mongoose@5.11.97: Mongoose publishes its own types, so you do not need to install this package.
+[CI/CD/test]   | #31 ...
+[CI/CD/test]   | 
+[CI/CD/test]   | #28 [activity-service stage-1 5/7] RUN npm ci --omit=dev && npm cache clean --force
+[CI/CD/test]   | #28 16.02 
+[CI/CD/test]   | #28 16.02 added 121 packages, and audited 122 packages in 15s
+[CI/CD/test]   | #28 16.02 
+[CI/CD/test]   | #28 16.02 17 packages are looking for funding
+[CI/CD/test]   | #28 16.02   run `npm fund` for details
+[CI/CD/test]   | #28 16.03 
+[CI/CD/test]   | #28 16.03 found 0 vulnerabilities
+[CI/CD/test]   | #28 16.04 npm notice
+[CI/CD/test]   | #28 16.04 npm notice New major version of npm available! 10.8.2 -> 11.6.2
+[CI/CD/test]   | #28 16.04 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.6.2
+[CI/CD/test]   | #28 16.04 npm notice To update run: npm install -g npm@11.6.2
+[CI/CD/test]   | #28 16.04 npm notice
+[CI/CD/test]   | #28 16.68 npm warn using --force Recommended protections disabled.
+[CI/CD/test]   | #28 ...
+[CI/CD/test]   | 
+[CI/CD/test]   | #31 [activity-service builder 4/6] RUN npm ci
+[CI/CD/test]   | #31 23.64 
+[CI/CD/test]   | #31 23.64 added 479 packages, and audited 480 packages in 23s
+[CI/CD/test]   | #31 23.64 
+[CI/CD/test]   | #31 23.64 57 packages are looking for funding
+[CI/CD/test]   | #31 23.65   run `npm fund` for details
+[CI/CD/test]   | #31 23.67 
+[CI/CD/test]   | #31 23.67 3 vulnerabilities (2 low, 1 critical)
+[CI/CD/test]   | #31 23.67 
+[CI/CD/test]   | #31 23.67 To address all issues, run:
+[CI/CD/test]   | #31 23.67   npm audit fix
+[CI/CD/test]   | #31 23.67 
+[CI/CD/test]   | #31 23.67 Run `npm audit` for details.
+[CI/CD/test]   | #31 23.68 npm notice
+[CI/CD/test]   | #31 23.68 npm notice New major version of npm available! 10.8.2 -> 11.6.2
+[CI/CD/test]   | #31 23.68 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.6.2
+[CI/CD/test]   | #31 23.68 npm notice To update run: npm install -g npm@11.6.2
+[CI/CD/test]   | #31 23.68 npm notice
+[CI/CD/test]   | #31 ...
+[CI/CD/test]   | 
+[CI/CD/test]   | #33 [tasks-service 5/6] RUN npm ci
+[CI/CD/test]   | #33 18.84 
+[CI/CD/test]   | #33 18.84 added 193 packages, and audited 194 packages in 18s
+[CI/CD/test]   | #33 18.84 
+[CI/CD/test]   | #33 18.84 23 packages are looking for funding
+[CI/CD/test]   | #33 18.84   run `npm fund` for details
+[CI/CD/test]   | #33 18.90 
+[CI/CD/test]   | #33 18.90 5 vulnerabilities (1 low, 2 moderate, 1 high, 1 critical)
+[CI/CD/test]   | #33 18.90 
+[CI/CD/test]   | #33 18.90 To address issues that do not require attention, run:
+[CI/CD/test]   | #33 18.90   npm audit fix
+[CI/CD/test]   | #33 18.90 
+[CI/CD/test]   | #33 18.90 Some issues need review, and may require choosing
+[CI/CD/test]   | #33 18.90 a different dependency.
+[CI/CD/test]   | #33 18.90 
+[CI/CD/test]   | #33 18.90 Run `npm audit` for details.
+[CI/CD/test]   | #33 18.93 npm notice
+[CI/CD/test]   | #33 18.93 npm notice New major version of npm available! 10.8.2 -> 11.6.2
+[CI/CD/test]   | #33 18.93 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.6.2
+[CI/CD/test]   | #33 18.93 npm notice To update run: npm install -g npm@11.6.2
+[CI/CD/test]   | #33 18.93 npm notice
+[CI/CD/test]   | #33 ...
+[CI/CD/test]   | 
+[CI/CD/test]   | #32 [***-service 5/6] RUN npm ci
+[CI/CD/test]   | #32 20.15 
+[CI/CD/test]   | #32 20.15 added 183 packages, and audited 184 packages in 20s
+[CI/CD/test]   | #32 20.15 
+[CI/CD/test]   | #32 20.16 21 packages are looking for funding
+[CI/CD/test]   | #32 20.16   run `npm fund` for details
+[CI/CD/test]   | #32 20.17 
+[CI/CD/test]   | #32 20.17 3 vulnerabilities (1 low, 2 moderate)
+[CI/CD/test]   | #32 20.17 
+[CI/CD/test]   | #32 20.17 To address issues that do not require attention, run:
+[CI/CD/test]   | #32 20.17   npm audit fix
+[CI/CD/test]   | #32 20.17 
+[CI/CD/test]   | #32 20.17 Some issues need review, and may require choosing
+[CI/CD/test]   | #32 20.17 a different dependency.
+[CI/CD/test]   | #32 20.17 
+[CI/CD/test]   | #32 20.17 Run `npm audit` for details.
+[CI/CD/test]   | #32 20.17 npm notice
+[CI/CD/test]   | #32 20.17 npm notice New major version of npm available! 10.8.2 -> 11.6.2
+[CI/CD/test]   | #32 20.17 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.6.2
+[CI/CD/test]   | #32 20.17 npm notice To update run: npm install -g npm@11.6.2
+[CI/CD/test]   | #32 20.17 npm notice
+[CI/CD/test]   | #32 ...
+[CI/CD/test]   | 
+[CI/CD/test]   | #29 [api-gateway 5/6] RUN npm ci
+[CI/CD/test]   | #29 24.42 npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and ***ed way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+[CI/CD/test]   | #29 25.01 npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+[CI/CD/test]   | #29 30.38 
+[CI/CD/test]   | #29 30.38 added 567 packages, and audited 568 packages in 30s
+[CI/CD/test]   | #29 30.38 
+[CI/CD/test]   | #29 30.38 62 packages are looking for funding
+[CI/CD/test]   | #29 30.38   run `npm fund` for details
+[CI/CD/test]   | #29 30.38 
+[CI/CD/test]   | #29 30.38 2 vulnerabilities (1 low, 1 high)
+[CI/CD/test]   | #29 30.38 
+[CI/CD/test]   | #29 30.38 To address all issues, run:
+[CI/CD/test]   | #29 30.38   npm audit fix
+[CI/CD/test]   | #29 30.38 
+[CI/CD/test]   | #29 30.38 Run `npm audit` for details.
+[CI/CD/test]   | #29 30.38 npm notice
+[CI/CD/test]   | #29 30.38 npm notice New major version of npm available! 10.8.2 -> 11.6.2
+[CI/CD/test]   | #29 30.38 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.6.2
+[CI/CD/test]   | #29 30.38 npm notice To update run: npm install -g npm@11.6.2
+[CI/CD/test]   | #29 30.38 npm notice
+[CI/CD/test]   | #29 ...
+[CI/CD/test]   | 
+[CI/CD/test]   | #30 [frontend deps 4/4] RUN npm install
+[CI/CD/test]   | #30 42.53 
+[CI/CD/test]   | #30 42.53 added 350 packages, and audited 351 packages in 42s
+[CI/CD/test]   | #30 42.53 
+[CI/CD/test]   | #30 42.53 140 packages are looking for funding
+[CI/CD/test]   | #30 42.53   run `npm fund` for details
+[CI/CD/test]   | #30 42.59 
+[CI/CD/test]   | #30 42.59 3 vulnerabilities (2 low, 1 moderate)
+[CI/CD/test]   | #30 42.59 
+[CI/CD/test]   | #30 42.59 To address issues that do not require attention, run:
+[CI/CD/test]   | #30 42.59   npm audit fix
+[CI/CD/test]   | #30 42.59 
+[CI/CD/test]   | #30 42.59 To address all issues, run:
+[CI/CD/test]   | #30 42.59   npm audit fix --force
+[CI/CD/test]   | #30 42.59 
+[CI/CD/test]   | #30 42.59 Run `npm audit` for details.
+[CI/CD/test]   | #30 42.60 npm notice
+[CI/CD/test]   | #30 42.60 npm notice New major version of npm available! 10.8.2 -> 11.6.2
+[CI/CD/test]   | #30 42.60 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.6.2
+[CI/CD/test]   | #30 42.60 npm notice To update run: npm install -g npm@11.6.2
+[CI/CD/test]   | #30 42.60 npm notice
+[CI/CD/test]   | #30 ...
+[CI/CD/test]   | 
+[CI/CD/test]   | #32 [***-service 5/6] RUN npm ci
+[CI/CD/test]   | #32 DONE 45.4s
+[CI/CD/test]   | 
+[CI/CD/test]   | #29 [api-gateway 5/6] RUN npm ci
+[CI/CD/test]   | #29 DONE 45.5s
+[CI/CD/test]   | 
+[CI/CD/test]   | #31 [activity-service builder 4/6] RUN npm ci
+[CI/CD/test]   | #31 DONE 48.1s
+[CI/CD/test]   | 
+[CI/CD/test]   | #30 [frontend deps 4/4] RUN npm install
+[CI/CD/test]   | #30 ...
+[CI/CD/test]   | 
+[CI/CD/test]   | #33 [tasks-service 5/6] RUN npm ci
+[CI/CD/test]   | #33 DONE 45.6s
+[CI/CD/test]   | 
+[CI/CD/test]   | #34 [api-gateway 6/6] COPY . .
+[CI/CD/test]   | #34 ...
+[CI/CD/test]   | 
+[CI/CD/test]   | #28 [activity-service stage-1 5/7] RUN npm ci --omit=dev && npm cache clean --force
+[CI/CD/test]   | #28 DONE 45.8s
+[CI/CD/test]   | 
+[CI/CD/test]   | #30 [frontend deps 4/4] RUN npm install
+[CI/CD/test]   | #30 DONE 48.5s
+[CI/CD/test]   | 
+[CI/CD/test]   | #35 [activity-service builder 5/6] COPY . .
+[CI/CD/test]   | #35 ...
+[CI/CD/test]   | 
+[CI/CD/test]   | #34 [api-gateway 6/6] COPY . .
+[CI/CD/test]   | #34 DONE 2.7s
+[CI/CD/test]   | 
+[CI/CD/test]   | #36 [***-service 6/6] COPY . .
+[CI/CD/test]   | #36 DONE 2.8s
+[CI/CD/test]   | 
+[CI/CD/test]   | #37 [tasks-service 6/6] COPY . .
+[CI/CD/test]   | #37 DONE 2.5s
+[CI/CD/test]   | 
+[CI/CD/test]   | #35 [activity-service builder 5/6] COPY . .
+[CI/CD/test]   | #35 DONE 2.6s
+[CI/CD/test]   | 
+[CI/CD/test]   | #38 [tasks-service] exporting to docker image format
+[CI/CD/test]   | #38 exporting layers
+[CI/CD/test]   | #38 ...
+[CI/CD/test]   | 
+[CI/CD/test]   | #39 [***-service] exporting to docker image format
+[CI/CD/test]   | #39 exporting layers 9.9s done
+[CI/CD/test]   | #39 exporting manifest sha256:f3cd0c82b6d36c005f3ce753cad84f3bbacf86077002b3eb15450c03cc3e465c
+[CI/CD/test]   | #39 exporting manifest sha256:f3cd0c82b6d36c005f3ce753cad84f3bbacf86077002b3eb15450c03cc3e465c 0.0s done
+[CI/CD/test]   | #39 exporting config sha256:b94f1b31a94efaaf286bd87baa811eb1a543ac2518de6e55e0b1dc2ec63c272c 0.1s done
+[CI/CD/test]   | #39 sending tarball
+[CI/CD/test]   | #39 ...
+[CI/CD/test]   | 
+[CI/CD/test]   | #40 [activity-service builder 6/6] RUN npm run build
+[CI/CD/test]   | #40 1.180 
+[CI/CD/test]   | #40 1.180 > activity-service@1.0.0 build
+[CI/CD/test]   | #40 1.180 > tsc
+[CI/CD/test]   | #40 1.180 
+[CI/CD/test]   | #40 ...
+[CI/CD/test]   | 
+[CI/CD/test]   | #41 [api-gateway] exporting to docker image format
+[CI/CD/test]   | #41 exporting layers 9.9s done
+[CI/CD/test]   | #41 exporting manifest sha256:e420f8a54c4abcd9b341478f2c5141f0ca8e5320ff1027163389636fb0846380 0.1s done
+[CI/CD/test]   | #41 exporting config sha256:8b1e2ab6fec64490e9ddbf6b517b13336530e22bb93b681dc27f99f5598c0c62 0.0s done
+[CI/CD/test]   | #41 ...
+[CI/CD/test]   | 
+[CI/CD/test]   | #42 [frontend builder 3/5] COPY --from=deps /app/node_modules ./node_modules
+[CI/CD/test]   | #42 ...
+[CI/CD/test]   | 
+[CI/CD/test]   | #43 importing to docker
+[CI/CD/test]   | #43 ...
+[CI/CD/test]   | 
+[CI/CD/test]   | #40 [activity-service builder 6/6] RUN npm run build
+[CI/CD/test]   | #40 DONE 21.7s
+[CI/CD/test]   | 
+[CI/CD/test]   | #43 importing to docker
+[CI/CD/test]   | #43 loading layer 6d2b96c4559f 125B / 125B
+[CI/CD/test]   | #43 loading layer d42b55acd1f1 32.77kB / 2.42MB
+[CI/CD/test]   | #43 loading layer 917b90adf5cd 32.77kB / 64.25kB
+[CI/CD/test]   | #43 loading layer a351b9c15908 294.91kB / 27.30MB
+[CI/CD/test]   | #43 ...
+[CI/CD/test]   | 
+[CI/CD/test]   | #44 [activity-service stage-1 6/7] COPY --from=builder /usr/src/app/dist ./dist
+[CI/CD/test]   | #44 DONE 2.4s
+[CI/CD/test]   | 
+[CI/CD/test]   | #45 [activity-service stage-1 7/7] RUN mkdir -p /usr/src/app/dist/logs &&     chown -R node:node /usr/src/app
+[CI/CD/test]   | #45 ...
+[CI/CD/test]   | 
+[CI/CD/test]   | #46 importing to docker
+[CI/CD/test]   | #46 loading layer b05327aa716b 21.58kB / 21.58kB
+[CI/CD/test]   | #46 loading layer e6705401c6e7 131.07kB / 12.57MB
+[CI/CD/test]   | #46 loading layer e6705401c6e7 8.39MB / 12.57MB 2.1s
+[CI/CD/test]   | #46 ...
+[CI/CD/test]   | 
+[CI/CD/test]   | #39 [***-service] exporting to docker image format
+[CI/CD/test]   | #39 sending tarball 21.0s done
+[CI/CD/test]   | #39 DONE 31.0s
+[CI/CD/test]   | 
+[CI/CD/test]   | #47 importing to docker
+[CI/CD/test]   | #47 loading layer 6d2b96c4559f 125B / 125B 9.4s done
+[CI/CD/test]   | #47 loading layer d42b55acd1f1 2.42MB / 2.42MB 8.9s done
+[CI/CD/test]   | #47 loading layer 5cdc87471688 20.48kB / 20.48kB 8.1s done
+[CI/CD/test]   | #47 loading layer b37308c79e3a 11.35MB / 11.35MB 6.9s done
+[CI/CD/test]   | #47 loading layer 7a181af64638 7.24kB / 7.24kB 0.7s done
+[CI/CD/test]   | #47 DONE 9.4s
+[CI/CD/test]   | 
+[CI/CD/test]   | #38 [tasks-service] exporting to docker image format
+[CI/CD/test]   | #38 exporting layers 25.7s done
+[CI/CD/test]   | #38 exporting manifest sha256:a0fa20798cc195438319ca8943fc5fe6d779fe64ac54f3d2fbdbd0b99e8b3217 0.0s done
+[CI/CD/test]   | #38 exporting config sha256:e18f37a5d7a4d0a5e3f0c1a7418f67d584e8378bbe8898ab5cd1f6b15a3abba5 0.0s done
+[CI/CD/test]   | #38 ...
+[CI/CD/test]   | 
+[CI/CD/test]   | #48 [***-service] resolving provenance for metadata file
+[CI/CD/test]   | #48 DONE 0.0s
+[CI/CD/test]   | 
+[CI/CD/test]   | #43 importing to docker
+[CI/CD/test]   | #43 loading layer a351b9c15908 22.12MB / 27.30MB 6.8s
+[CI/CD/test]   | #43 ...
+[CI/CD/test]   | 
+[CI/CD/test]   | #46 importing to docker
+[CI/CD/test]   | #46 loading layer 7df6ee419714 7.18kB / 7.18kB
+[CI/CD/test]   | #46 loading layer b05327aa716b 21.58kB / 21.58kB 4.0s done
+[CI/CD/test]   | #46 loading layer e6705401c6e7 12.57MB / 12.57MB 3.9s done
+[CI/CD/test]   | #46 loading layer 7df6ee419714 7.18kB / 7.18kB 0.1s done
+[CI/CD/test]   | #46 DONE 4.0s
+[CI/CD/test]   | 
+[CI/CD/test]   | #38 [tasks-service] exporting to docker image format
+[CI/CD/test]   | #38 sending tarball 6.2s done
+[CI/CD/test]   | #38 DONE 32.0s
+[CI/CD/test]   | 
+[CI/CD/test]   | #45 [activity-service stage-1 7/7] RUN mkdir -p /usr/src/app/dist/logs &&     chown -R node:node /usr/src/app
+[CI/CD/test]   | #45 ...
+[CI/CD/test]   | 
+[CI/CD/test]   | #49 [tasks-service] resolving provenance for metadata file
+[CI/CD/test]   | #49 DONE 0.0s
+[CI/CD/test]   | 
+[CI/CD/test]   | #43 importing to docker
+[CI/CD/test]   | #43 loading layer 5c3abdd1b71d 14.41kB / 14.41kB
+[CI/CD/test]   | #43 loading layer 6d2b96c4559f 125B / 125B 11.4s done
+[CI/CD/test]   | #43 loading layer d42b55acd1f1 2.42MB / 2.42MB 10.8s done
+[CI/CD/test]   | #43 loading layer 917b90adf5cd 64.25kB / 64.25kB 10.0s done
+[CI/CD/test]   | #43 loading layer a351b9c15908 27.30MB / 27.30MB 8.5s done
+[CI/CD/test]   | #43 loading layer 5c3abdd1b71d 14.41kB / 14.41kB 0.1s done
+[CI/CD/test]   | #43 DONE 11.4s
+[CI/CD/test]   | 
+[CI/CD/test]   | #41 [api-gateway] exporting to docker image format
+[CI/CD/test]   | #41 sending tarball 23.0s done
+[CI/CD/test]   | #41 DONE 33.1s
+[CI/CD/test]   | 
+[CI/CD/test]   | #42 [frontend builder 3/5] COPY --from=deps /app/node_modules ./node_modules
+[CI/CD/test]   | #42 ...
+[CI/CD/test]   | 
+[CI/CD/test]   | #50 [api-gateway] resolving provenance for metadata file
+[CI/CD/test]   | #50 DONE 0.0s
+[CI/CD/test]   | 
+[CI/CD/test]   | #42 [frontend builder 3/5] COPY --from=deps /app/node_modules ./node_modules
+[CI/CD/test]   | #42 DONE 48.2s
+[CI/CD/test]   | 
+[CI/CD/test]   | #45 [activity-service stage-1 7/7] RUN mkdir -p /usr/src/app/dist/logs &&     chown -R node:node /usr/src/app
+[CI/CD/test]   | #45 ...
+[CI/CD/test]   | 
+[CI/CD/test]   | #51 [frontend builder 4/5] COPY . .
+[CI/CD/test]   | #51 DONE 0.3s
+[CI/CD/test]   | 
+[CI/CD/test]   | #45 [activity-service stage-1 7/7] RUN mkdir -p /usr/src/app/dist/logs &&     chown -R node:node /usr/src/app
+[CI/CD/test]   | #45 ...
+[CI/CD/test]   | 
+[CI/CD/test]   | #52 [frontend builder 5/5] RUN npm run build
+[CI/CD/test]   | #52 0.541 
+[CI/CD/test]   | #52 0.541 > tasks-app-frontend@0.1.0 build
+[CI/CD/test]   | #52 0.541 > next build
+[CI/CD/test]   | #52 0.541 
+[CI/CD/test]   | #52 1.347 Attention: Next.js now collects completely anonymous telemetry regarding usage.
+[CI/CD/test]   | #52 1.347 This information is used to shape Next.js' roadmap and prioritize features.
+[CI/CD/test]   | #52 1.347 You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+[CI/CD/test]   | #52 1.347 https://nextjs.org/telemetry
+[CI/CD/test]   | #52 1.347 
+[CI/CD/test]   | #52 1.491    ▲ Next.js 15.3.3
+[CI/CD/test]   | #52 1.491 
+[CI/CD/test]   | #52 1.525    Creating an optimized production build ...
+[CI/CD/test]   | #52 ...
+[CI/CD/test]   | 
+[CI/CD/test]   | #45 [activity-service stage-1 7/7] RUN mkdir -p /usr/src/app/dist/logs &&     chown -R node:node /usr/src/app
+[CI/CD/test]   | #45 DONE 29.1s
+[CI/CD/test]   | 
+[CI/CD/test]   | #53 [activity-service] exporting to docker image format
+[CI/CD/test]   | #53 exporting layers
+[CI/CD/test]   | #53 exporting layers 4.9s done
+[CI/CD/test]   | #53 exporting manifest sha256:6338944cd5bdc114f28aedd2a8b703253569de822d2cdd8bc1c6db984e3f8261 0.0s done
+[CI/CD/test]   | #53 exporting config sha256:f1e5221238bc10dac9c96134484520186ce9cc8c8078dbea593018ba35ff3779 0.0s done
+[CI/CD/test]   | #53 sending tarball
+[CI/CD/test]   | #53 ...
+[CI/CD/test]   | 
+[CI/CD/test]   | #54 importing to docker
+[CI/CD/test]   | #54 loading layer 1d4a063b30a5 32.77kB / 54.60kB
+[CI/CD/test]   | #54 loading layer aaed5e8b7952 65.54kB / 4.45MB
+[CI/CD/test]   | #54 loading layer fa74db24aa0a 7.29kB / 7.29kB
+[CI/CD/test]   | #54 loading layer c63d9af5b873 65.54kB / 4.50MB
+[CI/CD/test]   | #54 loading layer 1d4a063b30a5 54.60kB / 54.60kB 1.7s done
+[CI/CD/test]   | #54 loading layer aaed5e8b7952 4.45MB / 4.45MB 1.7s done
+[CI/CD/test]   | #54 loading layer fa74db24aa0a 7.29kB / 7.29kB 0.9s done
+[CI/CD/test]   | #54 loading layer c63d9af5b873 4.50MB / 4.50MB 0.8s done
+[CI/CD/test]   | #54 DONE 1.7s
+[CI/CD/test]   | 
+[CI/CD/test]   | #53 [activity-service] exporting to docker image format
+[CI/CD/test]   | #53 sending tarball 2.9s done
+[CI/CD/test]   | #53 DONE 7.8s
+[CI/CD/test]   | 
+[CI/CD/test]   | #55 [activity-service] resolving provenance for metadata file
+[CI/CD/test]   | #55 DONE 0.0s
+[CI/CD/test]   | 
+[CI/CD/test]   | #52 [frontend builder 5/5] RUN npm run build
+[CI/CD/test]   | #52 14.76  ✓ Compiled successfully in 8.0s
+[CI/CD/test]   | #52 14.77    Skipping validation of types
+[CI/CD/test]   | #52 14.77    Skipping linting
+[CI/CD/test]   | #52 15.07    Collecting page data ...
+[CI/CD/test]   | #52 16.58    Generating static pages (0/8) ...
+[CI/CD/test]   | #52 17.29    Generating static pages (2/8) 
+[CI/CD/test]   | #52 17.29    Generating static pages (4/8) 
+[CI/CD/test]   | #52 17.29    Generating static pages (6/8) 
+[CI/CD/test]   | #52 17.29  ✓ Generating static pages (8/8)
+[CI/CD/test]   | #52 17.65    Finalizing page optimization ...
+[CI/CD/test]   | #52 17.65    Collecting build traces ...
+[CI/CD/test]   | #52 24.29 
+[CI/CD/test]   | #52 24.30 Route (app)                                 Size  First Load JS
+[CI/CD/test]   | #52 24.30 ┌ ○ /                                      136 B         101 kB
+[CI/CD/test]   | #52 24.30 ├ ○ /_not-found                            977 B         102 kB
+[CI/CD/test]   | #52 24.30 ├ ○ /dashboard                           12.1 kB         113 kB
+[CI/CD/test]   | #52 24.30 ├ ○ /login                               2.27 kB         103 kB
+[CI/CD/test]   | #52 24.30 └ ○ /register                            2.35 kB         103 kB
+[CI/CD/test]   | #52 24.30 + First Load JS shared by all             101 kB
+[CI/CD/test]   | #52 24.30   ├ chunks/4bd1b696-e0f918e9a4ef950e.js  53.2 kB
+[CI/CD/test]   | #52 24.30   ├ chunks/684-7535f00f5c99db98.js       45.9 kB
+[CI/CD/test]   | #52 24.30   └ other shared chunks (total)          1.92 kB
+[CI/CD/test]   | #52 24.30 
+[CI/CD/test]   | #52 24.30 
+[CI/CD/test]   | #52 24.30 ○  (Static)  prerendered as static content
+[CI/CD/test]   | #52 24.30 
+[CI/CD/test]   | #52 24.34 npm notice
+[CI/CD/test]   | #52 24.34 npm notice New major version of npm available! 10.8.2 -> 11.6.2
+[CI/CD/test]   | #52 24.34 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.6.2
+[CI/CD/test]   | #52 24.34 npm notice To update run: npm install -g npm@11.6.2
+[CI/CD/test]   | #52 24.34 npm notice
+[CI/CD/test]   | #52 DONE 26.3s
+[CI/CD/test]   | 
+[CI/CD/test]   | #56 [frontend runner 3/6] COPY --from=builder /app/public ./public
+[CI/CD/test]   | #56 DONE 0.1s
+[CI/CD/test]   | 
+[CI/CD/test]   | #57 [frontend runner 4/6] COPY --from=builder /app/.next ./.next
+[CI/CD/test]   | #57 DONE 0.9s
+[CI/CD/test]   | 
+[CI/CD/test]   | #58 [frontend runner 5/6] COPY --from=builder /app/node_modules ./node_modules
+[CI/CD/test]   | #58 DONE 17.6s
+[CI/CD/test]   | 
+[CI/CD/test]   | #59 [frontend runner 6/6] COPY --from=builder /app/package.json ./package.json
+[CI/CD/test]   | #59 DONE 0.3s
+[CI/CD/test]   | 
+[CI/CD/test]   | #60 [frontend] exporting to docker image format
+[CI/CD/test]   | #60 exporting layers
+[CI/CD/test]   | #60 exporting layers 24.5s done
+[CI/CD/test]   | #60 exporting manifest sha256:030320fdbd56cc634bbe09bdfea33fa4d6565f870c73864d6d7b24859d7ca072 0.0s done
+[CI/CD/test]   | #60 exporting config sha256:2021868f40a885a5d96d2a9b326e6919a9ca6df779e399382b85d772682c5da1 0.0s done
+[CI/CD/test]   | #60 sending tarball
+[CI/CD/test]   | #60 ...
+[CI/CD/test]   | 
+[CI/CD/test]   | #61 importing to docker
+[CI/CD/test]   | #61 loading layer 2b6ab63450d1 92B / 92B
+[CI/CD/test]   | #61 loading layer 4ffbc8286f82 32.77kB / 138.24kB
+[CI/CD/test]   | #61 loading layer 66d15a8a6841 98.30kB / 7.14MB
+[CI/CD/test]   | #61 loading layer c710ddb46004 557.06kB / 169.90MB
+[CI/CD/test]   | #61 loading layer c710ddb46004 114.75MB / 169.90MB 2.0s
+[CI/CD/test]   | #61 loading layer c710ddb46004 125.89MB / 169.90MB 4.1s
+[CI/CD/test]   | #61 loading layer c710ddb46004 142.05MB / 169.90MB 6.8s
+[CI/CD/test]   | #61 loading layer c710ddb46004 167.67MB / 169.90MB 8.9s
+[CI/CD/test]   | #61 loading layer dd4ecc2ff11e 436B / 436B
+[CI/CD/test]   | #61 loading layer 2b6ab63450d1 92B / 92B 12.1s done
+[CI/CD/test]   | #61 loading layer 4ffbc8286f82 138.24kB / 138.24kB 12.1s done
+[CI/CD/test]   | #61 loading layer 66d15a8a6841 7.14MB / 7.14MB 12.1s done
+[CI/CD/test]   | #61 loading layer c710ddb46004 169.90MB / 169.90MB 11.6s done
+[CI/CD/test]   | #61 loading layer dd4ecc2ff11e 436B / 436B 0.9s done
+[CI/CD/test]   | #61 DONE 12.1s
+[CI/CD/test]   | 
+[CI/CD/test]   | #60 [frontend] exporting to docker image format
+[CI/CD/test]   | #60 sending tarball 15.9s done
+[CI/CD/test]   | #60 DONE 40.4s
+[CI/CD/test]   | 
+[CI/CD/test]   | #62 [frontend] resolving provenance for metadata file
+[CI/CD/test]   | #62 DONE 0.0s
+[CI/CD/test]   |  projects-tasks-service  Built
+[CI/CD/test]   |  projects-***-service  Built
+[CI/CD/test]   |  projects-api-gateway  Built
+[CI/CD/test]   |  projects-frontend  Built
+[CI/CD/test]   |  projects-activity-service  Built
+[CI/CD/test]   |  Container ***  Recreate
+[CI/CD/test]   |  Container ***  Recreated
+[CI/CD/test]   |  Container ***_service  Recreate
+[CI/CD/test]   |  Container ***_service  Recreated
+[CI/CD/test]   |  Container activity_service  Recreate
+[CI/CD/test]   |  Container tasks_service  Recreate
+[CI/CD/test]   |  Container activity_service  Recreated
+[CI/CD/test]   |  Container tasks_service  Recreated
+[CI/CD/test]   |  Container api_gateway  Recreate
+[CI/CD/test]   |  Container api_gateway  Recreated
+[CI/CD/test]   |  Container projects-frontend-1  Recreate
+[CI/CD/test]   |  Container projects-frontend-1  Recreated
+[CI/CD/test]   |  Container ***  Starting
+[CI/CD/test]   |  Container ***  Started
+[CI/CD/test]   |  Container ***  Waiting
+[CI/CD/test]   |  Container activity_service  Starting
+[CI/CD/test]   |  Container tasks_service  Starting
+[CI/CD/test]   |  Container tasks_service  Started
+[CI/CD/test]   |  Container activity_service  Started
+[CI/CD/test]   |  Container ***  Healthy
+[CI/CD/test]   |  Container ***_service  Starting
+[CI/CD/test]   |  Container ***_service  Started
+[CI/CD/test]   |  Container ***_service  Waiting
+[CI/CD/test]   |  Container activity_service  Waiting
+[CI/CD/test]   |  Container tasks_service  Waiting
+[CI/CD/test]   |  Container activity_service  Healthy
+[CI/CD/test]   |  Container ***_service  Healthy
+[CI/CD/test]   |  Container tasks_service  Healthy
+[CI/CD/test]   |  Container api_gateway  Starting
+[CI/CD/test]   |  Container api_gateway  Started
+[CI/CD/test]   |  Container api_gateway  Waiting
+[CI/CD/test]   |  Container api_gateway  Healthy
+[CI/CD/test]   |  Container projects-frontend-1  Starting
+[CI/CD/test]   |  Container projects-frontend-1  Started
+[CI/CD/test]   | [GlobalSetup] Docker containers launched. Waiting for services to become healthy...
+[CI/CD/test]   | [GlobalSetup] Waiting for API Gateway at http://localhost:***/health...
+[CI/CD/test]   | [GlobalSetup] API Gateway is ready!
+[CI/CD/test]   | 
+[CI/CD/test]   | [GlobalSetup] Setup complete. Running ***s...
+[CI/CD/test]   |   ●  process.exit called with "1"
+[CI/CD/test]   | 
+[CI/CD/test]   |     [0m [90m 13 |[39m   } [36mcatch[39m (error) {
+[CI/CD/test]   |      [90m 14 |[39m     console[33m.[39merror([32m'[SetupFile - beforeAll] FATAL: DB connection failed:'[39m[33m,[39m process[33m.[39menv[33m.[39m[33mMONGO_URI_FOR_TESTS[39m[33m,[39m error)[33m;[39m
+[CI/CD/test]   |     [31m[1m>[22m[39m[90m 15 |[39m     process[33m.[39mexit([35m1[39m)[33m;[39m
+[CI/CD/test]   |      [90m    |[39m             [31m[1m^[22m[39m
+[CI/CD/test]   |      [90m 16 |[39m   }
+[CI/CD/test]   |      [90m 17 |[39m }[33m,[39m [35m60000[39m)[33m;[39m
+[CI/CD/test]   |      [90m 18 |[39m[0m
+[CI/CD/test]   | 
+[CI/CD/test]   |       at Object.exit (src/jest.setup.js:15:13)
+[CI/CD/test]   | npm error Lifecycle script `***` failed with error:
+[CI/CD/test]   | npm error code 1
+[CI/CD/test]   | npm error path /home/gabriel/projects/e2e-***s
+[CI/CD/test]   | npm error workspace e2e-***s@1.0.0
+[CI/CD/test]   | npm error location /home/gabriel/projects/e2e-***s
+[CI/CD/test]   | npm error command failed
+[CI/CD/test]   | npm error command sh -c jest --runInBand --detectOpenHandles --no-cache
+[CI/CD/test]   ❌  Failure - Main Run all integration ***s [4m58.466100203s]
+[CI/CD/test] exitcode '1': failure
+[CI/CD/test] ⭐ Run Main Dump Docker logs on failure
+[CI/CD/test]   🐳  docker exec cmd=[bash -e /var/run/act/workflow/11] ***= workdir=
+[CI/CD/test]   | frontend-1  | 
+[CI/CD/test]   | frontend-1  | > tasks-app-frontend@0.1.0 start
+[CI/CD/test]   | frontend-1  | > next start
+[CI/CD/test]   | frontend-1  | 
+[CI/CD/test]   | frontend-1  |    ▲ Next.js 15.3.3
+[CI/CD/test]   | frontend-1  |    - Local:        http://localhost:3000
+[CI/CD/test]   | frontend-1  |    - Network:      http://172.18.0.9:3000
+[CI/CD/test]   | frontend-1  | 
+[CI/CD/test]   | frontend-1  |  ✓ Starting...
+[CI/CD/test]   | frontend-1  |  ✓ Ready in 429ms
+[CI/CD/test]   | tasks_service  | 
+[CI/CD/test]   | tasks_service  | > task-service@1.0.0 dev
+[CI/CD/test]   | tasks_service  | > nodemon server.js
+[CI/CD/test]   | tasks_service  | 
+[CI/CD/test]   | tasks_service  | [33m[nodemon] 3.1.9[39m
+[CI/CD/test]   | tasks_service  | [33m[nodemon] to restart at any time, enter `rs`[39m
+[CI/CD/test]   | tasks_service  | [33m[nodemon] watching path(s): *.*[39m
+[CI/CD/test]   | tasks_service  | [33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[CI/CD/test]   | tasks_service  | [32m[nodemon] starting `node server.js`[39m
+[CI/CD/test]   | tasks_service  | {
+[CI/CD/test]   | tasks_service  |   "level": "info",
+[CI/CD/test]   | tasks_service  |   "message": "RabbitMQ URI found",
+[CI/CD/test]   | tasks_service  |   "timestamp": "2025-10-15 20:41:15"
+[CI/CD/test]   | tasks_service  | }
+[CI/CD/test]   | tasks_service  | {
+[CI/CD/test]   | tasks_service  |   "level": "info",
+[CI/CD/test]   | tasks_service  |   "message": "Attempting to connect to MongoDB at URI",
+[CI/CD/test]   | tasks_service  |   "timestamp": "2025-10-15 20:41:15"
+[CI/CD/test]   | tasks_service  | }
+[CI/CD/test]   | tasks_service  | {
+[CI/CD/test]   | tasks_service  |   "level": "info",
+[CI/CD/test]   | tasks_service  |   "message": "Mongoose connected to DB.",
+[CI/CD/test]   | tasks_service  |   "timestamp": "2025-10-15 20:41:15"
+[CI/CD/test]   | tasks_service  | }
+[CI/CD/test]   | tasks_service  | {
+[CI/CD/test]   | tasks_service  |   "level": "info",
+[CI/CD/test]   | tasks_service  |   "message": "RabbitMQ connection not ready. Initializing...",
+[CI/CD/test]   | tasks_service  |   "timestamp": "2025-10-15 20:41:15"
+[CI/CD/test]   | tasks_service  | }
+[CI/CD/test]   | tasks_service  | {
+[CI/CD/test]   | tasks_service  |   "level": "info",
+[CI/CD/test]   | tasks_service  |   "timestamp": "2025-10-15 20:41:15"
+[CI/CD/test]   | tasks_service  | }
+[CI/CD/test]   | tasks_service  | {
+[CI/CD/test]   | tasks_service  |   "level": "info",
+[CI/CD/test]   | tasks_service  |   "message": "Attempting to connect to RabbitMQ...",
+[CI/CD/test]   | tasks_service  |   "timestamp": "2025-10-15 20:41:15"
+[CI/CD/test]   | tasks_service  | }
+[CI/CD/test]   | tasks_service  | {
+[CI/CD/test]   | tasks_service  |   "address": "172.18.0.3",
+[CI/CD/test]   | tasks_service  |   "code": "ECONNREFUSED",
+[CI/CD/test]   | tasks_service  |   "errno": -111,
+[CI/CD/test]   | tasks_service  |   "level": "error",
+[CI/CD/test]   | activity_service  | {
+[CI/CD/test]   | activity_service  |   "level": "info",
+[CI/CD/test]   | activity_service  |   "message": "Attempting to connect to MongoDB at URI",
+[CI/CD/test]   | activity_service  |   "timestamp": "2025-10-15 20:41:15"
+[CI/CD/test]   | activity_service  | }
+[CI/CD/test]   | activity_service  | {
+[CI/CD/test]   | activity_service  |   "level": "info",
+[CI/CD/test]   | activity_service  |   "message": "Mongoose connected to DB.",
+[CI/CD/test]   | activity_service  |   "timestamp": "2025-10-15 20:41:15"
+[CI/CD/test]   | activity_service  | }
+[CI/CD/test]   | activity_service  | {
+[CI/CD/test]   | activity_service  |   "level": "info",
+[CI/CD/test]   | activity_service  |   "message": "Initializing RabbitMQ Consumer Service...",
+[CI/CD/test]   | activity_service  |   "timestamp": "2025-10-15 20:41:15"
+[CI/CD/test]   | activity_service  | }
+[CI/CD/test]   | activity_service  | {
+[CI/CD/test]   | activity_service  |   "level": "info",
+[CI/CD/test]   | activity_service  |   "message": "Attempting to get RabbitMQ channel (with retries)...",
+[CI/CD/test]   | activity_service  |   "timestamp": "2025-10-15 20:41:15"
+[CI/CD/test]   | activity_service  | }
+[CI/CD/test]   | activity_service  | {
+[CI/CD/test]   | activity_service  |   "level": "info",
+[CI/CD/test]   | activity_service  |   "message": "getChannel: Initiating connection attempt via connectRabbitMQ...",
+[CI/CD/test]   | activity_service  |   "timestamp": "2025-10-15 20:41:15"
+[CI/CD/test]   | api_gateway       | 
+[CI/CD/test]   | api_gateway       | > api-gateway@1.0.0 start
+[CI/CD/test]   | api_gateway       | > node src/server.js
+[CI/CD/test]   | api_gateway       | 
+[CI/CD/test]   | api_gateway       | {
+[CI/CD/test]   | api_gateway       |   "level": "info",
+[CI/CD/test]   | api_gateway       |   "message": "Connecting to Redis at ***:*** WITH password authentication.",
+[CI/CD/test]   | api_gateway       |   "timestamp": "2025-10-15 20:41:25"
+[CI/CD/test]   | api_gateway       | }
+[CI/CD/test]   | api_gateway       | {
+[CI/CD/test]   | api_gateway       |   "level": "info",
+[CI/CD/test]   | api_gateway       |   "message": "API Gateway: Circuit breaker configuration module loaded.",
+[CI/CD/test]   | api_gateway       |   "timestamp": "2025-10-15 20:41:25"
+[CI/CD/test]   | api_gateway       | }
+[CI/CD/test]   | api_gateway       | {
+[CI/CD/test]   | api_gateway       |   "level": "info",
+[CI/CD/test]   | api_gateway       |   "message": "API Gateway: Circuit breaker \"checkGatewayBlacklistAction\" initialized.",
+[CI/CD/test]   | api_gateway       |   "timestamp": "2025-10-15 20:41:25"
+[CI/CD/test]   | api_gateway       | }
+[CI/CD/test]   | api_gateway       | {
+[CI/CD/test]   | api_gateway       |   "level": "info",
+[CI/CD/test]   | api_gateway       |   "message": "API Gateway: Event listeners attached to circuit breaker \"checkGatewayBlacklistAction\".",
+[CI/CD/test]   | api_gateway       |   "timestamp": "2025-10-15 20:41:25"
+[CI/CD/test]   | api_gateway       | }
+[CI/CD/test]   | api_gateway       | {
+[CI/CD/test]   | api_gateway       |   "level": "info",
+[CI/CD/test]   | api_gateway       |   "message": "Connected to Redis successfully at ***:***!",
+[CI/CD/test]   | api_gateway       |   "timestamp": "2025-10-15 20:41:25"
+[CI/CD/test]   | api_gateway       | }
+[CI/CD/test]   | api_gateway       | {
+[CI/CD/test]   | api_gateway       |   "level": "info",
+[CI/CD/test]   | api_gateway       |   "message": "API Gateway listening on port ***",
+[CI/CD/test]   | api_gateway       |   "timestamp": "2025-10-15 20:41:25"
+[CI/CD/test]   | api_gateway       | }
+[CI/CD/test]   | tasks_service     |   "message": "Failed to connect to RabbitMQ during initial setup: connect ECONNREFUSED 172.18.0.3:5672",
+[CI/CD/test]   | tasks_service     |   "port": 5672,
+[CI/CD/test]   | tasks_service     |   "stack": "Error: connect ECONNREFUSED 172.18.0.3:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)",
+[CI/CD/test]   | tasks_service     |   "syscall": "connect",
+[CI/CD/test]   | tasks_service     |   "timestamp": "2025-10-15 20:41:15"
+[CI/CD/test]   | tasks_service     | }
+[CI/CD/test]   | tasks_service     | {
+[CI/CD/test]   | tasks_service     |   "level": "info",
+[CI/CD/test]   | tasks_service     |   "message": "RabbitMQ connection failed. Scheduling retry attempt 1 in 961ms...",
+[CI/CD/test]   | tasks_service     |   "timestamp": "2025-10-15 20:41:15"
+[CI/CD/test]   | tasks_service     | }
+[CI/CD/test]   | tasks_service     | {
+[CI/CD/test]   | tasks_service     |   "level": "info",
+[CI/CD/test]   | tasks_service     |   "message": "Executing scheduled retry attempt 1...",
+[CI/CD/test]   | tasks_service     |   "timestamp": "2025-10-15 20:41:16"
+[CI/CD/test]   | tasks_service     | }
+[CI/CD/test]   | tasks_service     | {
+[CI/CD/test]   | tasks_service     |   "level": "info",
+[CI/CD/test]   | tasks_service     |   "message": "Attempting to connect to RabbitMQ...",
+[CI/CD/test]   | tasks_service     |   "timestamp": "2025-10-15 20:41:16"
+[CI/CD/test]   | tasks_service     | }
+[CI/CD/test]   | tasks_service     | {
+[CI/CD/test]   | tasks_service     |   "address": "172.18.0.3",
+[CI/CD/test]   | tasks_service     |   "code": "ECONNREFUSED",
+[CI/CD/test]   | tasks_service     |   "errno": -111,
+[CI/CD/test]   | tasks_service     |   "level": "error",
+[CI/CD/test]   | tasks_service     |   "message": "Failed to connect to RabbitMQ during initial setup: connect ECONNREFUSED 172.18.0.3:5672",
+[CI/CD/test]   | tasks_service     |   "port": 5672,
+[CI/CD/test]   | tasks_service     |   "stack": "Error: connect ECONNREFUSED 172.18.0.3:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)",
+[CI/CD/test]   | tasks_service     |   "syscall": "connect",
+[CI/CD/test]   | tasks_service     |   "timestamp": "2025-10-15 20:41:16"
+[CI/CD/test]   | tasks_service     | }
+[CI/CD/test]   | tasks_service     | {
+[CI/CD/test]   | tasks_service     |   "level": "info",
+[CI/CD/test]   | tasks_service     |   "message": "RabbitMQ connection failed. Scheduling retry attempt 2 in 233ms...",
+[CI/CD/test]   | tasks_service     |   "timestamp": "2025-10-15 20:41:16"
+[CI/CD/test]   | tasks_service     | }
+[CI/CD/test]   | tasks_service     | {
+[CI/CD/test]   | tasks_service     |   "level": "info",
+[CI/CD/test]   | tasks_service     |   "message": "Executing scheduled retry attempt 2...",
+[CI/CD/test]   | tasks_service     |   "timestamp": "2025-10-15 20:41:16"
+[CI/CD/test]   | tasks_service     | }
+[CI/CD/test]   | tasks_service     | {
+[CI/CD/test]   | tasks_service     |   "level": "info",
+[CI/CD/test]   | tasks_service     |   "message": "Attempting to connect to RabbitMQ...",
+[CI/CD/test]   | tasks_service     |   "timestamp": "2025-10-15 20:41:16"
+[CI/CD/test]   | tasks_service     | }
+[CI/CD/test]   | tasks_service     | {
+[CI/CD/test]   | tasks_service     |   "address": "172.18.0.3",
+[CI/CD/test]   | tasks_service     |   "code": "ECONNREFUSED",
+[CI/CD/test]   | tasks_service     |   "errno": -111,
+[CI/CD/test]   | tasks_service     |   "level": "error",
+[CI/CD/test]   | tasks_service     |   "message": "Failed to connect to RabbitMQ during initial setup: connect ECONNREFUSED 172.18.0.3:5672",
+[CI/CD/test]   | tasks_service     |   "port": 5672,
+[CI/CD/test]   | tasks_service     |   "stack": "Error: connect ECONNREFUSED 172.18.0.3:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)",
+[CI/CD/test]   | tasks_service     |   "syscall": "connect",
+[CI/CD/test]   | tasks_service     |   "timestamp": "2025-10-15 20:41:16"
+[CI/CD/test]   | tasks_service     | }
+[CI/CD/test]   | tasks_service     | {
+[CI/CD/test]   | tasks_service     |   "level": "info",
+[CI/CD/test]   | tasks_service     |   "message": "RabbitMQ connection failed. Scheduling retry attempt 3 in 2986ms...",
+[CI/CD/test]   | tasks_service     |   "timestamp": "2025-10-15 20:41:16"
+[CI/CD/test]   | tasks_service     | }
+[CI/CD/test]   | tasks_service     | {
+[CI/CD/test]   | tasks_service     |   "level": "info",
+[CI/CD/test]   | tasks_service     |   "message": "Executing scheduled retry attempt 3...",
+[CI/CD/test]   | tasks_service     |   "timestamp": "2025-10-15 20:41:19"
+[CI/CD/test]   | tasks_service     | }
+[CI/CD/test]   | tasks_service     | {
+[CI/CD/test]   | tasks_service     |   "level": "info",
+[CI/CD/test]   | tasks_service     |   "message": "Attempting to connect to RabbitMQ...",
+[CI/CD/test]   | tasks_service     |   "timestamp": "2025-10-15 20:41:19"
+[CI/CD/test]   | tasks_service     | }
+[CI/CD/test]   | tasks_service     | {
+[CI/CD/test]   | tasks_service     |   "level": "info",
+[CI/CD/test]   | tasks_service     |   "message": "RabbitMQ connection established successfully!",
+[CI/CD/test]   | tasks_service     |   "timestamp": "2025-10-15 20:41:19"
+[CI/CD/test]   | tasks_service     | }
+[CI/CD/test]   | tasks_service     | {
+[CI/CD/test]   | tasks_service     |   "level": "info",
+[CI/CD/test]   | tasks_service     |   "message": "RabbitMQ channel created successfully!",
+[CI/CD/test]   | tasks_service     |   "timestamp": "2025-10-15 20:41:19"
+[CI/CD/test]   | tasks_service     | }
+[CI/CD/test]   | tasks_service     | {
+[CI/CD/test]   | tasks_service     |   "level": "info",
+[CI/CD/test]   | tasks_service     |   "message": "Queue \"task_events\" asserted successfully.",
+[CI/CD/test]   | tasks_service     |   "timestamp": "2025-10-15 20:41:19"
+[CI/CD/test]   | tasks_service     | }
+[CI/CD/test]   | tasks_service     | {
+[CI/CD/test]   | tasks_service     |   "level": "info",
+[CI/CD/test]   | tasks_service     |   "message": "Starting Outbox Processor...",
+[CI/CD/test]   | tasks_service     |   "timestamp": "2025-10-15 20:41:19"
+[CI/CD/test]   | tasks_service     | }
+[CI/CD/test]   | tasks_service     | {
+[CI/CD/test]   | tasks_service     |   "level": "info",
+[CI/CD/test]   | tasks_service     |   "message": "Tasks Server is running on http://localhost:***",
+[CI/CD/test]   | activity_service  | }
+[CI/CD/test]   | activity_service  | {
+[CI/CD/test]   | activity_service  |   "error": {
+[CI/CD/test]   | activity_service  |     "address": "172.18.0.3",
+[CI/CD/test]   | activity_service  |     "code": "ECONNREFUSED",
+[CI/CD/test]   | activity_service  |     "errno": -111,
+[CI/CD/test]   | activity_service  |     "message": "connect ECONNREFUSED 172.18.0.3:5672",
+[CI/CD/test]   | activity_service  |     "name": "Error",
+[CI/CD/test]   | activity_service  |     "port": 5672,
+[CI/CD/test]   | activity_service  |     "stack": "Error: connect ECONNREFUSED 172.18.0.3:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)",
+[CI/CD/test]   | activity_service  |     "syscall": "connect"
+[CI/CD/test]   | activity_service  |   },
+[CI/CD/test]   | activity_service  |   "level": "error",
+[CI/CD/test]   | activity_service  |   "message": "Failed to connect/setup RabbitMQ during initial attempt:",
+[CI/CD/test]   | activity_service  |   "timestamp": "2025-10-15 20:41:15"
+[CI/CD/test]   | activity_service  | }
+[CI/CD/test]   | activity_service  | {
+[CI/CD/test]   | activity_service  |   "level": "info",
+[CI/CD/test]   | activity_service  |   "message": "RabbitMQ connection failed. Scheduling retry attempt 1 in 586ms...",
+[CI/CD/test]   | activity_service  |   "timestamp": "2025-10-15 20:41:15"
+[CI/CD/test]   | activity_service  | }
+[CI/CD/test]   | activity_service  | {
+[CI/CD/test]   | activity_service  |   "level": "info",
+[CI/CD/test]   | activity_service  |   "message": "Executing scheduled retry attempt 1...",
+[CI/CD/test]   | activity_service  |   "timestamp": "2025-10-15 20:41:15"
+[CI/CD/test]   | activity_service  | }
+[CI/CD/test]   | activity_service  | {
+[CI/CD/test]   | activity_service  |   "error": {
+[CI/CD/test]   | activity_service  |     "address": "172.18.0.3",
+[CI/CD/test]   | activity_service  |     "code": "ECONNREFUSED",
+[CI/CD/test]   | activity_service  |     "errno": -111,
+[CI/CD/test]   | activity_service  |     "message": "connect ECONNREFUSED 172.18.0.3:5672",
+[CI/CD/test]   | activity_service  |     "name": "Error",
+[CI/CD/test]   | activity_service  |     "port": 5672,
+[CI/CD/test]   | activity_service  |     "stack": "Error: connect ECONNREFUSED 172.18.0.3:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)",
+[CI/CD/test]   | activity_service  |     "syscall": "connect"
+[CI/CD/test]   | activity_service  |   },
+[CI/CD/test]   | activity_service  |   "level": "error",
+[CI/CD/test]   | activity_service  |   "message": "Failed to connect/setup RabbitMQ during initial attempt:",
+[CI/CD/test]   | activity_service  |   "timestamp": "2025-10-15 20:41:15"
+[CI/CD/test]   | activity_service  | }
+[CI/CD/test]   | activity_service  | {
+[CI/CD/test]   | activity_service  |   "level": "info",
+[CI/CD/test]   | activity_service  |   "message": "RabbitMQ connection failed. Scheduling retry attempt 2 in 1542ms...",
+[CI/CD/test]   | activity_service  |   "timestamp": "2025-10-15 20:41:15"
+[CI/CD/test]   | activity_service  | }
+[CI/CD/test]   | activity_service  | {
+[CI/CD/test]   | activity_service  |   "level": "info",
+[CI/CD/test]   | activity_service  |   "message": "Executing scheduled retry attempt 2...",
+[CI/CD/test]   | activity_service  |   "timestamp": "2025-10-15 20:41:17"
+[CI/CD/test]   | activity_service  | }
+[CI/CD/test]   | activity_service  | {
+[CI/CD/test]   | activity_service  |   "level": "info",
+[CI/CD/test]   | activity_service  |   "message": "RabbitMQ connection successful, resetting retry state.",
+[CI/CD/test]   | activity_service  |   "timestamp": "2025-10-15 20:41:17"
+[CI/CD/test]   | activity_service  | }
+[CI/CD/test]   | activity_service  | {
+[CI/CD/test]   | activity_service  |   "level": "info",
+[CI/CD/test]   | activity_service  |   "message": "RabbitMQ connection established successfully!",
+[CI/CD/test]   | activity_service  |   "timestamp": "2025-10-15 20:41:17"
+[CI/CD/test]   | activity_service  | }
+[CI/CD/test]   | activity_service  | {
+[CI/CD/test]   | activity_service  |   "level": "info",
+[CI/CD/test]   | activity_service  |   "message": "RabbitMQ channel created successfully!",
+[CI/CD/test]   | activity_service  |   "timestamp": "2025-10-15 20:41:17"
+[CI/CD/test]   | activity_service  | }
+[CI/CD/test]   | activity_service  | {
+[CI/CD/test]   | activity_service  |   "level": "info",
+[CI/CD/test]   | activity_service  |   "message": "Asserting queue: task_events",
+[CI/CD/test]   | activity_service  |   "timestamp": "2025-10-15 20:41:17"
+[CI/CD/test]   | activity_service  | }
+[CI/CD/test]   | activity_service  | {
+[CI/CD/test]   | activity_service  |   "level": "info",
+[CI/CD/test]   | activity_service  |   "message": "Queue \"task_events\" asserted successfully.",
+[CI/CD/test]   | activity_service  |   "timestamp": "2025-10-15 20:41:17"
+[CI/CD/test]   | activity_service  | }
+[CI/CD/test]   | activity_service  | {
+[CI/CD/test]   | activity_service  |   "level": "info",
+[CI/CD/test]   | activity_service  |   "message": "RabbitMQ connection successful, resetting retry state.",
+[CI/CD/test]   | activity_service  |   "timestamp": "2025-10-15 20:41:17"
+[CI/CD/test]   | activity_service  | }
+[CI/CD/test]   | activity_service  | {
+[CI/CD/test]   | activity_service  |   "level": "info",
+[CI/CD/test]   | activity_service  |   "message": "RabbitMQ channel ready, starting consumer...",
+[CI/CD/test]   | activity_service  |   "timestamp": "2025-10-15 20:41:17"
+[CI/CD/test]   | activity_service  | }
+[CI/CD/test]   | activity_service  | {
+[CI/CD/test]   | activity_service  |   "level": "info",
+[CI/CD/test]   | tasks_service     |   "timestamp": "2025-10-15 20:41:19"
+[CI/CD/test]   | tasks_service     | }
+[CI/CD/test]   | activity_service  |   "message": "Attempting to start consumer on queue: task_events",
+[CI/CD/test]   | activity_service  |   "timestamp": "2025-10-15 20:41:17"
+[CI/CD/test]   | activity_service  | }
+[CI/CD/test]   | activity_service  | {
+[CI/CD/test]   | activity_service  |   "level": "info",
+[CI/CD/test]   | activity_service  |   "message": "Consumer started successfully on queue: task_events",
+[CI/CD/test]   | activity_service  |   "timestamp": "2025-10-15 20:41:17"
+[CI/CD/test]   | activity_service  | }
+[CI/CD/test]   | activity_service  | {
+[CI/CD/test]   | activity_service  |   "level": "info",
+[CI/CD/test]   | activity_service  |   "message": "RabbitMQ Consumer Service Initialized Successfully.",
+[CI/CD/test]   | activity_service  |   "timestamp": "2025-10-15 20:41:17"
+[CI/CD/test]   | activity_service  | }
+[CI/CD/test]   | activity_service  | {
+[CI/CD/test]   | activity_service  |   "level": "info",
+[CI/CD/test]   | activity_service  |   "message": "Activity Service running on port ***",
+[CI/CD/test]   | activity_service  |   "timestamp": "2025-10-15 20:41:17"
+[CI/CD/test]   | activity_service  | }
+[CI/CD/test]   | ***             | 1:C 15 Oct 2025 20:41:08.177 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[CI/CD/test]   | ***_service      | 
+[CI/CD/test]   | ***_service      | > ***-service@1.0.0 dev
+[CI/CD/test]   | ***_service      | > nodemon server.js
+[CI/CD/test]   | ***_service      | 
+[CI/CD/test]   | ***_service      | [33m[nodemon] 3.1.9[39m
+[CI/CD/test]   | ***_service      | [33m[nodemon] to restart at any time, enter `rs`[39m
+[CI/CD/test]   | ***_service      | [33m[nodemon] watching path(s): *.*[39m
+[CI/CD/test]   | ***_service      | [33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[CI/CD/test]   | ***_service      | [32m[nodemon] starting `node server.js`[39m
+[CI/CD/test]   | ***_service      | WARNING: NODE_ENV value of '***' did not match any deployment config file names.
+[CI/CD/test]   | ***_service      | WARNING: See https://github.com/node-config/node-config/wiki/Strict-Mode
+[CI/CD/test]   | ***_service      | {
+[CI/CD/test]   | ***_service      |   "level": "info",
+[CI/CD/test]   | ***_service      |   "message": "Connecting to Redis at ***:*** WITH password authentication.",
+[CI/CD/test]   | ***_service      |   "timestamp": "2025-10-15 20:41:20"
+[CI/CD/test]   | ***_service      | }
+[CI/CD/test]   | ***_service      | {
+[CI/CD/test]   | ***_service      |   "level": "info",
+[CI/CD/test]   | ***_service      |   "message": "Circuit breaker configuration module loaded",
+[CI/CD/test]   | ***_service      |   "timestamp": "2025-10-15 20:41:20"
+[CI/CD/test]   | ***             | 1:C 15 Oct 2025 20:41:08.177 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[CI/CD/test]   | ***             | 1:C 15 Oct 2025 20:41:08.177 * Redis version=7.4.6, bits=64, commit=00000000, modified=0, pid=1, just started
+[CI/CD/test]   | ***             | 1:C 15 Oct 2025 20:41:08.177 * Configuration loaded
+[CI/CD/test]   | ***             | 1:M 15 Oct 2025 20:41:08.177 * monotonic clock: POSIX clock_gettime
+[CI/CD/test]   | ***             | 1:M 15 Oct 2025 20:41:08.179 * Running mode=standalone, port=***.
+[CI/CD/test]   | ***             | 1:M 15 Oct 2025 20:41:08.179 * Server initialized
+[CI/CD/test]   | ***             | 1:M 15 Oct 2025 20:41:08.179 * Loading RDB produced by version 7.4.6
+[CI/CD/test]   | ***             | 1:M 15 Oct 2025 20:41:08.179 * RDB age 4 seconds
+[CI/CD/test]   | ***             | 1:M 15 Oct 2025 20:41:08.179 * RDB memory usage when created 0.98 Mb
+[CI/CD/test]   | ***             | 1:M 15 Oct 2025 20:41:08.179 * Done loading RDB, keys loaded: 0, keys expired: 0.
+[CI/CD/test]   | ***             | 1:M 15 Oct 2025 20:41:08.179 * DB loaded from disk: 0.000 seconds
+[CI/CD/test]   | ***             | 1:M 15 Oct 2025 20:41:08.179 * Ready to accept connections tcp
+[CI/CD/test]   | ***_service      | }
+[CI/CD/test]   | ***_service      | {
+[CI/CD/test]   | ***_service      |   "level": "info",
+[CI/CD/test]   | ***_service      |   "message": "Circuit breaker \"RedisLogoutBlacklist\" initialized",
+[CI/CD/test]   | ***_service      |   "timestamp": "2025-10-15 20:41:20"
+[CI/CD/test]   | ***_service      | }
+[CI/CD/test]   | ***_service      | {
+[CI/CD/test]   | ***_service      |   "level": "info",
+[CI/CD/test]   | ***_service      |   "message": "Event listeners attached to circuit breaker \"RedisLogoutBlacklist\".",
+[CI/CD/test]   | ***_service      |   "timestamp": "2025-10-15 20:41:20"
+[CI/CD/test]   | ***_service      | }
+[CI/CD/test]   | ***_service      | {
+[CI/CD/test]   | ***_service      |   "level": "info",
+[CI/CD/test]   | ***_service      |   "message": "Attempting to connect to MongoDB at URI",
+[CI/CD/test]   | ***_service      |   "timestamp": "2025-10-15 20:41:20"
+[CI/CD/test]   | ***_service      | }
+[CI/CD/test]   | ***_service      | {
+[CI/CD/test]   | ***_service      |   "level": "info",
+[CI/CD/test]   | ***_service      |   "timestamp": "2025-10-15 20:41:20"
+[CI/CD/test]   | ***_service      | }
+[CI/CD/test]   | ***_service      | {
+[CI/CD/test]   | ***_service      |   "level": "info",
+[CI/CD/test]   | ***_service      |   "message": "Mongoose connected to DB.",
+[CI/CD/test]   | ***_service      |   "timestamp": "2025-10-15 20:41:20"
+[CI/CD/test]   | ***_service      | }
+[CI/CD/test]   | ***_service      | {
+[CI/CD/test]   | ***_service      |   "level": "info",
+[CI/CD/test]   | ***_service      |   "message": "Connected to Redis successfully at ***:***!",
+[CI/CD/test]   | ***_service      |   "timestamp": "2025-10-15 20:41:20"
+[CI/CD/test]   | ***_service      | }
+[CI/CD/test]   | ***_service      | {
+[CI/CD/test]   | ***_service      |   "level": "info",
+[CI/CD/test]   | ***_service      |   "message": "Server is running on http://localhost:***",
+[CI/CD/test]   | ***_service      |   "timestamp": "2025-10-15 20:41:20"
+[CI/CD/test]   | ***_service      | }
+[CI/CD/test]   ✅  Success - Main Dump Docker logs on failure [202.492933ms]
+[CI/CD/test]   🐳  docker exec cmd=[/opt/acttoolcache/node/18.20.8/x64/bin/node /var/run/act/workflow/hashfiles/index.js] ***= workdir=
+[CI/CD/test]   🐳  docker exec cmd=[/opt/acttoolcache/node/18.20.8/x64/bin/node /var/run/act/workflow/hashfiles/index.js] ***= workdir=
+[CI/CD/test] ⭐ Run Post Set up Docker Buildx
+[CI/CD/test]   🐳  docker exec cmd=[/opt/acttoolcache/node/18.20.8/x64/bin/node /var/run/act/actions/docker-setup-buildx-action@v3/dist/index.js] ***= workdir=
+[CI/CD/test]   ❓  ::group::Removing builder
+[CI/CD/test]   | [command]/usr/bin/docker buildx rm builder-832ac3b3-124f-47fd-aad2-2373c6844bb5
+[CI/CD/test]   | builder-832ac3b3-124f-47fd-aad2-2373c6844bb5 removed
+[CI/CD/test]   ❓  ::endgroup::
+[CI/CD/test]   ❓  ::group::Cleaning up certificates
+[CI/CD/test]   ❓  ::endgroup::
+[CI/CD/test]   ❓  ::group::Post cache
+[CI/CD/test]   | State not set
+[CI/CD/test]   ❓  ::endgroup::
+[CI/CD/test]   ✅  Success - Post Set up Docker Buildx [3.973563436s]
+[CI/CD/test] ⭐ Run Complete job
+[CI/CD/test]   ✅  Success - Complete job
+[CI/CD/test] 🏁  Job failed

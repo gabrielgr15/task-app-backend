@@ -40,7 +40,6 @@ services:
       NODE_ENV: ${NODE_ENV:-development}
       PORT: ${USER_SERVICE_PORT:-4001}
       MONGO_URI: ${MONGO_USER_URI}
-      MONGO_TEST_URI: ${MONGO_TEST_URI} 
       JWT_SECRET: ${JWT_SECRET}
       REDIS_HOST: ${REDIS_HOST} 
       REDIS_PORT: ${REDIS_PORT}
@@ -67,8 +66,7 @@ services:
     environment:      
       NODE_ENV: ${NODE_ENV:-development}
       PORT: ${TASKS_SERVICE_PORT:-4002}
-      MONGO_URI: ${MONGO_TASKS_URI}      
-      MONGO_TEST_URI: ${MONGO_TEST_URI} 
+      MONGO_URI: ${MONGO_TASKS_URI}
       RABBITMQ_URI: ${RABBITMQ_URI}
     depends_on:
       rabbitmq:
@@ -93,7 +91,6 @@ services:
       NODE_ENV: ${NODE_ENV:-development}
       PORT: ${ACTIVITY_SERVICE_PORT:-4003}
       MONGO_URI: ${MONGO_ACTIVITY_URI}
-      MONGO_TEST_URI: ${MONGO_TEST_URI} 
       RABBITMQ_URI: ${RABBITMQ_URI}
     depends_on:
       rabbitmq:

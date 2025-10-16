@@ -16,8 +16,7 @@ export async function connectDB() {
         isDbConnected = true;
         return;
     }
-    const isTestEnv = process.env.NODE_ENV === 'test';
-    const dbUri = isTestEnv ? process.env.MONGO_TEST_URI : process.env.MONGO_URI;
+    const dbUri = process.env.MONGO_URI;
 
     if (!dbUri) {
         logger.error(`FATAL ERROR: A MongoDB URI was not provided for the current environment.`);
