@@ -84,6 +84,7 @@ git clone https://github.com/gabrielgr15/task-app-backend.git
 cd task-app-backend
 
 # 2. Set up environment variables for each service using the .env.example files
+cp .env.example .env
 
 # 3. Launch the entire stack
 docker-compose up --build
